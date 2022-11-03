@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+    <animations>
+		<imp_cargo path="gfx/MonstersDLC/spine/characters/spire_imp" json="imp_big.json" scale="0.450000" mirror="true">
+            <mixing all="true" time="0.2f" />
+        </imp_cargo>	
+        <imp_egg path="%mod%/gfx/Spine/imp_egg" json="imp_egg.json" scale="0.269000" mirror="false">
+            <mixing all="true" />
+        </imp_egg>
+	    <!-- <imp path="gfx/Spine/characters/imp" json="imp.json" scale="0.380000" time_scale="1.3" mirror="true"> -->
+            <!-- <mixing all="true" /> -->
+        <!-- </imp> -->
+		<!-- <imp_cargo path="%mod%/gfx/Spine/spire_imp" json="imp_big.json" scale="0.450000" mirror="true"> -->
+            <!-- <mixing all="true" time="0.2f" /> -->
+        <!-- </imp_cargo> -->
+        <!-- <custom_imphouse path="%mod%/gfx/Spine/imp_house" json="house_for_imp.json" scale="0.550000" mirror="false"> -->
+            <!-- <mixing all="true" /> -->
+        <!-- </custom_imphouse>		 -->
+        <custom_imphouse path="gfx/MonstersDLC/spine/builds/imp_house" json="house_for_imp.json" scale="0.550000" mirror="false">
+            <mixing all="true" />
+        </custom_imphouse>				
+    </animations>
+</root>

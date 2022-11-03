@@ -1,0 +1,31 @@
+<root>
+<!-- TreeBlockBehaviour -->
+    <growth_duration value="500"/>
+    <resources value="gold_apple-1"/>
+    <drop_interval value="100,300"/>
+    <drop_count value="40,50"/>
+    <max_height value="3"/>
+    <start_drop_count value="5"/>
+
+<!-- SpineBehaviour -->
+    <spine value="magic_tree"/>
+
+<!-- AnimationBehaviour -->
+    <states>
+        <state name="to_1" loop="false" ani="0_to_1" next="1_idle" />
+        <state name="1_cut" loop="false" ani="1_slots_cut" next="1_idle" />
+        <state name="1_idle" loop="true" ani="1_slots" />
+
+        <state name="to_2" loop="false" ani="1_to_2" next="2_idle" />
+        <state name="2_cut" loop="false" ani="2_slots_cut" next="2_idle" />
+        <state name="2_idle" loop="true" ani="2_slots" />
+
+        <state name="to_3" loop="false" ani="2_to_3" next="3_idle" />
+        <state name="3_cut" loop="false" ani="3_slots_cut" next="3_idle" />
+        <state name="3_idle" loop="true" ani="3_slots" />
+
+        <state name="wither" loop="false" ani="wither" next="wither_idle" />
+        <state name="wither_cut" loop="false" ani="wither_slots_cut" next="wither_idle" />
+        <state name="wither_idle" loop="true" ani="wither_slots" />
+    </states>
+</root>

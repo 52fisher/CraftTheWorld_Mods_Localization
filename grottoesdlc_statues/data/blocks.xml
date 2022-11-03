@@ -1,0 +1,12 @@
+<root>
+    <block name="Grotto_male_statue" type="simple" properties="user_mirror_switch,light=3,editor=Grottoes_DLCmod,wide,can_fall,draw_align=down,scale=3.00" effect="firefly_green.xml" effect_offset="0.00,1.50" effect_scale="0.75" extract="10" through="true" file="gfx/GrottoesDLC/blocks/statue_hill_male.png" resource="Grotto_male_statue" draw_layer="front" build="1" tornado_resist="true" ontop="true">
+        <gameobject>
+            <behaviour value="HealingRangeBehaviour" config="GrottoesStatueHealing.xml" server_only="true" />
+        </gameobject>
+    </block>
+    <block name="Grotto_female_statue" type="simple" properties="user_mirror_switch,light=3,editor=Grottoes_DLCmod,wide,can_fall,draw_align=down,scale=3.00" effect="firefly_green.xml" effect_offset="0.00,1.50" effect_scale="0.75" through="true" file="gfx/GrottoesDLC/blocks/statue_hill.png" resource="Grotto_female_statue" draw_layer="front" build="1" extract="10" tornado_resist="true" ontop="true">
+        <gameobject>
+            <behaviour value="HealingRangeBehaviour" config="GrottoesStatueHealing.xml" server_only="true" />
+        </gameobject>
+    </block>
+</root>

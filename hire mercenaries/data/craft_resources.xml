@@ -1,0 +1,12 @@
+<root>
+    <resource name="Skeleton_archer_friend" title="%Skeleton_archer_friendT" desc="%Skeleton_archer_friendD" application="block" build="Skeleton_archer_friend" properties="exclusive" shop_count="5" shop_cost="3" file="gfx/level_tiles/map_obj/mini/skeleton.png" pak="" />
+    <resource name="hire_goblin" title="%hire_goblinT" desc="%hire_goblinD" application="block" build="hire_goblin" properties="exclusive" shop_count="2" shop_cost="4" file="gfx/level_tiles/monsters/goblin.png" pak="" />
+    <resource name="hire_cave_goblin" title="%hire_cave_goblinT" desc="%hire_cave_goblinD" application="block" build="hire_cave_goblin" properties="exclusive" shop_count="2" shop_cost="5" file="gfx/level_tiles/monsters/cave_goblin.png" pak="" />
+    <resource name="hire_orc" title="%hire_orcT" desc="%hire_orcD" application="block" build="hire_orc" properties="exclusive" shop_count="1" shop_cost="10" file="gfx/level_tiles/monsters/orc.png" pak="" />
+    <resource name="hire_elf_archer" title="%hire_elf_archerT" desc="%hire_elf_archerD" application="block" build="hire_elf_archer" properties="exclusive" shop_count="1" shop_cost="9" file="gfx/level_tiles/monsters/Beholder.png" pak="" />
+    <resource name="hire_elf_spearman" title="%hire_elf_spearmanT" desc="%hire_elf_spearmanD" application="block" build="hire_elf_spearman" properties="exclusive" shop_count="1" shop_cost="8" file="gfx/level_tiles/monsters/elf_spearman.png" pak="" />
+    <resource name="hire_golem" title="%hire_golemT" desc="%hire_golemD" application="block" build="hire_golem" properties="exclusive" shop_count="1" shop_cost="60" file="gfx/level_tiles/monsters/earth_golem.png" pak="" />
+    <resource name="hire_skelton_archer" title="%hire_skelton_archerT" desc="%hire_skelton_archerD" application="block" build="hire_skelton_archer" properties="exclusive" shop_count="2" shop_cost="3" file="gfx/level_tiles/monsters/skeleton_archer.png" pak="" />
+    <resource name="cave_hired_goblin" title="%cave_hired_goblinT" desc="%cave_hired_goblinD" application="block" build="cave_hired_goblin" properties="no_shop,no_char_inv,no_inv" shop_count="0" shop_cost="1" file="gfx/ui/new_interface/inventory/pickaxe.png" pak="" />
+    <resource name="hire_elfarcher" title="%hire_elfarcherT" desc="%hire_elfarcherD" application="block" build="hire_elfarcher" properties="exclusive" shop_count="1" shop_cost="6" file="gfx/level_tiles/monsters/pistol_skel.png" />
+</root>

@@ -1,0 +1,16 @@
+<root>
+    <block name="custom_imphouse" item="custom_imphouse" build="9" resource="custom_imphouse" extract="6" backcraft="false" properties="stony" pak="" />
+    <block name="imp_egg_block" type="simple" properties="narrow,no_render,can_fall,crash_up" file="%mod%/gfx/blocks/imp_egg.png" resource="imp_egg-1-50" draw_layer="normal" build="1" extract="1" ontop="true" through="true" pak="" />
+    <block name="imp_spwan_block" type="simple" properties="narrow,no_render,can_fall,crash_up,break_sound=spell_imps" file="%mod%/gfx/blocks/imp_egg.png" resource="imp_egg-1-33" draw_layer="normal" build="1" extract="1" ontop="true" through="true" pak="">
+        <events>
+            <OnCrash script="../mods/steeamdreck_imphouse/scripts/imp_f_drop.lua" />
+        </events>
+    </block>
+    <block name="imp_incubator" type="entity" item="imp_incubator" properties="" resource="imp_incubator" build="1" extract="1" pak="" />
+    <block name="incubator" type="entity" item="imp_incubator" properties="" resource="incubator" build="1" extract="1" pak="Monsters DLC" />
+    <block name="gargoyle_ancient_empty" file="gfx/level_tiles/map_obj/Ancient_rooms/Gargoyle_rock_empty" through="true" build="1" resource="stone-5,imp_egg-1-50" extract="8" ontop="true" properties="apply_tool2,stone,draw_align=down,scale_xaxis,can_fall" pak="">
+        <events>
+            <OnCrash script="../mods/steeamdreck_imphouse/scripts/recipe_custom_imphouse.lua" />
+        </events>
+    </block>
+</root>

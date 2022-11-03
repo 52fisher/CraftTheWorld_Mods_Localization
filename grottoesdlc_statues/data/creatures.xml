@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<!-- 
+    attribute 'merge_type' sets behaviour of xml merge method for mods.
+    values:
+        replace - defaul value, fully replace node
+        partial = replace only defined nodes
+-->
+    <!-- example: add dwarf new skin and set it as body skin -->
+    <!-- <creature name="worker" merge_type="partial">
+        <skins>
+            <skin type="body" name="body_01" file="%mod%/gfx/skins/male_dwarf_body.png"/>
+        </skins>
+        <appearance_groups>
+            <body skins="body_01"/>
+        </appearance_groups>
+    </creature> -->
+</root>

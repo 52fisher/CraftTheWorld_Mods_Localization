@@ -1,0 +1,6 @@
+<root>
+    <recipe name="custom_imphouse" ingredients="plank-4,stone-2,fabric-1,healt_elexir-8,imp_egg-5,quartz-6,stone-7,mana_elexir-3,stone-9" produce="custom_imphouse" group="1" pak="" craft_need="workshop" />
+    <recipe name="gargoyley_spawner" produce="gargoyley_spawner" group="1" ingredients="rusty_sceleton_heavy_mace-5,stone-1,stone-2,stone-3,imp_egg-4,imp_egg-6,stone-8" craft_need="" allow="false" pak="" />
+    <recipe name="gargoyle_ancient_empty" ingredients="stone-8,stone-5" produce="gargoyle_ancient_empty" group="1" pak="" craft_need="workshop" />
+    <recipe name="scrambled_impeggs" produce="scrambled_impeggs=5" ingredients="imp_egg-2,wood-5" craft_need="kitchen" pak="" group="2" />
+</root>

@@ -1,0 +1,28 @@
+<root>
+    <block name="sheepblock" type="simple" file="gfx/level_tiles/map_obj/mini/sheep.png" properties="no_render,can_fall,crash_up,wide" resource="" draw_layer="normal" build="1" extract="1" ontop="true" through="true" pak="">
+        <events>
+            <OnCrash script="../mods/pet_spawner/scripts/sheep_spawn_puni.lua" />
+        </events>
+    </block>
+    <block name="sheep_house" type="entity" properties="" resource="sheep_house" item="sheep_house" build="1" extract="1" pak="" />
+    <block name="boarblock" type="simple" file="gfx/Spine/characters/boar/boar_face.png" properties="no_render,can_fall,crash_up,wide" resource="" draw_layer="normal" build="1" extract="1" ontop="true" through="true" pak="">
+        <events>
+            <OnCrash script="../mods/pet_spawner/scripts/boar_spawn_puni.lua" />
+        </events>
+    </block>
+    <block name="boar_house" type="entity" properties="draw_align=down,scale_yaxis" resource="boar_house" item="boar_house" pak="" />
+    <block name="chickenblock" type="simple" properties="can_fall,crash_up,wide,no_render" resource="" file="gfx/Spine/characters/chicken/blue_chick_head.png" draw_layer="normal" build="1" extract="1" ontop="true" through="true" pak="">
+        <events>
+            <OnCrash script="../mods/pet_spawner/scripts/chicken_spawn_puni.lua" />
+        </events>
+    </block>
+    <block name="chicken_house2" type="entity" item="chicken_house2" properties="" resource="chicken_house2" build="1" extract="1" pak="" />
+    <block name="fishblock" type="simple" properties="can_fall,crash_up,wide,no_render" resource="" file="gfx/Spine/characters/fish_koi/head.png" draw_layer="normal" build="1" extract="1" ontop="true" through="true" >
+        <events>
+            <OnCrash script="../mods/pet_spawner/scripts/fish_spawn_puni.lua" />
+        </events>
+    </block>
+    <block name="fish_house" type="entity" item="fish_house" properties="" resource="fish_house" />
+</root>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root />

@@ -1,0 +1,17 @@
+key;russian;english;polish;german;french;italian;spanish;japanese;korean;chinese;chinese_t
+sheepblockT;;sheepblock;;;;;;;;;
+sheepblockD;;sheepblock desc;;;;;;;;;
+sheep_houseT;;sheep farm house;;;;;;;;羊圈;羊圈
+sheep_houseD;;spawn sheep every 3 min.;;;;;;;;每3分钟产羊一次;每3分钟产羊一次
+boarblockT;;boarblock;;;;;;;;;
+boarblockD;;boarblock desc;;;;;;;;;
+boar_houseT;;boar farm house;;;;;;;;野猪猪圈;野猪猪圈
+boar_houseD;;spawn boar every 3 min.;;;;;;;;每3分钟产野猪一次;每3分钟产野猪一次
+chickenblockT;;chickenblock;;;;;;;;;
+chickenblockD;;chickenblock desc;;;;;;;;;
+chicken_house2T;;chicken farm house;;;;;;;;鸡圈;鸡圈
+chicken_house2D;;spawn chicken every 3 min.;;;;;;;;每3分钟产鸡一次;每3分钟产鸡一次
+fishblockT;;fishblock;;;;;;;;;
+fishblockD;;fishblock desc;;;;;;;;;
+fish_houseT;;fish farm box;;;;;;;;鱼苗箱;鱼苗箱
+fish_houseD;;spawn fish every 3 min in water.;;;;;;;;每3分钟产鱼一次;每3分钟产鱼一次

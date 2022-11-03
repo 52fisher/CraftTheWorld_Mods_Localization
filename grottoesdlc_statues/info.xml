@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+    <mod name="grottoesDLC_statues">
+        <id>2025668135</id>
+        <title>
+            <russian></russian>
+            <english>Grottoes DLC statues</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese></chinese>
+            <chinese_t></chinese_t>
+        </title>
+        <description>
+            <russian></russian>
+            <english>Allows to craft Grottoes DLC healing statues</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese></chinese>
+            <chinese_t></chinese_t>
+        </description>
+        <author>
+            <russian></russian>
+            <english>Maxim</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese></chinese>
+            <chinese_t></chinese_t>
+        </author>
+        <version>1.005</version>
+    </mod>
+</root>

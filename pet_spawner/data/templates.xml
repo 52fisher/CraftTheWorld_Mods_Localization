@@ -1,0 +1,39 @@
+<root>
+    <fauna merge="partial">
+        <normal>
+            <creature name="puni_sheep" enabled="true"/>
+            <creature name="puni_yak" enabled="true"/>
+            <creature name="puni_chicken" enabled="true"/>
+       </normal>
+        <underground>
+            <creature name="puni_sheep" enabled="true"/>
+            <creature name="puni_yak" enabled="true"/>
+            <creature name="puni_chicken" enabled="true"/>
+        </underground>
+        <desert>
+            <creature name="puni_sheep" enabled="true"/>
+            <creature name="puni_yak" enabled="true"/>
+            <creature name="puni_chicken" enabled="true"/>
+       </desert>
+        <snow>
+            <creature name="puni_sheep" enabled="true"/>
+            <creature name="puni_yak" enabled="true"/>
+            <creature name="puni_chicken" enabled="true"/>
+      </snow>
+      <dlc_temples>
+            <creature name="puni_sheep" enabled="true"/>
+            <creature name="puni_yak" enabled="true"/>
+            <creature name="puni_chicken" enabled="true"/>
+      </dlc_temples>
+	  <lonely_mountain>     
+			<creature name="puni_sheep" enabled="true"/>
+            <creature name="puni_yak" enabled="true"/>
+            <creature name="puni_chicken" enabled="true"/>
+	  </lonely_mountain>
+      <two_fortress>     
+			<creature name="puni_sheep" enabled="true"/>
+            <creature name="puni_yak" enabled="true"/>
+            <creature name="puni_chicken" enabled="true"/>
+	  </two_fortress>
+    </fauna>
+</root>

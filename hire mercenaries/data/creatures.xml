@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<!-- 
+    attribute 'merge_type' sets behaviour of xml merge method for mods.
+    values:
+        replace - defaul value, fully replace node
+        partial = replace only defined nodes
+-->
+    <!-- example: add dwarf new skin and set it as body skin -->
+    <!-- <creature name="worker" merge_type="partial">
+        <skins>
+            <skin type="body" name="body_01" file="%mod%/gfx/skins/male_dwarf_body.png"/>
+        </skins>
+        <appearance_groups>
+            <body skins="body_01"/>
+        </appearance_groups>
+    </creature> -->
+
+ <creature name="skeleton_archer_friendly">
+    <params>
+      <ico_tc value="reptilian_skeletons"/>
+      <ai value="BaseMob"/>
+      <id value="creature"/>
+      <targets value="workers_enemies"/>
+      <hostility value="harmless"/>
+      <clan value="dwarfs"/>
+      <height value="55"/>
+      <width value="35"/>
+      <healt value="2"/>
+      <scale value="1"/>
+      <walk_speed value="52"/>
+      <climbs_speed value="45"/>
+      <radius value="6"/>
+      <jump_down value="10000"/>
+      <over_high value="3"/>
+      <distance value="2-3"/>
+      <!--расстояние до зомби при его приследовании-->
+      <fall_height value="10"/>
+      <fear_radius value="8"/>
+      <!--радиус боязни человечков-->
+      <attack value="0.3"/>
+      <tour_distance value="3-4"/>
+      <!--радиус прогулки монстра вокруг да около-->
+      <resources value="bone-1-50,iron_boots-1-1,rusty_sceleton_mace-1-3,rusty_sceleton_saber-1-3"/>
+      <water_die_time value="0"/>
+      <life_time value="3"/>
+      <shot_time value="1.6"/>
+    </params>
+    <behaviours>
+      <behaviour value="MonsterLogicBehaviour">
+        <script value="mods/hire mercenaries/data/verylongdefender.lua"/>
+      </behaviour>
+      <behaviour value="PathfindingBehaviour">
+        <can_climb value="true"/>
+        <can_fly_up value="true"/>
+        <can_jump value="true"/>
+      </behaviour>
+      <behaviour value="MeleBattleBehaviour"/>
+	   <!--behaviour value="DistanceBattleBehaviour"/ -->	  
+    </behaviours>
+    <sounds>
+      <hit value="hit_metall_metall"/>
+      <step value="skeleton_step"/>
+      <ambient value="skeleton_ambient"/>
+      <die value="skeleton_death"/>
+    </sounds>
+    <animations>
+      <ani name="cantdo" ani="skeleton\main2"/>
+      <ani name="idle" ani="skeleton\main2"/>
+      <ani name="stop" ani="skeleton\main"/>
+      <ani name="move" ani="skeleton\walk"/>
+      <ani name="move1" ani="skeleton\walk2"/>
+      <ani name="move2" ani="skeleton\walk3"/>
+      <ani name="move3" ani="skeleton\walk4"/>
+      <ani name="shield" ani="skeleton\shield_up,shield_up_continue"/>
+      <ani name="shield_down" ani="skeleton\shield_down"/>
+      <ani name="action" ani="skeleton\attack"/>
+      <ani name="climb" ani="skeleton\walk"/>
+      <ani name="jump" ani="skeleton\jump"/>
+      <!--<ani name="dies_end" ani="creature_dies"/>-->
+      <ani name="dies_end" ani="skeleton\death"/>
+    </animations>
+    <spine_elements>
+      <random slots="leg1_feet2,leg1_feet1,leg1_2" attach_count="2"/>
+      <!--выбираем рандомно один из аттачей к указаным слотам, атачей должно быть одинаковое кол-во-->
+      <random slots="head" attach_count="3"/>
+      <random slots="wipon" attach_count="2"/>
+      <show_hide slots="shoulder"/>
+    </spine_elements>
+  </creature>
+    <creature name="goblin_friendly">
+    <params>
+      <ai value="BaseMob"/>
+      <id value="creature"/>
+      <targets value="workers_enemies"/>
+      <hostility value="harmless"/>
+      <clan value="dwarfs"/>
+      <height value="50"/>
+      <width value="30"/>
+      <scale value="1"/>
+      <!--скейл для всех анимаций-->
+      <healt value="8"/>
+      <walk_speed value="70"/>
+      <laden_speed value="40"/>
+      <!--скорость загруженного гоблина-->
+      <climbs_speed value="40"/>
+      <climbs_ladder_speed value="50"/>
+      <radius value="8"/>
+      <fall_height value="10"/>
+      <attack value="0.3"/>
+      <healt_restore value="0.16%"/>
+      <!--процент восстановления жизни в сек-->
+      <camp_radius value="2"/>
+      <!--радиус вокруг лагеря, который считается лагерем-->
+      <wait_time value="120"/>
+      <!--время ожидания в засаде-->
+      <attack_healt value="30%"/>
+      <!--мин. кол. жизни для атаки человечка в %-->
+      <camp_fight_radius value="5"/>
+      <!--радиус вокруг лагеря, в пределах которого гоблины дерутся до смерти-->
+      <tour_distance value="3-5"/>
+      <!--радиус прогулки монстра вокруг да около-->
+      <water_die_time value="180"/>
+      <shot_time value="1"/>
+      <resources value="goblin_spear-1-4,skin-1-15,rope-1-15,coal-1-10,silver-1-3,gold-1-2,mithril-1-2"/>
+      <skins value="green_goblin_01,green_goblin_02,green_goblin_03"/>
+    </params>
+    <behaviours>
+      <behaviour value="MonsterLogicBehaviour">
+        <script value="mods/hire mercenaries/data/longdefender.lua"/>
+      </behaviour>
+      <behaviour value="PathfindingBehaviour">
+        <can_climb value="true"/>
+        <can_fly_up value="true"/>
+        <can_jump value="true"/>
+      </behaviour>
+      <behaviour value="MeleBattleBehaviour"/>
+	   <!--behaviour value="DistanceBattleBehaviour"/ -->	  
+    </behaviours>
+    <sounds>
+      <ambient value="goblin_ambient"/>
+      <die value="goblin_death"/>
+    </sounds>
+    <animations>
+      <ani name="cantdo" ani="cave_goblin\main_02"/>
+      <ani name="stop" ani="cave_goblin\main_01"/>
+      <ani name="move" ani="cave_goblin\walk"/>
+      <ani name="run" ani="cave_goblin\walk_run"/>
+      <ani name="action" ani="cave_goblin\attack_spear"/>
+      <ani name="climb" ani="cave_goblin_back\climb_up"/>
+      <ani name="climb_down" ani="cave_goblin_back\climb_down"/>
+      <ani name="jump" ani="cave_goblin\jump_point"/>
+      <ani name="swim" ani="cave_goblin\sweem"/>
+      <ani name="fly" ani="cave_goblin\fly"/>
+      <ani name="landing" ani="cave_goblin\landing"/>
+      <ani name="dies_end" ani="cave_goblin\death"/>
+    </animations>
+    <spine_elements>
+      <random_color slots="hair_skin">
+        <colors>
+          245, 45, 0,
+          255, 240, 0,
+          147, 8,  8,
+          200, 179, 82,
+          48, 152, 0,
+          255, 138, 0,
+        </colors>
+      </random_color>
+    </spine_elements>
+  </creature>
+
+  <creature name="cave_goblin_warrior_friendly">
+    <params>
+      <ai value="BaseMob"/>
+      <id value="creature"/>
+      <targets value="workers_enemies"/>
+      <hostility value="harmless"/>
+      <clan value="dwarfs"/>
+      <height value="50"/>
+      <width value="30"/>
+      <scale value="1"/>
+      <healt value="9"/>
+      <walk_speed value="70"/>
+      <laden_speed value="40"/>
+      <climbs_speed value="40"/>
+      <climbs_ladder_speed value="50"/>
+      <radius value="8"/>
+      <fall_height value="10"/>
+      <attack value="0.4"/>
+      <healt_restore value="0.16%"/>
+      <water_die_time value="180"/>
+      <shot_time value="1"/>
+      <use_jump_begin/>
+      <resources value="cave_goblin_spear-1-4,skin-1-15,rope-1-15,coal-1-10,silver-1-3,gold-1-2,mithril-1-2"/>
+      <skins value="cave_goblin_01,cave_goblin_02,cave_goblin_03"/>
+      <specialization value="common"/>
+      <activity_radius value="50"/>
+      <dig_radius value="30"/>
+      <through_doors value="true"/>
+    </params>
+    <behaviours>
+      <!--behaviour value="MonsterLogicBehaviour">
+        <script value="mods/hire mercenaries/data/longdefender.lua"/>
+      </behaviour-->
+      <behaviour value="CaveOrcLogic" instantiate="host">
+        <totem_item value="cave_orcs_totem"/>
+        <weight_patrol value="35"/>
+        <weight_sleep value="0"/>
+        <weight_idle value="0"/>
+        <weight_talk value="0"/>
+        <weight_dig value="15"/>
+        <dig_timeout value="20"/>
+      </behaviour>
+      <behaviour value="MonsterLogicBehaviour">
+        <script value="mods/hire mercenaries/data/longdefender.lua"/>
+      </behaviour>
+      <behaviour value="PathfindingBehaviour">
+        <can_climb value="true"/>
+        <can_fly_up value="true"/>
+        <can_jump value="true"/>
+      </behaviour>
+      <behaviour value="MeleBattleBehaviour"/>
+      <behaviour value="SpineSlotsAttachmentsBehaviour">
+        <slots>
+          <slot name="weapon" attachments="weapon/goblin_picke"/>
+        </slots>
+      </behaviour>
+	   <!--behaviour value="DistanceBattleBehaviour"/ -->	  
+    </behaviours>
+    <sounds>
+      <ambient value="cave_goblin_ambient"/>
+      <die value="cave_goblin_death"/>
+      <dig value="cave_goblin_dig"/>
+    </sounds>
+    <animations>
+      <ani name="cantdo" ani="cave_goblin\main_02"/>
+      <ani name="stop" ani="cave_goblin\main_01"/>
+      <ani name="move" ani="cave_goblin\walk"/>
+      <ani name="run" ani="cave_goblin\walk_run"/>
+      <ani name="action" ani="cave_goblin\attack_pickaxe"/>
+      <ani name="attack_spear" ani="cave_goblin\attack_spear"/>
+      <ani name="climb" ani="cave_goblin_back\climb_up"/>
+      <ani name="climb_idle" ani="cave_goblin_back\climb_main"/>
+      <ani name="climb_down" ani="cave_goblin_back\climb_down"/>
+      <ani name="jump" ani="cave_goblin\jump_point"/>
+      <ani name="swim" ani="cave_goblin\sweem"/>
+
+      <ani name="craft_back" ani="cave_goblin_back\craft_main"/>
+      <ani name="craft_back1" ani="cave_goblin_back\craft_main_02"/>
+      <ani name="craft_back2" ani="cave_goblin_back\craft_main_03"/>
+      <ani name="craft_back3" ani="cave_goblin_back\craft_main_04"/>
+      <ani name="landing" ani="cave_goblin\landing"/>
+
+      <ani name="dies_end" ani="cave_goblin\death"/>
+    </animations>
+    <spine_elements>
+      <show_hide slots="cloths"/>
+      <hide slots="shoulder,armor,helmet,helmet_back,weapon/goblin_shield,arm2_weapon"/>
+    </spine_elements>
+    <ani_tools>
+      <slot value="weapon">
+        <tool ani="weapon/goblin_picke" alias="pick" />
+        <tool ani="weapon/goblin_spear" alias="weapon" />
+      </slot>
+    </ani_tools>
+  </creature>
+
+  <creature name="orc_friendly">
+    <params>
+      <ai value="BaseMob"/>
+      <id value="creature"/>
+      <targets value="workers_enemies"/>
+      <hostility value="harmless"/>
+      <clan value="dwarfs"/>
+      <height value="70"/>
+      <width value="50"/>
+      <scale value="1" />
+      <healt value="10"/>
+      <!--<walk_speed value="70"/>-->
+      <walk_speed value="60"/>
+      <climbs_speed value="35"/>
+      <radius value="3"/>
+      <fall_height value="10"/>
+      <healt_restore value="0.166%"/>
+      <tour_distance value="3-4"/>
+      <fear_radius value="8"/>
+      <attack value="0.6"/>
+      <attack_push value="true"/>
+      <resources value="brains-1,bone-1-25,mucus-1-10,money-1-10"/>
+      <water_die_time value="0"/>
+      <life_time value="1.5"/>
+      <shot_time value="1.7"/>
+      <use_jump_begin/>
+      <day_not_kill/>
+      <can_sweem/>
+      <skins value="skin_01"/>
+      <use_parachut/>
+    </params>
+    <behaviours>
+      <behaviour value="MonsterLogicBehaviour">
+        <script value="mods/hire mercenaries/data/defender.lua"/>
+      </behaviour>
+      <behaviour value="PathfindingBehaviour">
+        <can_climb value="true"/>
+        <can_fly_up value="true"/>
+        <can_jump value="true"/>
+      </behaviour>
+      <behaviour value="MeleBattleBehaviour"/>
+	   <!--behaviour value="DistanceBattleBehaviour"/ -->	  
+    </behaviours>
+    <sounds>
+      <ambient value="orc_ambient"/>
+      <die value="orc_death"/>
+    </sounds>
+    <animations>
+      <ani name="idle" ani="orc\main"/>
+      <ani name="idle1" ani="orc\main_02"/>
+      <ani name="idle2" ani="orc\main_5_tolk"/>
+      <ani name="stop" ani="orc\main"/>
+      <ani name="move" ani="orc\walk"/>
+      <ani name="action" ani="orc\attack_02|attack_03|attack_04"/>
+      <ani name="climb" ani="orc\walk"/>
+      <ani name="jump" ani="orc\jump_point"/>
+      <ani name="dies_end" ani="orc\death"/>
+      <ani name="fly" ani="orc\fly"/>
+      <ani name="swim" ani="orc\sweem"/>
+      <ani name="landing" ani="orc\landing"/>
+    </animations>
+    <spine_elements>
+      <show slot="shields/shield_01" attach="shields/shield_01"/>
+      <random slots="helmet" attach_count="2" can_hide="true"/>
+      <random slots="armor/leg_plat2,armor/leg_plate1" attach_count="1" can_hide="true"/>
+      <show slot="armor" attach="armor/pants"/>
+      <show slot="armor/naruch1" attach="armor/naruch1"/>
+      <show slot="arm2_armor_back" attach="armor/naruch2_back"/>
+      <show slot="armor/naruch2" attach="armor/naruch2"/>
+    </spine_elements>
+  </creature>
+
+
+  <creature name="elf_spearman_friendly">
+    <params>
+      <ai value="BaseMob"/>
+      <id value="creature"/>
+      <targets value="workers_enemies"/>
+      <hostility value="harmless"/>
+      <clan value="dwarfs"/>
+      <height value="80"/>
+      <width value="40"/>
+      <scale value="1.1" />
+      <healt value="15"/>
+      <walk_speed value="60"/>
+      <climbs_speed value="35"/>
+      <radius value="6"/>
+      <fall_height value="10"/>
+      <fear_radius value="8"/>
+      <attack value="0.4"/>
+      <resources value="money-1-30,elven_armor-1-5,elven_boots-1-6,helm_elven-1-6,elven_spear-1-5"/>
+      <shot_time value="1"/>
+      <use_jump_begin/>
+      <day_not_kill/>
+      <skins value="spearman_01"/>
+      <specialization value="spearman"/>
+    </params>
+    <behaviours>
+      <behaviour value="MonsterLogicBehaviour">
+        <script value="mods/hire mercenaries/data/defender.lua"/>
+      </behaviour>
+      <behaviour value="PathfindingBehaviour">
+        <can_climb value="true"/>
+        <can_jump value="true"/>
+      </behaviour>
+      <behaviour value="MeleBattleBehaviour"/>
+	   <!--behaviour value="DistanceBattleBehaviour"/ -->	  
+    </behaviours>
+    <sounds>
+      <battle value="ice_elves_battlecry"/>
+      <die value="ice_elves_death"/>
+    </sounds>
+    <animations>
+      <ani name="idle" ani="elfs\spearman_idle_01"/>
+      <ani name="idle1" ani="elfs\spearman_idle_02"/>
+      <ani name="stop" ani="elfs\spearman_idle_01"/>
+      <ani name="move" ani="elfs\walk_spearman"/>
+      <ani name="action" ani="elfs\spearman_attack_01_1|spearman_attack_02"/>
+      <ani name="climb" ani="elfs\walk_spearman"/>
+      <ani name="whip" ani="elfs\spearman_whip"/>
+      <ani name="jump" ani="elfs\spearman_jump"/>
+      <ani name="dies_end" ani="elfs\spearman_death"/>
+      <!--<ani name="landing" ani="elfs\landing"/>-->
+    </animations>
+  </creature>
+
+
+  <creature name="elf_archer_friendly">
+    <params>
+      <ai value="BaseMob"/>
+      <id value="creature"/>
+      <targets value="workers_enemies"/>
+      <hostility value="harmless"/>
+      <clan value="dwarfs"/>
+      <scale value="2" />
+      <height value="66"/>
+      <!--<width value="58"/>-->
+      <width value="45"/>
+      <healt value="30"/>
+      <walk_speed value="35"/>
+      <climbs_speed value="55"/>
+      <radius value="7"/>
+      <fall_height value="10"/>
+      <attack value="0.8"/>
+      <attack_push value="true"/>
+      <!--отталкивает врага при ударе-->
+      <shot_time value="2"/>
+      <resources value="eye-1,eye-1-50,money-1"/>
+    </params>
+    <behaviours>
+      <behaviour value="MonsterLogicBehaviour">
+        <script value="mods/hire mercenaries/data/defender.lua"/>
+      </behaviour>
+      <behaviour value="PathfindingBehaviour">
+        <can_climb value="true"/>
+        <can_jump value="true"/>
+      </behaviour>
+      <behaviour value="MeleBattleBehaviour"/>
+	   <!--behaviour value="DistanceBattleBehaviour"/ -->	  
+    </behaviours>
+    <sounds>
+      <ambient value="beholder_ambient"/>
+    </sounds>
+    <animations>
+      <ani name="cantdo" ani="beholder\main_03"/>
+      <ani name="stop" ani="beholder\main"/>
+      <ani name="idle" ani="beholder\main_02"/>
+      <ani name="move" ani="beholder\walk"/>
+      <ani name="action" ani="beholder\attack"/>
+      <ani name="climb" ani="beholder\walk"/>
+      <ani name="jump" ani="beholder\main"/>
+      <ani name="dies_end" ani="beholder\death"/>
+    </animations>
+  </creature>
+
+  <creature name="temple_golem_friendly">
+    <params>
+      <ai value="BaseMob"/>
+      <id value="creature"/>
+      <targets value="workers_enemies"/>
+      <hostility value="harmless"/>
+      <clan value="dwarfs"/>
+      <height value="110"/>
+      <width value="50"/>
+      <scale value="1" />
+      <healt value="70"/>
+      <walk_speed value="50"/>
+      <climbs_speed value="35"/>
+      <radius value="4"/>
+      <fall_height value="10"/>
+      <healt_restore value="0"/>
+      <tour_distance value="3-4"/>
+      <fear_radius value="8"/>
+      <attack value="2"/>
+      <attack_push value="true"/>
+      <resources value="wood-10|15,living_tree-2|3"/>
+      <water_die_time value="0"/>
+      <shot_time value="3"/>
+      <arrow_resist value="4"/>
+      <magic_resist value="4"/>
+      <skins value="earth_golem"/>
+      <material value="stone"/>
+    </params>
+    <behaviours>
+      <behaviour value="MonsterLogicBehaviour">
+        <script value="data/components/ai/defender.lua"/>
+      </behaviour>
+      <behaviour value="PathfindingBehaviour">
+        <can_climb value="true"/>
+        <!-- <can_fly_up value="true"/> -->
+        <can_jump value="true"/>
+      </behaviour>
+      <behaviour value="MeleBattleBehaviour"/>
+	   <!--behaviour value="DistanceBattleBehaviour"/ -->	  
+    </behaviours>
+    <sounds>
+      <hit value="temple_golem_attack"/>
+      <action1 value="temple_golem_in"/>
+      <step value="skeleton_boss_step"/>
+    </sounds>
+    <animations>
+      <ani name="idle" ani="golem\idle"/>
+      <ani name="stop" ani="golem\idle"/>
+      <ani name="move" ani="golem\walk"/>
+      <ani name="action" ani="golem\attack_01"/>
+      <ani name="activation" ani="golem\activation"/>
+      <ani name="deactivation" ani="golem\diactivation"/>
+      <ani name="inactive" ani="golem\diactivated"/>
+      <ani name="dies_end" ani="golem\death"/>
+    </animations>
+  </creature>
+
+
+  <creature name="Allied_skeleton_archer">
+    <params>
+      <ai value="BaseMob"/>
+      <id value="creature"/>
+      <targets value="workers_enemies"/>
+      <hostility value="harmless"/>
+      <clan value="dwarfs"/>
+      <height value="55"/>
+      <width value="35"/>
+      <healt value="1"/>
+      <scale value="1"/>
+      <walk_speed value="52"/>
+      <climbs_speed value="45"/>
+      <radius value="5"/>
+      <distance value="2-3"/>
+      <!--расстояние до зомби при его приследовании-->
+      <fall_height value="10"/>
+      <fear_radius value="8"/>
+      <!--радиус боязни человечков-->
+      <attack value="0.2"/>
+      <tour_distance value="3-4"/>
+      <!--радиус прогулки монстра вокруг да около-->
+      <resources value="bone-1-50,iron_boots-1-1"/>
+      <water_die_time value="0"/>
+      <life_time value="3"/>
+      <shot_time value="2"/>
+      <no_static value="true"/>
+      <archer/>
+      <skins value="skin_01,skin_02,skin_03,skin_04,skin_05,skin_06,skin_07"/>
+    </params>
+    <behaviours>
+      <behaviour value="MonsterLogicBehaviour">
+        <script value="mods/hire mercenaries/data/defender.lua"/>
+      </behaviour>
+      <behaviour value="PathfindingBehaviour">
+        <can_climb value="true"/>
+        <can_jump value="true"/>
+      </behaviour>
+      <behaviour value="DistanceBattleBehaviour" instantiate="host">
+        <ammo_resource value="bow_arrow"/>
+        <bone value="bow"/>
+        <shoot_sound value="bow"/>
+      </behaviour>
+    </behaviours>
+    <sounds>
+      <hit value="hit_metall_metall"/>
+      <step value="skeleton_step"/>
+      <ambient value="skeleton_ambient"/>
+      <die value="skeleton_death"/>
+    </sounds>
+    <animations>
+      <ani name="cantdo" ani="skeleton_archer\main2"/>
+      <ani name="idle" ani="skeleton_archer\main2"/>
+      <ani name="stop" ani="skeleton_archer\main"/>
+      <ani name="move" ani="skeleton_archer\walk"/>
+      <ani name="move1" ani="skeleton_archer\walk2"/>
+      <ani name="move2" ani="skeleton_archer\walk3"/>
+      <ani name="move3" ani="skeleton_archer\walk4"/>
+      <ani name="shield" ani="skeleton_archer\shield_up,shield_up_continue"/>
+      <ani name="shield_down" ani="skeleton_archer\shield_down"/>
+      <ani name="action" ani="skeleton_archer\attack"/>
+      <ani name="climb" ani="skeleton_archer\walk"/>
+      <ani name="jump" ani="skeleton_archer\jump"/>
+      <ani name="dies_end" ani="skeleton_archer\death"/>
+    </animations>
+  </creature>
+
+  <creature name="puni_elf_archer">
+    <params>
+      <ico value="pistol_skel"/>
+      <ai value="BaseMob"/>
+      <id value="creature"/>
+      <targets value="workers_enemies"/>
+      <hostility value="harmless"/>
+      <height value="55"/>
+      <width value="35"/>
+      <healt value="5"/>
+      <walk_speed value="52"/>
+      <climbs_speed value="45"/>
+      <radius value="6"/>
+      <fall_height value="10"/>
+      <attack value="0.3"/>
+      <resources value="bone-1-50,brains-1-50,money-1-20,rusty_gun-1-20"/>
+      <water_die_time value="0"/>
+      <shot_time value="1.6"/>
+      <skins value="man_1,man_2"/>
+      <night_skins value="skeleton_1,skeleton_2"/>
+      <use_jump_begin/>
+      <levelup_healt value="0.3"/>
+      <levelup_damage value="0.3"/>
+    </params>
+    <behaviours>
+      <behaviour value="MonsterLogicBehaviour">
+        <script value="mods/hire mercenaries/data/defender.lua"/>
+      </behaviour>
+      <behaviour value="PathfindingBehaviour">
+        <can_climb value="true"/>
+        <can_jump value="true"/>
+      </behaviour>
+      <behaviour value="DistanceBattleBehaviour" instantiate="host">
+        <ammo_resource value="ammo"/>
+        <bone value="pistol"/>
+        <shoot_sound value="pirate_shot"/>
+      </behaviour>
+    </behaviours>
+    <sounds>
+      <!-- <hit value="hit_metall_metall"/> -->
+      <step value="skeleton_step"/>
+      <ambient value="skeleton_ambient"/>
+      <die value="skeleton_death"/>
+    </sounds>
+    <animations>
+      <ani name="idle" ani="pirate_skeleton\main_01_man|main_02_man"/>
+      <ani name="stop" ani="pirate_skeleton\main_01_man"/>
+      <ani name="move" ani="pirate_skeleton\walk_01_man|walk_02_man|walk_03_man|walk_04_man"/>
+      <ani name="action" ani="pirate_skeleton\attack_man"/>
+      <ani name="climb" ani="pirate_skeleton\walk_01_man"/>
+      <ani name="jump" ani="pirate_skeleton\jump_man"/>
+      <ani name="dies_end" ani="pirate_skeleton\death_man"/>
+    </animations>
+    <night_animations>
+      <ani name="idle" ani="pirate_skeleton\main_01_skeleton|main_02_skeleton"/>
+      <ani name="stop" ani="pirate_skeleton\main_01_skeleton"/>
+      <ani name="move" ani="pirate_skeleton\walk_01_skeleton|walk_02_skeleton|walk_03_skeleton|walk_04_skeleton"/>
+      <ani name="action" ani="pirate_skeleton\attack_skeleton"/>
+      <ani name="climb" ani="pirate_skeleton\walk_01_skeleton"/>
+      <ani name="jump" ani="pirate_skeleton\jump_skeleton"/>
+      <ani name="dies_end" ani="pirate_skeleton\death_skeleton"/>
+    </night_animations>
+  </creature>
+
+
+  <creature name="friendly_goblin_mountain_worker">
+    <params>
+      <ico value="cave_goblin"/>
+      <ai value="BaseMob"/>
+      <id value="creature"/>
+      <targets value="workers_enemies"/>
+      <hostility value="harmless"/>
+      <clan value="dwarfs"/>
+      <height value="50"/>
+      <width value="30"/>
+      <scale value="1"/>
+      <healt value="4"/>
+      <walk_speed value="90"/>
+      <laden_speed value="40"/>
+      <climbs_speed value="40"/>
+      <climbs_ladder_speed value="50"/>
+      <radius value="8"/>
+      <fall_height value="10"/>
+      <attack value="0.1"/>
+      <healt_restore value="0.16%"/>
+      <water_die_time value="180"/>
+      <shot_time value="1"/>
+      <resources value="brains-1-30,cave_goblin_spear-1-20,coal-1-20"/>
+      <through_doors value="true"/>
+    </params>
+    <behaviours>
+      <behaviour value="CaveOrcLogic" instantiate="host">
+        <weight_patrol value="20"/>
+        <weight_sleep value="0"/>
+        <weight_idle value="30"/>
+        <weight_talk value="0"/>
+        <weight_dig value="5"/>
+        <dig_timeout value="20"/>
+      </behaviour>
+      <behaviour value="PathfindingBehaviour" instantiate="host">
+        <can_jump value="true"/>
+      </behaviour>
+      <behaviour value="MeleBattleBehaviour" instantiate="host"/>
+
+      <behaviour value="MobRenderBehaviour"/>
+      <behaviour value="MobActionsBehaviour"/>
+      <behaviour value="MobControlAnimationSpeed"/>
+      <behaviour value="SpineBehaviour">
+        <spine value="cave_goblin"/>
+        <skins value="cave_goblin_01,cave_goblin_02,cave_goblin_03"/>
+      </behaviour>
+      <behaviour value="SpineSlotsVisibilityBehaviour">
+        <slots>
+          <show slots="cloths" chance="0.5"/>
+          <hide slots="shoulder,armor,helmet,helmet_back,weapon/goblin_shield,arm2_weapon"/>
+        </slots>
+      </behaviour>
+      <behaviour value="SpineSlotsAttachmentsBehaviour">
+        <slots>
+          <slot name="weapon" attachments="weapon/goblin_picke"/>
+        </slots>
+      </behaviour>
+      <behaviour value="AnimationBehaviour">
+        <states>
+          <state name="idle" ani="main_01" loop="false" next="idle"/>
+          <state name="sleep" ani="front_sleep" loop="true" />
+          <state name="attack" ani="attack_pickaxe" loop="true"/>
+          <state name="walk" ani="walk" loop="false" next="walk"/>
+          <state name="run" ani="walk_run" loop="true"/>
+          <state name="jump" ani="jump_point" loop="false" next="walk" />
+          <state name="die" ani="death" loop="false"/>
+
+          <state name="dance" ani="main_01" loop="false" next="dance" random_time="true"/>
+          <state name="talk" ani="main_01" loop="true"/>
+
+          <state name="climb" ani="climb_up" loop="true"/>
+          <state name="climb_down" ani="back_climb_down" loop="true"/>
+        </states>
+      </behaviour>
+    </behaviours>
+    <sounds>
+      <ambient value="cave_goblin_ambient"/>
+      <die value="cave_goblin_death"/>
+      <dig value="cave_goblin_dig"/>
+    </sounds>
+  </creature>
+
+
+
+</root>

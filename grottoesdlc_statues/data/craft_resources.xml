@@ -1,0 +1,4 @@
+<root>
+    <resource name="Grotto_male_statue" title="%Grotto_male_statueT" desc="%Grotto_male_statueD" application="furniture" build="Grotto_male_statue" properties="allow_craft,tech_ratio=x3,max_count=3,comfort=0.5" shop_count="1" shop_cost="1" file="gfx/GrottoesDLC/blocks/statue_hill_male.png" tech="advanced_stone_works" />
+    <resource name="Grotto_female_statue" title="%Grotto_female_statueT" desc="%Grotto_female_statueD" application="furniture" build="Grotto_female_statue" properties="allow_craft,tech_ratio=x3,max_count=3,comfort=0.5" shop_count="1" shop_cost="1" file="gfx/GrottoesDLC/blocks/statue_hill.png" tech="advanced_stone_works" />
+</root>

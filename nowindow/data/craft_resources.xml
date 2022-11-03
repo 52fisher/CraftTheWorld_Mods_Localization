@@ -1,0 +1,3 @@
+<root>
+    <resource name="nowindow" title="NoWindow" desc="it is not a window" file="%mod%/gfx/item_icons/craftnowindow" build="nowindow" application="furniture" properties="comfort=0.5" shop_count="36" shop_cost="2" tech="advanced_iron_works" />
+</root>

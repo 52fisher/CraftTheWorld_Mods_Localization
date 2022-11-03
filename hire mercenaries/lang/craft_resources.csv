@@ -1,0 +1,21 @@
+key;russian;english;polish;german;french;italian;spanish;japanese;korean;chinese;chinese_t
+Skeleton_archer_friendT;;hire Skeleton;;;;;;;;雇佣骷髅兵;
+Skeleton_archer_friendD;;hire friendly Skeletons;;;;;;;;雇佣友好的骷髅兵(弱但便宜);
+hire_goblinT;;hire goblin;;;;;;;;雇佣哥布林;
+hire_goblinD;;hire friendly goblins;;;;;;;;雇佣友好的哥布林(脆弱近战单位);
+hire_cave_goblinT;;hire_cave_goblin;;;;;;;;雇佣洞穴哥布林;
+hire_cave_goblinD;;hire cave goblins that stronger than green goblins.;;;;;;;;比哥布林强一点;
+hire_orcT;;hire_orc;;;;;;;;雇佣兽人;
+hire_orcD;;hire orc that strong and sturdy;;;;;;;;雇佣强壮的兽人(昂贵但强大);
+hire_elf_archerT;;hire beholder;;;;;;;;雇佣眼魔;
+hire_elf_archerD;;hire beholder that durable unit;;;;;;;;雇佣眼魔(良好的耐用单元);
+hire_elf_spearmanT;;hire elf spearman;;;;;;;;雇佣精灵矛兵;
+hire_elf_spearmanD;;hire elf spearman that balanced melee unit.;;;;;;;;雇佣精灵矛兵(平衡的近战单位);
+hire_golemT;;hire golem;;;;;;;;雇佣傀儡;
+hire_golemD;;hire golem that crush the enemies;;;;;;;;雇佣粉碎敌人的傀儡(高耐久和高伤害);
+hire_skelton_archerT;;hire skelton archer;;;;;;;;雇佣骷髅射手;
+hire_skelton_archerD;;hire skelton archer;;;;;;;;雇佣骷髅射手(廉价的弱射程单位);
+cave_hired_goblinT;;cave_hired_goblin;;;;;;;;cave_hired_goblin;
+cave_hired_goblinD;;cave_hired_goblin desc;;;;;;;;cave_hired_goblin desc;
+hire_elfarcherT;;hire pistol skeleton;;;;;;;;雇佣带枪骷髅兵;
+hire_elfarcherD;;hire pistol skeleton that strong range unit.;;;;;;;;雇佣带枪骷髅(强大的射程单位);

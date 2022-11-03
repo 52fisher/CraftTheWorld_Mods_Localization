@@ -1,0 +1,12 @@
+<root>
+    <recipe name="Skeleton_archer_friend" ingredients="" produce="Skeleton_archer_friend" group="1" pak="" />
+    <recipe name="hire_goblin" ingredients="" produce="hire_goblin" group="1" pak="" />
+    <recipe name="hire_cave_goblin" ingredients="" produce="hire_cave_goblin" group="1" pak="" />
+    <recipe name="hire_orc" ingredients="" produce="hire_orc" group="1" pak="" />
+    <recipe name="hire_elf_archer" ingredients="" produce="hire_elf_archer" group="1" pak="" />
+    <recipe name="hire_elf_spearman" ingredients="" produce="hire_elf_spearman" group="1" pak="" />
+    <recipe name="hire_golem" ingredients="" produce="hire_golem" group="1" pak="" />
+    <recipe name="hire_skelton_archer" ingredients="" produce="hire_skelton_archer" group="1" pak="" />
+    <recipe name="cave_hired_goblin" ingredients="" produce="cave_hired_goblin" group="1" pak="" />
+    <recipe name="hire_elfarcher" ingredients="" produce="hire_elfarcher" group="1" pak="" />
+</root>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+    <mod name="improvedbackpacks">
+        <id>2695786956</id>
+        <title>
+            <russian></russian>
+            <english>Improved Backpacks</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese>改进的背包</chinese>
+            <chinese_t></chinese_t>
+        </title>
+        <description>
+            <russian></russian>
+            <english>Triples backpack capacity and adds autoladders.&#x0A;Recipes are modified to require a ladder.</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese>三倍背包容量和自动扶梯功能</chinese>
+            <chinese_t>三倍背包容量和自动扶梯功能</chinese_t>
+        </description>
+        <author>
+            <russian></russian>
+            <english>Xehlwan</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese>fisher</chinese>
+            <chinese_t>fisher</chinese_t>
+        </author>
+        <version>1.001</version>
+    </mod>
+</root>

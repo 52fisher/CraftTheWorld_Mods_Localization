@@ -1,0 +1,8 @@
+<root>
+    <eggs>
+        <egg name="wyvern_egg" duration="10" produce="vivern_baby" spine="wyvern_egg"/>
+        <egg name="egg" duration="5" spawn="chicken|octopus|duck|chick|lizard|garklan" spine="chicken_egg"/> <!-- steeamdreck was here -->		
+        <egg name="dragon_egg" duration="15" spawn="little_dragon" spine="dragon_egg"/>
+		<egg name="imp_egg" duration="0.50" spawn="imp_cargo" spine="imp_egg"/>
+    </eggs>
+</root>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+    <mod name="nowindow">
+        <id>1960813353</id>
+        <title>
+            <russian></russian>
+            <english>The Nowindow Mod</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese>透明窗户</chinese>
+            <chinese_t></chinese_t>
+        </title>
+        <description>
+            <russian></russian>
+            <english>Adds the Nowindow to the game.&#x0A;&#x0A;The Nowindow is a transparent background block. You can add faked outdoor areas to your buildings.&#x0A;&#x0A;V1.4</english>
+            <polish></polish>
+            <german>Das Fehlende Fenster: ein transparenter Hintergrundblock</german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese>将 Nowindow 添加到游戏中。&#x0A;&#x0A;Nowindow 是一个透明的背景块。您可以在建筑物中添加伪造的室外区域。&#x0A;&#x0A;V1.4</chinese>
+            <chinese_t></chinese_t>
+        </description>
+        <author>
+            <russian></russian>
+            <english>Grobi and Steeamdreck</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese></chinese>
+            <chinese_t></chinese_t>
+        </author>
+        <version>1.006</version>
+    </mod>
+</root>

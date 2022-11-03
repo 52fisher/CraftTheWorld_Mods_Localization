@@ -1,0 +1,11 @@
+key;russian;english;polish;german;french;italian;spanish;japanese;korean;chinese;chinese_t
+custom_imphouseT;House for Imps;House for Imps;House for Imps;Haus für Imps;House for Imps;House for Imps;House for Imps;House for Imps;House for Imps;小精灵之屋;小精灵之屋
+custom_imphouseD;Spawn 5 Imps ever 5 min and sometimes an imp egg;Spawn 5 Imps ever 5 min and sometimes an imp egg;Spawn 5 Imps ever 5 min and sometimes an imp egg;Spawnt 5 Imps jede 5 min und manchmal ein imp ei;Spawn 5 Imps ever 5 min and sometimes an imp egg;Spawn 5 Imps ever 5 min and sometimes an imp egg;Spawn 5 Imps ever 5 min and sometimes an imp egg;Spawn 5 Imps ever 5 min and sometimes an imp egg;Spawn 5 Imps ever 5 min and sometimes an imp egg;每 5 分钟生成 5 个小精灵，有时还会生成一个精灵蛋;Spawn 5 Imps ever 5 min and sometimes an imp egg
+imp_eggT;Imp Egg;Imp Egg;Imp Egg;Imp Egg;Imp Egg;Imp Egg;Imp Egg;Imp Egg;Imp Egg;小精灵蛋;小精灵蛋
+imp_eggD;Редкий и труднодоступный алхимический ингредиент.;A rare and hard to obtain alchemical ingredient.;Rzadki i trudny do uzyskania składnik alchemiczny.;Eine seltene alchemistische Zutat, die man nur schwer erhält.;Un ingrédient alchimique rare et difficile à obtenir.;Un ingrediente alchemico raro e difficile da ottenere.;Un ingrediente alquímico inusual y difícil de hallar.;希少で入手が困難な錬金術のための材料。;희귀하고 구하기 힘든 연금술 재료죠.;一种极为稀少且难以得到的炼金原料。;一種極為稀少且難以得到的煉金原料。
+imp_egg_blockT;;;;
+imp_egg_blockD;;;;
+rat_dropT;;;;;;
+rat_dropD;;;;;;
+ScrambledeggsT;;;;;;;;;;
+ScrambledeggsD;;;;;;;;;;

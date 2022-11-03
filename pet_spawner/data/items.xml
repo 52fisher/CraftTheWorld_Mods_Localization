@@ -1,0 +1,54 @@
+<root>
+    <item name="sheep_house" properties="can_fall,removable,draw_image_as_mini,draw_align=down,scale=1.36,scale_yaxis" size="1.00,1.00" pak="">
+        <this>
+            <behaviour value="SpawnBlockBehaviour" saveable="true">
+                <offset value="0,0" />
+                <destroy value="none" />
+                <spawn value="sheepblock" />
+                <period value="180" />
+            </behaviour>
+        </this>
+        <images>
+            <image file="%mod%/gfx/blocks/farm_house_sheep.png" />
+        </images>
+    </item>
+    <item name="boar_house" properties="can_fall,removable,draw_image_as_mini,draw_align=down,scale=1.42,scale_yaxis" pak="">
+        <this>
+            <behaviour value="SpawnBlockBehaviour" saveable="true">
+                <offset value="0,0" />
+                <destroy value="none" />
+                <spawn value="boarblock" />
+                <period value="180" />
+            </behaviour>
+        </this>
+        <images>
+            <image file="%mod%/gfx/blocks/farm_house_boar.png" />
+        </images>
+    </item>
+    <item name="chicken_house2" properties="can_fall,removable,draw_image_as_mini,draw_align=down,scale=1.32,scale_yaxis" size="1.00,1.00" pak="">
+        <this>
+            <behaviour value="SpawnBlockBehaviour" saveable="true">
+                <offset value="0,0" />
+                <destroy value="none" />
+                <spawn value="chickenblock" />
+                <period value="180" />
+            </behaviour>
+        </this>
+        <images>
+            <image file="%mod%/gfx/blocks/farm_house_chicken.png" />
+        </images>
+    </item>
+    <item name="fish_house" properties="can_fall,removable,draw_image_as_mini,draw_align=down,scale=0.84,scale_yaxis">
+        <this>
+            <behaviour value="SpawnBlockBehaviour" saveable="true">
+                <offset value="0,0" />
+                <destroy value="none" />
+                <spawn value="fishblock" />
+                <period value="180" />
+            </behaviour>
+        </this>
+        <images>
+            <image file="%mod%/gfx/blocks/fishbox.png" />
+        </images>
+    </item>
+</root>

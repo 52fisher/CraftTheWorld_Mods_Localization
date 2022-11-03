@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+    <mod name="steeamdreck_imphouse">
+        <id>2034249558</id>
+        <title>
+            <russian>Imp House</russian>
+            <english>Imp House</english>
+            <polish>Imp House</polish>
+            <german>Imp Haus</german>
+            <french>Imp House</french>
+            <italian>Imp House</italian>
+            <spanish>Imp House</spanish>
+            <japanese>Imp House</japanese>
+            <korean>Imp House</korean>
+            <chinese>Imp House</chinese>
+            <chinese_t>Imp House</chinese_t>
+        </title>
+        <description>
+            <russian>The House for Imps!&#x0A;&#x0A;I found the graphics in the gamefiles from the Boss and Monster DLC but it was not implement in game. &#x0A;So i did some &quot;XML-Magic&quot; to bring it alive.&#x0A;&#x0A;Hope you have fun and like my Version, until the Devs bring there orginal version of the House for Imps!&#x0A;&#x0A;@moddes have a look,i think there some tricks you can learn, like make you own drop wine spwan etc, and pathing for your files.</russian>
+            <english>The House for Imps!&#x0A;&#x0A;I found the graphics in the gamefiles from the Boss and Monster DLC but it was not implement in game. &#x0A;So i did some &quot;XML-Magic&quot; to bring it alive.&#x0A;&#x0A;Hope you have fun and like my Version, until the Devs bring there orginal version of the House for Imps!&#x0A;&#x0A;@moddes have a look,i think there some tricks you can learn, like make you own drop wine spwan etc, and pathing for your files.</english>
+            <polish>The House for Imps!&#x0A;&#x0A;I found the graphics in the gamefiles from the Boss and Monster DLC but it was not implement in game. &#x0A;So i did some &quot;XML-Magic&quot; to bring it alive.&#x0A;&#x0A;Hope you have fun and like my Version, until the Devs bring there orginal version of the House for Imps!&#x0A;&#x0A;@moddes have a look,i think there some tricks you can learn, like make you own drop wine spwan etc, and pathing for your files.</polish>
+            <german>The House for Imps!&#x0A;&#x0A;I found the graphics in the gamefiles from the Boss and Monster DLC but it was not implement in game. &#x0A;So i did some &quot;XML-Magic&quot; to bring it alive.&#x0A;&#x0A;Hope you have fun and like my Version, until the Devs bring there orginal version of the House for Imps!&#x0A;&#x0A;@moddes have a look,i think there some tricks you can learn, like make you own drop wine spwan etc, and pathing for your files.</german>
+            <french>The House for Imps!&#x0A;&#x0A;I found the graphics in the gamefiles from the Boss and Monster DLC but it was not implement in game. &#x0A;So i did some &quot;XML-Magic&quot; to bring it alive.&#x0A;&#x0A;Hope you have fun and like my Version, until the Devs bring there orginal version of the House for Imps!&#x0A;&#x0A;@moddes have a look,i think there some tricks you can learn, like make you own drop wine spwan etc, and pathing for your files.</french>
+            <italian>The House for Imps!&#x0A;&#x0A;I found the graphics in the gamefiles from the Boss and Monster DLC but it was not implement in game. &#x0A;So i did some &quot;XML-Magic&quot; to bring it alive.&#x0A;&#x0A;Hope you have fun and like my Version, until the Devs bring there orginal version of the House for Imps!&#x0A;&#x0A;@moddes have a look,i think there some tricks you can learn, like make you own drop wine spwan etc, and pathing for your files.</italian>
+            <spanish>The House for Imps!&#x0A;&#x0A;I found the graphics in the gamefiles from the Boss and Monster DLC but it was not implement in game. &#x0A;So i did some &quot;XML-Magic&quot; to bring it alive.&#x0A;&#x0A;Hope you have fun and like my Version, until the Devs bring there orginal version of the House for Imps!&#x0A;&#x0A;@moddes have a look,i think there some tricks you can learn, like make you own drop wine spwan etc, and pathing for your files.</spanish>
+            <japanese>The House for Imps!&#x0A;&#x0A;I found the graphics in the gamefiles from the Boss and Monster DLC but it was not implement in game. &#x0A;So i did some &quot;XML-Magic&quot; to bring it alive.&#x0A;&#x0A;Hope you have fun and like my Version, until the Devs bring there orginal version of the House for Imps!&#x0A;&#x0A;@moddes have a look,i think there some tricks you can learn, like make you own drop wine spwan etc, and pathing for your files.</japanese>
+            <korean>The House for Imps!&#x0A;&#x0A;I found the graphics in the gamefiles from the Boss and Monster DLC but it was not implement in game. &#x0A;So i did some &quot;XML-Magic&quot; to bring it alive.&#x0A;&#x0A;Hope you have fun and like my Version, until the Devs bring there orginal version of the House for Imps!&#x0A;&#x0A;@moddes have a look,i think there some tricks you can learn, like make you own drop wine spwan etc, and pathing for your files.</korean>
+            <chinese>The House for Imps!&#x0A;&#x0A;I found the graphics in the gamefiles from the Boss and Monster DLC but it was not implement in game. &#x0A;So i did some &quot;XML-Magic&quot; to bring it alive.&#x0A;&#x0A;Hope you have fun and like my Version, until the Devs bring there orginal version of the House for Imps!&#x0A;&#x0A;@moddes have a look,i think there some tricks you can learn, like make you own drop wine spwan etc, and pathing for your files.</chinese>
+            <chinese_t>The House for Imps!&#x0A;&#x0A;I found the graphics in the gamefiles from the Boss and Monster DLC but it was not implement in game. &#x0A;So i did some &quot;XML-Magic&quot; to bring it alive.&#x0A;&#x0A;Hope you have fun and like my Version, until the Devs bring there orginal version of the House for Imps!&#x0A;&#x0A;@moddes have a look,i think there some tricks you can learn, like make you own drop wine spwan etc, and pathing for your files.</chinese_t>
+        </description>
+        <author>
+            <russian>Steeamdreck</russian>
+            <english>Steeamdreck</english>
+            <polish>Steeamdreck</polish>
+            <german>Steeamdreck</german>
+            <french>Steeamdreck</french>
+            <italian>Steeamdreck</italian>
+            <spanish>Steeamdreck</spanish>
+            <japanese>Steeamdreck</japanese>
+            <korean>Steeamdreck</korean>
+            <chinese>Steeamdreck</chinese>
+            <chinese_t>Steeamdreck</chinese_t>
+        </author>
+        <version>1.008</version>
+    </mod>
+</root>

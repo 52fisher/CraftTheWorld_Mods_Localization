@@ -1,0 +1,7 @@
+<root>
+    <resource name="backpack_01" title="%Backpack1T" desc="%Backpack1D"  file="gfx\level_tiles\craft_tools\Backpack\backpack_01" application="equip" class="item" properties="capacity=3,ani_items=backpack_01,dskin=backpack_01,autoladders" shop_count="10" shop_cost="4" order="4330" pak="" />
+    <resource name="backpack_02" title="%Backpack2T" desc="%Backpack2D"  file="gfx\level_tiles\craft_tools\Backpack\backpack_02" application="equip" class="item" properties="capacity=6,ani_items=backpack_02,dskin=backpack_02,autoladders,parachute,infinity_count,max_health_modifier=100.00%,skill_value=33.33%" shop_count="10" shop_cost="7" order="4340" />
+    <resource name="leather_backpack" title="%leather_backpackT" desc="%leather_backpackD" application="equip" build="" properties="armor=20.00%,capacity=3,autoladders,parachute,infinity_count" shop_count="10" shop_cost="6" file="gfx/CommonJan21/item_icons/leather_backpack_icon.png" class="item" order="4335">
+        <skin type="backpack" file="gfx/CommonJan21/equip/leather_backpack.png" />
+    </resource>
+</root>

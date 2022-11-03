@@ -1,0 +1,6 @@
+<root>
+    <ammo_resource value="lighting_arrow"/>
+    <bone value="bow"/>
+    <shoot_sound value="bow"/>
+    <targets value="workers_enemies" />
+</root>

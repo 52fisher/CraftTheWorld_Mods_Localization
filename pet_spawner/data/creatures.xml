@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+<!-- 
+    attribute 'merge_type' sets behaviour of xml merge method for mods.
+    values:
+        replace - defaul value, fully replace node
+        partial = replace only defined nodes
+-->
+    <!-- example: add dwarf new skin and set it as body skin -->
+    <!-- <creature name="worker" merge_type="partial">
+        <skins>
+            <skin type="body" name="body_01" file="%mod%/gfx/skins/male_dwarf_body.png"/>
+        </skins>
+        <appearance_groups>
+            <body skins="body_01"/>
+        </appearance_groups>
+    </creature> -->
+
+  <creature name="puni_sheep">
+    <params>
+      <group value="animal"/>
+      <ai value="sheep"/>
+      <height value="36"/>
+      <width value="40"/>
+      <!--<ratio value="1.14"/>      -->      <!--пропорция ширины к высоте-->      <!--
+      <scale value="0.6"/>      -->      <!--скейл к размеру блока-->
+      <healt value="3"/>
+      <walk_speed value="80"/>
+      <climbs_speed value="10"/>
+      <radius value="3"/>
+      <fall_height value="100"/>
+      <!--<weight_coeff value="1"/>-->
+      <over_high value="1"/>
+      <!--может преодолевать высоту-->
+      <jump_down value="2"/>
+      <!--может спрыгивать с высоты-->
+      <escape_distance value="2"/>
+      <!--расстояние, на которое старается убежать при атаке -->
+      <resources value="wool-1,meat-1"/>
+      <water_die_time value="30"/>
+
+      <can_cut value="true"/>
+      <can_catch value="true"/>
+      <cut_resources value="wool-1"/>
+      <growing_time value="600"/>
+      <growing_stage_max value="2"/>
+      <farm_population_ratio value="0.05"/>
+    </params>
+    <sounds>
+      <ambient value="sheep_ambient"/>
+      <die value="sheep_death"/>
+    </sounds>
+    <skins>
+      <stage1 value="bold_lamb"/>
+      <stage2 value="hairy_lamb"/>
+      <stage3 value="curly_lamb"/>
+    </skins>
+    <animations>
+      <ani name="cantdo" ani="lamb\main"/>
+      <ani name="idle" ani="lamb\main"/>
+      <ani name="stop" ani="lamb\main_02"/>
+      <ani name="move" ani="lamb\walk"/>
+      <ani name="climb" ani="lamb\walk"/>
+      <ani name="jump" ani="lamb\jump"/>
+      <ani name="dies_end" ani="lamb\death"/>
+    </animations>
+  </creature>
+
+  <creature name="puni_yak">
+    <params>
+      <group value="animal"/>
+      <ai value="yak"/>
+      <height value="45"/>
+      <width value="50"/>
+      <!--<ratio value="0.5"/>      -->      <!--пропорция ширины к высоте-->      <!--
+      <scale value="0.9"/>      -->      <!--скейл к размеру блока-->
+      <healt value="10"/>
+      <walk_speed value="90"/>
+      <climbs_speed value="10"/>
+      <radius value="3"/>
+      <fall_height value="10"/>
+      <!--<weight_coeff value="1"/>-->
+      <over_high value="1"/>
+      <!--может преодолевать высоту-->
+      <jump_down value="1"/>
+      <!--может спрыгивать с высоты-->
+      <escape_distance value="2"/>
+      <!--расстояние, на которое старается убежать при атаке -->
+      <attack value="0.15"/>
+      <attack_healt value="20%" />
+      <!--мин. кол. жизни для атаки человечка в %-->
+      <resources value="skin-2,meat-3,bone-2"/>
+      <water_die_time value="30"/>
+      <shot_time value="1.3"/>
+      <grazing value="4" />
+    </params>
+    <sounds>
+      <ambient value="pig_ambient"/>
+      <die value="pig_death"/>
+      <attack value="hit"/>
+    </sounds>
+    <animations>
+      <ani name="cantdo" ani="boar\main"/>
+      <ani name="idle" ani="boar\main"/>
+      <ani name="stop" ani="boar\main_02"/>
+      <ani name="move" ani="boar\walk"/>
+      <ani name="action" ani="boar\attack"/>
+      <ani name="climb" ani="boar\walk"/>
+      <ani name="jump" ani="boar\jump_up"/>
+      <ani name="dies_end" ani="boar\death"/>
+    </animations>
+  </creature>
+
+  <creature name="puni_chicken">
+    <params>
+      <group value="animal"/>
+      <ai value="chicken"/>
+      <height value="38"/>
+      <width value="30"/>
+      <!--<ratio value="1"/>      -->      <!--пропорция ширины к высоте-->
+      <!--<scale value="0.5"/>      -->      <!--скейл к размеру блока-->
+      <healt value="2"/>
+      <walk_speed value="100"/>
+      <climbs_speed value="100"/>
+      <radius value="3"/>
+      <!--радиус видимости и радиус цели-->
+      <fall_height value="100"/>
+      <!--<weight_coeff value="1"/>-->
+      <over_high value="3"/>
+      <!--может преодолевать высоту-->
+      <jump_down value="10000"/>
+      <!--может спрыгивать с любой высоты-->
+      <escape_distance value="1"/>
+      <!--расстояние, на которое старается убежать при атаке -->
+      <resources value="egg-2,feather-2"/>
+      <water_die_time value="30"/>
+
+      <can_catch value="true"/>
+      <farm_population_ratio value="0.1"/>
+      <farm_resource value="egg"/>
+    </params>
+    <sounds>
+      <ambient value="chicken_ambient"/>
+      <die value="chicken_death"/>
+    </sounds>
+    <animations>
+      <ani name="cantdo" ani="chicken\main_02"/>
+      <ani name="idle" ani="chicken\main_02"/>
+      <ani name="idle1" ani="chicken\main"/>
+      <ani name="stop" ani="chicken\main"/>
+      <ani name="move" ani="chicken\walk_run"/>
+      <ani name="climb" ani="chicken\fly"/>
+      <ani name="jump" ani="chicken\fly"/>
+      <ani name="fall" ani="chicken\fly"/>
+      <ani name="dies_end" ani="chicken\death"/>
+    </animations>
+  </creature>
+
+</root>

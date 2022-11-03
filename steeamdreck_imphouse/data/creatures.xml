@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+ <creature name="imp">
+    <params>
+      <ai value="imp"/>
+      <height value="30"/>
+      <width value="30"/>
+      <scale value="1"/>
+      <healt value="1"/>
+      <empty_speed value="120"/>
+      <cargo_speed value="100"/>
+      <catch_count value="30"/>
+      <life_time value="300"/>
+    </params>
+    <animations>
+      <ani name="idle" ani="imp\fly_empty"/>
+      <ani name="stop" ani="imp\fly_carry"/>
+      <ani name="run" ani="imp\fly_empty"/>
+      <ani name="move" ani="imp\fly_carry"/>
+      <ani name="action" ani="imp\take"/>
+    </animations>
+  </creature>
+
+  <creature name="imp_cargo">
+    <params>
+      <ai value="imp"/>
+      <height value="30"/>
+      <width value="30"/>
+      <scale value="1"/>
+      <healt value="1"/>
+      <empty_speed value="140"/>
+      <cargo_speed value="120"/>
+	  <life_time value="7200"/>
+	  <!-- <skins value="imp_01,imp_02"/> -->
+    </params>
+    <animations>
+      <ani name="idle" ani="imp_cargo\fly_empty"/>
+      <ani name="stop" ani="imp_cargo\fly_carry"/>
+      <ani name="run" ani="imp_cargo\fly_empty"/>
+      <ani name="move" ani="imp_cargo\fly_carry"/>
+      <ani name="action" ani="imp_cargo\take"/>
+	  <ani name="sleep" ani="imp_cargo\sleep"/>
+	  <ani name="going_to_sleep" ani="imp_cargo\going_to_sleep"/>
+    </animations>
+  </creature>	
+  
+  <creature name="gargoyley" merge="partial" >
+    <params>
+      <resources value="mucus-1-70,rusty_sceleton_heavy_mace-1-25,bone-1-70,money-1-10,imp_egg-1-50"/>
+    </params>   
+  </creature>
+
+  <creature name="gargoyley_ancient" merge="partial">
+    <params>
+      <resources value="mucus-1-70,rusty_sceleton_heavy_mace-1-25,bone-1-70,money-5-40,imp_egg,imp_egg-1-50"/>
+    </params>
+  </creature>
+
+  <creature name="gargoyley_fire" merge="partial">
+    <params>
+      <resources value="mucus-1-70,rusty_sceleton_heavy_mace-1-25,bone-1-70,money-1-10,imp_egg-1-10,imp_egg-1-30"/>
+    </params>
+  </creature>  
+</root>

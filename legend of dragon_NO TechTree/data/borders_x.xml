@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+  <border name="hatch_dragon" >
+    <layers>
+      <layer offset="0,10" align="4" ontop="true">
+        <file path="%mod%/gfx/Dragon_rooms/dragon_doors/dragon_ancient_bottom"/>
+      </layer>
+    </layers>
+  </border>
+  <border name="dragon" >
+    <layers>
+      <layer offset="0,0" align="1" align_back="1">
+        <file path="%mod%/gfx/Dragon_rooms/dragon_border_top"/>
+      </layer>
+      <layer offset="0,0" align="3" align_back="3">
+        <file path="%mod%/gfx/Dragon_rooms/dragon_border_right"/>
+      </layer>
+      <layer offset="0,0" align="2" align_back="2">
+        <file path="%mod%/gfx/Dragon_rooms/dragon_border_left"/>
+      </layer>
+      <layer offset="0,0" align="4" align_back="4">
+        <file path="%mod%/gfx/Dragon_rooms/dragon_border_low"/>
+      </layer>
+
+      <layer offset="0,0" align_front="1">
+        <file path="%mod%/gfx/Dragon_rooms/dragon_border_top_gr"/>
+      </layer>
+      <layer offset="0,0" align_front="3">
+        <file path="%mod%/gfx/Dragon_rooms/dragon_border_right_gr"/>
+      </layer>
+      <layer offset="0,0" align_front="2">
+        <file path="%mod%/gfx/Dragon_rooms/dragon_border_left_gr"/>
+      </layer>
+      <layer offset="0,0" align_front="4">
+        <file path="%mod%/gfx/Dragon_rooms/dragon_border_low_gr"/>
+      </layer>
+    </layers>
+  </border>
+</root>
+

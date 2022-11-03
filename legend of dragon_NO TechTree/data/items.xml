@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+    <item name="smyti_dg" properties="dead_radius=2,nodig_under=2,removable,device,smithy,efficiency=3" light="2" size="3.00" offsety="0" pak="">
+        <params>
+            <param name="front_spine" value="Front_ST" />
+            <param name="front_off" value="main" />
+            <param name="front_on" value="main" />
+            <param name="back_spine" value="Dragon_smyte" />
+            <param name="back_off" value="work_off" />
+            <param name="back_on" value="work_on" />
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="craft_metall" />
+        </params>
+    </item>
+    <item name="stanock_dg" properties="device,nodig_under=2,workbench,efficiency=4,removable,dead_radius=1,workshop" size="2.67" offsety="0" pak="">
+        <params>
+            <param name="front_spine" value="Front_WB" />
+            <param name="front_off" value="main" />
+            <param name="front_on" value="main" />
+            <param name="back_spine" value="Dragon_worcbanch" />
+            <param name="back_off" value="off" />
+            <param name="back_on" value="on" />
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="craft_wood" />
+        </params>
+    </item>
+    <item name="lab_dg" properties="dead_radius=2,nodig_under=2,removable,device,lab,efficiency=3" size="3.00" offsety="0" pak="">
+        <params>
+            <param name="front_spine" value="Front_LB" />
+            <param name="front_off" value="main_off" />
+            <param name="front_on" value="main_on" />
+            <param name="back_spine" value="Dragon_lab" />
+            <param name="back_off" value="main_off" />
+            <param name="back_on" value="main_on" />
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="" />
+        </params>
+    </item>
+    <item name="kuxona_dg" size="1.00,1.00" align="down" offsety="0" properties="device,kitchen,efficiency=6,sound=fire,nodig_under=2,dead_radius=2,removable,crash_after_fall,can_fall,scale=2.00,scale_yaxis" light="2" pak="">
+        <params>
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="craft_food" />
+        </params>
+        <images>
+            <image file="%mod%/gfx/spine/kitchen_stone_big_dragon.png" />
+            <image file="%mod%/gfx/spine/kitchen_stone_big_dragon.png" />
+        </images>
+    </item>
+    <item name="Dragon_arch_tower" properties="arrow_tower,can_fall,removable,crash_after_fall,radius=12" spine="Dragon_arch_tower" offsety="-100" spine_ani="main" spine_skin="wood_tower_2" size="1.00,1.00" pak="">
+        <params>
+            <param name="idle" value="main" />
+            <param name="attack_up_30" value="attack_high" />
+            <param name="attack_up_60" value="attack_high2" />
+            <param name="attack" value="attack_forw" />
+            <param name="attack_down_30" value="attack_down" />
+            <param name="attack_down_60" value="attack_down2" />
+            <param name="barrel_bone" value="arrow_point" />
+            <param name="sound_shot" value="heavy_rifle_shot" />
+            <param name="bullet" value="bow_arrow_fire" />
+            <param name="damage" value="1" />
+            <param name="event_attack" value="" />
+        </params>
+    </item>
+    <item name="Dragon_lib" properties="device,dead_radius=2,nodig_under=2,library,efficiency=4,can_fall,removable" light="2" spine="Dragon_lib" spine_ani="off" size="3.00" offsety="0" pak="">
+        <params>
+            <param name="front_spine" value="" />
+            <param name="front_off" value="" />
+            <param name="front_on" value="" />
+            <param name="back_spine" value="Dragon_lib" />
+            <param name="back_off" value="off" />
+            <param name="back_on" value="on" />
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="library" />
+        </params>
+    </item>
+    <item name="Dragon_trap" spine="Dragon_trap" spine_ani="iron_trap" size="60" align="down" properties="trap,removable,crash_after_fall,healt=-50,creature=monster|animal,can_fall,count=60" pak="">
+        <params>
+            <param name="attack" value="iron_trap_closing" />
+            <param name="sound_action" value="iron_trap" />
+        </params>
+        <images>
+            <image file="%mod%/gfx/blocks/trap_iron.png" />
+        </images>
+    </item>
+    <item name="Dragon_mage_table" offsety="-100" properties="nodig_under=1,static,removable" light="3" light_intensity="0.49" spine="Dragon_mage_table" spine_ani="idle" size="1.00,1.00" pak="">
+        <wrapper>
+            <behaviour value="PauseUnexploredCreature" />
+        </wrapper>
+        <behaviours>
+            <behaviour value="ResourceDropBehaviour">
+                <resources value="stone-11,coal-7,iron-5,silver-3,gold-2,mithril-1" />
+            </behaviour>
+            <behaviour value="UITimerBehaviour">
+                <offset value="0,-80" />
+            </behaviour>
+            <behaviour value="ElfMineTableBehaviour">
+                <slot value="resource" />
+                <light_magic value="mlight_green" />
+                <elf_near_duration value="30" />
+                <common_duration value="120" />
+                <operator_tag value="elven_mage" />
+                <operator_radius value="3" />
+                <operator_hint value="hint" />
+                <operator_error value="error" />
+                <valid_resources value="coal,iron,silver,gold,mithril,sulfur" />
+            </behaviour>
+            <behaviour value="AnimationBehaviour">
+                <states>
+                    <state name="idle" loop="true" ani="idle" />
+                    <state name="active" loop="true" ani="active" />
+                    <state name="off" loop="false" ani="off" next="idle" />
+                    <state name="on" loop="false" ani="on" next="active" />
+                </states>
+            </behaviour>
+        </behaviours>
+    </item>
+    <item name="d_tesla_tower1" spine="d_tesla1" spine_ani="main" file="gfx\level_tiles\craft_constructions\tower\tower_lv1" effect="lightning_spot" size="60" align="down" offsety="0" light="3" properties="removable,healt=44,radius=6,time=3,lost=0.33,nodig_under=1,offset=-20,color=200|35|35,can_fall,stayon,crash_after_fall,server_entity" pak="">
+        <params>
+            <param name="idle" value="main" />
+            <param name="attack" value="attack" />
+            <param name="barrel" value="lightning" />
+        </params>
+    </item>
+    <item name="d_tesla_tower2" spine="d_tesla2" spine_ani="main" effect="lightning_spot" size="60,120" align="down" offsety="0" light="4" properties="removable,healt=100,radius=6,time=3,lost=0.33,nodig_under=1,offset=-20,color=200|35|35,can_fall,stayon,crash_after_fall,server_entity" pak="">
+        <params>
+            <param name="idle" value="main" />
+            <param name="attack" value="attack" />
+            <param name="barrel" value="lightning" />
+        </params>
+    </item>
+    <item name="d_tesla_tower3" spine="d_tesla3" spine_ani="main" effect="lightning_spot" size="60,180" align="down" offsety="0" light="4" properties="removable,healt=200,radius=7,time=3,lost=0.33,nodig_under=1,color=200|35|35,can_fall,stayon,crash_after_fall,server_entity" pak="">
+        <params>
+            <param name="idle" value="main" />
+            <param name="attack" value="attack" />
+            <param name="barrel" value="lightning" />
+        </params>
+    </item>
+    <item name="boss_spawner" properties="nodig_under=1,removable,incubator,can_fall,dead_radius_y=1" spine="dragon_spawner" spine_ani="off" gameobject="IncubatorEntity" size="1.00,1.00" pak="">
+        <behaviours>
+            <behaviour value="IncubatorBehaviour" config="IncubatorBehaviour.xml" />
+            <behaviour value="LayoutHintBehaviour" config="IncubatorHint.xml" />
+        </behaviours>
+        <params>
+            <param name="fire_bone" value="root" />
+            <param name="egg_bone" value="egg" />
+        </params>
+        <states>
+            <state name="off" loop="true" ani="off" next_state="" />
+            <state name="on" loop="true" ani="on" next_state="" />
+        </states>
+    </item>
+    <item name="dragon_egg" spine="dragon_egg" properties="dragon_egg,time=600,can_fall,removable" pak="">
+        <params>
+            <param name="stage1" value="first_stage" />
+            <param name="stage2" value="second_stage" />
+            <param name="stage3" value="third_stage" />
+        </params>
+    </item>
+    <item name="dragon_gren_egg" spine="dragon_gren_egg" properties="dragon_egg,time=600,can_fall,removable" pak="">
+        <params>
+            <param name="stage1" value="first_stage" />
+            <param name="stage2" value="second_stage" />
+            <param name="stage3" value="third_stage" />
+        </params>
+    </item>
+    <item name="dragon_blue_egg" spine="dragon_blue_egg" properties="dragon_egg,time=600,can_fall,removable" pak="">
+        <params>
+            <param name="stage1" value="first_stage" />
+            <param name="stage2" value="second_stage" />
+            <param name="stage3" value="third_stage" />
+        </params>
+    </item>
+    <item name="spawn_cube_mode" pak="" />
+    <item name="mtransform" effect="spell_transform" size="60" properties="magic,magic_transform,healt=6,creature=monster,radius=2,exclude_by_name=blue_dragon" light="4" pak="">
+        <params>
+            <param name="dest_creature" value="slug" />
+        </params>
+    </item>
+    <item name="dragon_stading" properties="user_color_img=2,can_fall,stayon,ladder,draw_all,staging" draw_to_chunks="true" size="1.00,1.00" pak="">
+        <images>
+            <image file="%mod%/gfx/blocks/lesa_back.png" />
+            <image file="%mod%/gfx/blocks/lesa.png" />
+        </images>
+    </item>
+</root>

@@ -1,0 +1,20 @@
+<root>
+    <fauna merge="partial">
+        <normal>
+            <creature name="elven_mage" enabled="true"/>
+        </normal>
+        <underground>
+            <creature name="elven_mage" enabled="true"/>
+        </underground>
+        <desert>
+            <creature name="elven_mage" enabled="true"/>
+        </desert>
+        <snow>
+            <creature name="elven_mage" enabled="true"/>
+        </snow>
+        <dlc_temples>
+            <creature name="elven_mage" enabled="true"/>
+        </dlc_temples>
+    </fauna>
+
+</root>

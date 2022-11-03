@@ -1,0 +1,88 @@
+<root>
+    <fauna merge="partial">
+        <normal>
+            <creature name="skeleton_archer_friendly" enabled="true"/>
+            <creature name="goblin_friendly" enabled="true"/>
+            <creature name="cave_goblin_warrior_friendly" enabled="true"/>
+            <creature name="orc_friendly" enabled="true"/>
+            <creature name="elf_spearman_friendly" enabled="true"/>
+            <creature name="elf_archer_friendly" enabled="true"/>
+            <creature name="temple_golem_friendly" enabled="true"/>
+            <creature name="Allied_skeleton_archer" enabled="true"/>
+            <creature name="friendly_goblin_mountain_worker" enabled="true"/>
+            <creature name="puni_elf_archer" enabled="true"/>
+       </normal>
+        <underground>
+            <creature name="skeleton_archer_friendly" enabled="true"/>
+            <creature name="goblin_friendly" enabled="true"/>
+            <creature name="cave_goblin_warrior_friendly" enabled="true"/>
+            <creature name="orc_friendly" enabled="true"/>
+            <creature name="elf_spearman_friendly" enabled="true"/>
+            <creature name="elf_archer_friendly" enabled="true"/>
+            <creature name="temple_golem_friendly" enabled="true"/>
+            <creature name="Allied_skeleton_archer" enabled="true"/>
+            <creature name="friendly_goblin_mountain_worker" enabled="true"/>
+            <creature name="puni_elf_archer" enabled="true"/>            
+        </underground>
+        <desert>
+            <creature name="skeleton_archer_friendly" enabled="true"/>
+            <creature name="goblin_friendly" enabled="true"/>
+            <creature name="cave_goblin_warrior_friendly" enabled="true"/>
+            <creature name="orc_friendly" enabled="true"/>
+            <creature name="elf_spearman_friendly" enabled="true"/>
+            <creature name="elf_archer_friendly" enabled="true"/>
+            <creature name="temple_golem_friendly" enabled="true"/>
+            <creature name="Allied_skeleton_archer" enabled="true"/>
+            <creature name="friendly_goblin_mountain_worker" enabled="true"/>
+            <creature name="puni_elf_archer" enabled="true"/>            
+       </desert>
+        <snow>
+            <creature name="skeleton_archer_friendly" enabled="true"/>
+            <creature name="goblin_friendly" enabled="true"/>
+            <creature name="cave_goblin_warrior_friendly" enabled="true"/>
+            <creature name="orc_friendly" enabled="true"/>
+            <creature name="elf_spearman_friendly" enabled="true"/>
+            <creature name="elf_archer_friendly" enabled="true"/>
+            <creature name="temple_golem_friendly" enabled="true"/>
+            <creature name="Allied_skeleton_archer" enabled="true"/>
+            <creature name="friendly_goblin_mountain_worker" enabled="true"/>
+            <creature name="puni_elf_archer" enabled="true"/>            
+      </snow>
+      <dlc_temples>
+            <creature name="skeleton_archer_friendly" enabled="true"/>
+            <creature name="goblin_friendly" enabled="true"/>
+            <creature name="cave_goblin_warrior_friendly" enabled="true"/>
+            <creature name="orc_friendly" enabled="true"/>
+            <creature name="elf_spearman_friendly" enabled="true"/>
+            <creature name="elf_archer_friendly" enabled="true"/>
+            <creature name="temple_golem_friendly" enabled="true"/>
+            <creature name="Allied_skeleton_archer" enabled="true"/>
+            <creature name="friendly_goblin_mountain_worker" enabled="true"/>
+            <creature name="puni_elf_archer" enabled="true"/>            
+      </dlc_temples>
+	  <lonely_mountain>     
+			<creature name="skeleton_archer_friendly" enabled="true"/>
+            <creature name="goblin_friendly" enabled="true"/>
+            <creature name="cave_goblin_warrior_friendly" enabled="true"/>
+            <creature name="orc_friendly" enabled="true"/>
+            <creature name="elf_spearman_friendly" enabled="true"/>
+            <creature name="elf_archer_friendly" enabled="true"/>
+            <creature name="temple_golem_friendly" enabled="true"/>
+            <creature name="Allied_skeleton_archer" enabled="true"/>
+            <creature name="friendly_goblin_mountain_worker" enabled="true"/>
+            <creature name="puni_elf_archer" enabled="true"/>            
+	  </lonely_mountain>
+      <two_fortress>     
+			<creature name="skeleton_archer_friendly" enabled="true"/>
+            <creature name="goblin_friendly" enabled="true"/>
+            <creature name="cave_goblin_warrior_friendly" enabled="true"/>
+            <creature name="orc_friendly" enabled="true"/>
+            <creature name="elf_spearman_friendly" enabled="true"/>
+            <creature name="elf_archer_friendly" enabled="true"/>
+            <creature name="temple_golem_friendly" enabled="true"/>
+            <creature name="Allied_skeleton_archer" enabled="true"/>
+            <creature name="friendly_goblin_mountain_worker" enabled="true"/>
+            <creature name="puni_elf_archer" enabled="true"/>            
+	  </two_fortress>
+    </fauna>
+</root>

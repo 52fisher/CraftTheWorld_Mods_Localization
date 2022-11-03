@@ -1,0 +1,7 @@
+key;russian;english;polish;german;french;italian;spanish;japanese;korean;chinese;chinese_t
+Backpack1T;;;;;;;;;;背包;
+Backpack1D;;Increases the number of items a dwarf can carry by %1, and provides a personal ladder.;;;;;;;;使矮人可以携带的物品数量增加%1，并为矮人提供一个梯子.;
+Backpack2T;;;;;;;;;;结实的背包;
+Backpack2D;;Increases the number of items a dwarf can carry by %1, and provides a personal ladder.;;;;;;;;使矮人可以携带的物品数量增加%1，并为矮人提供一个梯子.;
+leather_backpackT;;;;;;;;;;皮革背包;
+leather_backpackD;;Allows you to carry 3 more items, provides a personal ladder, and provides decent back protection.;;;;;;;;允许您携带3件以上物品，提供个人梯子，并提供良好的背部保护.;

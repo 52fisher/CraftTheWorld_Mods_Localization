@@ -1,0 +1,5 @@
+<root>
+    <recipe name="backpack_01" produce="backpack_01" group="2" ingredients="wood-1,ladder-5,rope-4,wood-7" craft_need="" pak="" />
+    <recipe name="backpack_02" produce="backpack_02" group="2" ingredients="plank-1,plank-2,rope-4,rope-5,ladder-6,plank-7,plank-8" craft_need="workbench" pak="" />
+    <recipe name="leather_backpack" ingredients="steel-4,backpack_01-5,nail-8" produce="leather_backpack" group="2" pak="" craft_need="workbench" />
+</root>

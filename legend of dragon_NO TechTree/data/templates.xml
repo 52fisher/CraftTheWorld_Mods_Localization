@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <fauna>
+    <all enableAll="true"/>
+    <!--доступны все монстры-->
+
+    <fauna>
+        <dlc_temples enableAll="false" merge="partial">
+            <creature name="gren_dragon" enabled="true"/>
+            <creature name="blue_dragon" enabled="true"/>
+        </dlc_temples>
+        <normal enableAll="false" merge="partial">
+            <creature name="gren_dragon" enabled="true"/>
+            <creature name="blue_dragon" enabled="true"/>
+        </normal>
+        <snow enableAll="false" merge="partial">
+            <creature name="gren_dragon" enabled="true"/>
+            <creature name="blue_dragon" enabled="true"/>
+        </snow>
+        <desert enableAll="false" merge="partial">
+            <creature name="gren_dragon" enabled="true"/>
+            <creature name="blue_dragon" enabled="true"/>
+        </desert>
+        <underground enableAll="false" merge="partial">
+            <creature name="gren_dragon" enabled="true"/>
+            <creature name="blue_dragon" enabled="true"/>
+        </underground>
+    </fauna>
+  <vegetation>
+    <usual_medium>
+      <item name="claster" points="0%" width="3-5"/>
+  </vegetation>	  
+</root>
+

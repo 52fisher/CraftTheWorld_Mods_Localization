@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+    <mod name="hire mercenaries">
+        <id>2148142597</id>
+        <title>
+            <russian></russian>
+            <english>hire mercenaries</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese></chinese>
+            <chinese_t></chinese_t>
+        </title>
+        <description>
+            <russian></russian>
+            <english></english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese></chinese>
+            <chinese_t></chinese_t>
+        </description>
+        <author>
+            <russian></russian>
+            <english>punin</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese></chinese>
+            <chinese_t></chinese_t>
+        </author>
+        <version>1.005</version>
+    </mod>
+</root>

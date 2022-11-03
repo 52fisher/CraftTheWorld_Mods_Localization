@@ -1,0 +1,6 @@
+<root>
+    <block name="nowindow" extract="2" build="1" resource="nowindow" draw_layer="front" through="true" crack="true" properties="can_replace,user_cycle_switch,crash_back,same_as_neighbors,light=4">
+        <file path="%mod%/gfx/blocks/nowindow_1.png" />
+        <file path="%mod%/gfx/blocks/nowindow_2.png" />
+    </block>
+</root>

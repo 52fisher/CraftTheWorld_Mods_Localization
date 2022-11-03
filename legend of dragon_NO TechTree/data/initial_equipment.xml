@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+    <equip name="dragon_egg" levels="1" include="all" exclude="" slot="-1" count="1" enable_recipe="false" />
+    <equip name="burger" levels="1" include="all" exclude="" slot="-1" count="1" enable_recipe="false" />
+    <equip name="uzin" levels="1" include="all" exclude="underground" slot="-1" count="7" enable_recipe="false" />
+    <equip name="diner" levels="1" include="all" exclude="" slot="-1" count="7" enable_recipe="false" />
+    <equip name="zavtrack" levels="1" include="all" exclude="" slot="-1" count="7" enable_recipe="false" />
+    <equip name="uzinpod" levels="1" include="underground" exclude="" slot="-1" count="7" enable_recipe="false" />
+    <equip name="ring_dragon" levels="15,14,18,17,16" include="all" exclude="" slot="-1" count="1" enable_recipe="false" />
+    <equip name="ring_dragon" levels="19,20" include="all" exclude="" slot="-1" count="3" enable_recipe="false" />
+    <equip name="ring_dragon" levels="1" include="all" exclude="" slot="-1" count="1" enable_recipe="false" />
+</root>

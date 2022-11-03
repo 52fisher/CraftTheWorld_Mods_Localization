@@ -1,0 +1,3 @@
+<root>
+    <recipe name="Magic_stick" ingredients="money-5" produce="Magic_stick=2" group="2" pak="" craft_need="lab" />
+</root>

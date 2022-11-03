@@ -1,0 +1,4 @@
+<root>
+    <recipe name="Grotto_male_statue" ingredients="healt_elexir-1,healt_elexir-3,stone-4,stone-5,stone-6,pick_iron-7,stone-8,paper-9" produce="Grotto_male_statue" group="1" pak="" craft_need="workshop" />
+    <recipe name="Grotto_female_statue" ingredients="healt_elexir-1,healt_elexir-3,stone-4,stone-5,stone-6,pick_iron-7,stone-8,grinding_stone-9" produce="Grotto_female_statue" group="1" pak="" craft_need="workshop" />
+</root>

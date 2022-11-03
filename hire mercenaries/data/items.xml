@@ -1,0 +1,52 @@
+<root>
+    <item name="Skeleton_archer_friend" properties="staging" draw_to_chunks="true" spawn="skeleton_archer_friendly" size="1.00,1.00" pak="">
+        <images>
+            <image file="gfx/level_tiles/monsters/skeleton_archer.png" />
+        </images>
+    </item>
+    <item name="hire_goblin" properties="staging" draw_to_chunks="true" spawn="goblin_friendly" size="1.00,1.00" pak="">
+        <images>
+            <image file="gfx/level_tiles/monsters/goblin.png" />
+        </images>
+    </item>
+    <item name="hire_cave_goblin" properties="staging" draw_to_chunks="true" spawn="cave_goblin_warrior_friendly" size="1.00,1.00" pak="">
+        <images>
+            <image file="gfx/level_tiles/monsters/goblin_warrior.png" />
+        </images>
+    </item>
+    <item name="hire_orc" properties="staging" draw_to_chunks="true" spawn="orc_friendly" size="1.00,1.00" pak="">
+        <images>
+            <image file="gfx/level_tiles/monsters/orc.png" />
+        </images>
+    </item>
+    <item name="hire_elf_archer" properties="staging" draw_to_chunks="true" spawn="elf_archer_friendly" size="1.00,1.00" pak="">
+        <images>
+            <image file="gfx/level_tiles/monsters/elf_archer.png" />
+        </images>
+    </item>
+    <item name="hire_elf_spearman" properties="staging" draw_to_chunks="true" spawn="elf_spearman_friendly" pak="">
+        <images>
+            <image file="gfx/level_tiles/monsters/elf_spearman.png" />
+        </images>
+    </item>
+    <item name="hire_golem" properties="staging" draw_to_chunks="true" spawn="temple_golem_friendly" size="1.00,1.00" pak="">
+        <images>
+            <image file="gfx/level_tiles/monsters/earth_golem.png" />
+        </images>
+    </item>
+    <item name="hire_skelton_archer" properties="staging" draw_to_chunks="true" spawn="Allied_skeleton_archer" size="1.00,1.00" pak="">
+        <images>
+            <image file="gfx/level_tiles/monsters/skeleton_archer.png" />
+        </images>
+    </item>
+    <item name="cave_hired_goblin" properties="staging" draw_to_chunks="true" spawn="friendly_goblin_mountain_worker" size="1.00,1.00" pak="">
+        <images>
+            <image file="gfx/ui/new_interface/inventory/pickaxe.png" />
+        </images>
+    </item>
+    <item name="hire_elfarcher" properties="staging" draw_to_chunks="true" spawn="puni_elf_archer" size="1.00,1.00">
+        <images>
+            <image file="gfx/level_tiles/monsters/pistol_skel.png" />
+        </images>
+    </item>
+</root>

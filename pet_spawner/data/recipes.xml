@@ -1,0 +1,11 @@
+<root>
+    <recipe name="pet_spawner_sheep" ingredients="" produce="pet_spawner_sheep" group="1" pak="" />
+    <recipe name="sheepblock" ingredients="" produce="sheepblock" group="1" pak="" />
+    <recipe name="sheep_house" ingredients="" produce="sheep_house" group="1" pak="" />
+    <recipe name="boarblock" ingredients="" produce="boarblock" group="1" pak="" />
+    <recipe name="boar_house" ingredients="" produce="boar_house" group="1" pak="" />
+    <recipe name="chickenblock" ingredients="" produce="chickenblock" group="1" pak="" />
+    <recipe name="chicken_house2" ingredients="" produce="chicken_house2" group="1" pak="" />
+    <recipe name="fishblock" ingredients="" produce="fishblock" group="1" />
+    <recipe name="fish_house" ingredients="" produce="fish_house" group="1" />
+</root>

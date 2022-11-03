@@ -1,0 +1,10 @@
+<root>
+    <resource name="sheepblock" title="%sheepblockT" desc="%sheepblockD" application="block" build="sheepblock" properties="no_shop,no_char_inv,no_inv" shop_count="1" shop_cost="1" file="gfx/level_tiles/map_obj/mini/sheep.png" pak="" />
+    <resource name="sheep_house" title="%sheep_houseT" desc="%sheep_houseD" application="furniture" build="sheep_house" properties="" shop_count="1" shop_cost="5" file="%mod%/gfx/item_icons/farm_house_sheep.png" pak="" />
+    <resource name="boarblock" title="%boarblockT" desc="%boarblockD" application="block" build="boarblock" properties="no_shop,no_char_inv,no_inv" shop_count="1" shop_cost="1" file="gfx/Spine/characters/boar/boar_face.png" pak="" />
+    <resource name="boar_house" title="%boar_houseT" desc="%boar_houseD" application="furniture" build="boar_house" properties="" shop_count="1" shop_cost="7" file="%mod%/gfx/item_icons/farm_house_boar.png" pak="" />
+    <resource name="chickenblock" title="%chickenblockT" desc="%chickenblockD" application="block" build="chickenblock" properties="no_shop,no_char_inv,no_inv" shop_count="1" shop_cost="1" file="gfx/Spine/characters/chicken/blue_chick_head.png" pak="" />
+    <resource name="chicken_house2" title="%chicken_house2T" desc="%chicken_house2D" application="furniture" build="chicken_house2" properties="" shop_count="1" shop_cost="4" file="%mod%/gfx/item_icons/farm_house_chicken.png" pak="" />
+    <resource name="fishblock" title="%fishblockT" desc="%fishblockD" application="block" build="fishblock" properties="" shop_count="1" shop_cost="1" file="gfx/Spine/characters/fish_koi/head.png" />
+    <resource name="fish_house" title="%fish_houseT" desc="%fish_houseD" application="furniture" build="fish_house" properties="" shop_count="1" shop_cost="3" file="%mod%/gfx/item_icons/fishbox.png" />
+</root>

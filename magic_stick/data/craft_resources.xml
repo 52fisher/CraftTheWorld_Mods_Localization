@@ -1,0 +1,10 @@
+<root>
+    <resource name="Magic_stick" title="%Magic_stickT" desc="%Magic_stickD" application="equip" build="" properties="dskin_gender_depend,attack=x1000,iron,sword,no_inv,allow_craft" shop_count="5" shop_cost="1" file="%mod%/gfx/item_icons/Magic_stick.png" class="weapon">
+        <file path="%mod%/gfx/item_icons/Magic_stick.png" />
+        <skin type="tool" file="%mod%/gfx/equip_skins/Magic_stick.png" />
+        <params>
+            <param name="sound_hit_metall" value="hit_metal_body" />
+            <param name="sound_hit_body" value="hit_metal_body" />
+        </params>
+    </resource>
+</root>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+    <mod name="magic_stick">
+        <id>2559161533</id>
+        <title>
+            <russian></russian>
+            <english>1 hit kill</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese></chinese>
+            <chinese_t></chinese_t>
+        </title>
+        <description>
+            <russian></russian>
+            <english>1 kit kill</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese></chinese>
+            <chinese_t></chinese_t>
+        </description>
+        <author>
+            <russian></russian>
+            <english>def1lt</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese></chinese>
+            <chinese_t></chinese_t>
+        </author>
+        <version>1.002</version>
+    </mod>
+</root>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+    <mod name="pet_spawner">
+        <id>2174329917</id>
+        <title>
+            <russian></russian>
+            <english>livestock_farmhouse</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese>牲畜饲养场</chinese>
+            <chinese_t></chinese_t>
+        </title>
+        <description>
+            <russian></russian>
+            <english>this mod add several farm house that spawn livestocks</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese>这个mod增加了几个养殖场，可以繁殖牲畜</chinese>
+            <chinese_t></chinese_t>
+        </description>
+        <author>
+            <russian></russian>
+            <english>punin</english>
+            <polish></polish>
+            <german></german>
+            <french></french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese></chinese>
+            <chinese_t></chinese_t>
+        </author>
+        <version>1.003</version>
+    </mod>
+</root>

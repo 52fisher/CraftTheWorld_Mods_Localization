@@ -1,0 +1,10 @@
+<root>
+    <radius value="6" />
+    <interval value="7" />
+    <max_count value="1" />
+    <duration value="2" />
+    <healing value="2" />
+    <target_effect value="spell_HP1" />
+    <effect value="spell_fireball" />
+    <targets value="worker,friend"/>
+</root>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+    <mod name="legend of dragon">
+        <id>1701514174</id>
+        <title>
+            <russian>Legasy of the Dragon</russian>
+            <english>Legasy of the Dragon</english>
+            <polish></polish>
+            <german></german>
+            <french>Legasy of the Dragon</french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese></chinese>
+            <chinese_t></chinese_t>
+        </title>
+        <description>
+            <russian>Мод добавляет продолжение ветки технологий после мифрила и посвящен драконьей тематике.</russian>
+            <english>The mod adds a continuation of the technology branch after Mithril and dedicated to the dragon theme.</english>
+            <polish></polish>
+            <german></german>
+            <french>Ce mod ajoute une nouvelle branche après le mithril basé sur le thème des Dragons.</french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese></chinese>
+            <chinese_t></chinese_t>
+        </description>
+        <author>
+            <russian>Mitrafun</russian>
+            <english>Mitrafun</english>
+            <polish></polish>
+            <german></german>
+            <french>Mitrafan</french>
+            <italian></italian>
+            <spanish></spanish>
+            <japanese></japanese>
+            <korean></korean>
+            <chinese></chinese>
+            <chinese_t></chinese_t>
+        </author>
+        <version>1.082</version>
+    </mod>
+</root>

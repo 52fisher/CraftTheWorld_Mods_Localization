@@ -1,0 +1,12 @@
+<root>
+    <block name="Skeleton_archer_friend" type="entity" item="Skeleton_archer_friend" properties="" resource="Skeleton_archer_friend" build="1" extract="1" pak="" />
+    <block name="hire_goblin" type="entity" item="hire_goblin" properties="" resource="hire_goblin" build="1" extract="1" pak="" />
+    <block name="hire_cave_goblin" type="entity" item="hire_cave_goblin" properties="" resource="hire_cave_goblin" build="1" extract="1" pak="" />
+    <block name="hire_orc" type="entity" item="hire_orc" properties="" resource="hire_orc" build="1" extract="1" pak="" />
+    <block name="hire_elf_archer" type="entity" item="hire_elf_archer" properties="" resource="hire_elf_archer" build="1" extract="1" pak="" />
+    <block name="hire_elf_spearman" type="entity" item="hire_elf_spearman" properties="" resource="hire_elf_spearman" pak="" />
+    <block name="hire_golem" type="entity" item="hire_golem" properties="" resource="hire_golem" build="1" extract="1" pak="" />
+    <block name="hire_skelton_archer" type="entity" item="hire_skelton_archer" properties="" resource="hire_skelton_archer" build="1" extract="1" pak="" />
+    <block name="cave_hired_goblin" type="entity" item="cave_hired_goblin" properties="" resource="cave_hired_goblin" build="1" extract="1" pak="" />
+    <block name="hire_elfarcher" type="entity" item="hire_elfarcher" properties="" resource="hire_elfarcher" build="1" extract="1" />
+</root>

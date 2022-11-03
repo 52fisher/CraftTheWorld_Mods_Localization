@@ -1,0 +1,12 @@
+<root>
+    <resource name="custom_imphouse" title="%custom_imphouseT" desc="%custom_imphouseD" application="furniture" build="custom_imphouse" properties="allow_craft" shop_count="1" shop_cost="25" file="%mod%/gfx/item_icons/house_for_imp_icon_large.png" tech="advanced_alchemy" pak="" />
+    <resource name="imp_egg" title="%imp_eggT" desc="%imp_eggD" file="%mod%/gfx/item_icons/imp_egg.png" application="halfstuff" properties="spawn=imp_cargo,spawn_hide=60,no_shop" shop_count="1" shop_cost="5" pak="" />
+    <resource name="imp_egg_block" title="%imp_egg_blockT" desc="%imp_egg_blockD" application="furniture" build="imp_egg_block" properties="no_shop,no_char_inv,no_inv" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/imp_egg.png" tech="" pak="" />
+    <resource name="imp_f_drop" title="%rat_dropT" desc="%rat_dropD" application="block" build="" properties="no_shop,no_char_inv,no_inv" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/imp.png" pak="">
+        <events>
+            <OnDrop script="../mods/steeamdreck_imphouse/scripts/imp_f_drop.lua" />
+            <!-- good we know dos -->
+        </events>
+    </resource>
+    <resource name="scrambled_impeggs" title="%ScrambledeggsT" desc="%ScrambledeggsD" application="food" build="" properties="allow_craft,satiety=2,mana=2,no_shop" shop_count="2" shop_cost="1" file="%mod%/gfx/item_icons/scrambled_impeggs.png" tech="basic_cooking" />
+</root>

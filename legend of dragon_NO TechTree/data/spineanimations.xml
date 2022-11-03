@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+    <animations pak="">
+        <Dragon_gun path="%mod%/gfx/spine/big_gun1" json="big_gun_1template.json" scale="0.240000" mirror="false">
+            <mixing all="true" />
+        </Dragon_gun>
+        <Dragon_worcbanch path="%mod%/gfx/spine/joiner_workbench" json="joiner_workbench_dragon.json" scale="0.420000" mirror="true">
+            <mixing all="true" />
+        </Dragon_worcbanch>
+        <Dragon_smyte path="%mod%/gfx/spine/smithy_dg" json="smithy_dg.json" scale="0.620000" mirror="true">
+            <mixing all="true" />
+        </Dragon_smyte>
+        <Front_WB path="%mod%/gfx/spine/joiner_workbench" json="joiner_workbench_front_dg.json" scale="0.420000" mirror="false">
+            <mixing all="true" />
+        </Front_WB>
+        <Front_ST path="%mod%/gfx/spine/smithy_dg" json="smithy_front_dg.json" scale="0.620000" mirror="true">
+            <mixing all="true" />
+        </Front_ST>
+        <Dragon_lab path="%mod%/gfx/spine/lab_dragon" json="laboratory_dg.json" scale="0.610000" mirror="true">
+            <mixing all="true" />
+        </Dragon_lab>
+        <Front_LB path="%mod%/gfx/spine/lab_dragon" json="front_table_dg.json" scale="0.610000" mirror="true">
+            <mixing all="true" />
+        </Front_LB>
+        <Dragon_arch_tower path="%mod%/gfx/spine/dragon_tower" json="dragon_tower_2_dg.json" scale="0.323000" mirror="false">
+            <mixing all="true" />
+        </Dragon_arch_tower>
+        <Dragon_bed path="%mod%/gfx/spine/Dragon_bed" json="bed_multistorey_dragon.json" scale="0.600000" mirror="false">
+            <mixing all="true" />
+        </Dragon_bed>
+        <d_skeleton path="%mod%/gfx/spine/d_skeleton" json="d_skeleton.json" scale="0.484000" mirror="true">
+            <mixing all="true" />
+        </d_skeleton>
+        <Dragon_lib path="%mod%/gfx/spine/dragon_lib" json="Dragon_Library.json" scale="0.380000" mirror="false">
+            <mixing all="true" />
+        </Dragon_lib>
+        <dragon_blue_egg path="%mod%/gfx/spine/dragon_blue_egg" json="dragon_blue_egg.json" scale="0.600000" mirror="false">
+            <mixing all="true" />
+        </dragon_blue_egg>
+        <Dragon_flamethrower path="%mod%/gfx/spine/dragon_flamethrower" json="Dragon_flamethrower.json" scale="0.215000" mirror="false">
+            <mixing all="true" />
+        </Dragon_flamethrower>
+        <Dragon_mage_table path="%mod%/gfx/spine/dragon_magic_table" json="dragon_magic_table.json" scale="0.565000" mirror="false">
+            <mixing all="true" />
+        </Dragon_mage_table>
+        <d_tesla1 path="%mod%/gfx/spine/dragon_tesla_tower" json="d_tesla1.json" scale="0.349000" mirror="false">
+            <mixing all="true" />
+        </d_tesla1>
+        <blue_dragon path="%mod%/gfx/spine/blue_dragon" json="blue_dragon_fly.json" scale="0.500000" mirror="true">
+            <mixing all="true" />
+        </blue_dragon>
+        <gren_dragon path="%mod%/gfx/spine/green_dragon" json="gren_dragon_fly.json" scale="0.376000" mirror="true">
+            <mixing all="true" />
+        </gren_dragon>
+        <dragon_spawner path="%mod%/gfx/spine/dragon_spawner" json="dragon_spawner.json" scale="0.600000" mirror="false">
+            <mixing all="true" />
+        </dragon_spawner>
+        <d_tesla2 path="%mod%/gfx/spine/dragon_tesla_tower" json="d_tesla2.json" scale="0.296000" mirror="false">
+            <mixing all="true" />
+        </d_tesla2>
+        <d_tesla3 path="%mod%/gfx/spine/dragon_tesla_tower" json="d_tesla3.json" scale="0.323000" mirror="false">
+            <mixing all="true" />
+        </d_tesla3>
+        <Dragon_trap path="%mod%/gfx/spine/dragon_traps" json="dragon_traps.json" scale="0.620000" mirror="false">
+            <mixing all="true" />
+        </Dragon_trap>
+        <gold_dragon path="%mod%/gfx/spine/gold dragon" json="gold_dragon_fly.json" scale="1" mirror="true">
+            <mixing all="true" />
+        </gold_dragon>
+        <dragon_gren_egg path="%mod%/gfx/spine/dragon_gren_egg" json="dragon_gren_egg.json" scale="0.600000" mirror="false">
+            <mixing all="true" />
+        </dragon_gren_egg>
+        <white_dragon path="%mod%/gfx/spine/white_dragon" json="white_dragon_fly.json" scale="1" mirror="true">
+            <mixing all="true" />
+        </white_dragon>
+        <caco_demon path="%mod%/gfx/spine/Caco_demon" json="Caco_demon.json" scale="0.995000" mirror="false">
+            <mixing all="true" />
+        </caco_demon>
+    </animations>
+</root>

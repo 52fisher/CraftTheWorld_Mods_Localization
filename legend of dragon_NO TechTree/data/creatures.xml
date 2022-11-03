@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <creature name="dragon_guard">
+    <params>
+      <ico value="black_dragon"/>
+      <ai value="little_dragon"/>
+      <height value="60"/>
+      <width value="30"/>
+      <scale value="1.2"/>
+      <healt value="5"/>
+      <walk_speed value="120"/>
+      <climbs_speed value="120"/>
+      <attack value="0.06"/>
+      <water_die_time value="180"/>
+      <radius value="8"/>
+      <rise_time value="0"/>
+      <shot_time value="2"/>
+      <skins value="black_guard"/>
+      <resources value="dragon_chest-1,dragon_soul-1,had_black_dragon-1-5,Dragon_had,meat-4,bone-2-60,bone-4-40,Dragon_Blood-5-60,Dragon_Scale-5-40"/>
+      <fire value="dragon_fire1"/>
+      <use_spawn_home/>
+      <home_center_radius value="20"/>
+    </params>
+    <sounds>
+      <hit value="dragon_attack"/>
+      <step value="dragon_step"/>
+    </sounds>
+    <animations>
+      <ani name="stop" ani="little_dragon_new\fly_main"/>
+      <ani name="move" ani="little_dragon_new\fly_forward"/>
+      <ani name="action" ani="little_dragon_new\fly_main_scream"/>
+      <ani name="climb" ani="little_dragon_new\fly_forward"/>
+      <ani name="jump" ani="little_dragon_new\fly_forward"/>
+      <ani name="dies_end" ani="little_dragon_new\death"/>
+    </animations>
+  </creature>
+  
+  <creature name="little_dragon">
+    <params>
+      <ai value="little_dragon"/>
+      <height value="60"/>
+      <width value="30"/>
+      <scale value="1"/>
+      <healt value="2"/>
+      <walk_speed value="120"/>
+      <climbs_speed value="120"/>
+      <attack value="0.06"/>
+	  <petrifaction_resource value="dragon_soul"/>
+      <water_die_time value="180"/>
+      <radius value="8"/>
+      <!--<rise_time value="648000"/>-->
+      <rise_time value="600"/>
+      <shot_time value="2"/>
+      <skins value="red"/>
+		  <resources value="dragon_chest-1,dragon_soul-1,Dragon_had-1-5,meat-4,bone-2-60,bone-4-40,Dragon_Blood-5-60,Dragon_Scale-5-40"/>
+    </params>
+    <sounds>
+      <hit value="dragon_attack"/>
+      <step value="dragon_step"/>
+    </sounds>
+    <animations>
+      <ani name="stop" ani="little_dragon_new\fly_main"/>
+      <ani name="move" ani="little_dragon_new\fly_forward"/>
+      <ani name="action" ani="little_dragon_new\fly_main_scream"/>
+      <ani name="climb" ani="little_dragon_new\fly_forward"/>
+      <ani name="jump" ani="little_dragon_new\fly_forward"/>
+      <ani name="dies_end" ani="little_dragon_new\death"/>
+    </animations>
+  </creature>
+  
+  <creature name="blue_dragon">
+    <params>
+      <ai value="little_dragon"/>
+      <height value="60"/>
+      <width value="30"/>
+      <scale value="1"/>
+      <healt value="2"/>
+      <base_armor value="10"/>	  
+      <walk_speed value="120"/>
+      <climbs_speed value="120"/>
+      <attack value="0.60"/>
+      <water_die_time value="180"/>
+      <radius value="8"/>
+      <!--<rise_time value="648000"/>-->
+      <rise_time value="6"/>
+      <shot_time value="2"/>
+      <skins value="red"/>
+		  <resources value="dragon_chest-1,dragon_soul-1,Dragon_had-1-5,meat-4,bone-2-60,bone-4-40,Dragon_Blood-5-60,Dragon_Scale-5-40"/>
+    </params>
+    <sounds>
+      <hit value="dragon_attack"/>
+      <step value="dragon_step"/>
+    </sounds>
+    <animations>
+      <ani name="stop" ani="blue_dragon\fly_main"/>
+      <ani name="move" ani="blue_dragon\fly_forward"/>
+      <ani name="action" ani="blue_dragon\fly_main_scream"/>
+      <ani name="climb" ani="blue_dragon\fly_forward"/>
+      <ani name="jump" ani="blue_dragon\fly_forward"/>
+      <ani name="dies_end" ani="blue_dragon\death"/>
+    </animations>
+  </creature>
+  
+  <creature name="gren_dragon">
+    <params>
+      <ai value="little_dragon"/>
+      <height value="60"/>
+      <width value="30"/>
+      <scale value="1"/>
+      <healt value="2"/>
+      <base_armor value="10"/>	  
+      <walk_speed value="120"/>
+      <climbs_speed value="120"/>
+      <attack value="0.6"/>
+      <water_die_time value="180"/>
+      <radius value="8"/>
+      <!--<rise_time value="648000"/>-->
+      <rise_time value="6"/>
+      <shot_time value="2"/>
+      <skins value="red"/>
+		  <resources value="dragon_chest-1,dragon_soul-1,Dragon_had-1-5,meat-4,bone-2-60,bone-4-40,Dragon_Blood-5-60,Dragon_Scale-5-40"/>
+    </params>
+    <sounds>
+      <hit value="dragon_attack"/>
+      <step value="dragon_step"/>
+    </sounds>
+    <animations>
+      <ani name="stop" ani="gren_dragon\fly_main"/>
+      <ani name="move" ani="gren_dragon\fly_forward"/>
+      <ani name="action" ani="gren_dragon\fly_main_scream"/>
+      <ani name="climb" ani="gren_dragon\fly_forward"/>
+      <ani name="jump" ani="gren_dragon\fly_forward"/>
+      <ani name="dies_end" ani="gren_dragon\death"/>
+    </animations>
+  </creature>
+  
+  <creature name="little_dragon_black">
+    <params>
+      <ico value="black_dragon"/>
+      <ai value="little_dragon"/>
+      <height value="60"/>
+      <width value="30"/>
+      <scale value="1"/>
+      <healt value="3"/>
+      <walk_speed value="120"/>
+      <climbs_speed value="120"/>
+      <attack value="0.06"/>
+      <water_die_time value="180"/>
+      <radius value="8"/>
+      <!--<rise_time value="648000"/>-->
+      <rise_time value="600"/>
+      <shot_time value="2"/>
+      <skins value="black"/>
+      <resources value="dragon_chest-1,dragon_soul-1,Dragon_had-1-5,meat-4,bone-2-60,bone-4-40,Dragon_Blood-5-60,Dragon_Scale-5-40"/>
+    </params>
+    <sounds>
+      <hit value="dragon_attack"/>
+      <step value="dragon_step"/>
+    </sounds>
+    <animations>
+      <ani name="stop" ani="little_dragon_new\fly_main"/>
+      <ani name="move" ani="little_dragon_new\fly_forward"/>
+      <ani name="action" ani="little_dragon_new\fly_main_scream"/>
+      <ani name="climb" ani="little_dragon_new\fly_forward"/>
+      <ani name="jump" ani="little_dragon_new\fly_forward"/>
+      <ani name="dies_end" ani="little_dragon_new\death"/>
+    </animations>
+  </creature>
+  
+  <creature name="dwarf_s">
+    <params>
+      <ico_tc value="reptilian_skeletons"/>
+      <ai value="BaseMob"/>
+      <id value="creature"/>
+      <targets value="workers_enemies"/>
+      <hostility value="harmless"/>
+      <clan value="dwarfs"/>
+      <height value="40"/>
+      <width value="40"/>
+      <healt value="30"/>
+      <walk_speed value="60"/>
+      <climbs_speed value="80"/>
+      <radius value="9"/>
+      <fall_height value="10"/>
+      <attack value="10"/>
+      <shot_time value="1"/>
+      <resources value="bone-1-50"/>
+    </params>
+	<behaviours>
+      <behaviour value="MonsterLogicBehaviour">
+        <script value="data/components/ai/defender.lua"/>
+      </behaviour>
+      <behaviour value="PathfindingBehaviour">
+        <can_climb value="true"/>
+        <can_fly_up value="true"/>
+        <can_jump value="true"/>
+      </behaviour>
+      <behaviour value="MeleBattleBehaviour"/>
+      <behaviour value="KillMobBehaviour">
+        <life_time value="30"/>
+      </behaviour>
+    </behaviours>  
+    <sounds>
+      <hit value="hit_metall_metall"/>
+      <step value="skeleton_step"/>
+      <ambient value="skeleton_ambient"/>
+      <die value="skeleton_death"/>
+    </sounds>
+    <animations>
+      <ani name="cantdo" ani="d_skeleton\main2"/>
+      <ani name="idle" ani="d_skeleton\main2"/>
+      <ani name="stop" ani="d_skeleton\main"/>
+      <ani name="move" ani="d_skeleton\walk"/>
+      <ani name="move1" ani="d_skeleton\walk2"/>
+      <ani name="move2" ani="d_skeleton\walk3"/>
+      <ani name="move3" ani="d_skeleton\walk4"/>
+      <ani name="shield" ani="d_skeleton\shield_up,shield_up_continue"/>
+      <ani name="shield_down" ani="d_skeleton\shield_down"/>
+      <ani name="action" ani="d_skeleton\attack"/>
+      <ani name="climb" ani="d_skeleton\walk"/>
+      <ani name="jump" ani="d_skeleton\jump"/>
+      <!--<ani name="dies_end" ani="creature_dies"/>-->
+      <ani name="dies_end" ani="d_skeleton\death"/>
+    </animations>
+    <spine_elements>
+      <random slots="leg1_feet2,leg1_feet1,leg1_2" attach_count="2"/>  <!--выбираем рандомно один из аттачей к указаным слотам, атачей должно быть одинаковое кол-во-->
+      <random slots="head" attach_count="3"/>
+      <random slots="wipon" attach_count="2"/>
+      <show_hide slots="shoulder"/>
+    </spine_elements>
+  </creature>
+
+<!-- 
+    attribute 'merge_type' sets behaviour of xml merge method for mods.
+    values:
+        replace - defaul value, fully replace node
+        partial = replace only defined nodes
+-->
+    <!-- example: add dwarf new skin and set it as body skin -->
+    <!-- <creature name="worker" merge_type="partial">
+        <skins>
+            <skin type="body" name="body_01" file="%mod%/gfx/skins/male_dwarf_body.png"/>
+        </skins>
+        <appearance_groups>
+            <body skins="body_01"/>
+        </appearance_groups>
+    </creature> -->
+</root>
