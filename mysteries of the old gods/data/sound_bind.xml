@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <hit>
+    <bind props="ashes" sound="hit_ashes" />>
+  </hit>
+  <break>
+    <bind props="ashes" sound="ashes_breaks" />
+  </break>
+</root>

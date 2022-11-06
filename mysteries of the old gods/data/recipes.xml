@@ -1,0 +1,507 @@
+<root>
+    <!--**************************************************************  Mining  ****************************************************************-->
+    <!--****************************************************************************************************************************************-->
+    <recipe name="leaves_dead" produce="leaves_dead" ingredients="leaves-8,leaves-9" pak="" />
+    <recipe name="snow" produce="snow" group="1" ingredients="water-7,water-8" craft_need="lab" pak="" />
+    <recipe name="ice" produce="ice" group="1" ingredients="water-5,snow-7,snow-8" craft_need="lab" pak="" />
+    <recipe name="stone" ingredients="coal-2,clay-5,coal-7,coal-9" produce="stone" group="2" pak="" craft_need="kitchen" />
+    <recipe name="sand" ingredients="stone-4,stone-6" produce="sand" group="2" pak="" craft_need="workshop" />
+    <recipe name="ashes" produce="ashes" ingredients="wood-4,wood-6" craft_need="kitchen" pak="" />
+    <recipe name="sulfur" ingredients="resin-2,sand-5,resin-7,coal-8,resin-9" produce="sulfur" group="3" pak="" craft_need="lab" />
+    <recipe name="iron" ingredients="coal-2,stone-5,coal-7,coal-9" produce="iron" group="3" pak="" craft_need="lab" />
+    <recipe name="copper" ingredients="sulfur-2,iron-5,sulfur-7,sulfur-9" produce="copper" group="3" craft_need="lab" pak="" />
+    <recipe name="silver" produce="silver" group="3" ingredients="iron-2,coal-5,iron-7,iron-9" craft_need="lab" pak="" />
+    <recipe name="gold" produce="gold" group="3" ingredients="silver-2,iron-5,silver-7,silver-9" craft_need="lab" pak="" />
+    <recipe name="mithril" produce="mithril" group="3" ingredients="gold-2,silver-5,gold-7,gold-9" craft_need="lab" pak="" />
+    <recipe name="anthracite" ingredients="coal-2,coal-5,coal-7,coal-9" produce="anthracite" group="5" craft_need="kitchen" pak="" />
+    <recipe name="titan" ingredients="mithril-2,gold-5,mithril-7,mithril-9" produce="titan" group="5" craft_need="lab" pak="" />
+    <recipe name="gargoyley_spawner" produce="gargoyley_spawner" group="1" ingredients="stone-1,stone-2,stone-3,iron-4,wood-6,stone-8" craft_need="" allow="false" pak="" />
+    <!--***********************************************************  Halfstuff  ****************************************************************-->
+    <!--****************************************************************************************************************************************-->
+    <recipe name="rags_hl" ingredients="fabric-5" produce="rags_hl=3" group="1" pak="Highland DLC" craft_need="workbench" />
+    <recipe name="blueprints" ingredients="paint-2,needle-4,paper-5,pen-6,paper-8" produce="blueprints=1" group="5" craft_need="library" pak="" />
+    <recipe name="bricks_block" ingredients="clay-2,water-5,coal-8" produce="bricks_block=3" group="2" craft_need="workshop" pak="" />
+    <recipe name="aluminum" ingredients="coal-4,steel-5" produce="aluminum" group="2" craft_need="smithy" pak="" />
+    <recipe name="copper_ingot" produce="copper_ingot" ingredients="copper-1,coal-2,coal-4,copper-5" group="1" craft_need="smithy" pak="" />
+    <recipe name="bronze" produce="bronze" ingredients="copper_ingot-4,iron-5,coal-7" group="1" craft_need="smithy" pak="" />
+    <recipe name="alloy_iron_silver" produce="alloy_iron_silver" ingredients="iron-1,coal-2,coal-4,silver-5" pak="" craft_need="smithy" />
+    <recipe name="durable_alloy" ingredients="mithril-5,anthracite-7,aluminum-8" produce="durable_alloy" group="3" craft_need="smithy" pak="" />
+    <recipe name="titan_ingot" produce="titan_ingot" ingredients="titan-1,anthracite-2,anthracite-4,titan-5" craft_need="smithy" group="1" pak="" />
+    <recipe name="nail" ingredients="iron-2,iron-5" produce="nail=5" group="2" pak="" craft_need="smithy" />
+    <recipe name="wire" produce="wire=2" ingredients="resin-2,copper_ingot-5" craft_need="smithy" group="5" pak="" />
+    <recipe name="spring" produce="spring" ingredients="silver-3,silver-5,copper-6,copper-8" craft_need="smithy" pak="" group="1" />
+    <recipe name="light_bulb" ingredients="coal-4,glass-5,wire-6" produce="light_bulb=1" group="5" craft_need="lab" pak="" />
+    <recipe name="battery" ingredients="copper-2,salt-4,water-5,salt-6,ashes-7,iron-8,ashes-9" produce="battery=1" group="5" craft_need="lab" pak="" />
+    <recipe name="bolt" produce="bolt=4" ingredients="steel-4,steel-5" craft_need="smithy" pak="" group="1" />
+    <recipe name="gear" produce="gear" ingredients="copper-2,copper-4,steel-5,copper-6,copper-8" craft_need="smithy" pak="" group="1" />
+    <recipe name="tube" ingredients="coal-5,copper_ingot-6" produce="tube" group="5" craft_need="smithy" pak="" />
+    <recipe name="capacitor" produce="capacitor" ingredients="copper-4,resin-5,copper-6,ashes-8" craft_need="smithy" group="1" pak="" />
+    <recipe name="magnifier" produce="magnifier" ingredients="glass-2,copper_ingot-4,glass-5,copper_ingot-6,glass-8" craft_need="smithy" pak="" group="1" />
+    <recipe name="spacer" produce="spacer" ingredients="bronze-2,coal-5" group="1" craft_need="smithy" pak="" />
+    <recipe name="plates" produce="plates" ingredients="bronze-1,bronze-3,bolt-4,bolt-5,bolt-6,bolt-8" craft_need="smithy" pak="" group="1" />
+    <recipe name="sensor" ingredients="silver_ingot-2,paint-4,glass-5,needle-6,spacer-7,tube-8" produce="sensor=1" group="5" craft_need="smithy" pak="" />
+    <recipe name="antennas" produce="antennas" ingredients="light_bulb-2,capacitor-4,battery-5,capacitor-6,silver_ingot-7,gold_ingot-8,silver_ingot-9" craft_need="smithy" pak="" group="1" />
+    <recipe name="fire_engine" produce="fire_engine" ingredients="spacer-1,blueprints-2,spacer-3,bolt-4,fire_essence-5,bolt-6,plates-7,gear-8,plates-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="moving_mechanism" produce="moving_mechanism" ingredients="bolt-1,bolt-3,gear-4,plates-5,tube-6,fastening_part-8" pak="" craft_need="smithy" />
+    <recipe name="cable" produce="cable=2" ingredients="resin-2,aluminum-5" group="1" craft_need="smithy" pak="" />
+    <recipe name="high_power_battery" produce="high_power_battery" ingredients="battery-2,cable-4,resin-5,glass-6,battery-8" group="1" craft_need="lab" pak="" />
+    <recipe name="mounting_part" produce="mounting_part" ingredients="coal-5,aluminum-6" group="1" craft_need="smithy" pak="" />
+    <recipe name="fastening_part" produce="fastening_part" ingredients="steel-8,durable_alloy-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="gears" produce="gears" ingredients="coal-5,durable_alloy-6" craft_need="smithy" group="1" pak="" />
+    <recipe name="mounting_plate" produce="mounting_plate" ingredients="durable_alloy-4,durable_alloy-6" group="1" craft_need="smithy" pak="" />
+    <recipe name="magic_engine" produce="magic_engine" ingredients="bolt-1,blueprints-2,bolt-3,plates-4,lightning_essence-5,plates-6,mounting_part-7,fastening_part-8,mounting_part-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="gunpowder" produce="gunpowder=2" group="1" ingredients="sulfur-4,sulfur-5,coal-7,coal-8" craft_need="lab" pak="" />
+    <recipe name="container_coal_iron" produce="container_coal_iron" ingredients="earth_coal_01_mog-1,earth_coal_01_mog-2,earth_coal_01_mog-3,earth_iron_01_mog-4,earth_coal_01_mog-5,earth_iron_01_mog-6,earth_iron_01_mog-7,earth_iron_01_mog-8,earth_iron_01_mog-9" pak="" />
+    <recipe name="foundry_machine_corps" produce="foundry_machine_corps" ingredients="sensor-1,steel-2,tube-3,bolt-4,fire_engine-5,bolt-6,plates-7,steel-8,plates-9" craft_need="smithy" pak="" />
+    <recipe name="spell_scroll" produce="spell_scroll" ingredients="pen-4,ink-5,paper-6" craft_need="library" pak="" />
+    <recipe name="living_tree" produce="living_tree" ingredients="eye-1,brains-2,eye-3,wood-4,transform_elexir-5,wood-6,mucus-7,wood-8,leaves-9" pak="" craft_need="lab" />
+    <recipe name="black_dragon_egg" produce="black_dragon_egg" ingredients="power_potion_black-2,chitin-4,dragon_egg-5,chitin-6,chitin-8" craft_need="lab" pak="" />
+    <recipe name="power_potion_green" produce="power_potion_green" ingredients="leaves-2,mucus-4,water-5,mucus-6,empty_bottle-8,spell_scroll-9" pak="" craft_need="lab" />
+    <recipe name="power_potion_yellow" produce="power_potion_yellow" ingredients="root-2,resin-4,water-5,resin-6,empty_bottle-8,spell_scroll-9" pak="" craft_need="lab" />
+    <recipe name="power_potion_white" produce="power_potion_white" ingredients="ice-2,snow-4,water-5,snow-6,empty_bottle-8,spell_scroll-9" pak="" craft_need="lab" />
+    <recipe name="power_potion_black" produce="power_potion_black" ingredients="web-1,brains-2,web-3,coal-4,water-5,coal-6,empty_bottle-8,spell_scroll-9" pak="" craft_need="lab" />
+    <recipe name="potion_poison" produce="potion_poison" pak="" ingredients="mucus-1,grey_mushroom-2,root-3,web-4,water-5,needle_crystal-6,leaves-7,empty_bottle-8,needle-9" craft_need="lab" />
+    <recipe name="magic_crystal" produce="magic_crystal" ingredients="portal_krs_red-1,quartz-2,portal_krs_violet-3,portal_krs_green-4,lightning_essence-5,portal_krs_dblue-6,needle_crystal-7,portal_krs_blue-8,pink_crystal-9" group="1" craft_need="lab" pak="" />
+    <!--****************************************************************************************************************************************-->
+    <recipe name="dig_machine_chassis" ingredients="plates-1,bolt-2,tube-3,miners_lamp-4,gear-5,water_bottle_hl-6,plates-7,bolt-8,spring-9" produce="dig_machine_chassis" group="3" craft_need="smithy" pak="Monsters DLC" />
+    <!--***************************************************************  Equip  ****************************************************************-->
+    <!--****************************************************************************************************************************************-->
+    <!--..................  Tools  .................-->
+    <!--............................................-->
+    <recipe name="axe_stone" produce="axe_stone" ingredients="stone-4,stone-5,wood-6,wood-8" pak="" />
+    <recipe name="chopper_iron" produce="chopper_iron" ingredients="power_potion_green-1,axe_stone-2,iron-4,wood-5,wood-6,wood-8" pak="" craft_need="smithy" />
+    <recipe name="heavy_skeleton_axe" produce="heavy_skeleton_axe" ingredients="power_potion_green-1,chopper_iron-2,iron-4,iron-5,wood-6,wood-8" pak="" craft_need="smithy" />
+    <recipe name="axe_steel" produce="axe_steel" ingredients="power_potion_green-1,heavy_skeleton_axe-2,steel-4,wood-5,wood-6,wood-8" pak="" craft_need="smithy" />
+    <recipe name="silver_axe" produce="silver_axe" ingredients="power_potion_yellow-1,axe_steel-2,silver_ingot-4,wood-5,wood-6,wood-8" pak="" craft_need="smithy" />
+    <recipe name="mithril_axe" produce="mithril_axe" ingredients="power_potion_yellow-1,silver_axe-2,mithril_ingot-4,mithril_ingot-5,silver_ingot-6,silver_ingot-8" pak="" craft_need="smithy" />
+    <recipe name="axe_bone" produce="axe_bone" ingredients="power_potion_white-1,mithril_axe-2,bone-4,bone-5,wood-6,wood-8" pak="" craft_need="workshop" />
+    <recipe name="axe_ice" produce="axe_ice" ingredients="power_potion_white-1,axe_bone-2,ice-4,ice-5,wood-6,wood-8" pak="" craft_need="workshop" />
+    <recipe name="axe_chitin" produce="axe_chitin" ingredients="power_potion_white-1,axe_ice-2,chitin-4,wood-5,wood-6,wood-8" pak="" craft_need="workbench" />
+    <recipe name="axe_bronze" produce="axe_bronze" ingredients="power_potion_white-1,axe_chitin-2,bronze-4,wood-5,wood-6,wood-8" pak="" craft_need="smithy" />
+    <recipe name="axe_alloy" produce="axe_alloy" ingredients="power_potion_black-1,axe_bronze-2,alloy_iron_silver-4,gold-5,wood-6,wood-8" pak="" craft_need="smithy" />
+    <recipe name="axe_gold" produce="axe_gold" ingredients="power_potion_black-1,axe_alloy-2,gold_ingot-4,gold_ingot-5,alloy_iron_silver-6,alloy_iron_silver-8" pak="" craft_need="smithy" />
+    <recipe name="axe_titan" produce="axe_titan" ingredients="power_potion_black-1,axe_gold-2,titan_ingot-4,titan_ingot-5,alloy_iron_silver-6,alloy_iron_silver-8" pak="" craft_need="smithy" />
+    <recipe name="pick_stone" produce="pick_stone" ingredients="stone-4,wood-5,stone-6,wood-7,wood-9" pak="" />
+    <recipe name="pick_iron" produce="pick_iron" ingredients="power_potion_green-1,pick_stone-2,iron-4,wood-5,iron-6,wood-7,wood-9" pak="" craft_need="smithy" />
+    <recipe name="heavy_skeleton_pick" produce="heavy_skeleton_pick" ingredients="power_potion_green-1,pick_iron-2,iron-4,iron-5,iron-6,wood-7,wood-9" pak="" craft_need="smithy" />
+    <recipe name="pick_steel" produce="pick_steel" ingredients="power_potion_green-1,heavy_skeleton_pick-2,steel-4,wood-5,steel-6,wood-7,wood-9" pak="" craft_need="smithy" />
+    <recipe name="pick_silver" produce="pick_silver" ingredients="power_potion_yellow-1,pick_steel-2,silver_ingot-4,wood-5,silver_ingot-6,wood-7,wood-9" pak="" craft_need="smithy" />
+    <recipe name="pick_mithril" produce="pick_mithril" ingredients="power_potion_yellow-1,pick_silver-2,mithril_ingot-4,silver_ingot-5,mithril_ingot-6,silver_ingot-7,silver_ingot-9" pak="" craft_need="smithy" />
+    <recipe name="pick_bone" produce="pick_bone" ingredients="power_potion_white-1,pick_mithril-2,bone-4,wood-5,bone-6,wood-7,wood-9" pak="" craft_need="workshop" />
+    <recipe name="pick_ice" produce="pick_ice" ingredients="power_potion_white-1,pick_bone-2,ice-4,wood-5,ice-6,wood-7,wood-9" pak="" craft_need="workshop" />
+    <recipe name="pick_chitin" produce="pick_chitin" ingredients="power_potion_white-1,pick_ice-2,chitin-4,wood-5,chitin-6,wood-7,wood-9" pak="" craft_need="workbench" />
+    <recipe name="pick_bronze" produce="pick_bronze" ingredients="power_potion_white-1,pick_chitin-2,bronze-4,wood-5,bronze-6,wood-7,wood-9" pak="" craft_need="smithy" />
+    <recipe name="pick_alloy" produce="pick_alloy" ingredients="power_potion_black-1,pick_bronze-2,alloy_iron_silver-4,wood-5,alloy_iron_silver-6,wood-7,wood-9" pak="" craft_need="smithy" />
+    <recipe name="pick_gold" produce="pick_gold" ingredients="power_potion_black-1,pick_alloy-2,gold_ingot-4,alloy_iron_silver-5,gold_ingot-6,alloy_iron_silver-7,alloy_iron_silver-9" pak="" craft_need="smithy" />
+    <recipe name="pick_titan" produce="pick_titan" ingredients="power_potion_black-1,pick_gold-2,titan_ingot-4,alloy_iron_silver-5,titan_ingot-6,alloy_iron_silver-7,alloy_iron_silver-9" pak="" craft_need="smithy" />
+    <!--..................  Helmet  ..................-->
+    <!--..............................................-->
+    <recipe name="child_of_nature_helmet_mog" produce="child_of_nature_helmet_mog" ingredients="leaves-3,leaves-6" pak="" craft_need="workbench" />
+    <recipe name="helmet_magical" ingredients="child_of_nature_helmet_mog-2,fabric-5,rope-6,needle-8" produce="helmet_magical" group="2" pak="" craft_need="workbench" />
+    <recipe name="helmet_magical_two" produce="helmet_magical_two" ingredients="helmet_magical-2,fabric-5,needle-6" pak="" craft_need="workbench" />
+    <recipe name="helm_wood" produce="helm_wood" group="1" ingredients="helmet_magical_two-2,wood-4,wood-5,wood-6,leaves-8" craft_need="workbench" pak="" />
+    <recipe name="helmet_woodleather" ingredients="helm_wood-2,plank-5,iron-6" produce="helmet_woodleather" group="2" pak="" craft_need="workbench" />
+    <recipe name="helm_leather" ingredients="power_potion_green-1,helmet_woodleather-2,skin-5,iron-6,rope-8" produce="helm_leather" group="2" craft_need="workbench" pak="" />
+    <recipe name="helm_hitin" produce="helm_hitin" group="2" ingredients="helm_leather-2,chitin-5,chitin-6" craft_need="workbench" pak="" />
+    <recipe name="helmet_mine" ingredients="power_potion_green-1,helm_hitin-2,miners_lamp-5,iron-6,rope-9" produce="helmet_mine" group="1" pak="Rooms DLC" craft_need="smithy" />
+    <recipe name="rusty_sceleton_helmet" produce="rusty_sceleton_helmet" group="2" ingredients="helmet_mine-2,iron-5" craft_need="smithy" pak="" />
+    <recipe name="big_skeleton_helmet" produce="big_skeleton_helmet" ingredients="rusty_sceleton_helmet-2,iron-5" pak="" craft_need="smithy" />
+    <recipe name="zombie_helmet" produce="zombie_helmet" ingredients="power_potion_green-1,big_skeleton_helmet-2,iron-4,iron-5,iron-6" pak="" craft_need="smithy" />
+    <recipe name="zombie_heavy_helmet" produce="zombie_heavy_helmet" ingredients="zombie_helmet-2,iron-5" pak="" craft_need="smithy" />
+    <recipe name="helm_steel" produce="helm_steel" group="2" ingredients="power_potion_green-1,zombie_heavy_helmet-2,steel-5,iron-6" craft_need="smithy" pak="" />
+    <recipe name="scaled_armor_helmet" produce="scaled_armor_helmet" group="3" ingredients="helm_steel-2,steel-4,chitin-6,chitin-8" craft_need="smithy" pak="" />
+    <recipe name="Rhinoceros_helmet" ingredients="scaled_armor_helmet-2,durable_shell-5,rope-6" produce="Rhinoceros_helmet" group="4" craft_need="smithy" pak="Monsters DLC" />
+    <recipe name="dark_elfs_helmet" produce="dark_elfs_helmet" ingredients="power_potion_yellow-1,Rhinoceros_helmet-2,alloy_iron_silver-4,silver_ingot-5,alloy_iron_silver-6,pink_crystal-8" pak="" craft_need="smithy" />
+    <recipe name="helm_silver" produce="helm_silver" group="2" ingredients="dark_elfs_helmet-2,alloy_iron_silver-5,silver_ingot-8" craft_need="smithy" pak="" />
+    <recipe name="helm_gold" produce="helm_gold" group="3" ingredients="power_potion_yellow-1,helm_silver-2,gold_ingot-4,gold_ingot-5,gold_ingot-6,silver_ingot-8" craft_need="smithy" pak="" />
+    <recipe name="dragon_warrior_helmet" produce="dragon_warrior_helmet" group="4" ingredients="helm_gold-2,silver_ingot-5,gold_ingot-8" craft_need="smithy" pak="" />
+    <recipe name="elven_gold_helmet" produce="elven_gold_helmet" ingredients="power_potion_yellow-1,dragon_warrior_helmet-2,mithril_ingot-4,mithril_ingot-5,mithril_ingot-6,gold_ingot-8" pak="" craft_need="smithy" />
+    <recipe name="helm_mithril" produce="helm_mithril" group="3" ingredients="elven_gold_helmet-2,mithril_ingot-5,mithril_ingot-8" craft_need="smithy" pak="" />
+    <recipe name="dark_mage_helmet" produce="dark_mage_helmet" ingredients="power_potion_yellow-1,helm_mithril-2,alloy_iron_silver-5,alloy_iron_silver-6,portal_krs_red-8" pak="" craft_need="smithy" />
+    <recipe name="knight_helmet" produce="knight_helmet" ingredients="dark_mage_helmet-2,titan_ingot-4,titan_ingot-5,titan_ingot-6,mithril_ingot-8" group="1" craft_need="smithy" pak="" />
+    <recipe name="orc_skeleton_helmet" produce="orc_skeleton_helmet" ingredients="power_potion_white-1,knight_helmet-2,skills_ring1-3,bone-5,bone-6,bone-8,bone-9" pak="" craft_need="workshop" />
+    <recipe name="funny_sceleton_helmet" produce="funny_sceleton_helmet" ingredients="orc_skeleton_helmet-2,bone-4,bone-6,rags_hl-8" group="1" craft_need="workbench" pak="" />
+    <recipe name="scream_mask" produce="scream_mask" ingredients="funny_sceleton_helmet-2,paint-5,silver-6,needle-7" group="1" craft_need="workbench" pak="" />
+    <recipe name="santa_hat" produce="santa_hat" ingredients="power_potion_white-1,scream_mask-2,skills_ring1-3,fabric-5,thread-6,needle-7,wool-8" group="1" craft_need="workbench" pak="" />
+    <recipe name="pirat_hat" produce="pirat_hat" ingredients="santa_hat-2,paint-5" group="1" craft_need="workbench" pak="" />
+    <recipe name="prodigal_son_helmet_mog" produce="prodigal_son_helmet_mog" ingredients="pirat_hat-2,scissors-5" pak="" craft_need="workbench" />
+    <recipe name="cultist_hood" produce="cultist_hood" ingredients="prodigal_son_helmet_mog-2,paint-5,silver-6,skin-8" group="1" craft_need="workbench" pak="" />
+    <recipe name="goblin_helmet_three" produce="goblin_helmet_three" ingredients="power_potion_white-1,cultist_hood-2,skills_ring1-3,durable_shell-5,skin-8" pak="" craft_need="workbench" />
+    <recipe name="goblin_helmet_two" produce="goblin_helmet_two" ingredients="goblin_helmet_three-2,chitin-4,chitin-6" pak="" craft_need="workbench" />
+    <recipe name="goblin_helmet" produce="goblin_helmet" ingredients="goblin_helmet_two-2,wool-4,wool-5,bone-8,bone-9" pak="" craft_need="workbench" />
+    <recipe name="helmet_patrol_mountain_broken" ingredients="power_potion_white-1,goblin_helmet-2,skills_ring1-3,skin-5,iron-8,needle-9" produce="helmet_patrol_mountain_broken" group="1" craft_need="smithy" pak="Highland DLC" />
+    <recipe name="helmet_patrol_mountain" ingredients="helmet_patrol_mountain_broken-2,skin-5,iron-6" produce="helmet_patrol_mountain" group="1" craft_need="smithy" pak="Highland DLC" />
+    <recipe name="helmet_patrol_mountain_improved" produce="helmet_patrol_mountain_improved" ingredients="helmet_patrol_mountain-2,gold-7,gold-9" pak="" craft_need="smithy" />
+    <recipe name="heavy_skeleton_helmet" produce="heavy_skeleton_helmet" ingredients="power_potion_white-1,helmet_patrol_mountain_improved-2,skills_ring2-3,copper_ingot-5,copper_ingot-8" pak="" craft_need="smithy" />
+    <recipe name="helmet_of_Athena" produce="helmet_of_Athena" ingredients="heavy_skeleton_helmet-2,bronze-4,bronze-5,bronze-6,wool-8" group="1" craft_need="smithy" pak="" />
+    <recipe name="orc_helmet" produce="orc_helmet" ingredients="power_potion_black-1,helmet_of_Athena-2,skills_ring2-3,alloy_iron_silver-5,alloy_iron_silver-9" pak="" craft_need="smithy" />
+    <recipe name="vampire_guard_helmet" produce="vampire_guard_helmet" ingredients="power_potion_black-1,orc_helmet-2,skills_ring2-3,steel-5,steel-6,iron-8" pak="" craft_need="smithy" />
+    <recipe name="vampire_guard_helmet_two_mask" produce="vampire_guard_helmet_two_mask" ingredients="power_potion_black-1,vampire_guard_helmet-2,iron-5" pak="" craft_need="smithy" />
+    <recipe name="jason_mask" produce="jason_mask" ingredients="vampire_guard_helmet_two_mask-2,chitin-4,chitin-5,chitin-6,rope-8" group="1" craft_need="workbench" pak="" />
+    <recipe name="fishman_helmet" produce="fishman_helmet" ingredients="power_potion_black-1,jason_mask-2,skills_ring2-3,durable_shell-5,durable_shell-7" group="1" craft_need="smithy" pak="" />
+    <recipe name="helmet_guardians_mountain_broken" ingredients="power_potion_black-1,fishman_helmet-2,skills_ring3-3,gold_ingot-5,skin-6,skin-7" produce="helmet_guardians_mountain_broken" group="1" craft_need="smithy" pak="Highland DLC" />
+    <recipe name="helmet_guardians_mountain" ingredients="helmet_guardians_mountain_broken-2,gold_ingot-6,gold_ingot-7,skin-8" produce="helmet_guardians_mountain" group="1" craft_need="smithy" pak="Highland DLC" />
+    <recipe name="helmet_guardians_mountain_improved" produce="helmet_guardians_mountain_improved" ingredients="helmet_guardians_mountain-2,mithril-5,mithril-7" pak="" craft_need="smithy" />
+    <recipe name="paladin_helmet" produce="paladin_helmet" ingredients="power_potion_black-1,helmet_guardians_mountain_improved-2,skills_ring3-3,black_dragon_egg-5,wool-7,skin-9" pak="" craft_need="lab" />
+    <recipe name="helm_elven" produce="helm_elven" ingredients="power_potion_black-1,paladin_helmet-2,skills_ring3-3,mithril_ingot-5,mithril_ingot-6" group="1" craft_need="smithy" pak="" />
+    <recipe name="stoneheart_helmet" produce="stoneheart_helmet" ingredients="helm_elven-2,mithril_ingot-4,mithril_ingot-5,mithril_ingot-6,gold_ingot-8" pak="" craft_need="smithy" />
+    <recipe name="dark_boss_helmet_one" produce="dark_boss_helmet_one" ingredients="power_potion_black-1,stoneheart_helmet-2,skills_ring3-3,portal_krs_green-6,titan_ingot-8" pak="" craft_need="smithy" />
+    <recipe name="dark_boss_helmet_two" produce="dark_boss_helmet_two" ingredients="dark_boss_helmet_one-2,titan_ingot-5,durable_alloy-6,portal_krs_red-7" pak="" craft_need="smithy" />
+    <recipe name="dark_boss_helmet_three" produce="dark_boss_helmet_three" ingredients="dark_boss_helmet_two-2,titan_ingot-4,durable_alloy-5,titan_ingot-6,portal_krs_dblue-8" pak="" craft_need="smithy" />
+    <!--..................  Cuirass  ..................-->
+    <!--...............................................-->
+    <recipe name="light_cape_cuirass" produce="light_cape_cuirass" ingredients="leaves_dead-5" pak="" craft_need="workbench" />
+    <recipe name="child_of_nature_cuirass_mog" produce="child_of_nature_cuirass_mog" ingredients="light_cape_cuirass-2,leaves-5,leaves-6,leaves-8" pak="" craft_need="workbench" />
+    <recipe name="cuirass_magical" ingredients="child_of_nature_cuirass_mog-2,skin-5,fabric-6,fabric-7,needle-9" produce="cuirass_magical" group="2" pak="" craft_need="workbench" />
+    <recipe name="cuirass_magical_two" produce="cuirass_magical_two" ingredients="cuirass_magical-2,fabric-5,thread-7,needle-8" pak="" craft_need="workbench" />
+    <recipe name="wood_armor" produce="wood_armor" group="1" ingredients="cuirass_magical_two-2,wood-4,leaves-5,wood-6,wood-7,rope-8,wood-9" craft_need="workbench" pak="" />
+    <recipe name="cuirass_woodleather" ingredients="wood_armor-2,nail-4,iron-5" produce="cuirass_woodleather" group="2" pak="" craft_need="workbench" />
+    <recipe name="shirt_skin" ingredients="power_potion_green-1,cuirass_woodleather-2,wood_shield-3,skin-4,skin-5,rope-8,needle-9" produce="shirt_skin" group="2" priority="0,armor" craft_need="workbench" pak="" />
+    <recipe name="hitin_armor" produce="hitin_armor" group="2" ingredients="shirt_skin-2,chitin-4,chitin-5,chitin-6" craft_need="workbench" pak="" />
+    <recipe name="cuirass_mine" produce="cuirass_mine" ingredients="power_potion_green-1,hitin_armor-2,khitin_shield-3,wood-4,wood-5,wood-6,rags_hl-8" pak="" craft_need="workbench" />
+    <recipe name="big_skeleton_cuirass" produce="big_skeleton_cuirass" ingredients="cuirass_mine-2,iron-4,iron-5,nail-8" pak="" craft_need="smithy" />
+    <recipe name="zombie_cuirass" produce="zombie_cuirass" ingredients="power_potion_green-1,big_skeleton_cuirass-2,mine_shield-3,iron-5,iron-7,coal-8,iron-9" pak="" craft_need="smithy" />
+    <recipe name="zombie_heavy_cuirass" produce="zombie_heavy_cuirass" ingredients="zombie_cuirass-2,iron-4,coal-8,iron-9" pak="" craft_need="smithy" />
+    <recipe name="steel_chain_armor" ingredients="power_potion_green-1,zombie_heavy_cuirass-2,zombie_shield-3,steel-4,steel-5,steel-6,coal-8" produce="steel_chain_armor" group="4" craft_need="smithy" priority="1,armor" pak="" />
+    <recipe name="scaled_armor" produce="scaled_armor" group="3" ingredients="steel_chain_armor-2,chitin-4,chitin-5,chitin-6,steel-8" craft_need="smithy" pak="" />
+    <recipe name="Rhinoceros_chest" ingredients="scaled_armor-2,durable_shell-4,nail-5,durable_shell-6,rope-8" produce="Rhinoceros_chest" group="4" craft_need="smithy" pak="Monsters DLC" />
+    <recipe name="dark_elfs_cuirass" produce="dark_elfs_cuirass" ingredients="power_potion_yellow-1,Rhinoceros_chest-2,iron_shield-3,alloy_iron_silver-4,alloy_iron_silver-5,alloy_iron_silver-6,steel-7,alloy_iron_silver-8,steel-9" pak="" craft_need="smithy" />
+    <recipe name="silver_armor" produce="silver_armor" group="2" ingredients="dark_elfs_cuirass-2,alloy_iron_silver-5,silver_ingot-7,silver_ingot-9" craft_need="smithy" pak="" />
+    <recipe name="gold_armor" ingredients="power_potion_yellow-1,silver_armor-2,dark_elfs_shield-3,gold_ingot-4,gold_ingot-5,gold_ingot-6,silver_ingot-7,gold_ingot-8,silver_ingot-9" produce="gold_armor" group="4" craft_need="smithy" priority="2,armor" pak="" />
+    <recipe name="dragon_warrior_cuirass" produce="dragon_warrior_cuirass" group="4" ingredients="gold_armor-2,gold_ingot-4,gold_ingot-6,silver_ingot-8" craft_need="smithy" pak="" />
+    <recipe name="elven_gold_cuirass" produce="elven_gold_cuirass" ingredients="power_potion_yellow-1,dragon_warrior_cuirass-2,gold_shield-3,mithril_ingot-4,mithril_ingot-5,mithril_ingot-6,gold_ingot-7,mithril_ingot-8,gold_ingot-9" pak="" craft_need="smithy" />
+    <recipe name="mithril_armor" produce="mithril_armor" group="3" ingredients="elven_gold_cuirass-2,mithril_ingot-4,mithril_ingot-6,gold_ingot-8" craft_need="smithy" pak="" />
+    <recipe name="dark_mage_cuirass" produce="dark_mage_cuirass" ingredients="power_potion_yellow-1,mithril_armor-2,mithril_shield-3,alloy_iron_silver-4,alloy_iron_silver-6,alloy_iron_silver-8" pak="" craft_need="smithy" />
+    <recipe name="knight_armor" produce="knight_armor" ingredients="dark_mage_cuirass-2,titan_ingot-4,titan_ingot-5,titan_ingot-6,mithril_ingot-7,titan_ingot-8,mithril_ingot-9" pak="" group="1" craft_need="smithy" />
+    <recipe name="orc_skeleton_cuirass" produce="orc_skeleton_cuirass" ingredients="power_potion_white-1,knight_armor-2,orc_shield-3,big_elixir_health-5,big_elixir_mana-6,bone-7,bone-8,bone-9" pak="" craft_need="workshop" />
+    <recipe name="funny_sceleton_cuirass" produce="funny_sceleton_cuirass" ingredients="orc_skeleton_cuirass-2,bone-4,bone-5,bone-6,rags_hl-8" group="1" craft_need="workbench" pak="" />
+    <recipe name="santa_armor" produce="santa_armor" ingredients="power_potion_white-1,funny_sceleton_cuirass-2,funny_sceleton_shield-3,big_elixir_health-5,big_elixir_mana-6,fabric-7,thread-8,fabric-9" group="1" craft_need="workbench" pak="" />
+    <recipe name="prodigal_son_cuirass_mog" produce="prodigal_son_cuirass_mog" ingredients="santa_armor-2,rope-5,rags_hl-7,wool-8,rags_hl-9" pak="" craft_need="workbench" />
+    <recipe name="cultist_vest" ingredients="prodigal_son_cuirass_mog-2,silver-4,paint-5,silver-6,skin-8" produce="cultist_vest" group="1" craft_need="workbench" pak="" />
+    <recipe name="goblin_cuirass_two" produce="goblin_cuirass_two" ingredients="power_potion_white-1,cultist_vest-2,pirat_shield-3,big_elixir_health-5,big_elixir_mana-6,skin-7,chitin-8,skin-9" pak="" craft_need="workbench" />
+    <recipe name="goblin_cuirass" produce="goblin_cuirass" ingredients="goblin_cuirass_two-2,chitin-4,durable_shell-5,chitin-6,wool-8" pak="" craft_need="workbench" />
+    <recipe name="cuirass_patrol_mountain_broken" produce="cuirass_patrol_mountain_broken" ingredients="power_potion_white-1,goblin_cuirass-2,goblin_shield-3,big_elixir_health-5,big_elixir_mana-6,skin-7,steel-8,iron-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="cuirass_patrol_mountain" produce="cuirass_patrol_mountain" ingredients="cuirass_patrol_mountain_broken-2,skin-5,steel-7,needle-8,steel-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="cuirass_patrol_mountain_improved" produce="cuirass_patrol_mountain_improved" ingredients="cuirass_patrol_mountain-2,gold-4,gold-5,gold-6,mithril-8" pak="" craft_need="smithy" />
+    <recipe name="heavy_skeleton_cuirass" produce="heavy_skeleton_cuirass" ingredients="power_potion_white-1,cuirass_patrol_mountain_improved-2,patrol_mountain_shield-3,big_elixir_health-5,big_elixir_mana-6,copper_ingot-7,rags_hl-8,copper_ingot-9" pak="" craft_need="smithy" />
+    <recipe name="armor_of_Athena" produce="armor_of_Athena" ingredients="heavy_skeleton_cuirass-2,bronze-4,bronze-5,bronze-6,copper_ingot-7,bronze-8,copper_ingot-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="orc_cuirass" produce="orc_cuirass" ingredients="power_potion_black-1,armor_of_Athena-2,shield_of_Athena-3,big_elixir_health-5,big_elixir_mana-6,alloy_iron_silver-7,alloy_iron_silver-8,alloy_iron_silver-9" pak="" craft_need="smithy" />
+    <recipe name="vampire_guard_cuirass_two" produce="vampire_guard_cuirass_two" ingredients="power_potion_black-1,orc_cuirass-2,orc_shield_two-3,big_elixir_health-5,big_elixir_mana-6,steel-7,iron-8,steel-9" pak="" craft_need="smithy" />
+    <recipe name="vampire_guard_cuirass" produce="vampire_guard_cuirass" ingredients="vampire_guard_cuirass_two-2,silver_ingot-4,silver_ingot-5,silver_ingot-6,alloy_iron_silver-7,silver_ingot-8,alloy_iron_silver-9" pak="" craft_need="smithy" />
+    <recipe name="fishman_armor" produce="fishman_armor" ingredients="power_potion_black-1,vampire_guard_cuirass-2,skeleton_shield-3,big_elixir_health-5,big_elixir_mana-6,durable_shell-7,durable_shell-8,durable_shell-9" pak="" group="1" craft_need="smithy" />
+    <recipe name="cuirass_guardians_mountain_broken" produce="cuirass_guardians_mountain_broken" ingredients="power_potion_black-1,fishman_armor-2,fishman_shield-3,big_elixir_health-5,big_elixir_mana-6,gold_ingot-7,skin-8,gold_ingot-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="cuirass_guardians_mountain" ingredients="cuirass_guardians_mountain_broken-2,gold_ingot-4,gold_ingot-5,gold_ingot-6,skin-7,skin-8,rope-9" produce="cuirass_guardians_mountain" group="1" craft_need="smithy" pak="Highland DLC" />
+    <recipe name="cuirass_guardians_mountain_improved" produce="cuirass_guardians_mountain_improved" ingredients="cuirass_guardians_mountain-2,mithril-5,mithril-6,mithril-7" pak="" craft_need="smithy" />
+    <recipe name="paladin_cuirass" produce="paladin_cuirass" ingredients="power_potion_black-1,cuirass_guardians_mountain_improved-2,shield_guardians_mountain_improved-3,big_elixir_health-5,big_elixir_mana-6,durable_alloy-7,durable_alloy-8,durable_alloy-9" pak="" craft_need="smithy" />
+    <recipe name="elven_armor" produce="elven_armor" ingredients="power_potion_black-1,paladin_cuirass-2,paladin_shield-3,big_elixir_health-5,big_elixir_mana-6,mithril_ingot-7,mithril_ingot-8,mithril_ingot-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="stoneheart_cuirass" produce="stoneheart_cuirass" ingredients="elven_armor-2,mithril_ingot-4,mithril_ingot-5,mithril_ingot-6,gold_ingot-7,mithril_ingot-8,gold_ingot-9" pak="" craft_need="smithy" />
+    <recipe name="dark_boss_cuirass_one" produce="dark_boss_cuirass_one" ingredients="power_potion_black-1,stoneheart_cuirass-2,stoneheart_shield-3,big_elixir_health-5,big_elixir_mana-6,titan_ingot-7,durable_alloy-8,titan_ingot-9" pak="" craft_need="smithy" />
+    <recipe name="dark_boss_cuirass_two" produce="dark_boss_cuirass_two" ingredients="dark_boss_cuirass_one-2,titan_ingot-4,titan_ingot-5,titan_ingot-6,durable_alloy-8" pak="" craft_need="smithy" />
+    <recipe name="dark_boss_cuirass_three" produce="dark_boss_cuirass_three" ingredients="dark_boss_cuirass_two-2,titan_ingot-4,titan_ingot-5,titan_ingot-6,portal_krs_red-7,durable_alloy-8,portal_krs_red-9" pak="" craft_need="smithy" />
+    <!--..................  Boots  ..................-->
+    <!--.............................................-->
+    <recipe name="child_of_nature_boot_mog" produce="child_of_nature_boot_mog" ingredients="leaves-1,leaves-4" pak="" craft_need="workbench" />
+    <recipe name="boot_magical" ingredients="child_of_nature_boot_mog-2,needle-5,fabric-6,skin-8" produce="boot_magical" group="2" pak="" craft_need="workbench" />
+    <recipe name="boots_magical_two" produce="boots_magical_two" ingredients="boot_magical-2,thread-5,needle-9" pak="" craft_need="workbench" />
+    <recipe name="boot_wood" ingredients="boots_magical_two-2,wood-5,wood-6,nail-7" produce="boot_wood" group="1" pak="" craft_need="workbench" />
+    <recipe name="boot_woodleather" ingredients="boot_wood-2,plank-5,iron-6" produce="boot_woodleather" group="2" pak="" craft_need="workbench" />
+    <recipe name="leather_boots" ingredients="power_potion_green-1,boot_woodleather-2,rope-6,skin-8" produce="leather_boots" group="2" craft_need="workbench" pak="" />
+    <recipe name="boots_hitin" produce="boots_hitin" group="2" ingredients="leather_boots-2,chitin-5,chitin-7" craft_need="workbench" pak="" />
+    <recipe name="boot_mine" ingredients="power_potion_green-1,boots_hitin-2,chitin-5,needle-6,skin-8" produce="boot_mine" group="1" pak="Rooms DLC" craft_need="workbench" />
+    <recipe name="big_skeleton_boots" produce="big_skeleton_boots" ingredients="boot_mine-2,iron-5,iron-7" pak="" craft_need="smithy" />
+    <recipe name="zombie_boots" produce="zombie_boots" ingredients="power_potion_green-1,big_skeleton_boots-2,iron-5,iron-6,skin-8" pak="" craft_need="smithy" />
+    <recipe name="zombie_heavy_boots" produce="zombie_heavy_boots" ingredients="zombie_boots-2,iron-4,iron-8" pak="" craft_need="smithy" />
+    <recipe name="iron_boots" ingredients="power_potion_green-1,zombie_heavy_boots-2,steel-6,steel-7,coal-8" produce="iron_boots" group="4" craft_need="smithy" pak="" />
+    <recipe name="scaled_armor_boots" produce="scaled_armor_boots" group="3" ingredients="iron_boots-2,steel-5,chitin-6,skin-8" craft_need="smithy" pak="" />
+    <recipe name="Rhinoceros_boots" ingredients="scaled_armor_boots-2,nail-4,durable_shell-5" produce="Rhinoceros_boots" group="4" craft_need="smithy" pak="Monsters DLC" />
+    <recipe name="dark_elfs_boots" produce="dark_elfs_boots" ingredients="power_potion_yellow-1,Rhinoceros_boots-2,alloy_iron_silver-5,alloy_iron_silver-6,skin-8" pak="" craft_need="smithy" />
+    <recipe name="silver_boots" produce="silver_boots" group="4" ingredients="dark_elfs_boots-2,silver_ingot-5,silver_ingot-6" craft_need="smithy" pak="" />
+    <recipe name="gold_boots" ingredients="power_potion_yellow-1,silver_boots-2,gold_ingot-5,gold_ingot-6,skin-8" produce="gold_boots" group="4" craft_need="smithy" pak="" />
+    <recipe name="dragon_warrior_boots" produce="dragon_warrior_boots" group="4" ingredients="gold_boots-2,gold_ingot-5,paint-7" craft_need="smithy" pak="" />
+    <recipe name="elven_gold_boots" produce="elven_gold_boots" ingredients="power_potion_yellow-1,dragon_warrior_boots-2,gold_ingot-5,mithril_ingot-6,skin-8" pak="" craft_need="smithy" />
+    <recipe name="mithril_boots" ingredients="elven_gold_boots-2,mithril_ingot-4,mithril_ingot-6" produce="mithril_boots" group="4" craft_need="smithy" pak="" />
+    <recipe name="dark_mage_boots" produce="dark_mage_boots" ingredients="power_potion_yellow-1,mithril_boots-2,alloy_iron_silver-5,alloy_iron_silver-6,skin-8" pak="" craft_need="smithy" />
+    <recipe name="knight_boots" produce="knight_boots" ingredients="dark_mage_boots-2,titan_ingot-4,titan_ingot-6" group="1" craft_need="smithy" pak="" />
+    <recipe name="orc_skeleton_boots" produce="orc_skeleton_boots" ingredients="power_potion_white-1,knight_boots-2,undead_amulet1-3,bone-5,bone-8" pak="" craft_need="workshop" />
+    <recipe name="funny_sceleton_shoes" produce="funny_sceleton_shoes" ingredients="orc_skeleton_boots-2,thread-6,rags_hl-7,needle-8" group="1" craft_need="workbench" pak="" />
+    <recipe name="santa_boots" produce="santa_boots" ingredients="power_potion_white-1,funny_sceleton_shoes-2,undead_amulet1-3,wool-6,fabric-8" pak="" craft_need="workbench" />
+    <recipe name="prodigal_son_boot_mog" produce="prodigal_son_boot_mog" ingredients="santa_boots-2,wool-7,skin-8" pak="" craft_need="workbench" />
+    <recipe name="cultist_boots" produce="cultist_boots" ingredients="prodigal_son_boot_mog-2,silver-5,paint-6,skin-8" group="1" craft_need="workbench" pak="" />
+    <recipe name="goblin_boot_two" produce="goblin_boot_two" ingredients="power_potion_white-1,cultist_boots-2,undead_amulet1-3,chitin-5,chitin-6,skin-8" pak="" craft_need="workbench" />
+    <recipe name="goblin_boot" produce="goblin_boot" ingredients="goblin_boot_two-2,copper-5,wool-7,needle-8" pak="" craft_need="workbench" />
+    <recipe name="boot_patrol_mountain_broken" ingredients="power_potion_white-1,goblin_boot-2,undead_amulet1-3,needle-5,needle-6,skin-8" produce="boot_patrol_mountain_broken" group="1" craft_need="workbench" pak="Highland DLC" />
+    <recipe name="boot_patrol_mountain" ingredients="boot_patrol_mountain_broken-2,needle-4,skin-5" produce="boot_patrol_mountain" group="1" craft_need="workbench" pak="Highland DLC" />
+    <recipe name="boots_patrol_mountain_improved" produce="boots_patrol_mountain_improved" ingredients="boot_patrol_mountain-2,mithril-4,gold-5" pak="" craft_need="smithy" />
+    <recipe name="heavy_skeleton_boots" produce="heavy_skeleton_boots" ingredients="power_potion_white-1,boots_patrol_mountain_improved-2,undead_amulet2-3,copper_ingot-5,copper_ingot-6,skin-8" pak="" craft_need="smithy" />
+    <recipe name="boots_of_Athena" produce="boots_of_Athena" ingredients="heavy_skeleton_boots-2,bronze-7,bronze-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="orc_boots" produce="orc_boots" ingredients="power_potion_black-1,boots_of_Athena-2,undead_amulet2-3,alloy_iron_silver-5,alloy_iron_silver-9" pak="" craft_need="smithy" />
+    <recipe name="vampire_guard_boots_two" produce="vampire_guard_boots_two" ingredients="power_potion_black-1,orc_boots-2,undead_amulet2-3,steel-5,iron-6,skin-8" pak="" craft_need="smithy" />
+    <recipe name="vampire_guard_boots" produce="vampire_guard_boots" ingredients="vampire_guard_boots_two-2,silver_ingot-4,alloy_iron_silver-6" pak="" craft_need="smithy" />
+    <recipe name="fishman_boots" produce="fishman_boots" ingredients="power_potion_black-1,vampire_guard_boots-2,undead_amulet2-3,durable_shell-5,durable_shell-6,skin-8" group="1" craft_need="smithy" pak="" />
+    <recipe name="boot_guardians_mountain_broken" ingredients="power_potion_black-1,fishman_boots-2,undead_amulet3-3,gold_ingot-5,skin-6,skin-8,nail-9" produce="boot_guardians_mountain_broken" group="1" craft_need="smithy" pak="Highland DLC" />
+    <recipe name="boot_guardians_mountain" ingredients="boot_guardians_mountain_broken-2,gold_ingot-5,skin-6,nail-8" produce="boot_guardians_mountain" group="1" craft_need="smithy" pak="Highland DLC" />
+    <recipe name="boots_guardians_mountain_improved" produce="boots_guardians_mountain_improved" ingredients="boot_guardians_mountain-2,mithril-5,mithril-6" pak="" craft_need="smithy" />
+    <recipe name="paladin_boots" produce="paladin_boots" ingredients="power_potion_black-1,boots_guardians_mountain_improved-2,undead_amulet3-3,durable_alloy-5,durable_alloy-6,skin-8" pak="" craft_need="smithy" />
+    <recipe name="elven_boots" produce="elven_boots" ingredients="power_potion_black-1,paladin_boots-2,undead_amulet3-3,mithril_ingot-5,mithril_ingot-6,skin-8" group="1" craft_need="smithy" pak="" />
+    <recipe name="stoneheart_boots" produce="stoneheart_boots" ingredients="elven_boots-2,mithril_ingot-5,mithril_ingot-6,gold_ingot-8" pak="" craft_need="smithy" />
+    <recipe name="dark_boss_boots_one" produce="dark_boss_boots_one" ingredients="power_potion_black-1,stoneheart_boots-2,undead_amulet3-3,titan_ingot-5,titan_ingot-6,skin-8" pak="" craft_need="smithy" />
+    <recipe name="dark_boss_boots_two" produce="dark_boss_boots_two" ingredients="dark_boss_boots_one-2,titan_ingot-5,durable_alloy-6" pak="" craft_need="smithy" />
+    <recipe name="dark_boss_boots_three" produce="dark_boss_boots_three" ingredients="dark_boss_boots_two-2,titan_ingot-5,titan_ingot-6,durable_alloy-8" pak="" craft_need="smithy" />
+    <!--..................  Shield  ..................-->
+    <!--..............................................-->
+    <recipe name="wood_shield" produce="wood_shield" group="1" ingredients="wood-2,wood-4,nail-5,wood-6,rope-8" craft_need="workbench" pak="" />
+    <recipe name="khitin_shield" produce="khitin_shield" group="1" ingredients="chitin-2,chitin-4,needle-5,chitin-6,rope-8" craft_need="workbench" pak="" />
+    <recipe name="mine_shield" produce="mine_shield" ingredients="wood-2,wood-4,nail-5,iron-6,iron-8" pak="" craft_need="workbench" />
+    <recipe name="zombie_shield" produce="zombie_shield" ingredients="iron-2,iron-4,nail-5,iron-6,iron-8" pak="" craft_need="smithy" />
+    <recipe name="iron_shield" produce="iron_shield" group="2" ingredients="steel-2,plank-4,nail-5,steel-6,plank-8" craft_need="workbench" pak="" />
+    <recipe name="dark_elfs_shield" produce="dark_elfs_shield" ingredients="alloy_iron_silver-2,silver-4,portal_krs_red-5,alloy_iron_silver-6,silver-8" pak="" craft_need="smithy" />
+    <recipe name="gold_shield" produce="gold_shield" group="3" ingredients="alloy_iron_silver-2,gold-4,gold_ingot-5,grinding_stone-6,silver-8" craft_need="smithy" pak="" />
+    <recipe name="mithril_shield" ingredients="mithril-2,mithril-4,mithril_ingot-5,grinding_stone-6,mithril-8" produce="mithril_shield" group="3" pak="" craft_need="smithy" />
+    <recipe name="orc_shield" produce="orc_shield" ingredients="plank-2,titan_ingot-4,nail-5,plank-6,titan_ingot-8" pak="" craft_need="workbench" />
+    <recipe name="funny_sceleton_shield" produce="funny_sceleton_shield" ingredients="iron-2,bone-4,nail-5,bone-6,plank-8" craft_need="workbench" group="1" pak="" />
+    <recipe name="pirat_shield" produce="pirat_shield" ingredients="bone-2,bone-4,nail-5,bone-6,plank-8" pak="" craft_need="workbench" />
+    <recipe name="goblin_shield" produce="goblin_shield" ingredients="iron-2,iron-4,nail-5,chitin-6,plank-8" pak="" craft_need="workbench" />
+    <recipe name="patrol_mountain_shield" produce="patrol_mountain_shield" ingredients="copper-2,steel-4,grinding_stone-5,copper-6,steel-8" pak="" craft_need="smithy" />
+    <recipe name="heavy_skeleton_shield" produce="heavy_skeleton_shield" ingredients="steel-4,nail-5,iron-6,iron-8" pak="" craft_need="smithy" />
+    <recipe name="shield_of_Athena" produce="shield_of_Athena" ingredients="copper-2,bronze-4,heavy_skeleton_shield-5,copper-6,bronze-8" craft_need="smithy" group="1" pak="" />
+    <recipe name="orc_shield_two" produce="orc_shield_two" ingredients="plank-2,plank-4,nail-5,alloy_iron_silver-6,alloy_iron_silver-8" pak="" craft_need="workbench" />
+    <recipe name="skeleton_shield" produce="skeleton_shield" ingredients="iron-2,alloy_iron_silver-4,grinding_stone-5,silver-6,silver_ingot-8" pak="" craft_need="smithy" />
+    <recipe name="fishman_shield" produce="fishman_shield" ingredients="durable_shell-2,durable_shell-4,nail-5,durable_shell-6,durable_shell-8" craft_need="smithy" group="1" pak="" />
+    <recipe name="shield_guardians_mountain_broken" ingredients="nail-2,gold_ingot-4,nail-6,plank-8" produce="shield_guardians_mountain_broken" group="1" craft_need="smithy" pak="Highland DLC" />
+    <recipe name="shield_guardians_mountain" ingredients="gold_ingot-4,shield_guardians_mountain_broken-5,nail-6,plank-8" produce="shield_guardians_mountain" group="1" craft_need="smithy" pak="Highland DLC" />
+    <recipe name="shield_guardians_mountain_improved" produce="shield_guardians_mountain_improved" ingredients="mithril-4,shield_guardians_mountain-5,grinding_stone-6,mithril-8" pak="" craft_need="smithy" />
+    <recipe name="paladin_shield" produce="paladin_shield" ingredients="mithril-2,durable_alloy-4,grinding_stone-5,mithril-6,durable_alloy-8" pak="" craft_need="smithy" />
+    <recipe name="elven_shield" produce="elven_shield" ingredients="mithril_ingot-4,grinding_stone-5,mithril-6,plank-8" pak="" craft_need="smithy" />
+    <recipe name="stoneheart_shield" produce="stoneheart_shield" ingredients="gold_ingot-4,elven_shield-5,gold_ingot-6,mithril_ingot-8" pak="" craft_need="smithy" />
+    <!--..................  Sword  ..................-->
+    <!--.............................................-->
+    <recipe name="knife_frostling" produce="knife_frostling" ingredients="wood-6,stone-9" pak="" craft_need="workbench" />
+    <recipe name="sword_wooden" produce="sword_wooden" ingredients="knife_frostling-2,plank-5,plank-8" pak="" craft_need="workbench" />
+    <recipe name="rusty_mummy_saber" produce="rusty_mummy_saber" group="1" ingredients="power_potion_green-1,sword_wooden-2,iron-5,iron-6" craft_need="smithy" pak="" />
+    <recipe name="orc_Highland_sword_two" produce="orc_Highland_sword_two" ingredients="power_potion_green-1,rusty_mummy_saber-2,iron-5,iron-6,rope-8" pak="" craft_need="smithy" />
+    <recipe name="rusty_sceleton_saber" produce="rusty_sceleton_saber" group="1" ingredients="orc_Highland_sword_two-2,iron-5" craft_need="smithy" pak="" />
+    <recipe name="dagger_steel" produce="dagger_steel" ingredients="power_potion_green-1,rusty_sceleton_saber-2,iron-5,iron-6,wood-8" pak="" craft_need="smithy" />
+    <recipe name="sword_iron" ingredients="power_potion_green-1,dagger_steel-2,steel-5,steel-6,wood-8" produce="sword_iron" group="2" craft_need="smithy" priority="0,sword" pak="" />
+    <recipe name="sword_iron_ice" ingredients="sword_iron-2,iron-4,coal-6,needle_crystal-8" produce="sword_iron_ice" group="3" pak="" craft_need="smithy" />
+    <recipe name="sword_iron_blood" ingredients="sword_iron_ice-2,iron-4,coal-6,pink_crystal-8" produce="sword_iron_blood" group="3" pak="" craft_need="smithy" />
+    <recipe name="dark_elfs_sword" produce="dark_elfs_sword" ingredients="power_potion_yellow-1,sword_iron_blood-2,alloy_iron_silver-5,alloy_iron_silver-6,wood-8" pak="" craft_need="smithy" />
+    <recipe name="sword_silver" ingredients="dark_elfs_sword-2,silver_ingot-5,coal-8" produce="sword_silver" group="3" craft_need="smithy" priority="1,sword" pak="" />
+    <recipe name="godeus_sword_th" ingredients="power_potion_yellow-1,sword_silver-2,gold_ingot-4,gold_ingot-5,gold_ingot-6,silver_ingot-8" produce="godeus_sword_th" group="3" craft_need="smithy" priority="2,sword" pak="" />
+    <recipe name="sword_dao" produce="sword_dao" group="1" ingredients="godeus_sword_th-2,gold_ingot-5,steel-8" craft_need="smithy" pak="" />
+    <recipe name="elven_gold_sword" produce="elven_gold_sword" ingredients="power_potion_yellow-1,sword_dao-2,gold_ingot-5,silver_ingot-6,silver_ingot-8" pak="" craft_need="smithy" />
+    <recipe name="sword_mithril" produce="sword_mithril" group="3" ingredients="elven_gold_sword-2,mithril_ingot-4,mithril_ingot-5,mithril_ingot-6" craft_need="smithy" pak="" />
+    <recipe name="knight_sword" produce="knight_sword" ingredients="power_potion_yellow-1,sword_mithril-2,titan_ingot-4,titan_ingot-5,titan_ingot-6,needle_crystal-7,portal_krs_green-8,needle_crystal-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="skeleton_pirate_sword" produce="skeleton_pirate_sword" ingredients="power_potion_white-1,knight_sword-2,rune_blood-3,silver_ingot-5,steel-6,wood-8" pak="" craft_need="smithy" />
+    <recipe name="pirate_captain_sword" produce="pirate_captain_sword" ingredients="power_potion_white-1,skeleton_pirate_sword-2,rune_blood-3,bronze-5,bronze-6,wood-8" pak="" craft_need="smithy" />
+    <recipe name="cultist_dagger" produce="cultist_dagger" ingredients="power_potion_white-1,pirate_captain_sword-2,silver_ingot-4,silver_ingot-5,silver_ingot-6" group="1" craft_need="smithy" pak="" />
+    <recipe name="cave_goblin_saber" produce="cave_goblin_saber" group="5" ingredients="power_potion_white-1,cultist_dagger-2,rune_blood-3,chitin-5,wood-6,wood-8" pak="" craft_need="workbench" />
+    <recipe name="cave_goblin_saber1" produce="cave_goblin_saber1" group="5" ingredients="cave_goblin_saber-2,chitin-5,durable_shell-8" pak="" craft_need="workbench" />
+    <recipe name="cave_goblin_saber2" produce="cave_goblin_saber2" group="5" ingredients="cave_goblin_saber1-2,durable_shell-5,durable_shell-8" pak="" craft_need="workbench" />
+    <recipe name="weapon_patrol_mountain_broken" ingredients="power_potion_white-1,cave_goblin_saber2-2,rune_blood-3,steel-5,steel-6,silver_ingot-7,silver_ingot-8,grinding_stone-9" produce="weapon_patrol_mountain_broken" group="1" craft_need="smithy" pak="Highland DLC" />
+    <recipe name="weapon_patrol_mountain" ingredients="weapon_patrol_mountain_broken-2,steel-5,silver_ingot-6,grinding_stone-8" produce="weapon_patrol_mountain" group="1" craft_need="smithy" pak="Highland DLC" />
+    <recipe name="orc_Highland_sword_one" produce="orc_Highland_sword_one" ingredients="power_potion_white-1,weapon_patrol_mountain-2,rune_blood-3,steel-5,steel-6,wood-8" pak="" craft_need="smithy" />
+    <recipe name="sword_of_Athena" produce="sword_of_Athena" ingredients="power_potion_white-1,orc_Highland_sword_one-2,bronze-5,bronze-6,wood-8" group="1" craft_need="smithy" pak="" />
+    <recipe name="orc_sword" produce="orc_sword" ingredients="power_potion_black-1,sword_of_Athena-2,rune_blood-3,alloy_iron_silver-5,alloy_iron_silver-6,wood-8" pak="" craft_need="smithy" />
+    <recipe name="vampire_guard_sword_two" produce="vampire_guard_sword_two" ingredients="power_potion_black-1,orc_sword-2,rune_blood-3,steel-4,alloy_iron_silver-5,steel-6" pak="" craft_need="smithy" />
+    <recipe name="vampire_guard_sword" produce="vampire_guard_sword" ingredients="vampire_guard_sword_two-2,silver_ingot-5,silver_ingot-6,grinding_stone-8" pak="" craft_need="smithy" />
+    <recipe name="fishman_weapon" produce="fishman_weapon" ingredients="power_potion_black-1,vampire_guard_sword-2,rune_blood-3,bone-4,durable_shell-5,bone-6,thread-8" group="1" craft_need="workbench" pak="" />
+    <recipe name="sword_guardians_mountain_improved" produce="sword_guardians_mountain_improved" ingredients="power_potion_black-1,fishman_weapon-2,rune_blood-3,gold_ingot-4,silver_ingot-5,gold_ingot-6,mithril_ingot-8" pak="" craft_need="smithy" />
+    <recipe name="orc_Highland_sword_three" produce="orc_Highland_sword_three" ingredients="power_potion_black-1,sword_guardians_mountain_improved-2,rune_blood-3,durable_alloy-4,alloy_iron_silver-5,durable_alloy-6,alloy_iron_silver-8" pak="" craft_need="smithy" />
+    <recipe name="elf_dagger" produce="elf_dagger" ingredients="power_potion_black-1,orc_Highland_sword_three-2,rune_blood-3,mithril_ingot-4,mithril_ingot-5,mithril_ingot-6" pak="" craft_need="smithy" />
+    <recipe name="sword_soul_reaper" ingredients="power_potion_black-1,elf_dagger-2,gold_ingot-4,mithril_ingot-5,gold_ingot-6,portal_krs_green-7,portal_krs_green-9" produce="sword_soul_reaper" group="1" craft_need="smithy" pak="Monsters DLC" />
+    <recipe name="dark_boss_sword_one" produce="dark_boss_sword_one" ingredients="power_potion_black-1,sword_soul_reaper-2,rune_blood-3,titan_ingot-4,titan_ingot-5,titan_ingot-6,portal_krs_green-7,titan_ingot-8,portal_krs_green-9" pak="" craft_need="smithy" />
+    <recipe name="dark_boss_sword_two" produce="dark_boss_sword_two" ingredients="dark_boss_sword_one-2,portal_krs_red-4,titan_ingot-5,portal_krs_red-6" pak="" craft_need="smithy" />
+    <!--..................  Spear  ..................-->
+    <!--.............................................-->
+    <recipe name="wooden_dagger" produce="wooden_dagger" ingredients="wood-8" pak="" craft_need="workbench" />
+    <recipe name="frostling_spear" produce="frostling_spear" group="1" ingredients="wooden_dagger-2,stone-5,wood-8" craft_need="workbench" pak="" />
+    <recipe name="goblin_green_spear" produce="goblin_green_spear" ingredients="power_potion_green-1,frostling_spear-2,iron-5,wood-7,wood-9" pak="" craft_need="workbench" />
+    <recipe name="training_spear" produce="training_spear" ingredients="power_potion_green-1,goblin_green_spear-2,iron-5,wood-7,rope-8,wood-9" pak="" craft_need="workbench" />
+    <recipe name="zombie_heavy_spear" produce="zombie_heavy_spear" ingredients="power_potion_green-1,training_spear-2,iron-5,wood-7,iron-8,wood-9" pak="" craft_need="smithy" />
+    <recipe name="steel_spear" produce="steel_spear" ingredients="power_potion_green-1,zombie_heavy_spear-2,steel-5,steel-7,steel-9" pak="" craft_need="smithy" />
+    <recipe name="vivern_red_spear" produce="vivern_red_spear" ingredients="power_potion_yellow-1,steel_spear-2,alloy_iron_silver-5,wood-7,wood-9" pak="" craft_need="workbench" />
+    <recipe name="dragon_spear" produce="dragon_spear" ingredients="power_potion_yellow-1,vivern_red_spear-2,gold_ingot-5,gold_ingot-7,gold_ingot-9" pak="" craft_need="smithy" />
+    <recipe name="mithril_spear" produce="mithril_spear" ingredients="power_potion_yellow-1,dragon_spear-2,mithril_ingot-4,mithril_ingot-5,mithril_ingot-6,mithril_ingot-8" pak="" craft_need="smithy" />
+    <recipe name="zombie_spear" produce="zombie_spear" ingredients="power_potion_yellow-1,mithril_spear-2,titan_ingot-5,wood-7,titan_ingot-8,wood-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="goblin_spear" produce="goblin_spear" group="1" ingredients="power_potion_white-1,zombie_spear-2,potion_poison-3,bone-5,wood-7,wood-9" craft_need="workshop" pak="" />
+    <recipe name="cultist_pike" produce="cultist_pike" ingredients="power_potion_white-1,goblin_spear-2,potion_poison-3,silver_ingot-4,silver_ingot-5,silver_ingot-6,silver_ingot-8" group="1" craft_need="smithy" pak="" />
+    <recipe name="cave_goblin_spear" produce="cave_goblin_spear" group="1" ingredients="power_potion_white-1,cultist_pike-2,potion_poison-3,durable_shell-5,wood-7,wood-9" craft_need="workbench" pak="" />
+    <recipe name="patrol_mountain_spear" produce="patrol_mountain_spear" ingredients="power_potion_white-1,cave_goblin_spear-2,potion_poison-3,steel-5,wood-7,wood-9" pak="" craft_need="workbench" />
+    <recipe name="spear_of_Athena" produce="spear_of_Athena" ingredients="power_potion_white-1,patrol_mountain_spear-2,potion_poison-3,bronze-5,wood-7,thread-8,wood-9" group="1" craft_need="workbench" pak="" />
+    <recipe name="zombie_spear_02" produce="zombie_spear_02" ingredients="power_potion_black-1,spear_of_Athena-2,potion_poison-3,alloy_iron_silver-5,wood-7,alloy_iron_silver-8,wood-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="vampire_guard_spear" produce="vampire_guard_spear" ingredients="power_potion_black-1,zombie_spear_02-2,potion_poison-3,alloy_iron_silver-4,silver_ingot-5,alloy_iron_silver-6,alloy_iron_silver-8,portal_krs_blue-9" pak="" craft_need="smithy" />
+    <recipe name="fishman_spear" produce="fishman_spear" ingredients="power_potion_black-1,vampire_guard_spear-2,potion_poison-3,durable_shell-4,thread-5,durable_shell-6,wood-7,thread-8,wood-9" pak="" craft_need="workbench" />
+    <recipe name="guardians_mountain_spear" produce="guardians_mountain_spear" ingredients="power_potion_black-1,fishman_spear-2,potion_poison-3,steel-4,silver_ingot-5,gold_ingot-6" pak="" craft_need="smithy" />
+    <recipe name="paladin_spear" produce="paladin_spear" ingredients="power_potion_black-1,guardians_mountain_spear-2,potion_poison-3,durable_alloy-5,wood-7,thread-8,wood-9" pak="" craft_need="workbench" />
+    <recipe name="elven_spear" produce="elven_spear" ingredients="power_potion_black-1,paladin_spear-2,potion_poison-3,mithril_ingot-5,wood-7,mithril_ingot-8,wood-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="dark_boss_spear" produce="dark_boss_spear" ingredients="power_potion_black-1,elven_spear-2,potion_poison-3,titan_ingot-4,titan_ingot-5,titan_ingot-6" pak="" craft_need="smithy" />
+    <!--..................  Club  ..................-->
+    <!--............................................-->
+    <recipe name="big_yetti_club" produce="big_yetti_club" ingredients="wood-6" pak="" craft_need="workbench" />
+    <recipe name="club" ingredients="big_yetti_club-2,wood-6,wood-8" produce="club" group="1" save="true" craft_need="workbench" priority="0,club" pak="" />
+    <recipe name="club_nailed" produce="club_nailed" ingredients="club-2,nail-5" craft_need="workbench" pak="" group="1" />
+    <recipe name="rusty_sceleton_heavy_mace" produce="rusty_sceleton_heavy_mace" group="1" ingredients="power_potion_green-1,club_nailed-2,iron-6,wood-8" craft_need="workbench" pak="" />
+    <recipe name="big_skeleton_club" produce="big_skeleton_club" ingredients="power_potion_green-1,rusty_sceleton_heavy_mace-2,iron-4,iron-5,wood-7" pak="" craft_need="smithy" />
+    <recipe name="zombie_heavy_club" produce="zombie_heavy_club" ingredients="power_potion_green-1,big_skeleton_club-2,iron-4,iron-5,iron-6,wood-7,nail-8,wood-9" pak="" craft_need="smithy" />
+    <recipe name="club_iron" ingredients="power_potion_green-1,zombie_heavy_club-2,steel-4,steel-6,wood-8" produce="club_iron" group="2" craft_need="smithy" priority="1,club" pak="" />
+    <recipe name="gargoyle_mummy_club" produce="gargoyle_mummy_club" ingredients="power_potion_yellow-1,club_iron-2,wood-4,alloy_iron_silver-5,wood-8" pak="" craft_need="workbench" />
+    <recipe name="gold_club" produce="gold_club" ingredients="power_potion_yellow-1,gargoyle_mummy_club-2,gold_ingot-4,alloy_iron_silver-5,gold_ingot-6,wood-7,silver_ingot-8,wood-9" pak="" craft_need="smithy" />
+    <recipe name="club_mithril" produce="club_mithril" group="3" ingredients="power_potion_yellow-1,gold_club-2,silver_ingot-5,silver_ingot-6,mithril_ingot-7,mithril_ingot-8,mithril_ingot-9" craft_need="smithy" pak="" />
+    <recipe name="steel_Magni_club" produce="steel_Magni_club" ingredients="power_potion_yellow-1,club_mithril-2,titan_ingot-4,titan_ingot-6,titan_ingot-8" pak="" craft_need="smithy" />
+    <recipe name="Magni_club" produce="Magni_club" ingredients="steel_Magni_club-2,alloy_iron_silver-4,alloy_iron_silver-6,quartz-7,portal_krs_blue-8,quartz-9" pak="" craft_need="smithy" />
+    <recipe name="bone_club" produce="bone_club" ingredients="power_potion_white-1,Magni_club-2,rune_ice-3,bone-4,bone-5,bone-6,bone-8" pak="" craft_need="workshop" />
+    <recipe name="funny_sceleton_club" produce="funny_sceleton_club" ingredients="bone_club-2,bronze-4,nail-5,bronze-6,wood-7,bronze-8,wood-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="monkey_king_club" produce="monkey_king_club" ingredients="power_potion_white-1,funny_sceleton_club-2,rune_ice-3,thread-4,wood-5,thread-6,gold-7,wood-8,gold-9" pak="" craft_need="workbench" />
+    <recipe name="orc_Highland_club" produce="orc_Highland_club" ingredients="power_potion_white-1,monkey_king_club-2,rune_ice-3,iron-5,iron-6,wood-7,bone-8,wood-9" pak="" craft_need="smithy" />
+    <recipe name="patrol_mountain_stone_club" produce="patrol_mountain_stone_club" ingredients="power_potion_white-1,orc_Highland_club-2,rune_ice-3,steel-5,steel-7,steel-9" pak="" craft_need="smithy" />
+    <recipe name="patrol_mountain_gold_club" produce="patrol_mountain_gold_club" ingredients="patrol_mountain_stone_club-2,gold-5" pak="" craft_need="smithy" />
+    <recipe name="rusty_sceleton_mace" produce="rusty_sceleton_mace" group="1" ingredients="power_potion_white-1,patrol_mountain_gold_club-2,rune_ice-3,steel-6,alloy_iron_silver-8" craft_need="smithy" pak="" />
+    <recipe name="troll_Highland_club" produce="troll_Highland_club" ingredients="power_potion_black-1,rusty_sceleton_mace-2,rune_ice-3,wood-4,wood-6,alloy_iron_silver-7,alloy_iron_silver-8,alloy_iron_silver-9" pak="" craft_need="smithy" />
+    <recipe name="gargoyle_club" produce="gargoyle_club" ingredients="power_potion_black-1,troll_Highland_club-2,rune_ice-3,silver_ingot-5,alloy_iron_silver-7,alloy_iron_silver-9" pak="" craft_need="smithy" />
+    <recipe name="fishman_club" produce="fishman_club" ingredients="power_potion_black-1,gargoyle_club-2,rune_ice-3,wood-4,durable_shell-5,wood-6,iron-7,iron-9" pak="" craft_need="workbench" />
+    <recipe name="weapon_guardians_mountain_broken" ingredients="power_potion_black-1,fishman_club-2,rune_ice-3,gold_ingot-5,gold_ingot-6,wood-7,wood-8" produce="weapon_guardians_mountain_broken" group="1" craft_need="smithy" pak="Highland DLC" />
+    <recipe name="weapon_guardians_mountain" ingredients="weapon_guardians_mountain_broken-2,gold_ingot-4,wood-5,gold_ingot-6" produce="weapon_guardians_mountain" group="1" craft_need="smithy" pak="Highland DLC" />
+    <recipe name="club_guardians_mountain_improved" produce="club_guardians_mountain_improved" ingredients="weapon_guardians_mountain-2,mithril-7,mithril-9" pak="" craft_need="smithy" />
+    <recipe name="paladin_club" produce="paladin_club" ingredients="power_potion_black-1,club_guardians_mountain_improved-2,rune_ice-3,durable_alloy-5,durable_alloy-6,mithril_ingot-7,mithril_ingot-8,mithril_ingot-9" pak="" craft_need="smithy" />
+    <recipe name="stoneheart_club" produce="stoneheart_club" ingredients="power_potion_black-1,paladin_club-2,rune_ice-3,mithril_ingot-4,gold-5,mithril-6,living_tree-7,living_tree-8,living_tree-9" pak="" craft_need="workbench" />
+    <recipe name="beatle_poisonous_club" produce="beatle_poisonous_club" ingredients="power_potion_black-1,stoneheart_club-2,rune_ice-3,titan_ingot-4,mithril_ingot-5,titan_ingot-6,mithril_ingot-8" group="1" craft_need="smithy" pak="" />
+    <!--..................  Bow  ..................-->
+    <!--...........................................-->
+    <recipe name="Demetra_bow" produce="Demetra_bow" ingredients="wood-2,leaves-7,leaves-9" pak="" craft_need="workbench" />
+    <recipe name="bow_wooden" ingredients="Demetra_bow-2,wood-5,wood-7,rope-8,wood-9" produce="bow_wooden" group="2" craft_need="workbench" priority="0,bow" pak="" />
+    <recipe name="frostling_bow" produce="frostling_bow" group="1" ingredients="power_potion_green-1,bow_wooden-2,wood-4,rope-5,wood-6,wood-8" craft_need="workbench" pak="" />
+    <recipe name="skeleton_bow" produce="skeleton_bow" ingredients="power_potion_green-1,frostling_bow-2,wood-4,wood-5,wood-6,rope-7,wood-8,rope-9" pak="" craft_need="workbench" />
+    <recipe name="zombie_bow" produce="zombie_bow" ingredients="power_potion_green-1,skeleton_bow-2,iron-4,wood-5,iron-6,wood-7,rope-8,wood-9" pak="" craft_need="workbench" />
+    <recipe name="bow_long" ingredients="power_potion_green-1,zombie_bow-2,steel-4,wood-5,steel-6,wood-7,rope-8,wood-9" produce="bow_long" group="3" craft_need="workbench" priority="1,bow" pak="" />
+    <recipe name="thunderbolt_bow" ingredients="power_potion_yellow-1,bow_long-2,alloy_iron_silver-4,plank-5,alloy_iron_silver-6,silver_ingot-7,rope-8,silver_ingot-9" produce="thunderbolt_bow" group="3" craft_need="smithy" pak="Monsters DLC" />
+    <recipe name="dragon_bow" produce="dragon_bow" ingredients="power_potion_yellow-1,thunderbolt_bow-2,alloy_iron_silver-5,gold_ingot-7,rope-8,gold_ingot-9" pak="" craft_need="smithy" />
+    <recipe name="bow_heavy" ingredients="power_potion_yellow-1,dragon_bow-2,mithril_ingot-4,rope-5,mithril_ingot-6,wood-7,wood-8,wood-9" produce="bow_heavy" group="3" craft_need="workbench" priority="1,bow" pak="" />
+    <recipe name="dark_bow" produce="dark_bow" ingredients="power_potion_yellow-1,bow_heavy-2,titan_ingot-5,titan_ingot-7,rope-8,titan_ingot-9" pak="" craft_need="smithy" />
+    <recipe name="orc_skeleton_bow" produce="orc_skeleton_bow" ingredients="power_potion_white-1,dark_bow-2,bone-5,bone-7,rope-8,bone-9" pak="" craft_need="workshop" />
+    <recipe name="cultist_bow" produce="cultist_bow" ingredients="power_potion_white-1,orc_skeleton_bow-2,silver_ingot-5,silver_ingot-7,rope-8,silver_ingot-9" pak="" craft_need="smithy" />
+    <recipe name="cave_goblin_bow" produce="cave_goblin_bow" ingredients="power_potion_white-1,cultist_bow-2,durable_shell-4,wood-5,durable_shell-6,wood-7,rope-8,wood-9" group="1" craft_need="workbench" pak="" />
+    <recipe name="bow_patrol_mountain_broken" ingredients="power_potion_white-1,cave_goblin_bow-2,wood-4,rope-5,wood-6,steel-7,wood-8,steel-9" produce="bow_patrol_mountain_broken" group="1" craft_need="workbench" pak="Highland DLC" />
+    <recipe name="bow_patrol_mountain" ingredients="bow_patrol_mountain_broken-2,plank-5,silver_ingot-7,rope-8,silver_ingot-9" produce="bow_patrol_mountain" group="1" craft_need="workbench" pak="Highland DLC" />
+    <recipe name="vivern_red_bow" produce="vivern_red_bow" ingredients="power_potion_white-1,bow_patrol_mountain-2,copper-4,iron-5,copper-6,living_tree-7,rope-8,living_tree-9" pak="" craft_need="workbench" />
+    <recipe name="orc_Highland_bow_one" produce="orc_Highland_bow_one" ingredients="power_potion_black-1,vivern_red_bow-2,alloy_iron_silver-5,living_tree-7,rope-8,living_tree-9" pak="" craft_need="workbench" />
+    <recipe name="green_goblin_bow" produce="green_goblin_bow" ingredients="power_potion_black-1,orc_Highland_bow_one-2,silver_ingot-5,living_tree-7,rope-8,living_tree-9" craft_need="workbench" group="1" pak="" />
+    <recipe name="fishman_bow" produce="fishman_bow" ingredients="power_potion_black-1,green_goblin_bow-2,durable_shell-4,durable_shell-6,living_tree-7,rope-8,living_tree-9" pak="" craft_need="workbench" />
+    <recipe name="bow_guardians_mountain_improved" produce="bow_guardians_mountain_improved" ingredients="power_potion_black-1,fishman_bow-2,plank-4,mithril-5,plank-6,gold_ingot-7,rope-8,gold_ingot-9" pak="" craft_need="workbench" />
+    <recipe name="orc_Highland_bow_two" produce="orc_Highland_bow_two" ingredients="power_potion_black-1,bow_guardians_mountain_improved-2,durable_alloy-5,durable_alloy-7,rope-8,durable_alloy-9" pak="" craft_need="smithy" />
+    <recipe name="elven_bow" produce="elven_bow" ingredients="power_potion_black-1,orc_Highland_bow_two-2,mithril_ingot-5,gold_ingot-7,rope-8,gold_ingot-9" group="1" craft_need="smithy" pak="" />
+    <recipe name="orc_Highland_bow_three" produce="orc_Highland_bow_three" ingredients="power_potion_black-1,elven_bow-2,titan_ingot-4,rope-5,titan_ingot-6,titan_ingot-8" pak="" craft_need="smithy" />
+    <!--..................  Rifle  ..................-->
+    <!--.............................................-->
+    <recipe name="pistol" produce="pistol" group="2" ingredients="" craft_need="smithy" pak="" />
+    <recipe name="rifle" produce="rifle" group="3" ingredients="" craft_need="smithy" pak="" />
+    <recipe name="dragon_cannon" produce="dragon_cannon" group="4" ingredients="" craft_need="smithy" pak="" />
+    <recipe name="mithril_big_gun" ingredients="" produce="mithril_big_gun" group="3" pak="" craft_need="smithy" />
+    <recipe name="cultist_pistol" produce="cultist_pistol" ingredients="" group="1" craft_need="lab" pak="" />
+    <!--..................  Staff  ..................-->
+    <!--.............................................-->
+    <recipe name="tick_staff" ingredients="leaves-1,leaves-3,wood-8" produce="tick_staff" group="1" craft_need="workbench" pak="Monsters DLC" />
+    <recipe name="wood_staff" produce="wood_staff" ingredients="tick_staff-2,rope-5,wood-7,wood-9" pak="" craft_need="workbench" />
+    <recipe name="wooden_staff" produce="wooden_staff" group="3" ingredients="power_potion_green-1,wood_staff-2,wood-4,wood-6,glass-8" craft_need="workbench" pak="" />
+    <recipe name="mine_staff" produce="mine_staff" ingredients="power_potion_green-1,wooden_staff-2,wood-4,wood-6,root-7,wood-8,root-9" pak="" craft_need="workbench" />
+    <recipe name="stone_staff" produce="stone_staff" ingredients="power_potion_green-1,mine_staff-2,stone-5,stone-7,stone-8,stone-9" pak="" craft_need="workshop" />
+    <recipe name="iron_staff" ingredients="power_potion_green-1,stone_staff-2,steel-4,brains-5,steel-6,empty_bottle-8" produce="iron_staff" group="2" pak="" craft_need="smithy" />
+    <recipe name="dark_elfs_staff_two" produce="dark_elfs_staff_two" ingredients="power_potion_yellow-1,iron_staff-2,portal_krs_red-5,alloy_iron_silver-7,alloy_iron_silver-9" pak="" craft_need="smithy" />
+    <recipe name="mstaff" produce="mstaff" group="3" ingredients="dark_elfs_staff_two-2,quartz-4,needle_crystal-5,pink_crystal-6,silver_ingot-8" craft_need="smithy" pak="" />
+    <recipe name="dragon_mage_staff" produce="dragon_mage_staff" ingredients="power_potion_yellow-1,mstaff-2,gold_ingot-4,alloy_iron_silver-5,gold_ingot-6,alloy_iron_silver-8" pak="" craft_need="smithy" />
+    <recipe name="mstaff_mithril" produce="mstaff_mithril" group="3" ingredients="power_potion_yellow-1,dragon_mage_staff-2,portal_krs_dblue-4,portal_krs_green-5,portal_krs_violet-6,mithril_ingot-7,mithril_ingot-9" craft_need="smithy" pak="" />
+    <recipe name="dark_elfs_staff_one" produce="dark_elfs_staff_one" ingredients="power_potion_yellow-1,mstaff_mithril-2,portal_krs_red-4,portal_krs_violet-6,titan_ingot-7,alloy_iron_silver-8,titan_ingot-9" pak="" craft_need="smithy" />
+    <recipe name="orc_skeleton_staff" produce="orc_skeleton_staff" ingredients="power_potion_white-1,dark_elfs_staff_one-2,bone-4,bone-6,bone-7,bone-8,bone-9" pak="" craft_need="workshop" />
+    <recipe name="frog_staff" produce="frog_staff" ingredients="power_potion_white-1,orc_skeleton_staff-2,mucus-4,fish-5,mucus-6,wood-7,wood-9" pak="" craft_need="workbench" />
+    <recipe name="goblin_staff" produce="goblin_staff" ingredients="power_potion_white-1,frog_staff-2,bone-4,rope-5,bone-6,plank-7,plank-8,plank-9" pak="" craft_need="workbench" />
+    <recipe name="patrol_mountain_staff" produce="patrol_mountain_staff" ingredients="power_potion_white-1,goblin_staff-2,gold-5,gold_ingot-7,iron-8,gold_ingot-9" pak="" craft_need="smithy" />
+    <recipe name="scientist_staff" produce="scientist_staff" ingredients="power_potion_white-1,patrol_mountain_staff-2,grey_mushroom-4,resin-5,pink_mushroom-6,bronze-7,empty_bottle-8,bronze-9" pak="" craft_need="smithy" />
+    <recipe name="orc_staff" produce="orc_staff" ingredients="power_potion_black-1,scientist_staff-2,portal_krs_red-4,portal_krs_green-5,portal_krs_violet-6,plank-7,plank-8,plank-9" pak="" craft_need="workbench" />
+    <recipe name="vampire_guard_staff" produce="vampire_guard_staff" ingredients="power_potion_black-1,orc_staff-2,portal_krs_dblue-4,portal_krs_blue-6,alloy_iron_silver-7,silver_ingot-8,alloy_iron_silver-9" pak="" craft_need="smithy" />
+    <recipe name="fishman_staff" produce="fishman_staff" ingredients="power_potion_black-1,vampire_guard_staff-2,durable_shell-5,living_tree-7,durable_shell-8,living_tree-9" pak="" craft_need="workbench" />
+    <recipe name="fire_staff" ingredients="power_potion_black-1,fishman_staff-2,pink_crystal-4,empty_bottle-5,portal_krs_red-6,gold_ingot-7,mithril_ingot-8,gold_ingot-9" produce="fire_staff" group="1" craft_need="smithy" pak="Monsters DLC" />
+    <recipe name="grottoes_staff" produce="grottoes_staff" ingredients="power_potion_black-1,fire_staff-2,needle_crystal-4,mucus-5,portal_krs_green-6,living_tree-7,empty_bottle-8,living_tree-9" pak="" craft_need="workbench" />
+    <recipe name="shaman_staff" produce="shaman_staff" ingredients="power_potion_black-1,grottoes_staff-2,portal_krs_dblue-4,portal_krs_blue-5,portal_krs_green-6,living_tree-7,living_tree-8,living_tree-9" craft_need="workbench" group="1" pak="" />
+    <recipe name="orc_boss_staff" produce="orc_boss_staff" ingredients="power_potion_black-1,shaman_staff-2,portal_krs_dblue-4,living_tree-5,portal_krs_dblue-6,living_tree-7,living_tree-8,living_tree-9" pak="" craft_need="workbench" />
+    <!--..................  Equipment  ..................-->
+    <!--.................................................-->
+    <recipe name="big_elixir_health" ingredients="" produce="big_elixir_health" group="1" pak="Grottoes DLC" />
+    <recipe name="big_elixir_mana" ingredients="" produce="big_elixir_mana" group="1" pak="Grottoes DLC" />
+    <recipe name="rune_blood" ingredients="fire_essence-4,stone-5,spell_scroll-6" produce="rune_blood" group="3" pak="" craft_need="lab" />
+    <recipe name="rune_ice" ingredients="ice-1,snow-2,ice-3,snow-4,stone-5,snow-6,ice-7,spell_scroll-8,ice-9" produce="rune_ice" group="3" pak="" craft_need="lab" />
+    <!--**************************************************************  Block  ****************************************************************-->
+    <!--***************************************************************************************************************************************-->
+    <!--..................  Bench  .................-->
+    <!--............................................-->
+    <recipe name="workbench_hl" ingredients="wood-2,stone-8" produce="workbench_hl" group="1" pak="" />
+    <recipe name="workbench" produce="workbench" ingredients="table_wooden-2,wood-4,iron-5,wood-6,workbench_hl-8" pak="" craft_need="" />
+    <recipe name="workbench_improved" produce="workbench_improved" ingredients="table_expensive-2,plank-4,plank-5,plank-6,alloy_iron_silver-7,workbench-8,alloy_iron_silver-9" pak="" craft_need="workshop" />
+    <recipe name="big_carpenter_hl_mog" produce="big_carpenter_hl_mog" ingredients="roof_tile-1,roof_tile-2,roof_tile-3,stone_wall-4,fire_engine-5,stone_wall-6,wooden_block-7,workbench_improved-8,wooden_block-9" pak="" craft_need="workshop" />
+    <recipe name="smithy_basic" produce="smithy_basic" ingredients="water-2,coal-5,stone-7,iron-8,stone-9" pak="" />
+    <recipe name="smithy" produce="smithy" ingredients="steel-2,plank-4,steel-5,plank-6,rope-7,smithy_basic-8,skin-9" pak="" craft_need="workshop" />
+    <recipe name="smithy_improved" produce="smithy_improved" ingredients="tube-2,sensor-3,plates-4,tube-5,plates-6,bolt-7,smithy-8,bolt-9" craft_need="workshop" pak="" />
+    <recipe name="big_forge_hl_mog" produce="big_forge_hl_mog" ingredients="plates-1,tube-2,plates-3,stone_wall-4,anthracite-5,stone_wall-6,titan_ingot-7,smithy_improved-8,titan_ingot-9" craft_need="workshop" pak="" />
+    <recipe name="magic_cauldron_basic" produce="magic_cauldron_basic" ingredients="berries-4,water-5,bone-6,mucus-7,pot-8,coal-9" pak="" />
+    <recipe name="magic_cauldron" produce="magic_cauldron" ingredients="plank-1,grey_mushroom-2,plank-3,eye-4,paper-5,brains-6,needle-7,magic_cauldron_basic-8,web-9" pak="" craft_need="workshop" />
+    <recipe name="magic_cauldron_improved" produce="magic_cauldron_improved" ingredients="stone_wall-1,pink_crystal-2,stone_wall-3,needle_crystal-4,pink_mushroom-5,quartz-6,sulfur-7,magic_cauldron-8,water_bottle_hl-9" pak="" craft_need="workshop" />
+    <recipe name="big_laboratory_hl_mog" produce="big_laboratory_hl_mog" ingredients="portal_krs_green-1,portal_krs_dblue-2,portal_krs_violet-3,portal_krs_red-4,dragon_egg-5,portal_krs_blue-6,wooden_block-7,magic_cauldron_improved-8,fire_engine-9" pak="" craft_need="workshop" />
+    <recipe name="library_basic" produce="library_basic" ingredients="paper-2,pen-4,iron-5,ink-6,table_wooden-8" pak="" />
+    <recipe name="library" produce="library" ingredients="logger_skill-1,swordsman_skill-2,minner_skill-3,carpenter_skill-4,torch-5,smith_skill-6,plank-7,library_basic-8,chair-9" craft_need="workshop" pak="" />
+    <recipe name="library_improved" produce="library_improved" ingredients="fisher_skill-1,archer_skill-2,miller_skill-3,stonecutter_skill-4,lamp-5,cook_skill-6,plank-7,library-8,chair_leather-9" craft_need="workshop" pak="" />
+    <recipe name="big_library" produce="big_library" ingredients="hunter_skill-1,mage_skill-2,climber_skill-3,swimmer_skill-4,chandelier_small-5,clock1-6,plank-7,library_improved-8,sofa-9" craft_need="workshop" pak="" />
+    <!--..................  Mechanisms   .................-->
+    <!--..................................................-->
+    <recipe name="trolley" produce="trolley" ingredients="nail-2,plank-4,plank-5,plank-6,wheel_for_trolley-7,wheel_for_trolley-9" craft_need="workbench" pak="" />
+    <recipe name="trolley_hl_mog" produce="trolley_hl_mog" ingredients="steel-2,trolley-5,iron_wheel-7,iron_wheel-9" craft_need="smithy" pak="" />
+    <recipe name="trolley_machine" produce="trolley_machine" ingredients="moving_mechanism-2,trolley_hl_mog-5" craft_need="smithy" pak="" />
+    <recipe name="mana_expander_green" ingredients="sensor-1,needle_crystal-4,blueprints-5,water_bottle_hl-6,capacitor-7,plates-8,tube-9" produce="mana_expander_green" group="3" craft_need="lab" pak="" />
+    <recipe name="mana_expander_red" produce="mana_expander_red" ingredients="wire-4,mana_expander_green-5,pink_mushroom-6,capacitor-7,battery-8,pink_crystal-9" pak="" craft_need="lab" />
+    <recipe name="mana_expander" produce="mana_expander" ingredients="cable-4,mana_expander_red-5,grey_mushroom-6,capacitor-7,high_power_battery-8,quartz-9" pak="" craft_need="lab" />
+    <recipe name="mana_generator_red" ingredients="antennas-1,wire-2,plates-4,fire_engine-5,sensor-6,gear-7,tube-8,water_bottle_hl-9" produce="mana_generator_red" group="3" craft_need="smithy" pak="" />
+    <recipe name="mana_generator" produce="mana_generator" ingredients="cable-2,high_power_battery-3,blueprints-4,magic_engine-5,high_power_battery-6,fastening_part-7,mana_generator_red-8,mounting_plate-9" pak="" craft_need="smithy" />
+    <recipe name="mana_pylon" ingredients="magnifier-1,magic_crystal-2,sensor-3,fire_engine-4,spring-5,plates-6,magic_engine-7,plates-8,spring-9" produce="mana_pylon" group="3" craft_need="smithy" pak="" />
+    <recipe name="static_portal_red" ingredients="water-1,wire-2,glass-3,tube-4,fire_engine-5,tube-6,spring-7,plates-8,spring-9" produce="static_portal_red" group="3" craft_need="smithy" pak="" />
+    <recipe name="static_portal" produce="static_portal" ingredients="blueprints-1,antennas-2,battery-3,cable-4,magic_engine-5,battery-6,gears-7,static_portal_red-8,mounting_plate-9" pak="" craft_need="smithy" />
+    <recipe name="portal_fortress" produce="portal_fortress" ingredients="brick_wall-1,gear-2,high_power_battery-3,gear-4,brick_wall-5,high_power_battery-6,titan_ingot-7,static_portal-8,mounting_plate-9" pak="" craft_need="workshop" />
+    <!--..................  Mine  .................-->
+    <!--...........................................-->
+    <recipe name="mine_coal" produce="mine_coal" ingredients="pick_iron-1,pick_iron-3,trolley-8" pak="" />
+    <recipe name="mine_salt_stone" produce="mine_salt_stone" ingredients="pick_iron-2,trolley-8" pak="" />
+    <recipe name="mine_sulfur_sand" produce="mine_sulfur_sand" ingredients="pick_iron-1,pick_iron-3,trolley-5" pak="" />
+    <recipe name="mine_iron" produce="mine_iron" ingredients="pick_iron-1,pick_iron-3,trolley-5,trolley-8" pak="" />
+    <recipe name="mine_copper" produce="mine_copper" ingredients="pick_steel-2,trolley-7,trolley-9" pak="" />
+    <recipe name="mine_silver" produce="mine_silver" ingredients="pick_steel-5,trolley-7,trolley-9" pak="" />
+    <recipe name="mine_gold" produce="mine_gold" ingredients="pick_iron-2,pick_steel-5,trolley-7,trolley-9" pak="" />
+    <recipe name="mine_mithril" produce="mine_mithril" ingredients="pick_iron-2,pick_steel-5,trolley_hl_mog-8" pak="" />
+    <recipe name="mine_anthracite" produce="mine_anthracite" ingredients="pick_steel-2,trolley-4,trolley-6" pak="" />
+    <recipe name="mine_titan" produce="mine_titan" ingredients="pick_iron-4,pick_steel-6,trolley-7,trolley_hl_mog-9" pak="" />
+    <!--..................  Others  .................-->
+    <!--.............................................-->
+    <recipe name="foundry_machine_steel" produce="foundry_machine_steel" ingredients="gunpowder-2,coal-4,container_coal_iron-5,coal-6,foundry_machine_corps-8" pak="" />
+    <recipe name="incubator" ingredients="wheat-1,wheat-3,plank-4,wheat-5,plank-6,stone_wall-7,kitchen_wood-8,stone_wall-9" produce="incubator" group="4" pak="Monsters DLC" />
+    <!--***************************************************************************************************************************************-->
+    <recipe name="brick_wall" ingredients="bricks_block-2,clay-5" produce="brick_wall=2" group="4" craft_need="workshop" pak="" />
+    <recipe name="dig_machine" produce="dig_machine" ingredients="antennas-1,wire-2,sensor-3,auger_iron-4,dig_machine_chassis-5,fire_engine-6,wood_wheel-7,wood_wheel-9" group="3" craft_need="smithy" pak="Monsters DLC" />
+    <recipe name="dig_machine_crystal" ingredients="blueprints-1,cable-2,high_power_battery-3,auger_crystal-4,dig_machine-5,magic_engine-6,iron_wheel-7,iron_wheel-9" produce="dig_machine_crystal" group="3" craft_need="smithy" pak="Monsters DLC" />
+    <!--************************************************************  Furniture  **************************************************************-->
+    <!--***************************************************************************************************************************************-->
+    <recipe name="water_bottle_hl" ingredients="water-1,water-2,water-3,water-4,rope-5,water-6,water-7,empty_bottle-8,water-9" produce="water_bottle_hl" group="1" pak="Highland DLC" craft_need="kitchen" />
+    <recipe name="decorative_shield" ingredients="wood-2,plank-4,iron-5,orc_Highland_sword_two-6,wood-8" produce="decorative_shield" group="4" craft_need="" pak="" />
+    <recipe name="gunnar_ironfist" produce="gunnar_ironfist" group="4" ingredients="stone-2,stone-4,stone-5,stone-6,stone-7,rusty_sceleton_heavy_mace-8,stone-9" craft_need="workshop" pak="" />
+    <!--***************************************************  Removal from drop  ****************************************************************-->
+    <!--****************************************************************************************************************************************-->
+    <recipe name="box_mine_01" ingredients="" produce="box_mine_01" group="1" pak="Monsters DLC" />
+    <recipe name="box_mine_02" ingredients="" produce="box_mine_02" group="1" pak="Monsters DLC" />
+    <recipe name="box_mine_03" ingredients="" produce="box_mine_03" group="1" pak="Monsters DLC" />
+    <recipe name="box_mine_04" ingredients="" produce="box_mine_04" group="1" pak="Rooms DLC" />
+    <recipe name="bag_mine_01" ingredients="" produce="bag_mine_01" group="1" pak="Monsters DLC" />
+    <recipe name="bag_mine_02" ingredients="" produce="bag_mine_02" group="1" pak="Monsters DLC" />
+    <recipe name="bag_mine_03" ingredients="" produce="bag_mine_03" group="1" pak="Monsters DLC" />
+    <recipe name="bag_mine_04" ingredients="" produce="bag_mine_04" group="1" pak="Rooms DLC" />
+    <recipe name="bag_mine_05" ingredients="" produce="bag_mine_05" group="1" pak="Rooms DLC" />
+    <recipe name="bag_mine_06" ingredients="" produce="bag_mine_06" group="1" pak="Rooms DLC" />
+    <recipe name="pick_ax_01" ingredients="" produce="pick_ax_01" group="1" pak="Rooms DLC" />
+    <recipe name="pick_ax_02" ingredients="" produce="pick_ax_02" group="1" pak="Rooms DLC" />
+    <recipe name="pick_ax_03" ingredients="" produce="pick_ax_03" group="1" pak="Rooms DLC" />
+    <recipe name="pick_ax_04" ingredients="" produce="pick_ax_04" group="1" pak="Rooms DLC" />
+    <!--***********************************************************************************************************************************-->
+</root>

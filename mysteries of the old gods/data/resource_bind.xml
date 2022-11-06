@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  
+  <!--mog-->
+  <bind res="snow" usual_desert="true" usual_medium="true" usual_cold="true"/>
+  <bind res="ice" usual_desert="true" usual_medium="true" usual_cold="true"/>
+  
+  <bind res="sulfur" usual_desert="true" usual_medium="true" usual_cold="true" underground="true" lonely_mountain="true"/>
+  <bind res="cave_goblin_bow" usual_desert="true" usual_medium="true" usual_cold="true"/>
+  <bind res="cave_goblin_saber" usual_desert="true" usual_medium="true" usual_cold="true"/>
+  <bind res="cave_goblin_saber1" usual_desert="true" usual_medium="true" usual_cold="true"/>
+  <bind res="cave_goblin_saber2" usual_desert="true" usual_medium="true" usual_cold="true"/>  
+
+  <bind res="scaled_armor_helmet" usual_desert="true" usual_medium="true" usual_cold="true"/>
+  <bind res="scaled_armor" usual_desert="true" usual_medium="true" usual_cold="true"/>
+  <bind res="scaled_armor_boots" usual_desert="true" usual_medium="true" usual_cold="true"/>
+  <bind res="dragon_warrior_helmet" usual_desert="true" usual_medium="true" usual_cold="true"/>
+  <bind res="dragon_warrior_cuirass" usual_desert="true" usual_medium="true" usual_cold="true"/>
+  <bind res="dragon_warrior_boots" usual_desert="true" usual_medium="true" usual_cold="true"/>
+  <bind res="sword_dao" usual_desert="true" usual_medium="true" usual_cold="true"/>
+  <!--mog-->   
+   
+  <bind res="cannon_ammo" all="false" usual_medium="true" usual_cold="true"/> 
+   
+  <bind res="wolf_heart" all="false" usual_cold="true"/>
+  
+  <bind res="rune1_desert" all="false" usual_desert="true"/>
+  <bind res="rune2_desert" all="false" usual_desert="true"/>
+  <bind res="rune3_desert" all="false" usual_desert="true"/>
+  <bind res="rune4_desert" all="false" usual_desert="true"/>
+  <bind res="rune5_desert" all="false" usual_desert="true"/>
+  <bind res="rune6_desert" all="false" usual_desert="true"/>  
+   
+  <bind res="totem_china" all="false" dlc_temples="true"/>
+  <bind res="totem" all="true" dlc_temples="false"/>
+  <bind res="rice" all="false" dlc_temples="true"/>
+  <bind res="seed" all="true" dlc_temples="false"/>
+  <bind res="asian_hat_01" all="false" dlc_temples="true"/>
+  <bind res="asian_hat_02" all="false" dlc_temples="true"/>
+  <bind res="dragon_statue1" all="false" dlc_temples="true"/>
+  <bind res="dragon_statue2" all="false" dlc_temples="true"/>
+  <bind res="picture_china" all="false" dlc_temples="true"/>
+  <bind res="asian_wood_wall" all="false" dlc_temples="true"/>
+  <bind res="roof_asian" all="false" dlc_temples="true"/>
+  <bind res="cloth_asian_01" all="false" dlc_temples="true"/>
+  <bind res="cloth_asian_02" all="false" dlc_temples="true"/>
+  <bind res="dragon_cannon" all="false" dlc_temples="true"/>
+  <bind res="ordinary_shirt" all="true" dlc_temples="false"/>
+  <bind res="ordinary_shirt1" all="true" dlc_temples="false"/>
+  <bind res="ordinary_shirt2" all="true" dlc_temples="false"/>
+  <bind res="ordinary_shirt_fem1" all="true" dlc_temples="false"/>
+  <bind res="chair_china" all="false" dlc_temples="true"/>
+  <bind res="sofa_china" all="false" dlc_temples="true"/>
+  <bind res="chair_leather_china" all="false" dlc_temples="true"/>
+  <bind res="locker_china" all="false" dlc_temples="true"/>
+  <bind res="table_china" all="false" dlc_temples="true"/>
+  <bind res="vase_china" all="false" dlc_temples="true"/>
+  <bind res="flashlight_china" all="false" dlc_temples="true"/>
+  <bind res="wall_stucco_china" all="false" dlc_temples="true"/>
+  <bind res="bed_china" all="false" dlc_temples="true"/>
+  <bind res="toad_meat" all="false" dlc_temples="true"/>
+  <bind res="duck_meat" all="false" dlc_temples="true"/>
+  <bind res="a_cup_of_rice" all="false" dlc_temples="true"/>
+  <bind res="soup_from_a_toad" all="false" dlc_temples="true"/>
+  <bind res="fried_duck" all="false" dlc_temples="true"/>
+  <bind res="bamboo_shoots" all="false" dlc_temples="true"/>
+   
+  <bind res="chair_leather" all="true" dlc_temples="false"/>
+  <bind res="chair" all="true" dlc_temples="false"/>
+  <bind res="sofa" all="true" dlc_temples="false"/>
+  <bind res="locker3" all="true" dlc_temples="false"/>
+  <bind res="wall_stucco" all="true" dlc_temples="false"/>
+  <bind res="bed_02" all="true" dlc_temples="false"/>
+  <bind res="table_wooden" all="true" dlc_temples="false"/>
+  <bind res="wheat" all="true" dlc_temples="false"/>
+
+  <bind res="plank" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="club" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="club_iron" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="picture3" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="flag1" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="flag1" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="window_stained_2" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="window_stained_4" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="window_stained_1" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="window_stained_7" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="thread" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="wine_barrel" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="clay_vase" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="mirror_ring" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="picture_02" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="chair_stone" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="torch" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="torch_mucus" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="trolley" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="fence_brick" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="bush_flower" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="lamponthefloor3" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="chair_tissue" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="bed_leaves" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="bed_chic" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="window3" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="plant" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="table_normal_01" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="godeus_sword_th" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="stove" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="apple_pie" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="beer" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="cocos" usual_desert="true" usual_medium="false" usual_cold="false" underground="true"/>
+  <bind res="bird" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="aquarium" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="statue3" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="statue4" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="gargoyle" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="outdoor_lamp" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="bones_shield" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="feather" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="bow_arrow" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="bow_arrow_fire" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="bow_arrow_silver" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="workbench" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="millstone" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="mstuff" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="jug" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="flour" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  
+  <bind res="fat" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" all="false" biome1="true"/>
+  <bind res="ice_wall" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" all="false" biome1="true"/>
+  <bind res="table_ice" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" all="false" biome1="true"/>
+  <bind res="ice_statue" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" all="false" biome1="true"/>
+  <bind res="ice_spikes" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" all="false" biome1="true"/>
+
+  <bind res="winter_boots" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" biome1="false" all="false"/>
+  <bind res="winter_shoes" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" biome1="false" all="false"/>
+  <bind res="winter_hat1" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" biome1="false" all="false"/>
+  <bind res="winter_hat2" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" biome1="false" all="false"/>
+  <bind res="winter_hat3" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" biome1="false" all="false"/>
+
+  <bind res="desert_hat_01" usual_desert="true" usual_medium="false" usual_cold="false" underground="false" biome1="false" all="false"/>
+  <bind res="desert_hat_02" usual_desert="true" usual_medium="false" usual_cold="false" underground="false" biome1="false" all="false"/>
+  <bind res="desert_shoes" usual_desert="true" usual_medium="false" usual_cold="false" underground="false" biome1="false" all="false"/>
+  <bind res="desert_sneakers" usual_desert="true" usual_medium="false" usual_cold="false" underground="false" biome1="false" all="false"/>
+
+  <bind res="base_hat" lonely_mountain="false" usual_desert="true" usual_medium="true" usual_cold="false" underground="true" dlc_temples="false"/>
+  <bind res="cloak_hat" lonely_mountain="false" usual_desert="false" usual_medium="true" usual_cold="false" underground="true" dlc_temples="false"/>
+  <bind res="tinker_hat" lonely_mountain="false" usual_desert="false" usual_medium="true" usual_cold="false" underground="true" dlc_temples="false"/>
+  <bind res="woodman_hat" lonely_mountain="false" usual_desert="true" usual_medium="true" usual_cold="false" underground="true" dlc_temples="false"/>
+
+  <bind res="mportal" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="mlight" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="mfireball" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="mforest" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="mcompas" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+  <bind res="mhorn" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
+
+  <bind res="gunpowder" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="false" underground="true"/>
+  <bind res="trunk" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="false" underground="true"/>
+  <bind res="trigger_mechanism" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="false" underground="true"/>
+  <bind res="pistol" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="false" underground="true"/>
+  <bind res="rifle" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="false" underground="true"/>
+  <bind res="heavy_rifle" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="false" underground="true"/>
+  <bind res="ammo_steel" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="false" underground="true"/>
+  <bind res="ammo_fire" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="false" underground="true"/>
+  <bind res="mushroom" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="false" underground="true"/>
+  <bind res="mushroom_dry" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="false" underground="true"/>
+  <bind res="mushroom_salat" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="false" underground="true"/>
+  <bind res="mushroom_soup" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="false" underground="true"/>
+  <bind res="mushroom-pies" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="false" underground="true"/>
+  <bind res="pick_cave_goblin" usual_desert="false" usual_medium="false" usual_cold="false" underground="true"/>
+  
+  <bind res="portal_biome_green" lonely_mountain="true" usual_desert="true" usual_medium="true" usual_cold="true" underground="true" biome1="false"/>
+  <bind res="portal_biome" lonely_mountain="true" usual_desert="true" usual_medium="true" usual_cold="true" underground="true" biome1="false"/>
+  <bind res="revival_elexir" lonely_mountain="true" usual_desert="true" usual_medium="true" usual_cold="true" underground="true" biome1="false"/>
+  <bind res="soul_keep" lonely_mountain="true" usual_desert="true" usual_medium="true" usual_cold="true" underground="true" biome1="false"/>
+  
+  <bind res="hand_flare" all="false" lonely_mountain="true" two_fortress="true"/>  
+
+</root>

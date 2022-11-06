@@ -1,0 +1,592 @@
+<root>
+    <item name="cave_goblins_camp" spine="cave_goblins_camp" spine_ani="main_01,main_02,main_3" size="200" properties="cave_goblins_camp,destructable,healt=300,nodig_under=2,dead_radius=2,exclude_editor" pak="">
+        <params>
+            <param name="populated" value="main_01,main_02,main_3" />
+            <param name="impty" value="main_3" />
+            <param name="skins_count" value="3" />
+        </params>
+    </item>
+    <item name="cave_goblins_hatch1" spine="cave_goblins_hatch1" spine_ani="full_main" size="60" properties="cave_goblins_hatch,destructable,healt=50,nodig_under=1,dead_radius=1,exclude_editor" pak="" />
+    <item name="cave_goblins_hatch2" spine="cave_goblins_hatch2" spine_ani="full_main" size="60" properties="cave_goblins_hatch,destructable,healt=50,nodig_under=1,dead_radius=1,exclude_editor" pak="" />
+    <item name="cave_goblins_hatch3" spine="cave_goblins_hatch3" spine_ani="full_main" size="120" properties="cave_goblins_hatch,destructable,healt=100,nodig_under=2,dead_radius=2,exclude_editor" pak="" />
+    <!--***********************************************************  Halfstuff  ****************************************************************-->
+    <!--****************************************************************************************************************************************-->
+    <item name="dragon_egg" spine="dragon_egg" properties="dragon_egg,time=600,can_fall,removable" pak="">
+        <params>
+            <param name="stage1" value="first_stage" />
+            <param name="stage2" value="second_stage" />
+            <param name="stage3" value="third_stage" />
+        </params>
+    </item>
+    <!--**************************************************************  Block  ****************************************************************-->
+    <!--***************************************************************************************************************************************-->
+    <!--..................  Bench  .................-->
+    <!--............................................-->
+    <item name="workbench_hl" properties="removable,device,workbench,dead_radius_x=1,dead_radius_y=1,nodig_under=1,efficiency=x1,break_sound=wood_breaks,hit_sound=wood_breaks,create_sound=build_wood,draw_align=down,scale_xaxis" size="1.00,1.00" pak="">
+        <params>
+            <param name="front_spine" value="device_front" />
+            <param name="front_off" value="idle" />
+            <param name="front_on" value="idle" />
+            <param name="back_spine" value="device" />
+            <param name="back_off" value="idle" />
+            <param name="back_on" value="working" />
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="" />
+        </params>
+        <images>
+            <image file="gfx/level_tiles/craft_obj/workshops/craft_table.png" />
+        </images>
+    </item>
+    <item name="workbench" size="2.67,2.67" align="down" offsety="0" properties="device,workbench,nodig_under=2,dead_radius_x=2,dead_radius_y=1,removable,efficiency=x2,break_sound=wood_breaks,hit_sound=wood_breaks,create_sound=build_wood,draw_align=down,scale=1.74,scale_yaxis" spine="joiner_workbench" spine_ani="off" pak="">
+        <params>
+            <param name="front_spine" value="joiner_workbench_front" />
+            <param name="front_off" value="main" />
+            <param name="front_on" value="main" />
+            <param name="back_spine" value="joiner_workbench" />
+            <param name="back_off" value="off" />
+            <param name="back_on" value="on" />
+            <param name="dust" value="trash_wood" />
+            <param name="sound_work" value="craft_wood" />
+        </params>
+        <images>
+            <image file="gfx\level_tiles\craft_obj\workshops\joiner_workbench_prev" />
+        </images>
+    </item>
+    <item name="workbench_improved" size="2.80,1.70" properties="device,nodig_under=2,workbench,efficiency=x3,removable,dead_radius_x=2,dead_radius_y=2,break_sound=wood_breaks,hit_sound=wood_breaks,create_sound=build_wood,draw_align=down,scale=1.70,scale_yaxis,draw_offset_x=0.0,draw_offset_y=1.0" offsety="0" pak="">
+        <params>
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="craft_wood" />
+        </params>
+        <images>
+            <image file="%mod%/gfx/blocks/bench/workbench_improved.png" />
+        </images>
+    </item>
+    <item name="big_carpenter_hl_mog" size="3.00,2.00" properties="device,workbench,efficiency=4,item_part_lighting,dead_radius_x=2,dead_radius_y=2,nodig_under=2,create_sound=build_wood,removable,break_sound=wood_breaks,hit_sound=wood_breaks" spine="big_carpenter_hl" offsety="-100" pak="">
+        <this>
+            <behaviour value="SpawnBlockBehaviour" saveable="true">
+                <spawn_once value="true" />
+                <destroy value="none" />
+                <spawn value="disable_device" />
+                <offset value="1, 0" />
+            </behaviour>
+            <behaviour value="LayoutTitleHintBehaviour" />
+        </this>
+        <params>
+            <param name="front_spine" value="" />
+            <param name="front_off" value="work_off" />
+            <param name="front_on" value="work_on" />
+            <param name="back_spine" value="big_carpenter_hl" />
+            <param name="back_off" value="work_off" />
+            <param name="back_on" value="work_on" />
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="craft_wood" />
+            <param name="clan" value="other" />
+        </params>
+        <images>
+            <image file="gfx/HighlandDLC/item_icons/big_carpenter_hl_mini.png" />
+        </images>
+    </item>
+    <item name="smithy_basic" size="2.20,2.20" offsety="0" properties="device,smithy,nodig_under=2,dead_radius_x=2,dead_radius_y=2,removable,efficiency=1,create_sound=build_metall,break_sound=stone_breaks,hit_sound=stone_breaks,draw_align=down,scale=2.80,scale_yaxis,draw_offset_x=0.0,draw_offset_y=26.0" pak="">
+        <params>
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="craft_metall" />
+        </params>
+        <images>
+            <image file="%mod%/gfx/blocks/bench/SmithyBasic.png" />
+        </images>
+    </item>
+    <item name="smithy" size="3.00,3.00" align="down" offsety="0" properties="device,smithy,nodig_under=2,dead_radius=2,removable,efficiency=2,dead_radius_x=2,dead_radius_y=2,break_sound=stone_breaks,hit_sound=stone_breaks" spine="smithy" spine_ani="work_off" pak="">
+        <params>
+            <param name="front_spine" value="smithy_front" />
+            <param name="front_off" value="main" />
+            <param name="front_on" value="main" />
+            <param name="back_spine" value="smithy" />
+            <param name="back_off" value="work_off" />
+            <param name="back_on" value="work_on" />
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="craft_metall" />
+        </params>
+        <images>
+            <image file="gfx\level_tiles\craft_obj\workshops\smithy_prev" />
+        </images>
+    </item>
+    <item name="smithy_improved" size="3.20,2.20" offsety="0" properties="device,smithy,nodig_under=2,dead_radius_x=2,dead_radius_y=2,removable,efficiency=3,create_sound=build_metall,break_sound=stone_breaks,hit_sound=stone_breaks,draw_align=down,scale=2.03,scale_yaxis" pak="">
+        <params>
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="craft_metall" />
+        </params>
+        <images>
+            <image file="%mod%/gfx/blocks/bench/ImprovedSmithy.png" />
+        </images>
+    </item>
+    <item name="big_forge_hl_mog" size="4.00,4.00" properties="device,smithy,efficiency=4,item_part_lighting,dead_radius_x=3,dead_radius_y=4,nodig_under=2,removable,create_sound=build_metall,break_sound=stone_breaks,hit_sound=stone_breaks" spine="big_forge_hl" offsety="-100" spine_ani="work_off" spine_skin="default" pak="">
+        <this>
+            <behaviour value="SpawnBlockBehaviour" saveable="true">
+                <spawn_once value="true" />
+                <destroy value="none" />
+                <spawn value="disable_device" />
+                <offset value="1, 0" />
+            </behaviour>
+            <behaviour value="LayoutTitleHintBehaviour" />
+        </this>
+        <params>
+            <param name="front_spine" value="device_front" />
+            <param name="front_off" value="idle" />
+            <param name="front_on" value="idle" />
+            <param name="back_spine" value="big_forge_hl" />
+            <param name="back_off" value="work_off" />
+            <param name="back_on" value="work_on" />
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="craft_metall" />
+            <param name="clan" value="other" />
+        </params>
+        <images>
+            <image file="gfx/HighlandDLC/item_icons/big_forge_hl_mini.png" />
+        </images>
+    </item>
+    <item name="magic_cauldron_basic" size="2.50,2.00" offsety="0" properties="device,lab,nodig_under=2,dead_radius_x=2,dead_radius_y=1,removable,efficiency=1,create_sound=build_wood,break_sound=wood_breaks,hit_sound=wood_breaks,draw_align=down,scale=1.90,scale_yaxis,draw_offset_x=0.0,draw_offset_y=24.0" light="2" pak="">
+        <params>
+            <param name="dust" value="trash_wood" />
+        </params>
+        <images>
+            <image file="%mod%/gfx/blocks/bench/magic_cauldron_basic.png" />
+        </images>
+    </item>
+    <item name="magic_cauldron" size="3.00,3.00" align="down" offsety="0" properties="device,lab,nodig_under=2,dead_radius=2,removable,efficiency=2,dead_radius_x=2,dead_radius_y=2,create_sound=build_wood,break_sound=wood_breaks,hit_sound=wood_breaks" light="2" spine="lab" spine_ani="main_off" pak="">
+        <params>
+            <param name="front_spine" value="lab_table" />
+            <param name="front_off" value="main_off" />
+            <param name="front_on" value="main_on,main_on2" />
+            <param name="back_spine" value="lab" />
+            <param name="back_off" value="main_off" />
+            <param name="back_on" value="main_on" />
+            <param name="effects" value="steam\cold_steam\on" />
+            <param name="dust" value="trash_wood" />
+        </params>
+        <images>
+            <image file="gfx\Spine\buildings\lab\laboratory_prev" />
+        </images>
+    </item>
+    <item name="magic_cauldron_improved" size="5.50,2.30" offsety="0" properties="device,lab,nodig_under=2,dead_radius_x=3,dead_radius_y=2,removable,efficiency=3,create_sound=build_wood,break_sound=wood_breaks,hit_sound=wood_breaks,draw_align=down,scale=2.50,scale_yaxis,draw_offset_x=0.0,draw_offset_y=15.0" light="2" pak="">
+        <params>
+            <param name="dust" value="trash_wood" />
+        </params>
+        <images>
+            <image file="%mod%/gfx/blocks/bench/magic_cauldron_improved.png" />
+        </images>
+    </item>
+    <item name="big_laboratory_hl_mog" size="4.00,2.00" properties="device,lab,item_part_lighting,dead_radius_x=3,dead_radius_y=2,nodig_under=2,efficiency=4,create_sound=build_wood,break_sound=wood_breaks,hit_sound=wood_breaks,removable" spine="big_laboratory_hl" offsety="-100" spine_ani="work_off" pak="">
+        <this>
+            <behaviour value="SpawnBlockBehaviour" saveable="true">
+                <spawn_once value="true" />
+                <destroy value="none" />
+                <spawn value="disable_device" />
+                <offset value="1, 0" />
+            </behaviour>
+            <behaviour value="LayoutTitleHintBehaviour" />
+        </this>
+        <params>
+            <param name="front_spine" value="" />
+            <param name="front_off" value="work_off" />
+            <param name="front_on" value="work_on" />
+            <param name="back_spine" value="big_laboratory_hl" />
+            <param name="back_off" value="work_off" />
+            <param name="back_on" value="work_on" />
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="" />
+            <param name="clan" value="other" />
+        </params>
+        <images>
+            <image file="gfx/HighlandDLC/item_icons/big_laboratory_hl_mini.png" />
+        </images>
+    </item>
+    <item name="library_basic" properties="nodig_under=2,removable,device,library,efficiency=x0.1,can_fall,item_part_lighting,dead_radius_x=1,dead_radius_y=2,break_sound=wood_breaks,hit_sound=wood_breaks,create_sound=build_wood,draw_align=down,scale=1.80,scale_yaxis,draw_offset_x=0.0,draw_offset_y=0.5" size="3.00,3.00" pak="">
+        <params>
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="library" />
+        </params>
+        <images>
+            <image file="%mod%/gfx/blocks/bench/library_basic.png" />
+        </images>
+    </item>
+    <item name="library" properties="nodig_under=2,dead_radius=2,removable,device,library,efficiency=x0.2,can_fall,item_part_lighting" spine="library" spine_ani="off" size="3.00,3.00" pak="">
+        <params>
+            <param name="front_spine" value="" />
+            <param name="front_off" value="" />
+            <param name="front_on" value="" />
+            <param name="back_spine" value="library" />
+            <param name="back_off" value="off" />
+            <param name="back_on" value="on" />
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="library" />
+        </params>
+        <images>
+            <image file="gfx/MonstersDLC/item_icons/Library_icon.png" />
+        </images>
+    </item>
+    <item name="library_improved" properties="nodig_under=2,dead_radius_x=2,dead_radius_y=2,removable,device,library,efficiency=x0.3,can_fall,item_part_lighting,break_sound=wood_breaks,hit_sound=wood_breaks,create_sound=build_wood,draw_align=down,scale=1.90,scale_yaxis,draw_offset_x=0.0,draw_offset_y=0.5" size="3.00,3.00" pak="">
+        <params>
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="library" />
+        </params>
+        <images>
+            <image file="%mod%/gfx/blocks/bench/library_improved.png" />
+        </images>
+    </item>
+    <item name="big_library" properties="nodig_under=2,dead_radius_x=3,dead_radius_y=3,removable,device,library,efficiency=x0.4,can_fall,item_part_lighting,break_sound=wood_breaks,hit_sound=wood_breaks,create_sound=build_wood,draw_align=down,scale=2.35,scale_yaxis,draw_offset_x=0.0,draw_offset_y=0.5" size="3.00,3.00" pak="">
+        <params>
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="library" />
+        </params>
+        <images>
+            <image file="%mod%/gfx/blocks/bench/big_library.png" />
+        </images>
+    </item>
+    <!--..................  Mechanisms   .................-->
+    <!--..................................................-->
+    <!--******trolley******-->
+    <item name="trolley" properties="trolley,allow_build,speed=200,removable,server_entity,draw_align=down,scale_xaxis,draw_offset_x=0.0,draw_offset_y=-12.0" size="1.00,1.00" pak="">
+        <params>
+            <param name="wheelspark" value="steel_spark" />
+        </params>
+        <images>
+            <image file="gfx\level_tiles\craft_constructions\trolley\trolley" />
+        </images>
+    </item>
+    <item name="trolley_hl_mog" properties="trolley,allow_build,speed=400,removable,server_entity,draw_align=down,scale=1.30,scale_xaxis,draw_offset_x=0.0,draw_offset_y=8.5" size="1.00,1.00" pak="">
+        <params>
+            <param name="wheelspark" value="steel_spark" />
+        </params>
+        <images>
+            <image file="gfx\HighlandDLC\item_icons\trolley_hl_01_icon_large" />
+        </images>
+    </item>
+    <item name="trolley_machine" properties="trolley,allow_build,speed=600,removable,server_entity,scale=1.15,scale_xaxis,draw_offset_x=0.0,draw_offset_y=0.5" size="1.00,1.00" pak="">
+        <params>
+            <param name="wheelspark" value="steel_spark" />
+        </params>
+        <images>
+            <image file="%mod%/gfx/blocks/mechanisms/trolley_machine.png" />
+        </images>
+    </item>
+    <!--******mana_expander******-->
+    <item name="mana_expander_green" spine="mana_expander_green" spine_ani="idle" size="1.00,1.00" offsety="0" properties="mana_expander=20,removable,nodig_under=1,dead_radius_x=1,dead_radius_y=1,random_time" pak="">
+        <sounds>
+            <sound play="bubbles" on_event="Bubbles" />
+        </sounds>
+    </item>
+    <item name="mana_expander_red" spine="mana_expander_red" spine_ani="idle" size="1.00,1.00" offsety="0" properties="mana_expander=30,removable,nodig_under=1,dead_radius_x=1,dead_radius_y=1,random_time" pak="">
+        <sounds>
+            <sound play="bubbles" on_event="Bubbles" />
+        </sounds>
+    </item>
+    <item name="mana_expander" spine="mana_expander" spine_ani="idle" size="1.00,1.00" offsety="0" properties="mana_expander=40,removable,nodig_under=1,dead_radius_x=1,dead_radius_y=1,random_time" pak="">
+        <sounds>
+            <sound play="bubbles" on_event="Bubbles" />
+        </sounds>
+    </item>
+    <!--******mana_generator******-->
+    <item name="mana_generator_red" spine="mana_generator_red" spine_ani="idle" size="1.00,1.00" offsety="0" properties="mana_generator,removable,nodig_under=2,dead_radius_x=2,dead_radius_y=2,use_mana=1,radius=5,time=0.76,color=130|255|255" pak="">
+        <states>
+            <state name="idle" loop="false" ani="idle" next_state="idle" />
+        </states>
+        <sounds>
+            <sound play="pump_up" on_event="PumpUp" />
+            <sound play="pump_down" on_event="PumpDown" />
+        </sounds>
+    </item>
+    <item name="mana_generator" spine="mana_generator" spine_ani="idle" size="1.00,1.00" offsety="0" properties="mana_generator,removable,nodig_under=2,dead_radius_x=2,dead_radius_y=2,use_mana=2,radius=5,time=0.76,color=130|255|255" pak="">
+        <states>
+            <state name="idle" loop="false" ani="idle" next_state="idle" />
+        </states>
+        <sounds>
+            <sound play="pump_up" on_event="PumpUp" />
+            <sound play="pump_down" on_event="PumpDown" />
+        </sounds>
+    </item>
+    <!--******mana_pylon******-->
+    <item name="mana_pylon" spine="mana_pylon" spine_ani="idle" size="3.00,3.00" offsety="0" properties="msg_controlled_v2,reset_mana_drain,removable,dead_radius_x=1,dead_radius_y=2" light="3" pak="">
+        <states>
+            <state name="on" loop="false" ani="activation" next_state="idle" />
+            <state name="idle" loop="true" ani="idle" next_state="" />
+        </states>
+    </item>
+    <!--******mana_portal******-->
+    <item name="static_portal_red" spine="static_portal_red" spine_ani="on" size="1.00,1.00" offsety="0" properties="static_portal,removable,nodig_under=2,dead_radius_x=2,dead_radius_y=2,use_mana=3,server_entity" pak="">
+        <params>
+            <param name="sound_on" value="gate_on" />
+            <param name="sound_off" value="gate_off" />
+            <param name="use_mana" value="3" />
+            <param name="effect_portal_entity" value="mportal_s" />
+        </params>
+        <states>
+            <state name="off_idle" loop="true" ani="off" next_state="" />
+            <state name="on" loop="false" ani="off_to_on" next_state="on_idle" />
+            <state name="on_idle" loop="false" ani="on" next_state="on_idle" />
+            <state name="off" loop="false" ani="on_to_off" next_state="off_idle" />
+        </states>
+        <images>
+            <image file="%mod%/gfx/blocks/mechanisms/static_portal_red_prev.png" />
+        </images>
+    </item>
+    <item name="static_portal" spine="static_portal" spine_ani="on" size="1.00,1.00" offsety="0" properties="static_portal,removable,nodig_under=2,dead_radius_x=2,dead_radius_y=2,use_mana=2,server_entity" pak="">
+        <params>
+            <param name="sound_on" value="gate_on" />
+            <param name="sound_off" value="gate_off" />
+            <param name="use_mana" value="2" />
+            <param name="effect_portal_entity" value="mportal_s" />
+        </params>
+        <states>
+            <state name="off_idle" loop="true" ani="off" next_state="" />
+            <state name="on" loop="false" ani="off_to_on" next_state="on_idle" />
+            <state name="on_idle" loop="false" ani="on" next_state="on_idle" />
+            <state name="off" loop="false" ani="on_to_off" next_state="off_idle" />
+        </states>
+        <images>
+            <image file="gfx\level_tiles\shop_obj\portal" />
+        </images>
+    </item>
+    <item name="portal_fortress" spine="portal_fortress" spine_ani="on" size="1.00,1.00" offsety="0" properties="static_portal,removable,nodig_under=2,dead_radius_x=2,dead_radius_y=3,use_mana=1,server_entity" pak="">
+        <params>
+            <param name="sound_on" value="gate_on" />
+            <param name="sound_off" value="gate_off" />
+            <param name="use_mana" value="1" />
+            <param name="effect_portal_entity" value="mportal_s" />
+        </params>
+        <states>
+            <state name="off_idle" loop="true" ani="off" next_state="" />
+            <state name="on" loop="false" ani="off_to_on" next_state="on_idle" />
+            <state name="on_idle" loop="false" ani="on" next_state="on_idle" />
+            <state name="off" loop="false" ani="on_to_off" next_state="off_idle" />
+        </states>
+        <images>
+            <image file="gfx/Two_fortressDLC/item_icons/dwarf_door_portal_icon.png" />
+        </images>
+    </item>
+    <!--..................  Mine  .................-->
+    <!--...........................................-->
+    <item name="mine_coal" spine="mine_coal" spine_ani="process" size="1.00,1.00" align="down" properties="wine_barrel,time=3600,count=5,removable,nodig_under=2,dead_radius_x=3,dead_radius_y=3" pak="">
+        <params>
+            <param name="product" value="earth_coal_01_mog" />
+        </params>
+        <states>
+            <state name="idle" loop="false" ani="process" next_state="drop" />
+            <state name="drop" loop="false" ani="drop" next_state="idle" />
+            <state name="death" loop="false" ani="death" next_state="death_idle" />
+            <state name="death_idle" loop="true" ani="death_idle" next_state="" />
+        </states>
+    </item>
+    <item name="mine_salt_stone" spine="mine_salt_stone" spine_ani="process" size="1.00,1.00" align="down" properties="wine_barrel,time=3600,count=5,removable,nodig_under=2,dead_radius_x=3,dead_radius_y=3" pak="">
+        <params>
+            <param name="product" value="stone_salt_stone_01" />
+        </params>
+        <states>
+            <state name="idle" loop="false" ani="process" next_state="drop" />
+            <state name="drop" loop="false" ani="drop" next_state="idle" />
+            <state name="death" loop="false" ani="death" next_state="death_idle" />
+            <state name="death_idle" loop="true" ani="death_idle" next_state="" />
+        </states>
+    </item>
+    <item name="mine_sulfur_sand" spine="mine_sulfur_sand" spine_ani="process" size="1.00,1.00" align="down" properties="wine_barrel,time=3600,count=5,removable,nodig_under=2,dead_radius_x=3,dead_radius_y=3" pak="">
+        <params>
+            <param name="product" value="stone_sulfur_sand_01" />
+        </params>
+        <states>
+            <state name="idle" loop="false" ani="process" next_state="drop" />
+            <state name="drop" loop="false" ani="drop" next_state="idle" />
+            <state name="death" loop="false" ani="death" next_state="death_idle" />
+            <state name="death_idle" loop="true" ani="death_idle" next_state="" />
+        </states>
+    </item>
+    <item name="mine_iron" spine="mine_iron" spine_ani="process" size="1.00,1.00" align="down" properties="wine_barrel,time=3600,count=5,removable,nodig_under=2,dead_radius_x=3,dead_radius_y=3" pak="">
+        <params>
+            <param name="product" value="earth_iron_01_mog" />
+        </params>
+        <states>
+            <state name="idle" loop="false" ani="process" next_state="drop" />
+            <state name="drop" loop="false" ani="drop" next_state="idle" />
+            <state name="death" loop="false" ani="death" next_state="death_idle" />
+            <state name="death_idle" loop="true" ani="death_idle" next_state="" />
+        </states>
+    </item>
+    <item name="mine_copper" spine="mine_copper" spine_ani="process" size="1.00,1.00" align="down" properties="wine_barrel,time=3600,count=5,removable,nodig_under=2,dead_radius_x=3,dead_radius_y=3" pak="">
+        <params>
+            <param name="product" value="stone_copper_01" />
+        </params>
+        <states>
+            <state name="idle" loop="false" ani="process" next_state="drop" />
+            <state name="drop" loop="false" ani="drop" next_state="idle" />
+            <state name="death" loop="false" ani="death" next_state="death_idle" />
+            <state name="death_idle" loop="true" ani="death_idle" next_state="" />
+        </states>
+    </item>
+    <item name="mine_silver" spine="mine_silver" spine_ani="process" size="1.00,1.00" align="down" properties="wine_barrel,time=3600,count=5,removable,nodig_under=2,dead_radius_x=3,dead_radius_y=3" pak="">
+        <params>
+            <param name="product" value="earth_silver_01_mog" />
+        </params>
+        <states>
+            <state name="idle" loop="false" ani="process" next_state="drop" />
+            <state name="drop" loop="false" ani="drop" next_state="idle" />
+            <state name="death" loop="false" ani="death" next_state="death_idle" />
+            <state name="death_idle" loop="true" ani="death_idle" next_state="" />
+        </states>
+    </item>
+    <item name="mine_gold" spine="mine_gold" spine_ani="process" size="1.00,1.00" align="down" properties="wine_barrel,time=3600,count=5,removable,nodig_under=2,dead_radius_x=3,dead_radius_y=3" pak="">
+        <params>
+            <param name="product" value="earth_gold_01_mog" />
+        </params>
+        <states>
+            <state name="idle" loop="false" ani="process" next_state="drop" />
+            <state name="drop" loop="false" ani="drop" next_state="idle" />
+            <state name="death" loop="false" ani="death" next_state="death_idle" />
+            <state name="death_idle" loop="true" ani="death_idle" next_state="" />
+        </states>
+    </item>
+    <item name="mine_mithril" spine="mine_mithril" spine_ani="process" size="1.00,1.00" align="down" properties="wine_barrel,time=3600,count=5,removable,nodig_under=2,dead_radius_x=3,dead_radius_y=3" pak="">
+        <params>
+            <param name="product" value="earth_mithril_01_mog" />
+        </params>
+        <states>
+            <state name="idle" loop="false" ani="process" next_state="drop" />
+            <state name="drop" loop="false" ani="drop" next_state="idle" />
+            <state name="death" loop="false" ani="death" next_state="death_idle" />
+            <state name="death_idle" loop="true" ani="death_idle" next_state="" />
+        </states>
+    </item>
+    <item name="mine_anthracite" spine="mine_anthracite" spine_ani="process" size="1.00,1.00" align="down" properties="wine_barrel,time=3600,count=5,removable,nodig_under=2,dead_radius_x=3,dead_radius_y=3" pak="">
+        <params>
+            <param name="product" value="stone_anthracite_01" />
+        </params>
+        <states>
+            <state name="idle" loop="false" ani="process" next_state="drop" />
+            <state name="drop" loop="false" ani="drop" next_state="idle" />
+            <state name="death" loop="false" ani="death" next_state="death_idle" />
+            <state name="death_idle" loop="true" ani="death_idle" next_state="" />
+        </states>
+    </item>
+    <item name="mine_titan" spine="mine_titan" spine_ani="process" size="1.00,1.00" align="down" properties="wine_barrel,time=3600,count=5,removable,nodig_under=2,dead_radius_x=3,dead_radius_y=3" pak="">
+        <params>
+            <param name="product" value="stone_titan_01" />
+        </params>
+        <states>
+            <state name="idle" loop="false" ani="process" next_state="drop" />
+            <state name="drop" loop="false" ani="drop" next_state="idle" />
+            <state name="death" loop="false" ani="death" next_state="death_idle" />
+            <state name="death_idle" loop="true" ani="death_idle" next_state="" />
+        </states>
+    </item>
+    <!--..................  Others  .................-->
+    <!--.............................................-->
+    <item name="foundry_machine_steel" spine="foundry_machine_steel" spine_ani="process" size="1.00,1.00" align="down" properties="wine_barrel,time=30,count=25,removable,nodig_under=2,dead_radius_x=2,dead_radius_y=3" pak="">
+        <params>
+            <param name="product" value="steel" />
+        </params>
+        <states>
+            <state name="idle" loop="false" ani="process" next_state="drop" />
+            <state name="drop" loop="false" ani="drop" next_state="idle" />
+            <state name="death" loop="false" ani="death" next_state="death_idle" />
+            <state name="death_idle" loop="true" ani="death_idle" next_state="" />
+        </states>
+    </item>
+    <item name="incubator" properties="nodig_under=1,removable,incubator,can_fall,dead_radius_y=2" spine="incubator" spine_ani="off" gameobject="IncubatorEntity" pak="Monsters DLC">
+        <behaviours>
+            <behaviour value="IncubatorBehaviour">
+                <eggs>
+                    <egg name="egg" duration="5" spawn="chicken|octopus|duck" spine="chicken_egg" />
+                    <egg name="wyvern_egg" duration="10" produce="vivern_baby" spine="wyvern_egg" />
+                    <egg name="dragon_egg" duration="15" spawn="little_dragon" spine="dragon_egg" />
+                    <egg name="black_dragon_egg" duration="20" spawn="little_dragon_black" spine="black_dragon_egg" />
+                </eggs>
+            </behaviour>
+            <behaviour value="LayoutHintBehaviour" config="IncubatorHint.xml" />
+        </behaviours>
+        <params>
+            <param name="fire_bone" value="root" />
+            <param name="egg_bone" value="egg" />
+        </params>
+        <states>
+            <state name="off" loop="true" ani="off" next_state="" />
+            <state name="on" loop="true" ani="on" next_state="" />
+        </states>
+    </item>
+    <!--****************************************************************************************************************************************-->
+    <item name="dig_machine" gameobject="DigMachineEntity" properties="removable,dig_machine,dead_radius_x=2,nodig_under=2,can_fall" spine="dig_machine" spine_ani="off" spine_skin="base" size="3.00,2.00" pak="">
+        <params>
+            <param name="wheel_bones" value="wheel1,wheel2,wheel1_back,wheel2_back" />
+            <param name="dig_effect" value="dig_machine_dig" />
+            <param name="smoke_effect" value="dig_machine_smoke" />
+            <param name="smoke_bone" value="body" />
+            <param name="dig_ratio" value="0.5" />
+            <param name="start_velocity" value="15" />
+            <param name="move_velocity" value="10" />
+            <param name="wheel_radius_coeff" value="3" />
+            <param name="rail_capacity" value="" />
+            <param name="rail_res" value="" />
+            <param name="bridge_capacity" value="" />
+            <param name="bridge_res" value="" />
+            <param name="mana" value="1" />
+            <param name="mana_interval" value="60" />
+            <param name="auger_skin" value="iron_auger" />
+            <param name="wheel_skin" value="wheels_tree" />
+            <param name="light_on_event" value="light_on" />
+            <param name="light_off_event" value="light_off" />
+            <param name="light_bone" value="lamp2" />
+            <param name="sound_boring" value="dig_machine_boring" />
+            <param name="sound_move" value="dig_machine_move" />
+            <param name="sound_off" value="dig_machine_off" />
+            <param name="draw_offset" value="0,0" />
+            <param name="panel" value="extra_dig_machine_simple_panel" />
+        </params>
+        <states>
+            <state name="off" loop="true" ani="off" next_state="" />
+            <state name="warning" loop="true" ani="off_warning" next_state="" />
+            <state name="move" loop="true" ani="on" next_state="" />
+            <state name="dig" loop="true" ani="on_dig" next_state="" />
+            <state name="turning_on" loop="false" ani="off_to_on" next_state="move" />
+            <state name="turning_off" loop="false" ani="on_to_off" next_state="off" />
+        </states>
+        <images>
+            <image file="gfx/MonstersDLC/item_icons/iron_auger.png" />
+        </images>
+    </item>
+    <item name="dig_machine_crystal" gameobject="DigMachineEntity" properties="removable,dig_machine,dead_radius_x=2,nodig_under=2,buildonp=rail,can_fall" spine="dig_machine" spine_ani="off" spine_skin="base" size="3.00,2.00" pak="">
+        <params>
+            <param name="wheel_bones" value="wheel1,wheel2,wheel1_back,wheel2_back" />
+            <param name="dig_effect" value="dig_machine_dig" />
+            <param name="smoke_effect" value="dig_machine_smoke" />
+            <param name="smoke_bone" value="body" />
+            <param name="dig_ratio" value="0.1" />
+            <param name="start_velocity" value="15" />
+            <param name="move_velocity" value="10" />
+            <param name="wheel_radius_coeff" value="3" />
+            <param name="rail_capacity" value="30" />
+            <param name="rail_res" value="rail" />
+            <param name="bridge_capacity" value="10" />
+            <param name="bridge_res" value="stone_bridge" />
+            <param name="mana" value="1" />
+            <param name="mana_interval" value="60" />
+            <param name="auger_skin" value="crystal_auger" />
+            <param name="wheel_skin" value="wheels_iron" />
+            <param name="light_on_event" value="light_on" />
+            <param name="light_off_event" value="light_off" />
+            <param name="light_bone" value="lamp2" />
+            <param name="sound_boring" value="dig_machine_boring" />
+            <param name="sound_move" value="dig_machine_move" />
+            <param name="sound_off" value="dig_machine_off" />
+            <param name="draw_offset" value="0,-11" />
+            <param name="panel" value="extra_dig_machine_panel" />
+        </params>
+        <states>
+            <state name="off" loop="true" ani="off" next_state="" />
+            <state name="warning" loop="true" ani="off_warning" next_state="" />
+            <state name="move" loop="true" ani="on" next_state="" />
+            <state name="dig" loop="true" ani="on_dig" next_state="" />
+            <state name="turning_on" loop="false" ani="off_to_on" next_state="move" />
+            <state name="turning_off" loop="false" ani="on_to_off" next_state="off" />
+        </states>
+        <images>
+            <image file="gfx/MonstersDLC/item_icons/crystal_auger.png" />
+        </images>
+    </item>
+    <!--****************************************************************************************************************************************-->
+</root>

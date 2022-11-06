@@ -1,0 +1,16 @@
+<root>
+    <fauna merge="partial">
+        <normal>
+            <creature name="little_dragon_black" enabled="true"/>
+            <creature name="dragon_guard" enabled="true"/>
+        </normal>
+        <desert>
+            <creature name="little_dragon_black" enabled="true"/>
+            <creature name="dragon_guard" enabled="true"/>
+        </desert>
+        <snow>
+            <creature name="little_dragon_black" enabled="true"/>
+            <creature name="dragon_guard" enabled="true"/>
+        </snow>
+    </fauna>
+</root>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<root>
+    <animations pak="">
+		<!--..................  Mechanisms   .................-->
+		<!--..................................................-->
+		<mana_expander_green path="%mod%/gfx/blocks/spine/mana_expander_green" json="mana_storage.json" scale="0.110000" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </mana_expander_green>
+        <mana_expander_red path="%mod%/gfx/blocks/spine/mana_expander_red" json="mana_storage.json" scale="0.110000" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </mana_expander_red>
+		<static_portal_red path="%mod%/gfx/blocks/spine/static_portal_red" json="portal.json" scale="0.300000" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </static_portal_red>
+		<portal_fortress path="%mod%/gfx/blocks/spine/portal_fortress" json="portal.json" scale="0.400000" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </portal_fortress>
+		 <mana_generator_red path="%mod%/gfx/blocks/spine/mana_generator_red" json="mana_generator.json" scale="0.200000" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </mana_generator_red>
+		<!--..................  Mine  .................-->
+		<!--...........................................-->  
+		<mine_coal path="%mod%/gfx/blocks/spine/mine_coal" json="mine_coal.json" scale="0.560000" offset="-10.00,0.00" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </mine_coal>		
+		<mine_salt_stone path="%mod%/gfx/blocks/spine/mine_salt_stone" json="mine_salt_stone.json" scale="0.560000" offset="-10.00,0.00" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </mine_salt_stone>				
+		<mine_sulfur_sand path="%mod%/gfx/blocks/spine/mine_sulfur_sand" json="mine_sulfur_sand.json" scale="0.560000" offset="-10.00,0.00" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </mine_sulfur_sand>				
+		<mine_iron path="%mod%/gfx/blocks/spine/mine_iron" json="mine_iron.json" scale="0.560000" offset="-10.00,0.00" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </mine_iron>		
+		<mine_copper path="%mod%/gfx/blocks/spine/mine_copper" json="mine_copper.json" scale="0.560000" offset="-10.00,0.00" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </mine_copper>				
+		<mine_silver path="%mod%/gfx/blocks/spine/mine_silver" json="mine_silver.json" scale="0.560000" offset="-10.00,0.00" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </mine_silver>
+		<mine_gold path="%mod%/gfx/blocks/spine/mine_gold" json="mine_gold.json" scale="0.560000" offset="-10.00,0.00" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </mine_gold>
+		<mine_mithril path="%mod%/gfx/blocks/spine/mine_mithril" json="mine_mithril.json" scale="0.560000" offset="-10.00,0.00" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </mine_mithril>		
+		<mine_anthracite path="%mod%/gfx/blocks/spine/mine_anthracite" json="mine_anthracite.json" scale="0.560000" offset="-10.00,0.00" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </mine_anthracite>				
+		<mine_titan path="%mod%/gfx/blocks/spine/mine_titan" json="mine_titan.json" scale="0.560000" offset="-10.00,0.00" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </mine_titan>
+		<!--****************************************************************************************************************************************-->	
+		<foundry_machine_steel path="%mod%/gfx/blocks/spine/foundry_machine_steel" json="foundry_machine.json" scale="0.560000" offset="-10.00,0.00" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </foundry_machine_steel>
+        <black_dragon_egg path="%mod%/gfx/halfstuff/spine/black_dragon_egg" json="black_dragon_egg.json" scale="0.242000" mirror="false">
+            <mixing all="true" />
+        </black_dragon_egg>		
+		<!--****************************************************************************************************************************************-->	
+		<cultist_pistol path="%mod%/gfx/equip_skins/spine" json="gun_template.json" scale="0.250000" mirror="false">
+            <mixing all="true" />
+        </cultist_pistol>
+    </animations>
+</root>
