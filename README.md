@@ -10,7 +10,7 @@
 - magic_stick
 - nowindow
 - pet_spawner
-
+- mysteries of the old gods
 # path
 
 `\Steam\steamapps\common\CraftTheWorld`
