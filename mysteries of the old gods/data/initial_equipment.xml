@@ -27,10 +27,11 @@
 	<equip name="money" levels="24" include="all" exclude="" slot="-1" count="24" enable_recipe="false" />
 	<equip name="money" levels="25" include="all" exclude="" slot="-1" count="25" enable_recipe="false" />	
 	<equip name="money" levels="26" include="all" exclude="" slot="-1" count="26" enable_recipe="false" />		
-	<equip name="money" levels="27" include="all" exclude="" slot="-1" count="26" enable_recipe="false" />		
-	<equip name="money" levels="28" include="all" exclude="" slot="-1" count="26" enable_recipe="false" />		
-	<equip name="money" levels="29" include="all" exclude="" slot="-1" count="26" enable_recipe="false" />		
-	<equip name="money" levels="30" include="all" exclude="" slot="-1" count="26" enable_recipe="false" />		
-	<equip name="money" levels="31" include="all" exclude="" slot="-1" count="26" enable_recipe="false" />		
-
+	<equip name="money" levels="27" include="all" exclude="" slot="-1" count="27" enable_recipe="false" />		
+	<equip name="money" levels="28" include="all" exclude="" slot="-1" count="28" enable_recipe="false" />		
+	<equip name="money" levels="29" include="all" exclude="" slot="-1" count="29" enable_recipe="false" />		
+	<equip name="money" levels="30" include="all" exclude="" slot="-1" count="30" enable_recipe="false" />		
+	<equip name="money" levels="31" include="all" exclude="" slot="-1" count="31" enable_recipe="false" />		
+	<!--***********************************************************************************************************-->
+	
 </root>

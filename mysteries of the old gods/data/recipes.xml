@@ -2,11 +2,12 @@
     <!--**************************************************************  Mining  ****************************************************************-->
     <!--****************************************************************************************************************************************-->
     <recipe name="leaves_dead" produce="leaves_dead" ingredients="leaves-8,leaves-9" pak="" />
-    <recipe name="snow" produce="snow" group="1" ingredients="water-7,water-8" craft_need="lab" pak="" />
-    <recipe name="ice" produce="ice" group="1" ingredients="water-5,snow-7,snow-8" craft_need="lab" pak="" />
-    <recipe name="stone" ingredients="coal-2,clay-5,coal-7,coal-9" produce="stone" group="2" pak="" craft_need="kitchen" />
-    <recipe name="sand" ingredients="stone-4,stone-6" produce="sand" group="2" pak="" craft_need="workshop" />
+    <recipe name="snow" produce="snow" group="1" ingredients="water-4,water-5,water-7,water-8" craft_need="lab" pak="" />
+    <recipe name="ice" produce="ice" group="1" ingredients="snow-4,snow-5,snow-7,snow-8" craft_need="lab" pak="" />
     <recipe name="ashes" produce="ashes" ingredients="wood-4,wood-6" craft_need="kitchen" pak="" />
+    <recipe name="sand" ingredients="stone-4,stone-6" produce="sand" group="2" pak="" craft_need="workshop" />
+    <recipe name="clay" ingredients="water-1,dirt-2" produce="clay=2" group="2" craft_need="workshop" pak="" />
+    <recipe name="stone" ingredients="coal-2,clay-5,coal-7,coal-9" produce="stone" group="2" pak="" craft_need="kitchen" />
     <recipe name="sulfur" ingredients="resin-2,sand-5,resin-7,coal-8,resin-9" produce="sulfur" group="3" pak="" craft_need="lab" />
     <recipe name="iron" ingredients="coal-2,stone-5,coal-7,coal-9" produce="iron" group="3" pak="" craft_need="lab" />
     <recipe name="copper" ingredients="sulfur-2,iron-5,sulfur-7,sulfur-9" produce="copper" group="3" craft_need="lab" pak="" />
@@ -15,12 +16,14 @@
     <recipe name="mithril" produce="mithril" group="3" ingredients="gold-2,silver-5,gold-7,gold-9" craft_need="lab" pak="" />
     <recipe name="anthracite" ingredients="coal-2,coal-5,coal-7,coal-9" produce="anthracite" group="5" craft_need="kitchen" pak="" />
     <recipe name="titan" ingredients="mithril-2,gold-5,mithril-7,mithril-9" produce="titan" group="5" craft_need="lab" pak="" />
+    <recipe name="rock_block" ingredients="mucus-2,stone-8" produce="rock_block" group="1" pak="" craft_need="workshop" />
     <recipe name="gargoyley_spawner" produce="gargoyley_spawner" group="1" ingredients="stone-1,stone-2,stone-3,iron-4,wood-6,stone-8" craft_need="" allow="false" pak="" />
     <!--***********************************************************  Halfstuff  ****************************************************************-->
     <!--****************************************************************************************************************************************-->
     <recipe name="rags_hl" ingredients="fabric-5" produce="rags_hl=3" group="1" pak="Highland DLC" craft_need="workbench" />
     <recipe name="blueprints" ingredients="paint-2,needle-4,paper-5,pen-6,paper-8" produce="blueprints=1" group="5" craft_need="library" pak="" />
-    <recipe name="bricks_block" ingredients="clay-2,water-5,coal-8" produce="bricks_block=3" group="2" craft_need="workshop" pak="" />
+    <recipe name="dsp" produce="dsp=3" ingredients="plank-1,resin-2,plank-3,resin-4,resin-6,plank-7,resin-8,plank-9" pak="" craft_need="workbench" />
+    <recipe name="bricks_block" ingredients="clay-2,water-5,coal-8" produce="bricks_block=2" group="2" craft_need="workshop" pak="" />
     <recipe name="aluminum" ingredients="coal-4,steel-5" produce="aluminum" group="2" craft_need="smithy" pak="" />
     <recipe name="copper_ingot" produce="copper_ingot" ingredients="copper-1,coal-2,coal-4,copper-5" group="1" craft_need="smithy" pak="" />
     <recipe name="bronze" produce="bronze" ingredients="copper_ingot-4,iron-5,coal-7" group="1" craft_need="smithy" pak="" />
@@ -28,6 +31,9 @@
     <recipe name="durable_alloy" ingredients="mithril-5,anthracite-7,aluminum-8" produce="durable_alloy" group="3" craft_need="smithy" pak="" />
     <recipe name="titan_ingot" produce="titan_ingot" ingredients="titan-1,anthracite-2,anthracite-4,titan-5" craft_need="smithy" group="1" pak="" />
     <recipe name="nail" ingredients="iron-2,iron-5" produce="nail=5" group="2" pak="" craft_need="smithy" />
+    <recipe name="seed_sandstone" produce="seed_sandstone=6" ingredients="spell_scroll-2,bricks_block-4,water-5,sand-6,empty_bottle-8" pak="" craft_need="lab" />
+    <recipe name="seed_marble" ingredients="spell_scroll-2,sandstone-4,water-5,obsidian_mog-6,empty_bottle-8" produce="seed_marble=6" group="0" pak="" craft_need="lab" />
+    <recipe name="seed_granite" produce="seed_granite=6" ingredients="spell_scroll-2,marble-4,water-5,obsidian_mog-6,empty_bottle-8" pak="" craft_need="lab" />
     <recipe name="wire" produce="wire=2" ingredients="resin-2,copper_ingot-5" craft_need="smithy" group="5" pak="" />
     <recipe name="spring" produce="spring" ingredients="silver-3,silver-5,copper-6,copper-8" craft_need="smithy" pak="" group="1" />
     <recipe name="light_bulb" ingredients="coal-4,glass-5,wire-6" produce="light_bulb=1" group="5" craft_need="lab" pak="" />
@@ -430,24 +436,30 @@
     <recipe name="rune_ice" ingredients="ice-1,snow-2,ice-3,snow-4,stone-5,snow-6,ice-7,spell_scroll-8,ice-9" produce="rune_ice" group="3" pak="" craft_need="lab" />
     <!--**************************************************************  Block  ****************************************************************-->
     <!--***************************************************************************************************************************************-->
+    <recipe name="seed_ice_spine" produce="seed_ice_spine" ingredients="snow-2,ice-4,water-5,ice-6,empty_bottle-8,rock_block-9" craft_need="lab" pak="" />
+    <recipe name="seed_obsidian_spine" produce="seed_obsidian_spine" ingredients="spell_scroll-2,ice-4,water-5,stone-6,empty_bottle-8,rock_block-9" craft_need="lab" pak="" />
     <!--..................  Bench  .................-->
     <!--............................................-->
     <recipe name="workbench_hl" ingredients="wood-2,stone-8" produce="workbench_hl" group="1" pak="" />
-    <recipe name="workbench" produce="workbench" ingredients="table_wooden-2,wood-4,iron-5,wood-6,workbench_hl-8" pak="" craft_need="" />
+    <recipe name="workbench" produce="workbench" ingredients="table_wooden-2,wood-4,iron-5,wood-6,workbench_hl-8" pak="" craft_need="workshop" />
     <recipe name="workbench_improved" produce="workbench_improved" ingredients="table_expensive-2,plank-4,plank-5,plank-6,alloy_iron_silver-7,workbench-8,alloy_iron_silver-9" pak="" craft_need="workshop" />
     <recipe name="big_carpenter_hl_mog" produce="big_carpenter_hl_mog" ingredients="roof_tile-1,roof_tile-2,roof_tile-3,stone_wall-4,fire_engine-5,stone_wall-6,wooden_block-7,workbench_improved-8,wooden_block-9" pak="" craft_need="workshop" />
-    <recipe name="smithy_basic" produce="smithy_basic" ingredients="water-2,coal-5,stone-7,iron-8,stone-9" pak="" />
+    <recipe name="workshop_basic" produce="workshop_basic" ingredients="stone-3,stone-7,stone-9" pak="" />
+    <recipe name="workshop" produce="workshop" ingredients="pick_iron-2,plank-4,plank-6,workshop_basic-8" pak="" craft_need="workbench" />
+    <recipe name="workshop_improved" produce="workshop_improved" ingredients="plates-2,plank-3,plates-5,sensor-6,fire_engine-7,workshop-8,bolt-9" pak="" craft_need="smithy" />
+    <recipe name="big_workshop_hl_mog" produce="big_workshop_hl_mog" ingredients="pick_silver-2,stone-4,pick_mithril-5,stone-6,dsp-7,workshop_improved-8,dsp-9" pak="" craft_need="workbench" />
+    <recipe name="smithy_basic" produce="smithy_basic" ingredients="stone-2,coal-5,stone-7,iron-8,stone-9" pak="" />
     <recipe name="smithy" produce="smithy" ingredients="steel-2,plank-4,steel-5,plank-6,rope-7,smithy_basic-8,skin-9" pak="" craft_need="workshop" />
     <recipe name="smithy_improved" produce="smithy_improved" ingredients="tube-2,sensor-3,plates-4,tube-5,plates-6,bolt-7,smithy-8,bolt-9" craft_need="workshop" pak="" />
     <recipe name="big_forge_hl_mog" produce="big_forge_hl_mog" ingredients="plates-1,tube-2,plates-3,stone_wall-4,anthracite-5,stone_wall-6,titan_ingot-7,smithy_improved-8,titan_ingot-9" craft_need="workshop" pak="" />
     <recipe name="magic_cauldron_basic" produce="magic_cauldron_basic" ingredients="berries-4,water-5,bone-6,mucus-7,pot-8,coal-9" pak="" />
     <recipe name="magic_cauldron" produce="magic_cauldron" ingredients="plank-1,grey_mushroom-2,plank-3,eye-4,paper-5,brains-6,needle-7,magic_cauldron_basic-8,web-9" pak="" craft_need="workshop" />
     <recipe name="magic_cauldron_improved" produce="magic_cauldron_improved" ingredients="stone_wall-1,pink_crystal-2,stone_wall-3,needle_crystal-4,pink_mushroom-5,quartz-6,sulfur-7,magic_cauldron-8,water_bottle_hl-9" pak="" craft_need="workshop" />
-    <recipe name="big_laboratory_hl_mog" produce="big_laboratory_hl_mog" ingredients="portal_krs_green-1,portal_krs_dblue-2,portal_krs_violet-3,portal_krs_red-4,dragon_egg-5,portal_krs_blue-6,wooden_block-7,magic_cauldron_improved-8,fire_engine-9" pak="" craft_need="workshop" />
+    <recipe name="big_laboratory_hl_mog" produce="big_laboratory_hl_mog" ingredients="portal_krs_green-1,portal_krs_dblue-2,portal_krs_violet-3,portal_krs_red-4,dragon_egg-5,portal_krs_blue-6,dsp-7,magic_cauldron_improved-8,fire_engine-9" pak="" craft_need="workshop" />
     <recipe name="library_basic" produce="library_basic" ingredients="paper-2,pen-4,iron-5,ink-6,table_wooden-8" pak="" />
     <recipe name="library" produce="library" ingredients="logger_skill-1,swordsman_skill-2,minner_skill-3,carpenter_skill-4,torch-5,smith_skill-6,plank-7,library_basic-8,chair-9" craft_need="workshop" pak="" />
     <recipe name="library_improved" produce="library_improved" ingredients="fisher_skill-1,archer_skill-2,miller_skill-3,stonecutter_skill-4,lamp-5,cook_skill-6,plank-7,library-8,chair_leather-9" craft_need="workshop" pak="" />
-    <recipe name="big_library" produce="big_library" ingredients="hunter_skill-1,mage_skill-2,climber_skill-3,swimmer_skill-4,chandelier_small-5,clock1-6,plank-7,library_improved-8,sofa-9" craft_need="workshop" pak="" />
+    <recipe name="big_library" produce="big_library" ingredients="hunter_skill-1,mage_skill-2,climber_skill-3,swimmer_skill-4,chandelier_small-5,clock1-6,dsp-7,library_improved-8,sofa-9" craft_need="workshop" pak="" />
     <!--..................  Mechanisms   .................-->
     <!--..................................................-->
     <recipe name="trolley" produce="trolley" ingredients="nail-2,plank-4,plank-5,plank-6,wheel_for_trolley-7,wheel_for_trolley-9" craft_need="workbench" pak="" />
@@ -474,12 +486,122 @@
     <recipe name="mine_mithril" produce="mine_mithril" ingredients="pick_iron-2,pick_steel-5,trolley_hl_mog-8" pak="" />
     <recipe name="mine_anthracite" produce="mine_anthracite" ingredients="pick_steel-2,trolley-4,trolley-6" pak="" />
     <recipe name="mine_titan" produce="mine_titan" ingredients="pick_iron-4,pick_steel-6,trolley-7,trolley_hl_mog-9" pak="" />
+    <!--..................  New ladder  .................-->
+    <!--.................................................-->
+    <recipe name="goblin_ladder_mog" produce="goblin_ladder_mog" ingredients="wood-2,wood-5" pak="" craft_need="workbench" />
+    <recipe name="ladder_mine_mog" produce="ladder_mine_mog=3" ingredients="wood-2,iron-5" pak="" craft_need="workbench" />
+    <recipe name="ladder" produce="ladder=2" ingredients="wood-2,wood-5,wood-8" pak="" craft_need="workbench" />
+    <recipe name="ladder_wood" produce="ladder_wood" ingredients="plank-2,nail-5" pak="" craft_need="workbench" />
+    <recipe name="cave_ladder_mog" produce="cave_ladder_mog" ingredients="bone-2,bone-5" pak="" craft_need="workshop" />
+    <recipe name="ladder_ice" produce="ladder_ice" ingredients="ice-2,ice-5" pak="" craft_need="workshop" />
+    <recipe name="ladder_stone" produce="ladder_stone" ingredients="stone-2,stone-5" pak="" craft_need="workshop" />
+    <recipe name="ladder_ancient_mog" produce="ladder_ancient_mog=2" ingredients="stone-2,stone-5,stone-8" pak="" craft_need="workshop" />
+    <recipe name="ladder_brick_broken" produce="ladder_brick_broken" ingredients="bricks_block-2,stone-5" pak="" craft_need="workshop" />
+    <recipe name="ladder_brick" produce="ladder_brick" ingredients="bricks_block-2,ladder_brick_broken-5" pak="" craft_need="workshop" />
+    <recipe name="ladder_desert_temple_mog" produce="ladder_desert_temple_mog" ingredients="sandstone-2,sandstone-5" pak="" craft_need="workshop" />
+    <recipe name="staircase_with_railinge_broken_mog" produce="staircase_with_railinge_broken_mog" ingredients="copper_ingot-2,bolt-5" pak="" craft_need="smithy" />
+    <recipe name="staircase_with_railinge_mog" produce="staircase_with_railinge_mog" ingredients="copper_ingot-2,staircase_with_railinge_broken_mog-5" pak="" craft_need="smithy" />
+    <recipe name="staircase_without_railings_broken_mog" produce="staircase_without_railings_broken_mog" ingredients="steel-2,bolt-5" pak="" craft_need="smithy" />
+    <recipe name="staircase_without_railings_mog" produce="staircase_without_railings_mog" ingredients="steel-2,staircase_without_railings_broken_mog-5" pak="" craft_need="smithy" />
+    <recipe name="stone_staircase" produce="stone_staircase" ingredients="obsidian_mog-2,obsidian_mog-5" pak="" craft_need="workshop" />
+    <recipe name="metal_ladder" produce="metal_ladder" ingredients="aluminum-2,bolt-5" pak="" craft_need="smithy" />
+    <recipe name="ladder_granite" produce="ladder_granite" ingredients="granite_mog-2,granite_mog-5" pak="" craft_need="workshop" />
+    <recipe name="stairs" produce="stairs" ingredients="durable_alloy-2,bolt-5" pak="" craft_need="smithy" />
+    <recipe name="steel_ladder" produce="steel_ladder" ingredients="titan_ingot-2,bolt-5" pak="" craft_need="smithy" />
+    <!--..................  Original ladder  .................-->
+    <!--......................................................-->
+    <recipe name="ladder_mine" ingredients="" produce="ladder_mine" group="1" pak="Monsters DLC" />
+    <recipe name="ladder_desert_temple" ingredients="" produce="ladder_desert_temple" group="1" pak="Monsters DLC" />
+    <!--..................  New column  .................-->
+    <!--.................................................-->
+    <recipe name="column_mine_mog" produce="column_mine_mog=2" ingredients="wood-1,rope-2,wood-3,wood-5,wood-8" pak="" craft_need="workbench" />
+    <recipe name="collumn_wood" produce="collumn_wood=2" ingredients="wood-1,nail-2,wood-3,wood-5,wood-8" pak="" craft_need="workbench" />
+    <recipe name="column_prop_broken_mog" produce="column_prop_broken_mog=2" ingredients="plank-1,nail-2,plank-3,plank-5,plank-8" pak="" craft_need="workbench" />
+    <recipe name="column_prop_mog" produce="column_prop_mog" ingredients="plank-1,column_prop_broken_mog-2,plank-3,nail-5,plank-8" pak="" craft_need="workbench" />
+    <recipe name="column_grottoes_stalactite_mog" produce="column_grottoes_stalactite_mog=2" ingredients="clay-1,clay-2,clay-3,clay-5,clay-8" pak="" craft_need="workshop" />
+    <recipe name="collumn_grottoes_elven" produce="collumn_grottoes_elven=2" ingredients="clay-1,leaves-2,clay-3,stone-5,stone-8" pak="" craft_need="workshop" />
+    <recipe name="collumn_ice" produce="collumn_ice=2" ingredients="ice-1,ice-2,ice-3,ice-5,ice-8" pak="" craft_need="workshop" />
+    <recipe name="collumn_tomb_mog" produce="collumn_tomb_mog=2" ingredients="stone-1,sand-2,stone-3,stone-5,stone-8" pak="" craft_need="workshop" />
+    <recipe name="collumn_ancient_mog" produce="collumn_ancient_mog=2" ingredients="stone-1,clay-2,stone-3,stone-5,stone-8" pak="" craft_need="workshop" />
+    <recipe name="collumn" produce="collumn=2" ingredients="stone-1,stone-2,stone-3,stone-5,stone-8" pak="" craft_need="workshop" />
+    <recipe name="column_ordinary_broken_mog" produce="column_ordinary_broken_mog=2" ingredients="bricks_block-1,stone-2,bricks_block-3,stone-5,stone-8" pak="" craft_need="workshop" />
+    <recipe name="column_ordinary_mog" produce="column_ordinary_mog" ingredients="clay-1,column_ordinary_broken_mog-2,clay-3,bricks_block-5,stone-8" pak="" craft_need="workshop" />
+    <recipe name="collumn_pyramid_mog" produce="collumn_pyramid_mog=2" ingredients="sandstone-1,sand-2,sandstone-3,sandstone-5,sandstone-8" pak="" craft_need="workshop" />
+    <recipe name="collumn_gothic" produce="collumn_gothic=2" ingredients="sandstone-1,clay-2,sandstone-3,sandstone-5,sandstone-8" pak="" craft_need="workshop" />
+    <recipe name="column_desert_temple_mog" produce="column_desert_temple_mog=2" ingredients="sandstone-1,sandstone-2,sandstone-3,sandstone-5,sandstone-8" pak="" craft_need="workshop" />
+    <recipe name="collumn_copper" produce="collumn_copper=2" ingredients="copper_ingot-1,copper_ingot-2,copper_ingot-3,copper_ingot-5,copper_ingot-8" pak="" craft_need="smithy" />
+    <recipe name="collumn_steel" produce="collumn_steel=2" ingredients="steel-1,steel-2,steel-3,steel-5,steel-8" craft_need="smithy" pak="" />
+    <recipe name="column_evil_main_mog" produce="column_evil_main_mog=2" ingredients="obsidian_mog-1,obsidian_mog-2,obsidian_mog-3,copper_ingot-5,obsidian_mog-8" pak="" craft_need="workshop" />
+    <recipe name="collumn_marble" produce="collumn_marble=2" ingredients="marble-1,marble-2,marble-3,marble-5,marble-8" pak="" craft_need="workshop" />
+    <recipe name="column_gnomes_facade_mog" produce="column_gnomes_facade_mog=2" ingredients="marble-1,gold_ingot-2,marble-3,marble-5,marble-8" pak="" craft_need="workshop" />
+    <recipe name="collumn_stone" produce="collumn_stone=2" ingredients="granite_mog-1,granite_mog-2,granite_mog-3,stone-5,granite_mog-8" pak="" craft_need="workshop" />
+    <recipe name="column_luxury_broken_mog" produce="column_luxury_broken_mog=2" ingredients="granite_mog-1,stone-2,granite_mog-3,granite_mog-5,granite_mog-8" pak="" craft_need="workshop" />
+    <recipe name="column_luxury_mog" produce="column_luxury_mog" ingredients="clay-1,column_luxury_broken_mog-2,clay-3,marble-5,marble-8" pak="" craft_need="workshop" />
+    <recipe name="column_entrance_mog" produce="column_entrance_mog=2" ingredients="granite_mog-1,granite_mog-2,granite_mog-3,granite_mog-5,granite_mog-8" pak="" craft_need="workshop" />
+    <recipe name="column_evil_facade_mog" produce="column_evil_facade_mog=2" ingredients="titan_ingot-1,portal_krs_violet-2,titan_ingot-3,titan_ingot-5,portal_krs_red-8" pak="" craft_need="smithy" />
+    <!--..................  Original column  .................-->
+    <!--......................................................-->
+    <recipe name="column_mine" ingredients="" produce="column_mine" group="1" pak="Monsters DLC" />
+    <recipe name="column_grottoes_stalactite" ingredients="" produce="column_grottoes_stalactite" group="1" pak="Grottoes DLC" />
+    <recipe name="column_desert_temple" ingredients="" produce="column_desert_temple" group="1" pak="Monsters DLC" />
+    <!--..................  New wall  .................-->
+    <!--...............................................-->
+    <recipe name="wall_mine_mog" produce="wall_mine_mog=3" ingredients="dirt-4,wood-5,wood-7,dirt-8" pak="" craft_need="workbench" />
+    <recipe name="forest_wall" produce="forest_wall" ingredients="wall_mine_mog-3,wood-4,wood-8" pak="" craft_need="workbench" />
+    <recipe name="wooden_block" produce="wooden_block=3" ingredients="plank-4,nail-5,plank-7,plank-8" pak="" craft_need="workbench" />
+    <recipe name="asian_wood_wall" produce="asian_wood_wall" ingredients="wooden_block-3,paint-4,paint-8" pak="" craft_need="workbench" />
+    <recipe name="poor_wall_broken_01_mog" produce="poor_wall_broken_01_mog=3" ingredients="dsp-4,dsp-5,dsp-7,dsp-8" pak="" craft_need="workbench" />
+    <recipe name="poor_wall_01_mog" produce="poor_wall_01_mog=2" ingredients="poor_wall_broken_01_mog-3,plank-4,nail-7,plank-8" pak="" craft_need="workbench" />
+    <recipe name="stone_with_moss_all_mog" produce="stone_with_moss_all_mog=3" ingredients="sand-4,clay-5,clay-7,sand-8" craft_need="workshop" pak="" />
+    <recipe name="stone_with_moss_all_liana_mog" produce="stone_with_moss_all_liana_mog" ingredients="stone_with_moss_all_mog-3,leaves-4,leaves-8" craft_need="workshop" pak="" />
+    <recipe name="stone_with_moss_mog" produce="stone_with_moss_mog=3" ingredients="clay-4,stone-5,stone-7,clay-8" craft_need="workshop" pak="" />
+    <recipe name="stone_with_moss_liana_block_mog" produce="stone_with_moss_liana_block_mog" ingredients="stone_with_moss_mog-3,leaves-4,root-7,leaves-8" craft_need="workshop" pak="" />
+    <recipe name="ice_wall" produce="ice_wall=3" ingredients="ice-4,ice-5,ice-7,ice-8" pak="" craft_need="workshop" />
+    <recipe name="poor_wall_broken_02_mog" produce="poor_wall_broken_02_mog=2" ingredients="stone-4,wood-5,wood-7,stone-8" pak="" craft_need="workshop" />
+    <recipe name="poor_wall_02_mog" produce="poor_wall_02_mog=2" ingredients="poor_wall_broken_02_mog-3,plank-4,stone-7,plank-8" pak="" craft_need="workshop" />
+    <recipe name="block_evil_dungeon_mog" produce="block_evil_dungeon_mog=3" ingredients="stone-4,sand-5,sand-7,stone-8" pak="" craft_need="workshop" />
+    <recipe name="tomb_wall_mog" produce="tomb_wall_mog" ingredients="block_evil_dungeon_mog-3,stone-4,stone-8" pak="" craft_need="workshop" />
+    <recipe name="wall_ancient_mog" produce="wall_ancient_mog=3" ingredients="stone-4,stone-5,stone-7,stone-8" pak="" craft_need="workshop" />
+    <recipe name="stone_wall" produce="stone_wall=2" ingredients="wall_ancient_mog-3,sand-4,water-7,sand-8" pak="" craft_need="workshop" />
+    <recipe name="middle_wall_broken_mog" produce="middle_wall_broken_mog=3" ingredients="bricks_block-4,stone-5,stone-7,bricks_block-8" pak="" craft_need="workshop" />
+    <recipe name="middle_wall_01_mog" produce="middle_wall_01_mog" ingredients="middle_wall_broken_mog-3,clay-4,clay-8" pak="" craft_need="workshop" />
+    <recipe name="brick_wall" ingredients="bricks_block-4,bricks_block-5,bricks_block-7,bricks_block-8" produce="brick_wall=3" group="4" craft_need="workshop" pak="" />
+    <recipe name="pyramid_mog" produce="pyramid_mog=3" ingredients="sandstone-4,sandstone-5,sandstone-7,sandstone-8" pak="" craft_need="workshop" />
+    <recipe name="block_01_desert_temple_mog" produce="block_01_desert_temple_mog" ingredients="pyramid_mog-3,clay-5,sand-7" pak="" craft_need="workshop" />
+    <recipe name="block_02_desert_temple_mog" produce="block_02_desert_temple_mog" ingredients="pyramid_mog-3,sand-4,clay-5,sand-8" pak="" craft_need="workshop" />
+    <recipe name="copper_wall" produce="copper_wall=2" ingredients="copper_ingot-4,bolt-5,bolt-7,copper_ingot-8" pak="" craft_need="smithy" />
+    <recipe name="metal_wall_broken_mog" produce="metal_wall_broken_mog=2" ingredients="bolt-4,steel-5,steel-7,bolt-8" pak="" craft_need="smithy" />
+    <recipe name="metal_wall_mog" produce="metal_wall_mog" ingredients="metal_wall_broken_mog-3,bolt-5,steel-7" pak="" craft_need="smithy" />
+    <recipe name="block_gnomes_workshop_broken_mog" produce="block_gnomes_workshop_broken_mog=3" ingredients="bricks_block-4,obsidian_mog-5,obsidian_mog-7,bricks_block-8" pak="" craft_need="workshop" />
+    <recipe name="block_gnomes_workshop_mog" produce="block_gnomes_workshop_mog" ingredients="block_gnomes_workshop_broken_mog-3,clay-5,sand-7" pak="" craft_need="workshop" />
+    <recipe name="block_gnomes_corridor_broken_mog" produce="block_gnomes_corridor_broken_mog=3" ingredients="obsidian_mog-4,obsidian_mog-5,obsidian_mog-7,obsidian_mog-8" pak="" craft_need="workshop" />
+    <recipe name="block_gnomes_corridor_mog" produce="block_gnomes_corridor_mog" ingredients="block_gnomes_corridor_broken_mog-3,clay-4,clay-8" pak="" craft_need="workshop" />
+    <recipe name="marble_wall_broken" produce="marble_wall_broken=3" ingredients="marble-4,marble-5,marble-7,marble-8" pak="" craft_need="workshop" />
+    <recipe name="marble_wall" produce="marble_wall" ingredients="marble_wall_broken-3,clay-4,clay-8" pak="" craft_need="workshop" />
+    <recipe name="block_gnomes_facade_broken_mog" produce="block_gnomes_facade_broken_mog=2" ingredients="marble-4,marble-7,marble-8" pak="" craft_need="workshop" />
+    <recipe name="block_gnomes_facade_mog" produce="block_gnomes_facade_mog" ingredients="block_gnomes_facade_broken_mog-3,silver-5,clay-7" pak="" craft_need="workshop" />
+    <recipe name="block_gnomes_throne_broken_mog" produce="block_gnomes_throne_broken_mog=2" ingredients="marble-4,marble-5,marble-8" pak="" craft_need="workshop" />
+    <recipe name="block_gnomes_throne_mog" produce="block_gnomes_throne_mog" ingredients="block_gnomes_throne_broken_mog-3,gold-5,clay-7" pak="" craft_need="workshop" />
+    <recipe name="rich_wall_broken_01_mog" produce="rich_wall_broken_01_mog=3" ingredients="granite_mog-4,granite_mog-5,granite_mog-7,granite_mog-8" pak="" craft_need="workshop" />
+    <recipe name="rich_wall_01_mog" produce="rich_wall_01_mog=2" ingredients="rich_wall_broken_01_mog-3,marble-4,marble-8" pak="" craft_need="workshop" />
+    <recipe name="block_evil_main_mog" produce="block_evil_main_mog=3" ingredients="granite_mog-4,copper_ingot-5,copper_ingot-7,granite_mog-8" pak="" craft_need="workshop" />
+    <recipe name="block_evil_facade_mog" produce="block_evil_facade_mog=3" ingredients="steel-4,granite_mog-5,granite_mog-7,steel-8" pak="" craft_need="workshop" />
+    <recipe name="steel_wall" produce="steel_wall=4" ingredients="titan_ingot-4,titan_ingot-5,titan_ingot-7,titan_ingot-8" pak="" craft_need="smithy" />
+    <recipe name="block_elfs_iron_mog" produce="block_elfs_iron_mog=2" ingredients="steel_wall-3,bolt-4,silver_ingot-5,silver_ingot-7,bolt-8" pak="" craft_need="smithy" />
+    <!--..................  Original wall  .................-->
+    <!--....................................................-->
+    <recipe name="wall_mine" ingredients="" produce="wall_mine" group="1" pak="Monsters DLC" />
+    <recipe name="stone_with_moss_all" ingredients="" produce="stone_with_moss_all" group="1" pak="Grottoes DLC" />
+    <recipe name="stone_with_moss_all_liana" ingredients="" produce="stone_with_moss_all_liana" group="1" pak="Grottoes DLC" />
+    <recipe name="stone_with_moss" ingredients="" produce="stone_with_moss" group="1" pak="Grottoes DLC" />
+    <recipe name="stone_with_moss_liana_block" ingredients="" produce="stone_with_moss_liana_block" group="1" pak="Grottoes DLC" />
+    <recipe name="block_01_desert_temple" ingredients="" produce="block_01_desert_temple" group="1" pak="Monsters DLC" />
+    <recipe name="block_02_desert_temple" ingredients="" produce="block_02_desert_temple" group="1" pak="Monsters DLC" />
     <!--..................  Others  .................-->
     <!--.............................................-->
     <recipe name="foundry_machine_steel" produce="foundry_machine_steel" ingredients="gunpowder-2,coal-4,container_coal_iron-5,coal-6,foundry_machine_corps-8" pak="" />
     <recipe name="incubator" ingredients="wheat-1,wheat-3,plank-4,wheat-5,plank-6,stone_wall-7,kitchen_wood-8,stone_wall-9" produce="incubator" group="4" pak="Monsters DLC" />
     <!--***************************************************************************************************************************************-->
-    <recipe name="brick_wall" ingredients="bricks_block-2,clay-5" produce="brick_wall=2" group="4" craft_need="workshop" pak="" />
     <recipe name="dig_machine" produce="dig_machine" ingredients="antennas-1,wire-2,sensor-3,auger_iron-4,dig_machine_chassis-5,fire_engine-6,wood_wheel-7,wood_wheel-9" group="3" craft_need="smithy" pak="Monsters DLC" />
     <recipe name="dig_machine_crystal" ingredients="blueprints-1,cable-2,high_power_battery-3,auger_crystal-4,dig_machine-5,magic_engine-6,iron_wheel-7,iron_wheel-9" produce="dig_machine_crystal" group="3" craft_need="smithy" pak="Monsters DLC" />
     <!--************************************************************  Furniture  **************************************************************-->
@@ -503,5 +625,6 @@
     <recipe name="pick_ax_02" ingredients="" produce="pick_ax_02" group="1" pak="Rooms DLC" />
     <recipe name="pick_ax_03" ingredients="" produce="pick_ax_03" group="1" pak="Rooms DLC" />
     <recipe name="pick_ax_04" ingredients="" produce="pick_ax_04" group="1" pak="Rooms DLC" />
+    <!--***********************************************************************************************************************************-->
     <!--***********************************************************************************************************************************-->
 </root>

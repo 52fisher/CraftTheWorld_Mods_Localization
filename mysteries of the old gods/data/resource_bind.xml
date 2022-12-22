@@ -4,6 +4,10 @@
   <!--mog-->
   <bind res="snow" usual_desert="true" usual_medium="true" usual_cold="true"/>
   <bind res="ice" usual_desert="true" usual_medium="true" usual_cold="true"/>
+  <bind res="ice_wall" usual_desert="true" usual_medium="true" usual_cold="true" underground="false" lonely_mountain="true" all="false" biome1="true"/>
+  <bind res="table_ice" usual_desert="true" usual_medium="true" usual_cold="true" underground="false" all="false" biome1="true"/>
+  <bind res="ice_statue" usual_desert="true" usual_medium="true" usual_cold="true" underground="false" all="false" biome1="true"/>
+  <bind res="ice_spikes" usual_desert="true" usual_medium="true" usual_cold="true" underground="false" all="false" biome1="true"/>
   
   <bind res="sulfur" usual_desert="true" usual_medium="true" usual_cold="true" underground="true" lonely_mountain="true"/>
   <bind res="cave_goblin_bow" usual_desert="true" usual_medium="true" usual_cold="true"/>
@@ -18,6 +22,7 @@
   <bind res="dragon_warrior_cuirass" usual_desert="true" usual_medium="true" usual_cold="true"/>
   <bind res="dragon_warrior_boots" usual_desert="true" usual_medium="true" usual_cold="true"/>
   <bind res="sword_dao" usual_desert="true" usual_medium="true" usual_cold="true"/>
+  <bind res="asian_wood_wall" usual_desert="true" usual_medium="true" usual_cold="true" dlc_temples="true"/>
   <!--mog-->   
    
   <bind res="cannon_ammo" all="false" usual_medium="true" usual_cold="true"/> 
@@ -39,8 +44,7 @@
   <bind res="asian_hat_02" all="false" dlc_temples="true"/>
   <bind res="dragon_statue1" all="false" dlc_temples="true"/>
   <bind res="dragon_statue2" all="false" dlc_temples="true"/>
-  <bind res="picture_china" all="false" dlc_temples="true"/>
-  <bind res="asian_wood_wall" all="false" dlc_temples="true"/>
+  <bind res="picture_china" all="false" dlc_temples="true"/>  
   <bind res="roof_asian" all="false" dlc_temples="true"/>
   <bind res="cloth_asian_01" all="false" dlc_temples="true"/>
   <bind res="cloth_asian_02" all="false" dlc_temples="true"/>
@@ -124,11 +128,7 @@
   <bind res="jug" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
   <bind res="flour" usual_desert="true" usual_medium="true" usual_cold="true" underground="true"/>
   
-  <bind res="fat" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" all="false" biome1="true"/>
-  <bind res="ice_wall" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" all="false" biome1="true"/>
-  <bind res="table_ice" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" all="false" biome1="true"/>
-  <bind res="ice_statue" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" all="false" biome1="true"/>
-  <bind res="ice_spikes" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" all="false" biome1="true"/>
+  <bind res="fat" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" all="false" biome1="true"/>  
 
   <bind res="winter_boots" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" biome1="false" all="false"/>
   <bind res="winter_shoes" lonely_mountain="true" usual_desert="false" usual_medium="false" usual_cold="true" underground="false" biome1="false" all="false"/>

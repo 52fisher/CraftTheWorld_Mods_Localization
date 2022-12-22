@@ -2,18 +2,119 @@
 <root>
     <!--**************************************************************  Mining  ****************************************************************-->
     <!--****************************************************************************************************************************************-->
-    <block name="ashes" atlas="%mod%/gfx/blocks/dirt/ashes_block_template.png" extract="3" type="solid block" draw_layer="front" backneed="true" stayon="true" crack="true" atlas_element="block" resource="ashes" draw_align="center" editor="mod" build="1" effect_scale="1" properties="apply_tool1,can_fall,ashes,can_replace,no_break_fall,editor=mining,draw_align=center" pak="" />
+    <block name="ashes" atlas="%mod%/gfx/blocks/dirt/ashes_block_template.png" atlas_element="block" build="0" resource="ashes" crack="true" draw_layer="front_a6" properties="apply_tool1,can_fall,sand,can_replace,no_break_fall,editor=mining,gen_priority" extract="2" pak="" />
+    <block name="sand" file="gfx\level_tiles\tile\sand_ground\sand_ground" corner="gfx\level_tiles\tile\sand_ground\corner" corner_group="2" corner_type="every" extract="2" build="0" through="false" resource="sand" crack="true" border="sand" draw_layer="front_a6" properties="apply_tool1,can_fall,sand,can_replace,no_break_fall,editor=mining" pak="" />
+    <block name="clay" atlas="%mod%/gfx/blocks/dirt/clay_block_template.png" build="1" extract="4" type="solid block" properties="apply_tool1,stone,can_replace,gen_priority,editor=mining" draw_layer="front_a10" stayon="true" crack="true" atlas_element="block" resource="clay" draw_align="center" effect_scale="1" pak="" />
+    <block name="stone" file="gfx\level_tiles\tile\stone_ground\stone_ground" corner="gfx\level_tiles\tile\stone_ground\stone_ground_corner" extract="8" build="2" falls="none" through="false" resource="stone" crack="true" border="stone" draw_layer="front_a7" properties="apply_tool1,stone,can_replace,gen_priority,editor=mining" pak="" />
+    <block name="sandstone" atlas="%mod%/gfx/blocks/dirt/sandstone_block_template.png" build="3" type="solid block" properties="apply_tool1,stone,can_replace,gen_priority,editor=mining" draw_layer="front_a8" stayon="true" crack="true" atlas_element="block" resource="sandstone" draw_align="center" effect_scale="1" extract="12" pak="" />
+    <block name="obsidian_mog" file="gfx\level_tiles\tile\obsidian_ground\obsidian_ground" corner="gfx\level_tiles\tile\obsidian_ground\corner" corner_group="9" border="obsidian_ground" draw_layer="front_a8" build="4" extract="14" type="solid block" properties="apply_tool1,stone,can_replace,gen_priority,editor=mining" stayon="true" crack="true" atlas_element="block" resource="obsidian_mog" draw_align="center" effect_scale="1" pak="" />
+    <block name="marble" atlas="%mod%/gfx/blocks/dirt/marble_block_template.png" build="5" type="solid block" properties="apply_tool1,stone,can_replace,gen_priority,editor=mining" draw_layer="front_a10" stayon="true" crack="true" atlas_element="block" resource="marble" draw_align="center" effect_scale="1" extract="16" pak="" />
+    <block name="granite_mog" file="gfx\level_tiles\tile\granite\granite" corner="gfx\level_tiles\tile\granite\corner" corner_group="9" draw_layer="front_a8" border="granite" build="6" extract="18" type="solid block" properties="apply_tool1,stone,can_replace,gen_priority,editor=mining" stayon="true" crack="true" atlas_element="block" resource="granite_mog" draw_align="center" effect_scale="1" pak="" />
+    <block name="rock_block" atlas="%mod%/gfx/blocks/dirt/rock_block_template.png" type="solid block" atlas_element="block" properties="can_replace,humus" resource="rock_block" build="10" stayon="true" crack="true" extract="10" draw_layer="front_a10" pak="" />
     <!--***********************************************************  Halfstuff  ****************************************************************-->
     <!--****************************************************************************************************************************************-->
+    <block name="seed_sandstone" type="simple" properties="" through="true" resource="seed_sandstone" draw_layer="normal" build="1" extract="1" pak="" />
+    <block name="growth_sandstone" type="simple" properties="no_render,farm_plant" spine="sandstone" spine_ani="main_03" through="true" resource="" draw_layer="normal" build="1" extract="1" pak="">
+        <gameobject saveable="true">
+            <behaviour value="SpineBehaviour" _spine="sandstone" saveable="true" />
+            <behaviour value="SpineRenderBehaviour" _offset="0,0.5" saveable="true" _draw_order="13" />
+            <behaviour value="AnimationBehaviour" saveable="true">
+                <states>
+                    <state name="1_growth" loop="false" ani="main_01_born" next="1_idle" />
+                    <state name="1_idle" loop="true" ani="main_01" />
+                    <state name="2_growth" loop="false" ani="main_02_born" next="2_idle" />
+                    <state name="2_idle" loop="true" ani="main_02" />
+                    <state name="3_growth" loop="false" ani="main_03_born" next="3_idle" />
+                    <state name="3_idle" loop="true" ani="main_03" />
+                    <state name="4_growth" loop="false" ani="main_04_born" next="4_idle" denied="4_idle" />
+                    <state name="4_idle" loop="true" ani="main_04" />
+                </states>
+            </behaviour>
+            <behaviour value="ResourceDropBehaviour" _resources="sandstone-2" _auto_drop="false" saveable="true" />
+            <behaviour value="GrowthBehaviour" _stages="3" _state_mask="%i_growth" _duration="1500" saveable="true" />
+        </gameobject>
+    </block>
+    <block name="seed_marble" type="simple" properties="" through="true" resource="seed_marble" draw_layer="normal" build="1" extract="1" />
+    <block name="growth_marble" type="simple" properties="no_render,farm_plant" spine="marble" spine_ani="main_03" through="true" resource="" draw_layer="normal" build="1" extract="1" pak="">
+        <gameobject saveable="true">
+            <behaviour value="SpineBehaviour" _spine="marble" saveable="true" />
+            <behaviour value="SpineRenderBehaviour" _offset="0,0.5" saveable="true" _draw_order="13" />
+            <behaviour value="AnimationBehaviour" saveable="true">
+                <states>
+                    <state name="1_growth" loop="false" ani="main_01_born" next="1_idle" />
+                    <state name="1_idle" loop="true" ani="main_01" />
+                    <state name="2_growth" loop="false" ani="main_02_born" next="2_idle" />
+                    <state name="2_idle" loop="true" ani="main_02" />
+                    <state name="3_growth" loop="false" ani="main_03_born" next="3_idle" />
+                    <state name="3_idle" loop="true" ani="main_03" />
+                    <state name="4_growth" loop="false" ani="main_04_born" next="4_idle" denied="4_idle" />
+                    <state name="4_idle" loop="true" ani="main_04" />
+                </states>
+            </behaviour>
+            <behaviour value="ResourceDropBehaviour" _resources="marble-2" _auto_drop="false" saveable="true" />
+            <behaviour value="GrowthBehaviour" _stages="3" _state_mask="%i_growth" _duration="1500" saveable="true" />
+        </gameobject>
+    </block>
+    <block name="seed_granite" type="simple" properties="" through="true" resource="seed_granite" draw_layer="normal" build="1" extract="1" />
+    <block name="growth_granite" type="simple" properties="no_render,farm_plant" spine="granite" spine_ani="main_03" through="true" resource="" draw_layer="normal" build="1" extract="1" pak="">
+        <gameobject saveable="true">
+            <behaviour value="SpineBehaviour" _spine="granite" saveable="true" />
+            <behaviour value="SpineRenderBehaviour" _offset="0,0.5" saveable="true" _draw_order="13" />
+            <behaviour value="AnimationBehaviour" saveable="true">
+                <states>
+                    <state name="1_growth" loop="false" ani="main_01_born" next="1_idle" />
+                    <state name="1_idle" loop="true" ani="main_01" />
+                    <state name="2_growth" loop="false" ani="main_02_born" next="2_idle" />
+                    <state name="2_idle" loop="true" ani="main_02" />
+                    <state name="3_growth" loop="false" ani="main_03_born" next="3_idle" />
+                    <state name="3_idle" loop="true" ani="main_03" />
+                    <state name="4_growth" loop="false" ani="main_04_born" next="4_idle" denied="4_idle" />
+                    <state name="4_idle" loop="true" ani="main_04" />
+                </states>
+            </behaviour>
+            <behaviour value="ResourceDropBehaviour" _resources="granite_mog-2" _auto_drop="false" saveable="true" />
+            <behaviour value="GrowthBehaviour" _stages="3" _state_mask="%i_growth" _duration="1500" saveable="true" />
+        </gameobject>
+    </block>
     <block name="dragon_egg" extract="0" item="dragon_egg" through="true" build="3" resource="dragon_egg" pak="" />
     <!--**************************************************************  Block  ****************************************************************-->
     <!--***************************************************************************************************************************************-->
+    <block name="growth_ice_1" file="gfx\Spine\environment\down_roots\1_prev" extract="3" growth="false" through="true" resource="ice-1" nodigunder="false" crack="false" ontop="true" properties="tree,apply_tool2,max_height=60,props=dirt,param1=growth_ice_spine_1,param2=&apos;01&apos;,layer=1" pak="Grottoes DLC" />
+    <block name="growth_ice_2" file="gfx\Spine\environment\down_roots\1_prev" extract="3" growth="false" through="true" resource="ice-1" nodigunder="false" crack="false" ontop="true" properties="tree,apply_tool2,max_height=60,props=dirt,param1=growth_ice_spine_2,param2=&apos;01&apos;,layer=1" pak="Grottoes DLC" />
+    <block name="growth_ice_3" file="gfx\Spine\environment\down_roots\1_prev" extract="3" growth="false" through="true" resource="ice-1" nodigunder="false" crack="false" ontop="true" properties="tree,apply_tool2,max_height=60,props=dirt,param1=growth_ice_spine_3,param2=&apos;01&apos;,layer=1" pak="Grottoes DLC" />
+    <block name="growth_ice_4" file="gfx\Spine\environment\down_roots\1_prev" extract="3" growth="false" through="true" resource="ice-1" nodigunder="false" crack="false" ontop="true" properties="tree,apply_tool2,max_height=60,props=dirt,param1=growth_ice_spine_4,param2=&apos;01&apos;,layer=1" pak="Grottoes DLC" />
+    <block name="seed_ice_spine" atlas="%mod%/gfx/blocks/dirt/rock_block_template.png" type="solid block" properties="can_climb,editor=DLC_grottoes" atlas_element="block" resource="stone" build="1" extract="1" stayon="true" crack="true" draw_layer="front_a3" ontop="true" corner_group="10" pak="">
+        <gameobject>
+            <behaviour value="SpawnBlockBehaviour">
+                <offset value="0,1" />
+                <spawn value="growth_ice_1,growth_ice_2,growth_ice_3,growth_ice_4" />
+                <period value="2400" />
+            </behaviour>
+        </gameobject>
+    </block>
+    <block name="growth_obsidian_1" file="gfx\Spine\environment\down_roots\1_prev" extract="3" growth="false" through="true" resource="obsidian_mog-1" nodigunder="false" crack="false" ontop="true" properties="tree,apply_tool2,max_height=60,props=dirt,param1=growth_obsidian_spine_1,param2=&apos;01&apos;,layer=1" pak="Grottoes DLC" />
+    <block name="growth_obsidian_2" file="gfx\Spine\environment\down_roots\1_prev" extract="3" growth="false" through="true" resource="obsidian_mog-1" nodigunder="false" crack="false" ontop="true" properties="tree,apply_tool2,max_height=60,props=dirt,param1=growth_obsidian_spine_2,param2=&apos;01&apos;,layer=1" pak="Grottoes DLC" />
+    <block name="growth_obsidian_3" file="gfx\Spine\environment\down_roots\1_prev" extract="3" growth="false" through="true" resource="obsidian_mog-1" nodigunder="false" crack="false" ontop="true" properties="tree,apply_tool2,max_height=60,props=dirt,param1=growth_obsidian_spine_3,param2=&apos;01&apos;,layer=1" pak="Grottoes DLC" />
+    <block name="growth_obsidian_4" file="gfx\Spine\environment\down_roots\1_prev" extract="3" growth="false" through="true" resource="obsidian_mog-1" nodigunder="false" crack="false" ontop="true" properties="tree,apply_tool2,max_height=60,props=dirt,param1=growth_obsidian_spine_4,param2=&apos;01&apos;,layer=1" pak="Grottoes DLC" />
+    <block name="seed_obsidian_spine" atlas="%mod%/gfx/blocks/dirt/rock_block_template.png" type="solid block" properties="can_climb,editor=DLC_grottoes" atlas_element="block" resource="stone" build="1" extract="1" stayon="true" crack="true" draw_layer="front_a3" ontop="true" corner_group="10" pak="">
+        <gameobject>
+            <behaviour value="SpawnBlockBehaviour">
+                <offset value="0,1" />
+                <spawn value="growth_obsidian_1,growth_obsidian_2,growth_obsidian_3,growth_obsidian_4" />
+                <period value="2400" />
+            </behaviour>
+        </gameobject>
+    </block>
     <!--..................  Bench  .................-->
     <!--............................................-->
     <block name="workbench_hl" build="1" extract="2" type="entity" item="workbench_hl" properties="editor=DLC_highland" resource="workbench_hl" pak="" />
     <block name="workbench" item="workbench" build="3" extract="6" resource="workbench" backcraft="false" properties="workbench,can_fall,ani_by_user,device" pak="" />
     <block name="workbench_improved" type="entity" item="workbench_improved" properties="" resource="workbench_improved" build="5" extract="10" pak="" />
     <block name="big_carpenter_hl_mog" type="entity" item="big_carpenter_hl_mog" properties="editor=DLC_highland" resource="big_carpenter_hl_mog" build="7" extract="14" pak="" />
+    <block name="workshop_basic" item="workshop_basic" extract="2" build="1" resource="workshop_basic" backcraft="false" properties="" pak="" />
+    <block name="workshop" item="workshop" extract="6" build="3" resource="workshop" backcraft="false" properties="workshop,can_fall,device" pak="" />
+    <block name="workshop_improved" item="workshop_improved" extract="10" build="5" resource="workshop_improved" backcraft="false" properties="" pak="" />
+    <block name="big_workshop_hl_mog" type="entity" item="big_workshop_hl_mog" properties="editor=DLC_highland" resource="big_workshop_hl_mog" build="7" extract="14" pak="" />
     <block name="smithy_basic" item="smithy_basic" build="1" extract="2" resource="smithy_basic" properties="" pak="" />
     <block name="smithy" item="smithy" build="3" extract="6" resource="smithy" properties="smithy,metallic,device" pak="" />
     <block name="smithy_improved" item="smithy_improved" build="5" extract="10" resource="smithy_improved" properties="" pak="" />
@@ -29,8 +130,8 @@
     <!--..................  Mechanisms   .................-->
     <!--..................................................-->
     <block name="trolley" item="trolley" build="5" resource="trolley" extract="3" backcraft="false" properties="trolley,buildonp=rail,metallic,editor=build" pak="" />
-    <block name="trolley_hl_mog" item="trolley_hl_mog" build="5" resource="trolley_hl_mog" extract="3" backcraft="false" properties="trolley,buildonp=rail,metallic,editor=build" pak="" />
-    <block name="trolley_machine" item="trolley_machine" build="5" resource="trolley_machine" extract="3" backcraft="false" properties="trolley,buildonp=rail,metallic,editor=build" pak="" />
+    <block name="trolley_hl_mog" item="trolley_hl_mog" build="5" resource="trolley_hl_mog" extract="3" backcraft="false" properties="trolley,buildonp=rail,metallic" pak="" />
+    <block name="trolley_machine" item="trolley_machine" build="5" resource="trolley_machine" extract="3" backcraft="false" properties="trolley,buildonp=rail,metallic" pak="" />
     <block name="mana_expander_green" item="mana_expander_green" build="3" extract="30" resource="mana_expander_green" category="map_obj" properties="" pak="" />
     <block name="mana_expander_red" item="mana_expander_red" build="3" extract="30" resource="mana_expander_red" category="map_obj" properties="" pak="" />
     <block name="mana_expander" item="mana_expander" build="3" extract="30" resource="mana_expander" category="map_obj" properties="" pak="" />
@@ -90,20 +191,810 @@
     <block name="stone_titan_01" type="simple" properties="editor=DLC_two_fortress,replace_with=stone_titan_02,user_mirror_switch,can_fall,no_bg_third,draw_align=down,scale=2.00,draw_offset_x=0.0,draw_offset_y=0.4" file="gfx/RoomsDLC/blocks/rock_iron_mine_01.png" resource="titan" draw_layer="normal" build="10" extract="300" ontop="true" through="true" pak="" />
     <block name="stone_titan_02" type="simple" properties="editor=DLC_two_fortress,replace_with=stone_titan_03,user_mirror_switch,can_fall,no_bg_third,draw_align=down,draw_offset_x=0.0,draw_offset_y=0.4" file="gfx/RoomsDLC/blocks/rock_iron_mine_02.png" resource="titan" draw_layer="normal" build="1" ontop="true" through="true" extract="150" pak="" />
     <block name="stone_titan_03" type="simple" properties="editor=DLC_two_fortress,user_mirror_switch,can_fall,no_bg_third,draw_align=down,draw_offset_x=0.0,draw_offset_y=0.4" file="gfx/RoomsDLC/blocks/rock_iron_mine_03.png" resource="titan,stone" draw_layer="normal" build="1" extract="150" ontop="true" through="true" pak="" />
+    <!--..................  New ladder  .................-->
+    <!--.................................................-->
+    <block name="goblin_ladder_mog" file="gfx\level_tiles\craft_constructions\goblin_ladder1" build="1" through="true" stayon="true" resource="goblin_ladder_mog" ontop="true" properties="ladder=1,weather_through,wooden,narrow,no_chain_crash,fire=fire_vertical,editor=build,scale_yaxis" draw_layer="normal" extract="1" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\craft_constructions\goblin_ladder1" build="1" backcraft="true" stayon="true" through="true" resource="goblin_ladder_mog" crack="false" ontop="true" properties="ladder=1,weather_through,wooden,narrow,fire=fire_vertical,scale_yaxis" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\goblin_ladder" build="1" backcraft="true" stayon="true" through="true" resource="goblin_ladder_mog" crack="false" ontop="true" properties="ladder=1,weather_through,wooden,narrow,fire=fire_vertical,scale_yaxis" />
+            <block name="bottom" file="gfx\level_tiles\craft_constructions\goblin_ladder1" build="1" backcraft="true" stayon="true" through="true" resource="goblin_ladder_mog" crack="false" ontop="true" properties="ladder=1,weather_through,wooden,narrow,fire=fire_vertical,scale_yaxis" />
+        </collumn>
+    </block>
+    <block name="ladder_mine_mog" atlas="gfx/RoomsDLC/blocks/ladder_mine.png" type="column" properties="true,editor=DLC_Rooms,ladder=x1.1,can_climb,no_chain_crash,fire=fire_block,wooden" atlas_element="column_base" resource="ladder_mine_mog" build="1" crack="true" ontop="true" extract="1" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="true,ladder=x1.1" build="1" extract="1" through="true" crack="false" ontop="true" stayon="false" />
+            <block name="trunk" atlas_element="column_tile" properties="true,ladder=x1.1" build="1" extract="1" through="true" crack="false" ontop="true" stayon="false" />
+            <block name="bottom" atlas_element="column_bottom" properties="true,ladder=x1.1" build="1" extract="1" through="true" crack="false" ontop="true" stayon="false" />
+        </collumn>
+    </block>
+    <block name="ladder" file="gfx\level_tiles\craft_constructions\ladder" build="1" through="true" stayon="true" resource="ladder" ontop="true" properties="ladder=x1.2,weather_through,wooden,narrow,no_chain_crash,fire=fire_vertical,editor=build" draw_layer="normal" extract="2" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\craft_constructions\ladder_top" build="1" backcraft="true" stayon="true" through="true" resource="ladder" crack="false" ontop="true" properties="ladder=x1.2,weather_through,wooden,narrow,fire=fire_vertical" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\ladder_trunk" build="1" backcraft="true" stayon="true" through="true" resource="ladder" crack="false" ontop="true" properties="ladder=x1.2,weather_through,wooden,narrow,fire=fire_vertical" />
+            <block name="bottom" file="gfx\level_tiles\craft_constructions\ladder_buttom" build="1" backcraft="true" stayon="true" through="true" resource="ladder" crack="false" ontop="true" properties="ladder=x1.2,weather_through,wooden,narrow,fire=fire_vertical" />
+        </collumn>
+    </block>
+    <block name="ladder_wood" file="gfx\level_tiles\craft_constructions\portable_ladder" build="1" through="true" stayon="true" resource="ladder_wood" ontop="true" properties="ladder=x1.3,weather_through,wooden,narrow,no_chain_crash,fire=fire_vertical,editor=build,scale_yaxis" draw_layer="normal" extract="3" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\craft_constructions\portable_ladder_top" build="1" backcraft="true" stayon="true" through="true" resource="ladder_wood" crack="false" ontop="true" properties="ladder=x1.3,weather_through,wooden,narrow,fire=fire_vertical,scale_yaxis" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\portable_ladder_trunk" build="1" backcraft="true" stayon="true" through="true" resource="ladder_wood" crack="false" ontop="true" properties="ladder=x1.3,weather_through,wooden,narrow,fire=fire_vertical,scale_yaxis" />
+            <block name="bottom" file="gfx\level_tiles\craft_constructions\portable_ladder_buttom" build="1" backcraft="true" stayon="true" through="true" resource="ladder_wood" crack="false" ontop="true" properties="ladder=x1.3,weather_through,wooden,narrow,fire=fire_vertical,scale_yaxis" />
+        </collumn>
+    </block>
+    <block name="cave_ladder_mog" file="gfx\level_tiles\map_obj\cave_gobl_ladders\cave_gobl_ladder_single" build="2" through="true" stayon="true" resource="cave_ladder_mog" ontop="true" properties="ladder=x1.5,weather_through,wooden,narrow,no_chain_crash,draw_align=center,scale_yaxis" draw_layer="normal" extract="5" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\map_obj\cave_gobl_ladders\cave_gobl_ladder_top" build="2" backcraft="true" stayon="true" through="true" resource="cave_ladder_mog" crack="false" ontop="true" properties="ladder=x1.5,weather_through,wooden,narrow,scale_yaxis,draw_align=center" />
+            <block name="trunk" file="gfx\level_tiles\map_obj\cave_gobl_ladders\cave_gobl_ladder_middle" build="2" backcraft="true" stayon="true" through="true" resource="cave_ladder_mog" crack="false" ontop="true" properties="ladder=x1.5,weather_through,wooden,narrow,scale_yaxis,draw_align=center" />
+            <block name="bottom" file="gfx\level_tiles\map_obj\cave_gobl_ladders\cave_gobl_ladder_bottom" build="2" backcraft="true" stayon="true" through="true" resource="cave_ladder_mog" crack="false" ontop="true" properties="ladder=x1.5,weather_through,wooden,narrow,scale_yaxis,draw_align=center" />
+        </collumn>
+    </block>
+    <block name="ladder_ice" file="%mod%/gfx/blocks/constructions/ladder/ladder_ice.png" build="3" through="true" stayon="true" resource="ladder_ice" ontop="true" properties="ladder=x1.7,weather_through,narrow,no_chain_crash,stony,draw_align=down,scale_yaxis" draw_layer="normal" extract="8" pak="">
+        <collumn>
+            <block name="top" file="%mod%/gfx/blocks/constructions/ladder/ladder_ice.png" build="3" backcraft="true" stayon="true" through="true" resource="ladder_ice" crack="false" ontop="true" properties="ladder=x1.7,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+            <block name="trunk" file="%mod%/gfx/blocks/constructions/ladder/ladder_ice.png" build="3" backcraft="true" stayon="true" through="true" resource="ladder_ice" crack="false" ontop="true" properties="ladder=x1.7,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+            <block name="bottom" file="%mod%/gfx/blocks/constructions/ladder/ladder_ice.png" build="3" backcraft="true" stayon="true" through="true" resource="ladder_ice" crack="false" ontop="true" properties="ladder=x1.7,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+        </collumn>
+    </block>
+    <block name="ladder_stone" atlas="%mod%/gfx/blocks/constructions/ladder/ladder_stone_template.png" build="4" type="column" properties="can_climb,no_chain_crash,ladder=x1.9,stony" draw_layer="normal" through="true" ontop="true" stayon="true" crack="true" atlas_element="column_base" resource="ladder_stone" effect_scale="1" extract="11" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="ladder=x1.9" build="4" extract="11" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="ladder=x1.9" build="4" extract="11" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="ladder=x1.9" build="4" extract="11" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="ladder_ancient_mog" file="gfx\level_tiles\map_obj\Ancient_rooms\ladder\ancient_ladder" build="4" through="true" stayon="true" resource="ladder_ancient_mog" ontop="true" properties="ladder=x2,weather_through,stony,narrow,no_chain_crash,editor=ancient,draw_align=down,scale_yaxis" draw_layer="normal" extract="12" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\map_obj\Ancient_rooms\ladder\ancient_ladder_top" build="4" backcraft="true" stayon="true" through="true" resource="ladder_ancient_mog" crack="false" ontop="true" properties="ladder=x2,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+            <block name="trunk" file="gfx\level_tiles\map_obj\Ancient_rooms\ladder\ancient_ladder_trunk" build="4" backcraft="true" stayon="true" through="true" resource="ladder_ancient_mog" crack="false" ontop="true" properties="ladder=x2,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+            <block name="bottom" file="gfx\level_tiles\map_obj\Ancient_rooms\ladder\ancient_ladder_buttom" build="4" backcraft="true" stayon="true" through="true" resource="ladder_ancient_mog" crack="false" ontop="true" properties="ladder=x2,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+        </collumn>
+    </block>
+    <block name="ladder_brick_broken" file="%mod%/gfx/blocks/constructions/ladder/ladder_brick_broken.png" build="5" through="true" stayon="true" resource="ladder_brick_broken" ontop="true" properties="ladder=x2.2,weather_through,narrow,no_chain_crash,bricken,draw_align=down,scale_yaxis" draw_layer="normal" extract="14" pak="">
+        <collumn>
+            <block name="top" file="%mod%/gfx/blocks/constructions/ladder/ladder_brick_broken.png" build="5" backcraft="true" stayon="true" through="true" resource="ladder_brick_broken" crack="false" ontop="true" properties="ladder=x2.2,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+            <block name="trunk" file="%mod%/gfx/blocks/constructions/ladder/ladder_brick_broken.png" build="5" backcraft="true" stayon="true" through="true" resource="ladder_brick_broken" crack="false" ontop="true" properties="ladder=x2.2,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+            <block name="bottom" file="%mod%/gfx/blocks/constructions/ladder/ladder_brick_broken.png" build="5" backcraft="true" stayon="true" through="true" resource="ladder_brick_broken" crack="false" ontop="true" properties="ladder=x2.2,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+        </collumn>
+    </block>
+    <block name="ladder_brick" file="%mod%/gfx/blocks/constructions/ladder/ladder_brick.png" build="5" through="true" stayon="true" resource="ladder_brick" ontop="true" properties="ladder=x2.2,weather_through,narrow,no_chain_crash,bricken,draw_align=down,scale_yaxis" draw_layer="normal" extract="14" pak="">
+        <collumn>
+            <block name="top" file="%mod%/gfx/blocks/constructions/ladder/ladder_brick.png" build="5" backcraft="true" stayon="true" through="true" resource="ladder_brick" crack="false" ontop="true" properties="ladder=x2.2,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+            <block name="trunk" file="%mod%/gfx/blocks/constructions/ladder/ladder_brick.png" build="5" backcraft="true" stayon="true" through="true" resource="ladder_brick" crack="false" ontop="true" properties="ladder=x2.2,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+            <block name="bottom" file="%mod%/gfx/blocks/constructions/ladder/ladder_brick.png" build="5" backcraft="true" stayon="true" through="true" resource="ladder_brick" crack="false" ontop="true" properties="ladder=x2.2,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+        </collumn>
+    </block>
+    <block name="ladder_desert_temple_mog" atlas="gfx/MonstersDLC/blocks/ladder_desert_temple.png" type="column" properties="editor=DLC_monsters,stony,ladder=x2.5,true,no_chain_crash" atlas_element="column_base" resource="ladder_desert_temple_mog" ontop="true" stayon="true" build="6" extract="18" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="ladder=x2.5,true" build="6" extract="18" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="ladder=x2.5,true" build="6" extract="18" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="ladder=x2.5,true" build="6" extract="18" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="staircase_with_railinge_broken_mog" type="column" properties="editor=DLC_highland,can_climb,ladder=x2.8,metallic,narrow,no_chain_crash" resource="staircase_with_railinge_broken_mog" atlas="gfx/HighlandDLC/blocks/staircase_with_railinge_broken.png" atlas_element="column_base" ontop="true" extract="21" crack="true" through="true" stayon="true" build="7" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="ladder=x2.8" build="7" extract="21" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="ladder=x2.8" build="7" extract="21" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="ladder=x2.8" build="7" extract="21" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="staircase_with_railinge_mog" atlas="gfx/HighlandDLC/blocks/staircase_with_railinge.png" type="column" properties="editor=DLC_highland,can_climb,ladder=x2.8,metallic,narrow,no_chain_crash" atlas_element="column_base" resource="staircase_with_railinge_mog" extract="21" crack="true" stayon="true" through="true" ontop="true" build="7" tornado_resist="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="ladder=x2.8" build="7" extract="21" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="ladder=x2.8" build="7" extract="21" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="ladder=x2.8" build="7" extract="21" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="staircase_without_railings_broken_mog" atlas="gfx/HighlandDLC/blocks/staircase_without_railings_broken.png" type="column" properties="editor=DLC_highland,can_climb,ladder=x3,metallic,narrow,no_chain_crash" atlas_element="column_base" resource="staircase_without_railings_broken_mog" ontop="true" extract="23" crack="true" through="true" stayon="true" build="7" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="ladder=x3" build="7" extract="23" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="ladder=x3" build="7" extract="23" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="ladder=x3" build="7" extract="23" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="staircase_without_railings_mog" atlas="gfx/HighlandDLC/blocks/staircase_without_railings.png" type="column" properties="ladder=x3,editor=DLC_highland,can_climb,metallic,narrow,no_chain_crash,true" atlas_element="column_base" resource="staircase_without_railings_mog" extract="23" crack="true" through="true" stayon="true" ontop="true" build="7" tornado_resist="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="ladder=x3" build="7" extract="23" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="ladder=x3" build="7" extract="23" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="ladder=x3" build="7" extract="23" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="stone_staircase" type="column" atlas_element="column_base" properties="ladder=x3.3,stony,can_climb,no_chain_crash,scale_yaxis" resource="stone_staircase" through="true" draw_layer="normal" ontop="true" stayon="true" file="gfx/CommonFarm/item_icons/stone_staircase_icon.png" atlas="gfx/CommonFarm/block/stone_staircase.png" build="8" crack="true" extract="28" tornado_resist="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="ladder=x3.3" build="8" extract="28" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="ladder=x3.3" build="8" extract="28" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="ladder=x3.3" build="8" extract="28" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="metal_ladder" atlas="%mod%/gfx/blocks/constructions/ladder/metal_ladder.png" type="column" properties="metallic,ladder=x3.6,no_chain_crash" draw_layer="normal" through="true" ontop="true" stayon="true" crack="true" atlas_element="column_base" resource="metal_ladder" effect_scale="1" extract="31" build="9" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="ladder=x3.6" build="9" extract="31" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="ladder=x3.6" build="9" extract="31" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="ladder=x3.6" build="9" extract="31" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="ladder_granite" atlas="%mod%/gfx/blocks/constructions/ladder/granite_ladder_template.png" extract="38" type="column" properties="can_climb,no_chain_crash,ladder=x3.9,stony" draw_layer="normal" through="true" ontop="true" stayon="true" crack="true" atlas_element="column_base" resource="ladder_granite" effect_scale="1" build="10" tornado_resist="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="ladder=x3.9" build="10" extract="38" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="ladder=x3.9" build="10" extract="38" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="ladder=x3.9" build="10" extract="38" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="stairs" atlas="%mod%/gfx/blocks/constructions/ladder/stairs.png" build="11" extract="43" type="column" properties="can_climb,no_chain_crash,ladder=x4.2,metallic" draw_layer="normal" through="true" ontop="true" stayon="true" crack="true" atlas_element="column_base" resource="stairs" effect_scale="1" tornado_resist="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="ladder=x4.2" build="11" extract="43" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="ladder=x4.2" build="11" extract="43" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="ladder=x4.2" build="11" extract="43" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="steel_ladder" file="gfx\level_tiles\craft_constructions\steel_ladder" build="11" through="true" stayon="true" resource="steel_ladder" ontop="true" properties="ladder=x4.4,weather_through,metallic,narrow,no_chain_crash,editor=build,draw_align=center,scale_yaxis" draw_layer="normal" extract="45" tornado_resist="true" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\craft_constructions\steel_ladder_top" build="11" backcraft="true" stayon="true" through="true" resource="steel_ladder" crack="false" ontop="true" properties="ladder=4.4,weather_through,iron,narrow,scale_yaxis,draw_align=center" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\steel_ladder_trunk" build="11" backcraft="true" stayon="true" through="true" resource="steel_ladder" crack="false" ontop="true" properties="ladder=4.4,weather_through,iron,narrow,scale_yaxis,draw_align=center" />
+            <block name="bottom" file="gfx\level_tiles\craft_constructions\steel_ladder_buttom" build="11" backcraft="true" stayon="true" through="true" resource="steel_ladder" crack="false" ontop="true" properties="ladder=4.4,weather_through,iron,narrow,scale_yaxis,draw_align=center" />
+        </collumn>
+    </block>
+    <!--..................  Original ladder  .................-->
+    <!--......................................................-->
+    <block name="goblin_ladder" file="gfx\level_tiles\craft_constructions\goblin_ladder" through="true" build="1" backcraft="true" stayon="true" resource="wood-2" extract="4" ontop="true" crack="false" properties="ladder=1,weather_through,wooden,crash_time=40-80" pak="" />
+    <block name="ladder_mine" atlas="gfx/RoomsDLC/blocks/ladder_mine.png" type="column" properties="true,editor=DLC_Rooms,ladder,can_climb,no_chain_crash,fire=fire_block,wooden" atlas_element="column_base" resource="wood-1,iron-1-30" build="1" extract="1" crack="true" pak="Rooms DLC">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="true,ladder" build="1" extract="1" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="true,ladder" build="1" extract="1" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="true,ladder" build="1" extract="1" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="cave_ladder" file="gfx\level_tiles\map_obj\cave_gobl_ladders\cave_gobl_ladder_single" extract="4" build="1" through="true" stayon="true" resource="bone-2" crack="false" ontop="true" properties="ladder=1,weather_through,wooden,narrow,no_chain_crash,scale_yaxis,draw_align=center" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\map_obj\cave_gobl_ladders\cave_gobl_ladder_top" build="1" backcraft="true" stayon="true" through="true" resource="bone-2" crack="false" ontop="true" properties="ladder=1,weather_through,wooden,narrow,scale_yaxis,draw_align=center" />
+            <block name="trunk" file="gfx\level_tiles\map_obj\cave_gobl_ladders\cave_gobl_ladder_middle" build="1" backcraft="true" stayon="true" through="true" resource="bone-2" crack="false" ontop="true" properties="ladder=1,weather_through,wooden,narrow,scale_yaxis,draw_align=center" />
+            <block name="bottom" file="gfx\level_tiles\map_obj\cave_gobl_ladders\cave_gobl_ladder_bottom" build="1" backcraft="true" stayon="true" through="true" resource="bone-2" crack="false" ontop="true" properties="ladder=1,weather_through,wooden,narrow,scale_yaxis,draw_align=center" />
+        </collumn>
+    </block>
+    <block name="ladder_ancient" file="gfx\level_tiles\map_obj\Ancient_rooms\ladder\ancient_ladder" extract="4" build="1" through="true" stayon="true" resource="stone-1|2" crack="false" ontop="true" properties="ladder=1,weather_through,stony,narrow,no_chain_crash,scale_yaxis,draw_align=down,editor=ancient" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\map_obj\Ancient_rooms\ladder\ancient_ladder_top" build="1" backcraft="true" stayon="true" through="true" resource="stone-1|2" crack="false" ontop="true" properties="ladder=1,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+            <block name="trunk" file="gfx\level_tiles\map_obj\Ancient_rooms\ladder\ancient_ladder_trunk" build="1" backcraft="true" stayon="true" through="true" resource="stone-1|2" crack="false" ontop="true" properties="ladder=1,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+            <block name="bottom" file="gfx\level_tiles\map_obj\Ancient_rooms\ladder\ancient_ladder_buttom" build="1" backcraft="true" stayon="true" through="true" resource="stone-1|2" crack="false" ontop="true" properties="ladder=1,weather_through,stony,narrow,scale_yaxis,draw_align=down" />
+        </collumn>
+    </block>
+    <block name="ladder_desert_temple" atlas="gfx/MonstersDLC/blocks/ladder_desert_temple.png" type="column" properties="editor=DLC_monsters,stony,ladder=x1.5,=true,=true,=true" atlas_element="column_base" resource="sandstone-2" ontop="true" stayon="true" build="10" extract="10" pak="Monsters DLC">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="ladder=x1.5" build="10" extract="10" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="ladder=x1.5" build="10" extract="10" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="ladder=x1.5" build="10" extract="10" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <!--..................  New column  .................-->
+    <!--.................................................-->
+    <block name="column_mine_mog" atlas="gfx/RoomsDLC/blocks/column_mine.png" type="column" properties="editor=DLC_Rooms,true,wooden" atlas_element="column_base" resource="column_mine_mog" ontop="true" stayon="true" build="1" extract="1" crack="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="1" extract="1" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="1" extract="1" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="1" extract="1" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="collumn_wood" atlas="%mod%/gfx/blocks/constructions/collumn/collumn_wood/collumn_wood_template.png" type="column" atlas_element="column_base" build="1" backcraft="true" resource="collumn_wood" nodigunder="true" ontop="true" properties="narrow,wooden" draw_layer="normal" extract="2" stayon="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="1" extract="2" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="1" extract="2" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="1" extract="2" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="column_prop_broken_mog" atlas="gfx/HighlandDLC/blocks/column_prop_broken.png" type="column" properties="editor=DLC_highland,true,wooden" atlas_element="column_base" resource="column_prop_broken_mog" stayon="true" through="true" ontop="true" extract="3" build="1" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="1" extract="3" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="1" extract="3" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="1" extract="3" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="column_prop_mog" atlas="gfx/HighlandDLC/blocks/column_prop.png" type="column" properties="editor=DLC_highland,wooden,true" atlas_element="column_base" resource="column_prop_mog" ontop="true" through="true" extract="3" build="1" stayon="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="1" extract="3" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="1" extract="3" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="1" extract="3" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="column_grottoes_stalactite_mog" atlas="gfx/GrottoesDLC/blocks/column_grottoes_stalactite.png" type="column" properties="editor=DLC_grottoes,true,stony" atlas_element="column_base" resource="column_grottoes_stalactite_mog" ontop="true" build="2" extract="5" stayon="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="2" extract="5" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="2" extract="5" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="2" extract="5" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="collumn_grottoes_elven" atlas="%mod%/gfx/blocks/constructions/collumn/collumn_grottoes_elven/collumn_grottoes_elven_template.png" type="column" atlas_element="column_base" extract="6" build="2" backcraft="true" resource="collumn_grottoes_elven" nodigunder="true" ontop="true" properties="stony,narrow" draw_layer="normal" stayon="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="2" extract="6" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="2" extract="6" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="2" extract="6" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="collumn_ice" file="%mod%/gfx/blocks/constructions/collumn/collumn_ice/vert_low.png" extract="8" build="3" backcraft="true" through="true" resource="collumn_ice" nodigunder="true" ontop="true" properties="stony,narrow,draw_align=center,scale_yaxis" draw_layer="normal" stayon="true" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\map_obj\elf_ice_bridge\gor_centr_twosided.png" build="3" backcraft="true" through="true" resource="collumn_ice" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="trunk" file="%mod%/gfx/blocks/constructions/collumn/collumn_ice/vert_low.png" build="3" backcraft="true" through="true" resource="collumn_ice" crack="false" ontop="true" stayon="true" properties="stony,narrow,draw_align=center,scale_yaxis" />
+            <block name="bottom" file="%mod%/gfx/blocks/constructions/collumn/collumn_ice/gor_centr_twosided.png" build="3" backcraft="true" through="true" resource="collumn_ice" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+        </collumn>
+    </block>
+    <block name="collumn_tomb_mog" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_collumn_middle_01" backcraft="true" through="true" resource="collumn_tomb_mog" nodigunder="false" ontop="true" properties="stony,narrow,draw_align=center,scale_yaxis" draw_layer="normal" build="4" stayon="true" extract="11" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_fl3" build="4" backcraft="true" through="true" resource="collumn_tomb_mog" crack="false" ontop="true" stayon="true" properties="stony,narrow,draw_align=center,scale_yaxis" />
+            <block name="trunk" file="%mod%/gfx/blocks/constructions/collumn/collumn_tomb/tomb_collumn_middle_01.png" build="4" backcraft="true" through="true" resource="collumn_tomb_mog" crack="false" ontop="true" stayon="true" properties="stony,narrow,draw_align=center,scale_yaxis" />
+            <block name="trunk" file="%mod%/gfx/blocks/constructions/collumn/collumn_tomb/tomb_collumn_middle_02.png" build="4" backcraft="true" through="true" resource="collumn_tomb_mog" crack="false" ontop="true" stayon="true" properties="stony,narrow,draw_align=center,scale_yaxis" />
+            <block name="bottom" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_collumn_bottom_01" build="4" backcraft="true" through="true" resource="collumn_tomb_mog" crack="false" ontop="true" stayon="true" properties="stony,narrow,scale_yaxis" />
+        </collumn>
+    </block>
+    <block name="collumn_ancient_mog" file="gfx\level_tiles\map_obj\Ancient_rooms\column\ancient_column" backcraft="true" through="true" resource="collumn_ancient_mog" nodigunder="false" ontop="true" properties="stony,narrow,editor=ancient" draw_layer="normal" build="4" stayon="true" extract="12" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\map_obj\Ancient_rooms\column\ancient_collumn_top_01" build="4" backcraft="true" through="true" resource="collumn_ancient_mog" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="trunk" file="gfx\level_tiles\map_obj\Ancient_rooms\column\ancient_column_middle_01" build="4" backcraft="true" through="true" resource="collumn_ancient_mog" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="trunk" file="gfx\level_tiles\map_obj\Ancient_rooms\column\ancient_column_middle_02" build="4" backcraft="true" through="true" resource="collumn_ancient_mog" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="bottom" file="gfx\level_tiles\map_obj\Ancient_rooms\column\ancient_column_bottom_01" build="4" backcraft="true" through="true" resource="collumn_ancient_mog" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="bottom" file="gfx\level_tiles\map_obj\Ancient_rooms\column\ancient_column_bottom_01" build="4" backcraft="true" through="true" resource="collumn_ancient_mog" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+        </collumn>
+    </block>
+    <block name="collumn" file="gfx\level_tiles\tile\collumn_top_01" build="4" backcraft="true" through="true" resource="collumn" nodigunder="true" ontop="true" properties="stony,narrow" draw_layer="normal" stayon="true" extract="12" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\tile\collumn_top_01" build="4" backcraft="true" through="true" resource="collumn" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="trunk" file="gfx\level_tiles\tile\collumn_middle_01" build="4" backcraft="true" through="true" resource="collumn" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="bottom" file="gfx\level_tiles\tile\collumn_botton_01" build="4" backcraft="true" through="true" resource="collumn" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+        </collumn>
+    </block>
+    <block name="column_ordinary_broken_mog" atlas="gfx/HighlandDLC/blocks/column_ordinary_broken.png" type="column" properties="editor=DLC_highland,true,bricken" atlas_element="column_base" resource="column_ordinary_broken_mog" stayon="true" ontop="true" through="true" build="5" extract="14" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="5" extract="14" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="5" extract="14" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="5" extract="14" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="column_ordinary_mog" atlas="gfx/HighlandDLC/blocks/column_ordinary.png" type="column" properties="editor=DLC_highland,true,bricken" atlas_element="column_tile" resource="column_ordinary_mog" stayon="true" ontop="true" through="true" build="5" extract="14" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="5" extract="14" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="5" extract="14" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="5" extract="14" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="collumn_pyramid_mog" file="gfx\level_tiles\tile\piram_column_middle" through="true" resource="collumn_pyramid_mog" nodigunder="false" ontop="true" properties="stony,narrow" draw_layer="normal" build="6" stayon="true" extract="17" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\tile\piram_column_top" build="6" through="true" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="trunk" file="gfx\level_tiles\tile\piram_column_middle" build="6" through="true" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="trunk" file="gfx\level_tiles\tile\piram_column_middle2" build="6" through="true" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="bottom" file="gfx\level_tiles\tile\piram_column_bottom" build="6" through="true" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+        </collumn>
+    </block>
+    <block name="collumn_gothic" file="gfx\level_tiles\tile\clmn_middle_02" build="6" backcraft="true" through="true" resource="collumn_gothic" nodigunder="true" ontop="true" properties="stony,narrow" draw_layer="normal" stayon="true" extract="18" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\tile\clmn_top" build="6" backcraft="true" through="true" resource="collumn_gothic" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="trunk" file="gfx\level_tiles\tile\clmn_middle_01" build="6" backcraft="true" through="true" resource="collumn_gothic" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="trunk" file="gfx\level_tiles\tile\clmn_middle_02" build="6" backcraft="true" through="true" resource="collumn_gothic" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="bottom" file="gfx\level_tiles\tile\clmn_botton" build="6" backcraft="true" through="true" resource="collumn_gothic" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+        </collumn>
+    </block>
+    <block name="column_desert_temple_mog" atlas="gfx/MonstersDLC/blocks/column_desert_temple.png" type="column" properties="editor=DLC_monsters,stony" atlas_element="column_tile" resource="column_desert_temple_mog" ontop="true" stayon="true" build="6" extract="19" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="6" extract="19" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="6" extract="19" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="6" extract="19" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="collumn_copper" atlas="%mod%/gfx/blocks/constructions/collumn/collumn_copper/collumn_copper_template.png" type="column" atlas_element="column_base" extract="21" build="7" backcraft="true" resource="collumn_copper" nodigunder="true" ontop="true" properties="narrow,metallic" draw_layer="normal" stayon="true" tornado_resist="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="7" extract="21" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="7" extract="21" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="7" extract="21" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="collumn_steel" atlas="%mod%/gfx/blocks/constructions/collumn/collumn_steel/collumn_steel_template.png" type="column" atlas_element="column_base" extract="23" build="7" backcraft="true" resource="collumn_steel" nodigunder="true" ontop="true" properties="narrow,metallic" draw_layer="normal" stayon="true" tornado_resist="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="7" extract="23" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="7" extract="23" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="7" extract="23" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="column_evil_main_mog" atlas="gfx/Two_fortressDLC/blocks/column_evil_main.png" type="column" atlas_element="column_base" properties="editor=DLC_two_fortress,can_climb,stony,no_bg_third" ontop="true" resource="column_evil_main_mog" through="true" tornado_resist="true" extract="28" build="8" stayon="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="8" extract="28" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="8" extract="28" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="8" extract="28" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="collumn_marble" atlas="%mod%/gfx/blocks/constructions/collumn/collumn_marble/collumn_marble_template.png" type="column" atlas_element="column_base" extract="31" build="9" backcraft="true" resource="collumn_marble" nodigunder="true" ontop="true" properties="stony,narrow" draw_layer="normal" stayon="true" tornado_resist="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="9" extract="31" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="9" extract="31" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="9" extract="31" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="column_gnomes_facade_mog" atlas="gfx/Two_fortressDLC/blocks/column_gnomes_facade.png" type="column" atlas_element="column_base" properties="editor=DLC_two_fortress,no_bg_third,can_climb,stony" ontop="true" resource="column_gnomes_facade_mog" through="true" tornado_resist="true" extract="33" build="9" stayon="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="9" extract="33" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="9" extract="33" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="9" extract="33" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="collumn_stone" file="gfx\level_tiles\tile\back_stone_column4" extract="38" backcraft="true" through="true" resource="collumn_stone" nodigunder="false" ontop="true" properties="stony,narrow" draw_layer="normal" build="10" stayon="true" tornado_resist="true" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\tile\back_stone_column4" build="10" backcraft="true" through="true" resource="collumn_stone" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="trunk" file="gfx\level_tiles\tile\back_stone_column1" build="10" backcraft="true" through="true" resource="collumn_stone" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="trunk" file="gfx\level_tiles\tile\back_stone_column2" build="10" backcraft="true" through="true" resource="collumn_stone" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="trunk" file="gfx\level_tiles\tile\back_stone_column3" build="10" backcraft="true" through="true" resource="collumn_stone" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+        </collumn>
+    </block>
+    <block name="column_luxury_broken_mog" atlas="gfx/HighlandDLC/blocks/column_luxury_broken.png" type="column" properties="editor=DLC_highland,true,stony" atlas_element="column_tile" resource="column_luxury_broken_mog" stayon="true" ontop="true" through="true" extract="38" build="10" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="10" extract="38" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="10" extract="38" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="10" extract="38" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="column_luxury_mog" atlas="gfx/HighlandDLC/blocks/column_luxury.png" type="column" properties="can_climb,true,editor=DLC_highland,stony" atlas_element="column_base" resource="column_luxury_mog" stayon="true" ontop="true" through="true" extract="38" build="10" tornado_resist="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="10" extract="38" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="10" extract="38" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="10" extract="38" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="column_entrance_mog" atlas="gfx/HighlandDLC/blocks/column_entrance.png" type="column" properties="editor=DLC_highland,true,stony" atlas_element="column_base" resource="column_entrance_mog" ontop="true" extract="40" build="10" stayon="true" tornado_resist="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="10" extract="40" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="10" extract="40" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="10" extract="40" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="column_evil_facade_mog" atlas="gfx/Two_fortressDLC/blocks/column_evil_facade.png" type="column" atlas_element="column_base" properties="editor=DLC_two_fortress,can_climb,metallic" ontop="true" resource="column_evil_facade_mog" tornado_resist="true" through="true" extract="45" build="11" stayon="true" pak="">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="11" extract="45" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="11" extract="45" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="11" extract="45" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <!--..................  Original column  .................-->
+    <!--......................................................-->
+    <block name="column_mine" atlas="gfx/RoomsDLC/blocks/column_mine.png" type="column" properties="editor=DLC_Rooms,true" atlas_element="column_base" resource="wood-2,rope-1-50" ontop="true" stayon="true" build="1" extract="1" crack="true" pak="Rooms DLC">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="1" extract="1" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="1" extract="1" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="1" extract="1" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <block name="column_grottoes_stalactite" atlas="gfx/GrottoesDLC/blocks/column_grottoes_stalactite.png" type="column" properties="editor=DLC_grottoes,=true,=true,=true,=true" atlas_element="column_base" resource="clay-2|3" ontop="true" build="1" extract="1" pak="Grottoes DLC">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="1" extract="1" through="true" crack="false" ontop="true" stayon="false" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="1" extract="1" through="true" crack="false" ontop="true" stayon="false" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="1" extract="1" through="true" crack="false" ontop="true" stayon="false" />
+        </collumn>
+    </block>
+    <block name="collumn_tomb" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_collumn_middle_01" extract="10" build="5" backcraft="true" through="true" resource="stone-2,sand-1-50" nodigunder="false" crack="false" ontop="false" properties="stony,narrow,draw_align=center" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_collumn_middle_01" build="5" backcraft="true" through="true" resource="stone-2,sand-1-50" crack="false" ontop="false" stayon="true" properties="stony,narrow,draw_align=center" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_collumn_middle_01" build="5" backcraft="true" through="true" resource="stone-2,sand-1-50" crack="false" ontop="false" properties="stony,narrow,draw_align=center" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_collumn_middle_02" build="5" backcraft="true" through="true" resource="stone-2,sand-1-50" crack="false" ontop="false" properties="stony,narrow,draw_align=center" />
+            <block name="bottom" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_collumn_bottom_01" build="5" backcraft="true" through="true" resource="stone-2,sand-1-50" crack="false" ontop="false" properties="stony,narrow" />
+        </collumn>
+    </block>
+    <block name="collumn_ancient" file="gfx\level_tiles\map_obj\Ancient_rooms\column\ancient_column" extract="10" build="5" backcraft="true" through="true" resource="stone-2,clay-1-50" nodigunder="false" crack="false" ontop="false" properties="stony,narrow,editor=ancient" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\map_obj\Ancient_rooms\column\ancient_collumn_top_01" build="5" backcraft="true" through="true" resource="stone-2,clay-1-50" crack="false" ontop="false" stayon="true" properties="stony,narrow" />
+            <block name="trunk" file="gfx\level_tiles\map_obj\Ancient_rooms\column\ancient_column_middle_01" build="5" backcraft="true" through="true" resource="stone-2,clay-1-50" crack="false" ontop="false" properties="stony,narrow" />
+            <block name="trunk" file="gfx\level_tiles\map_obj\Ancient_rooms\column\ancient_column_middle_02" build="5" backcraft="true" through="true" resource="stone-2,clay-1-50" crack="false" ontop="false" properties="stony,narrow" />
+            <block name="bottom" file="gfx\level_tiles\map_obj\Ancient_rooms\column\ancient_column_bottom_01" build="5" backcraft="true" through="true" resource="stone-2,clay-1-50" crack="false" ontop="false" properties="stony,narrow" />
+            <block name="bottom" file="gfx\level_tiles\map_obj\Ancient_rooms\column\ancient_column_bottom_01" build="5" backcraft="true" through="true" resource="stone-2,clay-1-50" crack="false" ontop="false" properties="stony,narrow" />
+        </collumn>
+    </block>
+    <block name="collumn_pyramid" file="gfx\level_tiles\tile\piram_column_top" extract="10" build="5" through="true" resource="sandstone-2,sand-1-50" nodigunder="false" crack="false" ontop="false" properties="stony,narrow" pak="">
+        <collumn>
+            <block name="top" file="gfx\level_tiles\tile\piram_column_top" build="5" through="true" crack="false" ontop="true" stayon="true" properties="stony,narrow" />
+            <block name="trunk" file="gfx\level_tiles\tile\piram_column_middle" build="5" through="true" crack="false" ontop="true" properties="stony,narrow" />
+            <block name="trunk" file="gfx\level_tiles\tile\piram_column_middle2" build="5" through="true" crack="false" ontop="true" properties="stony,narrow" />
+            <block name="bottom" file="gfx\level_tiles\tile\piram_column_bottom" build="1" through="true" crack="false" ontop="true" properties="stony,narrow" />
+        </collumn>
+    </block>
+    <block name="column_desert_temple" atlas="gfx/MonstersDLC/blocks/column_desert_temple.png" type="column" properties="editor=DLC_monsters,stony" atlas_element="column_base" resource="sandstone-2|3" ontop="true" stayon="true" build="20" extract="50" pak="Monsters DLC">
+        <collumn>
+            <block name="top" atlas_element="column_top" properties="" build="20" extract="50" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="trunk" atlas_element="column_tile" properties="" build="20" extract="50" through="true" crack="false" ontop="true" stayon="true" />
+            <block name="bottom" atlas_element="column_bottom" properties="" build="20" extract="50" through="true" crack="false" ontop="true" stayon="true" />
+        </collumn>
+    </block>
+    <!--..................  New wall  .................-->
+    <!--...............................................-->
+    <block name="wall_mine_mog" atlas="gfx/RoomsDLC/blocks/wall_mine.png" type="wall" properties="editor=DLC_Rooms,can_replace,wooden" atlas_element="block" resource="wall_mine_mog" draw_layer="front_a10" build="1" crack="true" extract="1" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="1" extract="1" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="1" extract="1" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="1" extract="1" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="1" extract="1" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="1" extract="1" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="forest_wall" atlas="%mod%/gfx/blocks/constructions/wall/forest_wall_template.png" build="1" type="wall" properties="can_replace,wooden" draw_layer="front_a10" crack="true" atlas_element="block" resource="forest_wall" effect_scale="1" extract="1" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="1" extract="1" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="1" extract="1" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="1" extract="1" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="1" extract="1" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="1" extract="1" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="wooden" file="gfx\level_tiles\craft_constructions\block\wood_wall\wood_block" corner="gfx\level_tiles\craft_constructions\block\wood_wall\corner" extract="2" build="1" through="false" resource="wooden_block" crack="true" draw_layer="front_a8" properties="can_replace,wooden" border="wooden_block" corner_group="9" corner_type="every" pak="">
+        <wall>
+            <block name="top" file="gfx\level_tiles\craft_constructions\block\wood_wall\wood_stone_cr" through="true" resource="wooden_block" crack="true" properties="collide=up|left,offset=25%,narrow" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\block\wood_wall\wood_stone_fl" through="true" resource="wooden_block" crack="true" properties="collide=up,offset=25%,draw_align=up,narrow,scale_xaxis" />
+            <block name="bottom" file="gfx\level_tiles\craft_constructions\block\wood_wall\wood_stone_cr_r" through="true" resource="wooden_block" crack="true" properties="collide=right|up,offset=25%,narrow" />
+            <block name="middle_left" file="gfx\level_tiles\craft_constructions\block\wood_wall\wood_stone_r" through="true" resource="wooden_block" crack="true" properties="collide=left,offset=25%,draw_align=left,narrow,,scale_yaxis" />
+            <block name="middle_right" file="gfx\level_tiles\craft_constructions\block\wood_wall\wall_stone_r_r" through="true" resource="wooden_block" crack="true" properties="collide=right,offset=25%,draw_align=right,narrow,scale_yaxis" />
+        </wall>
+    </block>
+    <block name="asian_wood_wall" file="gfx\level_tiles\craft_constructions\block\asian_wood_wall\wood_block" corner="gfx\level_tiles\craft_constructions\block\asian_wood_wall\corner" extract="2" build="1" through="false" resource="asian_wood_wall" crack="true" draw_layer="front_a8" properties="can_replace,wooden" border="asian_wood_wall" corner_group="9" corner_type="every" pak="">
+        <wall>
+            <block name="top" file="gfx\level_tiles\craft_constructions\block\asian_wood_wall\wood_stone_cr" through="true" crack="true" resource="asian_wood_wall" properties="collide=up|left,offset=25%,narrow" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\block\asian_wood_wall\wood_stone_fl" through="true" crack="true" resource="asian_wood_wall" properties="collide=up,offset=25%,draw_align=up,narrow,,scale_xaxis" />
+            <block name="bottom" file="gfx\level_tiles\craft_constructions\block\asian_wood_wall\wood_stone_cr_r" through="true" crack="true" resource="asian_wood_wall" properties="collide=right|up,offset=25%,narrow" />
+            <block name="middle_left" file="gfx\level_tiles\craft_constructions\block\asian_wood_wall\wood_stone_r" through="true" crack="true" resource="asian_wood_wall" properties="collide=left,offset=25%,draw_align=left,narrow,scale_yaxis" />
+            <block name="middle_right" file="gfx\level_tiles\craft_constructions\block\asian_wood_wall\wall_stone_r_r" through="true" crack="true" resource="asian_wood_wall" properties="collide=right,offset=25%,draw_align=right,narrow,scale_yaxis" />
+        </wall>
+    </block>
+    <block name="poor_wall_broken_01_mog" atlas="gfx/HighlandDLC/blocks/poor_wall_broken_01.png" type="wall" properties="editor=DLC_highland,can_replace,can_climb,wooden" atlas_element="block" resource="poor_wall_broken_01_mog" crack="true" draw_layer="front_a1" stayon="true" extract="3" build="1" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="1" extract="3" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="1" extract="3" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="1" extract="3" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="1" extract="3" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="1" extract="3" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="poor_wall_01_mog" atlas="gfx/HighlandDLC/blocks/poor_wall_01.png" type="wall" properties="editor=DLC_highland,can_replace,can_climb,wooden" atlas_element="block" resource="poor_wall_01_mog" crack="true" draw_layer="front_a1" stayon="true" extract="3" build="1" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="1" extract="3" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="1" extract="3" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="1" extract="3" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="1" extract="3" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="1" extract="3" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="stone_with_moss_all_mog" atlas="gfx/GrottoesDLC/blocks/stone_with_moss_all.png" type="solid block" properties="editor=DLC_grottoes,can_climb,stony,can_replace" atlas_element="block" resource="stone_with_moss_all_mog" build="2" extract="5" stayon="true" crack="true" draw_layer="front_a3" corner_group="11" pak="" />
+    <block name="stone_with_moss_all_liana_mog" atlas="gfx/GrottoesDLC/blocks/stone_with_moss_all_liana.png" type="solid block" properties="editor=DLC_grottoes,can_climb,stony,can_replace" atlas_element="block" resource="stone_with_moss_all_liana_mog" build="2" extract="5" stayon="true" crack="true" draw_layer="front_a3" corner_group="11" pak="" />
+    <block name="stone_with_moss_mog" atlas="gfx/GrottoesDLC/blocks/stone_with_moss.png" type="solid block" properties="editor=DLC_grottoes,can_climb,stony,can_replace" atlas_element="block" resource="stone_with_moss_mog" build="2" extract="6" crack="true" stayon="true" draw_layer="front_a3" corner_group="10" pak="" />
+    <block name="stone_with_moss_liana_block_mog" atlas="gfx/GrottoesDLC/blocks/stone_with_moss_liana.png" type="solid block" properties="editor=DLC_grottoes,can_climb,stony,can_replace" atlas_element="block" resource="stone_with_moss_liana_block_mog" crack="true" build="2" extract="6" stayon="true" draw_layer="front_a3" corner_group="10" pak="" />
+    <block name="ice_wall" file="gfx\level_tiles\tile\ice_ground\ice" extract="8" build="3" through="false" resource="ice_wall" draw_layer="front_a9" crack="true" border="ice" properties="can_replace,stony" pak="">
+        <wall>
+            <block name="top" file="gfx\level_tiles\craft_constructions\block\ice_wall\wall_ice_cr" build="3" through="true" resource="ice_wall" crack="true" properties="collide=up|left,offset=25%,narrow" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\block\ice_wall\wall_ice_fl" build="3" through="true" resource="ice_wall" crack="true" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" />
+            <block name="bottom" file="gfx\level_tiles\craft_constructions\block\ice_wall\wall_ice_cr_r" build="3" through="true" resource="ice_wall" crack="true" properties="collide=right|up,offset=25%,narrow" />
+            <block name="middle_left" file="gfx\level_tiles\craft_constructions\block\ice_wall\wall_ice_r" build="3" through="true" resource="ice_wall" crack="true" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" />
+            <block name="middle_right" file="gfx\level_tiles\craft_constructions\block\ice_wall\wall_ice_r_r" build="3" through="true" resource="ice_wall" crack="true" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" />
+        </wall>
+    </block>
+    <block name="poor_wall_broken_02_mog" atlas="gfx/HighlandDLC/blocks/poor_wall_broken_02.png" type="wall" properties="editor=DLC_highland,can_replace,can_climb,stony" atlas_element="block" resource="poor_wall_broken_02_mog" crack="true" draw_layer="front_a1" stayon="true" build="4" extract="10" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="4" extract="10" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="4" extract="10" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="4" extract="10" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="4" extract="10" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="4" extract="10" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="poor_wall_02_mog" atlas="gfx/HighlandDLC/blocks/poor_wall_02.png" type="wall" properties="editor=DLC_highland,can_replace,can_climb,stony" atlas_element="block" resource="poor_wall_02_mog" crack="true" draw_layer="front_a1" stayon="true" build="4" extract="10" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="4" extract="10" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="4" extract="10" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="4" extract="10" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="4" extract="10" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="4" extract="10" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="block_evil_dungeon_mog" atlas="gfx/Two_fortressDLC/blocks/block_evil_dungeon.png" type="wall" atlas_element="block" properties="editor=DLC_two_fortress,can_climb,can_replace,stony" resource="block_evil_dungeon_mog" draw_layer="front_a1" stayon="true" crack="true" build="4" extract="11" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="4" extract="11" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="4" extract="11" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="4" extract="11" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="4" extract="11" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="4" extract="11" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="tomb_wall_mog" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_block" extract="11" build="4" through="false" corner_group="11" corner_type="every" resource="tomb_wall_mog" draw_layer="front_a9" crack="true" border="tomb_wall" properties="can_replace,stony,water_no_absorb" pak="">
+        <wall>
+            <block name="top" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_cr" build="4" through="true" resource="tomb_wall_mog" crack="true" properties="collide=up|left,offset=25%,narrow" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_fl2" build="4" through="true" resource="tomb_wall_mog" crack="true" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_fl" build="4" through="true" resource="tomb_wall_mog" crack="true" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" />
+            <block name="bottom" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_cr_r" build="4" through="true" resource="tomb_wall_mog" crack="true" properties="collide=right|up,offset=25%,narrow" />
+            <block name="middle_left" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_l" build="4" through="true" resource="tomb_wall_mog" crack="true" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" />
+            <block name="middle_right" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_r" build="4" through="true" resource="tomb_wall_mog" crack="true" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" />
+        </wall>
+    </block>
+    <block name="wall_ancient_mog" file="gfx\level_tiles\map_obj\Ancient_rooms\ancient_stone_tiles\ancient_ground" extract="12" build="4" through="false" resource="wall_ancient_mog" draw_layer="front_a9" crack="true" border="stone_ancient" corner="gfx\level_tiles\map_obj\Ancient_rooms\ancient_stone_tiles" properties="can_replace,stony,editor=ancient" pak="">
+        <wall>
+            <block name="top" file="gfx\level_tiles\map_obj\Ancient_rooms\ancient_stone_tiles\ancient_cr" build="4" through="true" resource="wall_ancient_mog" crack="true" properties="collide=up|left,offset=25%,narrow" />
+            <block name="trunk" file="gfx\level_tiles\map_obj\Ancient_rooms\ancient_stone_tiles\ancient_fl" build="4" through="true" resource="wall_ancient_mog" crack="true" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" />
+            <block name="bottom" file="gfx\level_tiles\map_obj\Ancient_rooms\ancient_stone_tiles\ancient_cr_r" build="4" through="true" resource="wall_ancient_mog" crack="true" properties="collide=right|up,offset=25%,narrow" />
+            <block name="middle_left" file="gfx\level_tiles\map_obj\Ancient_rooms\ancient_stone_tiles\ancient_l" build="4" through="true" resource="wall_ancient_mog" crack="true" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" />
+            <block name="middle_right" file="gfx\level_tiles\map_obj\Ancient_rooms\ancient_stone_tiles\ancient_r" build="4" through="true" resource="wall_ancient_mog" crack="true" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" />
+        </wall>
+    </block>
+    <block name="stone_wall" file="gfx\level_tiles\craft_constructions\block\wall_stone" extract="12" build="4" through="false" resource="stone_wall" draw_layer="front_a9" crack="true" border="stone" properties="can_replace,stony,water_no_absorb" pak="">
+        <wall>
+            <block name="top" file="gfx\level_tiles\craft_constructions\block\wall_stone_cr" build="4" through="true" resource="stone_wall" crack="true" properties="collide=up|left,offset=25%,narrow" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\block\wall_stone_fl" build="4" through="true" resource="stone_wall" crack="true" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" />
+            <block name="bottom" file="gfx\level_tiles\craft_constructions\block\wall_stone_cr_r" build="4" through="true" resource="stone_wall" crack="true" properties="collide=right|up,offset=25%,narrow" />
+            <block name="middle_left" file="gfx\level_tiles\craft_constructions\block\wall_stone_r" build="4" through="true" resource="stone_wall" crack="true" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" />
+            <block name="middle_right" file="gfx\level_tiles\craft_constructions\block\wall_stone_r_r" build="4" through="true" resource="stone_wall" crack="true" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" />
+        </wall>
+    </block>
+    <block name="middle_wall_broken_mog" atlas="gfx/HighlandDLC/blocks/middle_wall_01_broken.png" type="wall" properties="can_replace,editor=DLC_highland,can_climb,bricken" atlas_element="block" resource="middle_wall_broken_mog" crack="true" draw_layer="front_a10" stayon="true" build="5" extract="14" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="5" extract="14" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="5" extract="14" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="5" extract="14" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="5" extract="14" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="5" extract="14" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="middle_wall_01_mog" atlas="gfx/HighlandDLC/blocks/middle_wall_01.png" type="wall" properties="editor=DLC_highland,can_replace,can_climb,bricken,water_no_absorb" atlas_element="block" resource="middle_wall_01_mog" draw_layer="front_a10" crack="true" stayon="true" build="5" extract="14" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="5" extract="14" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="5" extract="14" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="5" extract="14" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="5" extract="14" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="5" extract="14" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="brick_wall" file="gfx\level_tiles\craft_constructions\block\brick_wall\brick1" corner="gfx\level_tiles\craft_constructions\block\brick_wall\corner" corner_group="10" corner_type="every" extract="15" build="5" through="false" resource="brick_wall" draw_layer="front_a10" crack="true" border="brick" properties="break_sound=brick_breaks,can_replace,bricken,water_no_absorb" pak="">
+        <wall>
+            <block name="top" file="gfx\level_tiles\craft_constructions\block\brick_wall\brick_angle_l" build="5" through="true" resource="brick_wall" crack="true" properties="collide=up|left,offset=25%,narrow" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\block\brick_wall\brick_gor" build="5" through="true" resource="brick_wall" crack="true" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" />
+            <block name="bottom" file="gfx\level_tiles\craft_constructions\block\brick_wall\brick_angle_r" build="5" through="true" resource="brick_wall" crack="true" properties="collide=right|up,offset=25%,narrow" />
+            <block name="middle_left" file="gfx\level_tiles\craft_constructions\block\brick_wall\brick_vert_l" build="5" through="true" resource="brick_wall" crack="true" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" />
+            <block name="middle_right" file="gfx\level_tiles\craft_constructions\block\brick_wall\brick_vert_r" build="5" through="true" resource="brick_wall" crack="true" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" />
+        </wall>
+    </block>
+    <block name="pyramid_mog" file="gfx\level_tiles\tile\piramid_stone\pir_stone" corner="gfx\level_tiles\tile\piramid_stone\corner" resource="pyramid_mog" corner_group="10" draw_layer="front_a9" border="pyramid" build="6" extract="18" properties="can_replace,stony" crack="true" pak="" />
+    <block name="block_01_desert_temple_mog" atlas="gfx/MonstersDLC/blocks/block_01_desert_temple.png" type="wall" properties="editor=DLC_monsters,can_replace,stony,water_no_absorb" atlas_element="block" resource="block_01_desert_temple_mog" draw_layer="front_a9" crack="true" build="6" extract="18" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="6" extract="18" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="6" extract="18" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="6" extract="18" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="6" extract="18" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="6" extract="18" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="block_02_desert_temple_mog" atlas="gfx/MonstersDLC/blocks/block_02_desert_temple.png" type="wall" properties="editor=DLC_monsters,can_replace,stony,water_no_absorb" atlas_element="block" resource="block_02_desert_temple_mog" draw_layer="front_a3" crack="true" build="6" extract="18" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="6" extract="18" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="6" extract="18" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="6" extract="18" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="6" extract="18" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="6" extract="18" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="copper_wall" atlas="%mod%/gfx/blocks/constructions/wall/copper_wall_template.png" build="7" type="wall" properties="can_replace,metallic,water_no_absorb" draw_layer="front_a10" crack="true" atlas_element="block" resource="copper_wall" effect_scale="1" extract="21" tornado_resist="true" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="7" extract="21" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="7" extract="21" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="7" extract="21" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="7" extract="21" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="7" extract="21" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="metal_wall_broken_mog" atlas="gfx/HighlandDLC/blocks/metal_wall_broken.png" type="wall" properties="editor=DLC_highland,can_climb,metallic,can_replace" atlas_element="block" resource="metal_wall_broken_mog" draw_layer="front_a14" stayon="true" crack="true" extract="23" build="7" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="7" extract="23" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="7" extract="23" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="7" extract="23" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="7" extract="23" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="7" extract="23" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="metal_wall_mog" atlas="gfx/HighlandDLC/blocks/metal_wall.png" type="wall" properties="editor=DLC_highland,can_climb,metallic,can_replace,water_no_absorb" atlas_element="block" resource="metal_wall_mog" draw_layer="front_a14" stayon="true" crack="true" extract="23" build="7" tornado_resist="true" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="7" extract="23" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="7" extract="23" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="7" extract="23" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="7" extract="23" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="7" extract="23" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="block_gnomes_workshop_broken_mog" atlas="gfx/Two_fortressDLC/blocks/block_gnomes_workshop_broken.png" type="wall" atlas_element="block" properties="editor=DLC_two_fortress,can_climb,can_replace,bricken" resource="block_gnomes_workshop_broken_mog" draw_layer="front_a3" crack="true" stayon="true" extract="26" build="8" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="8" extract="26" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="8" extract="26" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="8" extract="26" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="8" extract="26" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="8" extract="26" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="block_gnomes_workshop_mog" atlas="gfx/Two_fortressDLC/blocks/block_gnomes_workshop.png" type="wall" atlas_element="block" properties="editor=DLC_two_fortress,can_climb,can_replace,bricken,water_no_absorb" resource="block_gnomes_workshop_mog" draw_layer="front_a3" crack="true" tornado_resist="true" stayon="true" extract="26" build="8" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="8" extract="26" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="8" extract="26" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="8" extract="26" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="8" extract="26" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="8" extract="26" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="block_gnomes_corridor_broken_mog" atlas="gfx/Two_fortressDLC/blocks/block_gnomes_corridor_broken.png" type="wall" atlas_element="block" properties="editor=DLC_two_fortress,can_climb,can_replace,stony" resource="block_gnomes_corridor_broken_mog" draw_layer="front_a2" crack="true" stayon="true" extract="28" build="8" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="8" extract="28" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="8" extract="28" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="8" extract="28" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="8" extract="28" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="8" extract="28" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="block_gnomes_corridor_mog" atlas="gfx/Two_fortressDLC/blocks/block_gnomes_corridor.png" type="wall" atlas_element="block" properties="editor=DLC_two_fortress,can_climb,can_replace,stony,water_no_absorb" resource="block_gnomes_corridor_mog" draw_layer="front_a2" crack="true" tornado_resist="true" stayon="true" extract="28" build="8" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="8" extract="28" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="8" extract="28" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="8" extract="28" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="8" extract="28" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="8" extract="28" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="marble_wall_broken" atlas="%mod%/gfx/blocks/constructions/wall/marble_wall_broken_template.png" build="9" extract="31" type="wall" properties="can_replace,stony" draw_layer="front_a10" crack="true" atlas_element="block" resource="marble_wall_broken" effect_scale="1" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="9" extract="31" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="9" extract="31" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="9" extract="31" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="9" extract="31" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="9" extract="31" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="marble_wall" atlas="%mod%/gfx/blocks/constructions/wall/marble_wall_template.png" build="9" extract="31" type="wall" properties="can_replace,bricken,water_no_absorb" draw_layer="front_a10" crack="true" atlas_element="block" resource="marble_wall" effect_scale="1" tornado_resist="true" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="9" extract="31" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="9" extract="31" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="9" extract="31" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="9" extract="31" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="9" extract="31" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="block_gnomes_facade_broken_mog" atlas="gfx/Two_fortressDLC/blocks/block_gnomes_facade_broken.png" type="wall" atlas_element="block" properties="editor=DLC_two_fortress,stony,can_replace" resource="block_gnomes_facade_broken_mog" draw_layer="front_a3" extract="33" crack="true" build="9" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="9" extract="33" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="9" extract="33" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="9" extract="33" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="9" extract="33" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="9" extract="33" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="block_gnomes_facade_mog" atlas="gfx/Two_fortressDLC/blocks/block_gnomes_facade.png" type="wall" atlas_element="block" properties="editor=DLC_two_fortress,can_climb,can_replace,stony,water_no_absorb" resource="block_gnomes_facade_mog" draw_layer="front_a3" stayon="true" crack="true" tornado_resist="true" extract="33" build="9" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="9" extract="33" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="9" extract="33" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="9" extract="33" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="9" extract="33" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="9" extract="33" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="block_gnomes_throne_broken_mog" atlas="gfx/Two_fortressDLC/blocks/block_gnomes_throne_broken.png" type="wall" atlas_element="block" properties="editor=DLC_two_fortress,can_climb,can_replace,stony" resource="block_gnomes_throne_broken_mog" draw_layer="front_a14" crack="true" stayon="true" extract="35" build="9" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="9" extract="35" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="9" extract="35" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="9" extract="35" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="9" extract="35" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="9" extract="35" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="block_gnomes_throne_mog" atlas="gfx/Two_fortressDLC/blocks/block_gnomes_throne.png" type="wall" atlas_element="block" properties="editor=DLC_two_fortress,can_climb,can_replace,stony,water_no_absorb" resource="block_gnomes_throne_mog" draw_layer="front_a14" tornado_resist="true" crack="true" stayon="true" extract="35" build="9" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="9" extract="35" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="9" extract="35" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="9" extract="35" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="9" extract="35" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="9" extract="35" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="rich_wall_broken_01_mog" atlas="gfx/HighlandDLC/blocks/rich_wall_broken_01.png" type="wall" properties="editor=DLC_highland,can_climb,can_replace,stony" atlas_element="block" resource="rich_wall_broken_01_mog" draw_layer="front_a1" stayon="true" crack="true" extract="38" build="10" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="10" extract="38" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="10" extract="38" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="10" extract="38" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="10" extract="38" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="10" extract="38" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="rich_wall_01_mog" atlas="gfx/HighlandDLC/blocks/rich_wall_01.png" type="wall" properties="editor=DLC_highland,can_climb,can_replace,stony,water_no_absorb" atlas_element="block" resource="rich_wall_01_mog" draw_layer="front_a1" stayon="true" crack="true" extract="38" build="10" tornado_resist="true" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="10" extract="38" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="10" extract="38" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="10" extract="38" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="10" extract="38" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="10" extract="38" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="block_evil_main_mog" atlas="gfx/Two_fortressDLC/blocks/block_evil_main.png" type="wall" atlas_element="block" properties="editor=DLC_two_fortress,can_climb,can_replace,bricken,water_no_absorb" resource="block_evil_main_mog" draw_layer="front_a9" stayon="true" crack="true" tornado_resist="true" extract="40" build="10" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="10" extract="40" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="10" extract="40" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="10" extract="40" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="10" extract="40" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="10" extract="40" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="block_evil_facade_mog" atlas="gfx/Two_fortressDLC/blocks/block_evil_facade.png" type="wall" atlas_element="block" properties="editor=DLC_two_fortress,can_climb,can_replace,water_no_absorb,gen_priority,pyramid_block,bricken" resource="block_evil_facade_mog" draw_layer="front_a24" stayon="true" crack="true" tornado_resist="true" extract="42" build="10" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="10" extract="42" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="10" extract="42" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="10" extract="42" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="10" extract="42" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="10" extract="42" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="steel_wall" file="gfx\level_tiles\craft_constructions\block\steel_wall\steel_block" corner="gfx\level_tiles\craft_constructions\block\steel_wall\corner" corner_group="10" corner_type="every" extract="45" build="11" through="false" resource="steel_wall" draw_layer="front_a10" crack="true" border="steel_wall" properties="can_replace,metallic,water_no_absorb" tornado_resist="true" pak="">
+        <wall>
+            <block name="top" file="gfx\level_tiles\craft_constructions\block\steel_wall\steel_cr" build="11" through="true" resource="steel_wall" crack="true" properties="collide=up|left,offset=25%,narrow" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\block\steel_wall\steel_fl" build="11" through="true" resource="steel_wall" crack="true" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" />
+            <block name="bottom" file="gfx\level_tiles\craft_constructions\block\steel_wall\steel_cr_r" build="11" through="true" resource="steel_wall" crack="true" properties="collide=right|up,offset=25%,narrow" />
+            <block name="middle_left" file="gfx\level_tiles\craft_constructions\block\steel_wall\steel_r" build="11" through="true" resource="steel_wall" crack="true" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" />
+            <block name="middle_right" file="gfx\level_tiles\craft_constructions\block\steel_wall\wall_steel_r_r" build="11" through="true" resource="steel_wall" crack="true" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" />
+        </wall>
+    </block>
+    <block name="block_elfs_iron_mog" atlas="gfx/Two_fortressDLC/blocks/block_elfs_iron.png" type="wall" atlas_element="block" properties="editor=DLC_two_fortress,can_climb,can_replace,metallic,water_no_absorb" resource="block_elfs_iron_mog" draw_layer="front_a11" stayon="true" crack="true" tornado_resist="true" extract="45" build="11" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="11" extract="45" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="11" extract="45" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="11" extract="45" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="11" extract="45" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="11" extract="45" through="true" crack="true" />
+        </wall>
+    </block>
+    <!--..................  Original wall  .................-->
+    <!--....................................................-->
+    <block name="wall_mine" atlas="gfx/RoomsDLC/blocks/wall_mine.png" type="wall" properties="editor=DLC_Rooms,can_replace,wooden" atlas_element="block" resource="wood-1,dirt-1-30" draw_layer="front_a10" build="1" extract="1" crack="true" pak="Rooms DLC">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="1" extract="1" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="1" extract="1" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="1" extract="1" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="1" extract="1" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="1" extract="1" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="stone_with_moss_all" atlas="gfx/GrottoesDLC/blocks/stone_with_moss_all.png" type="solid block" properties="editor=DLC_grottoes,can_climb" atlas_element="block" resource="clay,sand-1-30,money-1-10" build="1" extract="1" stayon="true" crack="true" draw_layer="front_a3" corner_group="11" pak="Grottoes DLC" />
+    <block name="stone_with_moss_all_liana" atlas="gfx/GrottoesDLC/blocks/stone_with_moss_all_liana.png" type="solid block" properties="editor=DLC_grottoes,can_climb" atlas_element="block" resource="clay,sand-1-30,money-1-10,leaves-2" build="1" extract="1" stayon="true" crack="true" draw_layer="front_a3" corner_group="11" pak="Grottoes DLC" />
+    <block name="stone_with_moss" atlas="gfx/GrottoesDLC/blocks/stone_with_moss.png" type="solid block" properties="editor=DLC_grottoes,can_climb" atlas_element="block" resource="clay,stone-1-30,money-1-10" build="1" extract="1" crack="true" stayon="true" draw_layer="front_a3" corner_group="10" pak="Grottoes DLC" />
+    <block name="stone_with_moss_liana_block" atlas="gfx/GrottoesDLC/blocks/stone_with_moss_liana.png" type="solid block" properties="editor=DLC_grottoes,can_climb" atlas_element="block" resource="clay,stone-1-30,money-1-10,root-1,leaves-2" crack="true" build="1" extract="1" stayon="true" draw_layer="front_a3" corner_group="10" pak="Grottoes DLC" />
+    <block name="tomb_wall" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_block" extract="50" build="4" through="false" corner_group="11" corner_type="every" resource="stone-3,sand-1-30" draw_layer="front_a9" crack="false" border="tomb_wall" properties="can_replace,stony" pak="">
+        <wall>
+            <block name="top" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_cr" build="50" through="true" resource="stone-3,sand-1-30" crack="true" properties="collide=up|left,offset=25%,narrow" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_fl2" build="50" through="true" resource="stone-3,sand-1-30" crack="true" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_fl" build="50" through="true" resource="stone-3,sand-1-30" crack="true" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" />
+            <block name="trunk" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_fl3" build="50" through="true" resource="stone-3,sand-1-30" crack="true" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" />
+            <block name="bottom" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_cr_r" build="50" through="true" resource="stone-3,sand-1-30" crack="true" properties="collide=right|up,offset=25%,narrow" />
+            <block name="middle_left" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_l" build="50" through="true" resource="stone-3,sand-1-30" crack="true" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" />
+            <block name="middle_right" file="gfx\level_tiles\craft_constructions\block\tomb_wall\tomb_r" build="50" through="true" resource="stone-3,sand-1-30" crack="true" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" />
+        </wall>
+    </block>
+    <block name="wall_ancient" file="gfx\level_tiles\map_obj\Ancient_rooms\ancient_stone_tiles\ancient_ground" extract="9" build="4" through="false" resource="stone-1|2" draw_layer="front_a9" crack="false" border="stone_ancient" corner="gfx\level_tiles\map_obj\Ancient_rooms\ancient_stone_tiles" properties="can_replace,stony,editor=ancient" pak="">
+        <wall>
+            <block name="top" file="gfx\level_tiles\map_obj\Ancient_rooms\ancient_stone_tiles\ancient_cr" build="4" through="true" resource="stone-1|2" crack="true" properties="collide=up|left,offset=25%,narrow" />
+            <block name="trunk" file="gfx\level_tiles\map_obj\Ancient_rooms\ancient_stone_tiles\ancient_fl" build="4" through="true" resource="stone-1|2" crack="true" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" />
+            <block name="bottom" file="gfx\level_tiles\map_obj\Ancient_rooms\ancient_stone_tiles\ancient_cr_r" build="4" through="true" resource="stone-1|2" crack="true" properties="collide=right|up,offset=25%,narrow" />
+            <block name="middle_left" file="gfx\level_tiles\map_obj\Ancient_rooms\ancient_stone_tiles\ancient_l" build="4" through="true" resource="stone-1|2" crack="true" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" />
+            <block name="middle_right" file="gfx\level_tiles\map_obj\Ancient_rooms\ancient_stone_tiles\ancient_r" build="4" through="true" resource="stone-1|2" crack="true" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" />
+        </wall>
+    </block>
+    <block name="pyramid" file="gfx\level_tiles\tile\piramid_stone\pir_stone" corner="gfx\level_tiles\tile\piramid_stone\corner" resource="sandstone-1|2" corner_group="10" draw_layer="front_a9" border="pyramid" extract="4400" properties="gen_priority,pyramid_block,editor=mining,save_damage" pak="" />
+    <block name="block_01_desert_temple" atlas="gfx/MonstersDLC/blocks/block_01_desert_temple.png" type="wall" properties="editor=DLC_monsters,can_replace,stony,save_damage" atlas_element="block" resource="sandstone-1|2,clay-1,sand-1" draw_layer="front_a9" extract="80" build="10" crack="true" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="10" extract="80" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="10" extract="80" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="10" extract="80" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="10" extract="80" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="10" extract="80" through="true" crack="true" />
+        </wall>
+    </block>
+    <block name="block_02_desert_temple" atlas="gfx/MonstersDLC/blocks/block_02_desert_temple.png" type="wall" properties="editor=DLC_monsters,can_replace,stony,save_damage" atlas_element="block" resource="sandstone-1|2,clay-1,sand-2" draw_layer="front_a3" extract="80" build="10" crack="true" pak="">
+        <wall>
+            <block name="top" atlas_element="corner_left" properties="collide=up|left,offset=25%,narrow" build="10" extract="80" through="true" crack="true" />
+            <block name="trunk" atlas_element="ceiling" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" build="10" extract="80" through="true" crack="true" />
+            <block name="bottom" atlas_element="corner_right" properties="collide=right|up,offset=25%,narrow" build="10" extract="80" through="true" crack="true" />
+            <block name="middle_left" atlas_element="wall_left" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" build="10" extract="80" through="true" crack="true" />
+            <block name="middle_right" atlas_element="wall_right" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" build="10" extract="80" through="true" crack="true" />
+        </wall>
+    </block>
     <!--..................  Others  .................-->
     <!--.............................................-->
     <block name="foundry_machine_steel" item="foundry_machine_steel" extract="14" build="7" resource="foundry_machine_corps" properties="" pak="" />
     <block name="incubator" type="entity" item="incubator" properties="" resource="incubator" build="1" extract="1" pak="Monsters DLC" />
     <!--***************************************************************************************************************************************-->
-    <block name="brick_wall" file="gfx\level_tiles\craft_constructions\block\brick_wall\brick1" corner="gfx\level_tiles\craft_constructions\block\brick_wall\corner" corner_group="10" corner_type="every" extract="12" build="4" through="false" resource="brick_wall" draw_layer="front_a10" crack="false" border="brick" properties="break_sound=brick_breaks,can_replace,bricken" pak="">
-        <wall>
-            <block name="top" file="gfx\level_tiles\craft_constructions\block\brick_wall\brick_angle_l" build="4" through="true" resource="brick_wall" crack="true" properties="collide=up|left,offset=25%,narrow" />
-            <block name="trunk" file="gfx\level_tiles\craft_constructions\block\brick_wall\brick_gor" build="4" through="true" resource="brick_wall" crack="true" properties="collide=up,draw_align=up,offset=25%,narrow,scale_xaxis" />
-            <block name="bottom" file="gfx\level_tiles\craft_constructions\block\brick_wall\brick_angle_r" build="4" through="true" resource="brick_wall" crack="true" properties="collide=right|up,offset=25%,narrow" />
-            <block name="middle_left" file="gfx\level_tiles\craft_constructions\block\brick_wall\brick_vert_l" build="4" through="true" resource="brick_wall" crack="true" properties="collide=left,draw_align=left,offset=25%,narrow,scale_yaxis" />
-            <block name="middle_right" file="gfx\level_tiles\craft_constructions\block\brick_wall\brick_vert_r" build="4" through="true" resource="brick_wall" crack="true" properties="collide=right,draw_align=right,offset=25%,narrow,scale_yaxis" />
-        </wall>
-    </block>
     <block name="dig_machine" type="entity" item="dig_machine" properties="" resource="dig_machine" build="1" extract="1" pak="" />
     <block name="dig_machine_crystal" type="entity" item="dig_machine_crystal" properties="" resource="dig_machine_crystal" build="1" extract="1" pak="" />
     <!--************************************************************  Furniture  **************************************************************-->
@@ -137,5 +1028,6 @@
     <block name="pick_ax_03" type="simple" properties="editor=DLC_Rooms,user_mirror_switch,can_fall,draw_align=down,scale=0.70" file="gfx/RoomsDLC/blocks/pick_ax_03.png" resource="wood-5,stone-2,iron-2" through="true" draw_layer="normal" build="1" extract="1" pak="Rooms DLC" />
     <block name="pick_ax_04" type="simple" properties="editor=DLC_Rooms,user_mirror_switch,can_fall,draw_align=down,scale=0.70" file="gfx/RoomsDLC/blocks/pick_ax_04.png" resource="wood-5,stone-2,iron-1" through="true" draw_layer="normal" build="1" extract="1" pak="Rooms DLC" />
     <!--****************************************************************************************************************************************-->
+    <block name="water_block_mog" file="gfx\level_tiles\tile\Biome1\water" effect="water_block" build="1" extract="10" through="false" resource="" crack="true" draw_layer="front_b" ontop="true" properties="resource,can_replace,drop_rain,spawn_water=50,time=20,draw_effect_with_block,editor=mining" pak="" />
     <!--****************************************************************************************************************************************-->
 </root>

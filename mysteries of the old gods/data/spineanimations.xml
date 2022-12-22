@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <root>
     <animations pak="">
+		<!--..................  Seeds   .................-->
+		<!--.............................................-->
+        <growth_ice_spine_1 path="%mod%/gfx/blocks/spine/growth_ice_spine_1" json="growth_ice_spine.json" scale="0.400000" mirror="false" offset="0.00,-150.00">
+            <mixing all="true" />
+        </growth_ice_spine_1>	
+        <growth_ice_spine_2 path="%mod%/gfx/blocks/spine/growth_ice_spine_2" json="growth_ice_spine.json" scale="0.400000" mirror="false" offset="0.00,-150.00">
+            <mixing all="true" />
+        </growth_ice_spine_2>
+        <growth_ice_spine_3 path="%mod%/gfx/blocks/spine/growth_ice_spine_3" json="growth_ice_spine.json" scale="0.400000" mirror="false" offset="0.00,-150.00">
+            <mixing all="true" />
+        </growth_ice_spine_3>	
+        <growth_ice_spine_4 path="%mod%/gfx/blocks/spine/growth_ice_spine_4" json="growth_ice_spine.json" scale="0.400000" mirror="false" offset="0.00,-150.00">
+            <mixing all="true" />
+        </growth_ice_spine_4>
+		<sandstone path="%mod%/gfx/halfstuff/spine/sandstone" json="sandstone.json" scale="0.300000" mirror="false">
+            <mixing all="true" />
+        </sandstone>
+        <growth_obsidian_spine_1 path="%mod%/gfx/blocks/spine/growth_obsidian_spine_1" json="growth_obsidian_spine.json" scale="0.400000" mirror="false" offset="0.00,-150.00">
+            <mixing all="true" />
+        </growth_obsidian_spine_1>	
+        <growth_obsidian_spine_2 path="%mod%/gfx/blocks/spine/growth_obsidian_spine_2" json="growth_obsidian_spine.json" scale="0.400000" mirror="false" offset="0.00,-150.00">
+            <mixing all="true" />
+        </growth_obsidian_spine_2>		
+		<growth_obsidian_spine_3 path="%mod%/gfx/blocks/spine/growth_obsidian_spine_3" json="growth_obsidian_spine.json" scale="0.400000" mirror="false" offset="0.00,-150.00">
+            <mixing all="true" />
+        </growth_obsidian_spine_3>
+		<growth_obsidian_spine_4 path="%mod%/gfx/blocks/spine/growth_obsidian_spine_4" json="growth_obsidian_spine.json" scale="0.400000" mirror="false" offset="0.00,-150.00">
+            <mixing all="true" />
+        </growth_obsidian_spine_4>
+        <marble path="%mod%/gfx/halfstuff/spine/marble" json="marble.json" scale="0.300000" mirror="false">
+            <mixing all="true" />
+        </marble>
+		<granite path="%mod%/gfx/halfstuff/spine/granite" json="granite.json" scale="0.300000" mirror="false">
+            <mixing all="true" />
+        </granite>	
 		<!--..................  Mechanisms   .................-->
 		<!--..................................................-->
 		<mana_expander_green path="%mod%/gfx/blocks/spine/mana_expander_green" json="mana_storage.json" scale="0.110000" mirror="false">
@@ -9,15 +44,15 @@
         <mana_expander_red path="%mod%/gfx/blocks/spine/mana_expander_red" json="mana_storage.json" scale="0.110000" mirror="false">
             <mixing all="true" time="0.2f" />
         </mana_expander_red>
+		<mana_generator_red path="%mod%/gfx/blocks/spine/mana_generator_red" json="mana_generator.json" scale="0.200000" mirror="false">
+            <mixing all="true" time="0.2f" />
+        </mana_generator_red>
 		<static_portal_red path="%mod%/gfx/blocks/spine/static_portal_red" json="portal.json" scale="0.300000" mirror="false">
             <mixing all="true" time="0.2f" />
         </static_portal_red>
 		<portal_fortress path="%mod%/gfx/blocks/spine/portal_fortress" json="portal.json" scale="0.400000" mirror="false">
             <mixing all="true" time="0.2f" />
         </portal_fortress>
-		 <mana_generator_red path="%mod%/gfx/blocks/spine/mana_generator_red" json="mana_generator.json" scale="0.200000" mirror="false">
-            <mixing all="true" time="0.2f" />
-        </mana_generator_red>
 		<!--..................  Mine  .................-->
 		<!--...........................................-->  
 		<mine_coal path="%mod%/gfx/blocks/spine/mine_coal" json="mine_coal.json" scale="0.560000" offset="-10.00,0.00" mirror="false">
@@ -61,5 +96,7 @@
 		<cultist_pistol path="%mod%/gfx/equip_skins/spine" json="gun_template.json" scale="0.250000" mirror="false">
             <mixing all="true" />
         </cultist_pistol>
+		<!--****************************************************************************************************************************************-->	
+		<!--****************************************************************************************************************************************-->	
     </animations>
 </root>

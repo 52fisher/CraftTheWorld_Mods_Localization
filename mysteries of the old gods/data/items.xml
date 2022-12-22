@@ -86,6 +86,61 @@
             <image file="gfx/HighlandDLC/item_icons/big_carpenter_hl_mini.png" />
         </images>
     </item>
+    <item name="workshop_basic" size="2.33,2.33" offsety="0" properties="device,workshop,nodig_under=2,dead_radius_x=1,dead_radius_y=2,removable,efficiency=1,create_sound=build_stone,break_sound=stone_breaks,hit_sound=stone_breaks,draw_align=down,scale=1.26,scale_yaxis,draw_offset_x=0.0,draw_offset_y=0.5" pak="">
+        <params>
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="craft_wood" />
+        </params>
+        <images>
+            <image file="gfx/Spine/buildings/scabbler_workshop/back.png" />
+        </images>
+    </item>
+    <item name="workshop" size="2.33,2.33" align="down" offsety="0" properties="device,workshop,nodig_under=2,dead_radius_x=2,dead_radius_y=2,removable,efficiency=2,create_sound=build_stone,break_sound=stone_breaks,hit_sound=stone_breaks" spine="scabbler_workshop" spine_ani="off" pak="">
+        <params>
+            <param name="back_spine" value="scabbler_workshop" />
+            <param name="back_off" value="off" />
+            <param name="back_on" value="on" />
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="craft_wood" />
+        </params>
+        <images>
+            <image file="gfx\Spine\buildings\scabbler_workshop\scabbler_workshop_prev" />
+        </images>
+    </item>
+    <item name="workshop_improved" size="3.10,3.10" offsety="0" properties="device,workshop,nodig_under=2,dead_radius_x=2,dead_radius_y=2,removable,efficiency=3,create_sound=build_stone,break_sound=stone_breaks,hit_sound=stone_breaks,draw_align=down,scale=1.83,scale_yaxis,draw_offset_x=0.0,draw_offset_y=1.0" pak="">
+        <params>
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="craft_wood" />
+        </params>
+        <images>
+            <image file="%mod%/gfx/blocks/bench/workshop_improved.png" />
+        </images>
+    </item>
+    <item name="big_workshop_hl_mog" size="4.00,3.00" properties="device,workshop,item_part_lighting,dead_radius_x=3,dead_radius_y=3,nodig_under=2,removable,efficiency=4,create_sound=build_stone,break_sound=stone_breaks,hit_sound=stone_breaks" spine="big_workshop_hl" offsety="-100" pak="">
+        <this>
+            <behaviour value="SpawnBlockBehaviour" saveable="true">
+                <spawn_once value="true" />
+                <destroy value="none" />
+                <spawn value="disable_device" />
+                <offset value="1, 0" />
+            </behaviour>
+            <behaviour value="LayoutTitleHintBehaviour" />
+        </this>
+        <params>
+            <param name="front_spine" value="device_front" />
+            <param name="front_off" value="idle" />
+            <param name="front_on" value="idle" />
+            <param name="back_spine" value="big_workshop_hl" />
+            <param name="back_off" value="work_off" />
+            <param name="back_on" value="work_on" />
+            <param name="dust" value="trash_stone" />
+            <param name="sound_work" value="craft_wood" />
+            <param name="clan" value="other" />
+        </params>
+        <images>
+            <image file="gfx/HighlandDLC/item_icons/big_workshop_hl_mini.png" />
+        </images>
+    </item>
     <item name="smithy_basic" size="2.20,2.20" offsety="0" properties="device,smithy,nodig_under=2,dead_radius_x=2,dead_radius_y=2,removable,efficiency=1,create_sound=build_metall,break_sound=stone_breaks,hit_sound=stone_breaks,draw_align=down,scale=2.80,scale_yaxis,draw_offset_x=0.0,draw_offset_y=26.0" pak="">
         <params>
             <param name="dust" value="trash_stone" />
@@ -588,5 +643,6 @@
             <image file="gfx/MonstersDLC/item_icons/crystal_auger.png" />
         </images>
     </item>
+    <!--****************************************************************************************************************************************-->
     <!--****************************************************************************************************************************************-->
 </root>

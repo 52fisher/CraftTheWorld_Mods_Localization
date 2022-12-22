@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <root>
   <sound name="trolley_hl_mog" properties="distance=0.50,loop" file="sfx\railway.ogg" pak="" />
-  <sound name="trolley_machine" properties="distance=0.50,loop" file="sfx\railway.ogg" pak="" />
-  <sound name="ashes_breaks" properties="distance=0.5" file="sfx\sand_break1.ogg,sfx\sand_break2.ogg,sfx\sand_break3.ogg" />
-  <sound name="hit_ashes" properties="distance=0.5" file="sfx\hit_sand_1.ogg,sfx\hit_sand_2.ogg,sfx\hit_sand_3.ogg" />
+  <sound name="trolley_machine" properties="distance=0.50,loop" file="sfx\railway.ogg" pak="" />  
 </root>
