@@ -1,29 +1,29 @@
 <root>
-    <resource name="dragon_egg" title="%dragon_eggT" desc="%dragon_eggD" application="halfstuff" build="" properties="no_back_craft,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_egg.png" tech="" pak="" />
+    <resource name="dragon_egg" title="%dragon_eggT" desc="%dragon_eggD" application="halfstuff" build="" properties="no_back_craft,shine" shop_count="1" shop_cost="10" file="%mod%/gfx/item_icons/dragon_egg.png" tech="" />
     <resource name="Dragon_Blood" title="%Dragon_BloodT" desc="%Dragon_BloodD" application="halfstuff" build="" properties="no_shop,no_back_craft,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/krov_drakona.png" tech="0" pak="">
         <file path="%mod%/gfx/item_icons/krov_drakona.png" />
     </resource>
-    <resource name="Liq_fire" title="%Liq_fireT" desc="%Liq_fireD" application="halfstuff" build="" properties="" shop_count="5" shop_cost="1" file="%mod%/gfx/item_icons/Liq_fire.png" pak="" />
+    <resource name="Liq_fire" title="%Liq_fireT" desc="%Liq_fireD" application="halfstuff" build="" properties="" shop_count="5" shop_cost="10" file="%mod%/gfx/item_icons/Liq_fire.png" pak="" />
     <resource name="dragon_gold" title="%dragon_goldT" desc="%dragon_goldD" application="halfstuff" build="" properties="no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/1234441111.png" tech="" pak="" />
-    <resource name="Dragon_brick" title="%Dragon_brickT" desc="%Dragon_brickD" application="halfstuff" build="" properties="" shop_count="5" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_brick.png" pak="" />
-    <resource name="Dragon_wood" title="%Dragon_woodT" desc="%Dragon_woodD" application="halfstuff" build="" properties="" shop_count="5" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_wood.png" pak="" />
+    <resource name="Dragon_brick" title="%Dragon_brickT" desc="%Dragon_brickD" application="halfstuff" build="" properties="" shop_count="5" shop_cost="10" file="%mod%/gfx/item_icons/Dragon_brick.png" pak="" />
+    <resource name="Dragon_wood" title="%Dragon_woodT" desc="%Dragon_woodD" application="halfstuff" build="" properties="" shop_count="5" shop_cost="10" file="%mod%/gfx/item_icons/Dragon_wood.png" pak="" />
     <resource name="Dragon_Scale" title="%Dragon_ScaleT" desc="%Dragon_ScaleD" application="halfstuff" build="" properties="no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_scale.png" tech="" pak="">
         <file path="%mod%/gfx/item_icons/dragon_scale.png" />
     </resource>
     <resource name="Dragon_Diamond" title="%Dragon_DiamondT" desc="%Dragon_DiamondD" application="halfstuff" build="" properties="no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/kristal.png" tech="0" pak="">
         <file path="%mod%/gfx/item_icons/kristal.png" />
     </resource>
-    <resource name="picaxe_dragon" title="%picaxe_dragonT" desc="%picaxe_dragonD" application="equip" build="" properties="skill=miner,attack=x100,speed=x60,apply_tool1,skill_value=20.00%,miner_drop=100.00%,mithril,mace,poison=10,get_healt=10.00%,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/pikaxe_dragon_icon.png" class="pick" tech="" pak="">
+    <resource name="picaxe_dragon" title="%picaxe_dragonT" desc="%picaxe_dragonD" application="equip" build="" properties="skill=miner,attack=x4,speed=x26,apply_tool1,skill_value=20.00%,miner_drop=100.00%,mithril,mace" shop_count="1" shop_cost="100" file="%mod%/gfx/item_icons/pikaxe_dragon_icon.png" class="pick" tech="" pak="">
         <skin type="tool" file="%mod%/gfx/equip_skins/pikaxe_dragon.png" />
     </resource>
-    <resource name="Axe_dragon" title="%Axe_dragonT" desc="%Axe_dragonD" application="equip" build="" properties="skill=climber,attack=x100,speed=x60,apply_tool2,mithril,mace,skill_value=20.00%,poison=10,get_healt=10.00%,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_axe_icon.png" class="axe" tech="" pak="">
+    <resource name="Axe_dragon" title="%Axe_dragonT" desc="%Axe_dragonD" application="equip" build="" properties="skill=climber,attack=x4,speed=x13,apply_tool2,mithril,mace,skill_value=20.00%" shop_count="1" shop_cost="100" file="%mod%/gfx/item_icons/dragon_axe_icon.png" class="axe" tech="" pak="">
         <skin type="tool" file="%mod%/gfx/equip_skins/dragon_axe.png" />
     </resource>
-    <resource name="Dragon_Sword" title="%Dragon_SwordT" desc="%Dragon_SwordD" application="equip" build="" properties="skill=swordsman,attack=x100,sword,skill_value=30.00%,iron,mithril,get_healt=10.00%,poison=10,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/123123ytyty123.png" class="weapon" tech="" pak="">
+    <resource name="Dragon_Sword" title="%Dragon_SwordT" desc="%Dragon_SwordD" application="equip" build="" properties="skill=swordsman,attack=x7,sword,skill_value=15.00%,iron,mithril,get_healt=10.00%" shop_count="1" shop_cost="100" file="%mod%/gfx/item_icons/123123ytyty123.png" class="weapon" tech="" pak="">
         <file path="%mod%/gfx/item_icons/123123ytyty123.png" />
         <skin type="tool" file="%mod%/gfx/equip_skins/sword_dragon_1.png" />
     </resource>
-    <resource name="dragon_staf" title="%dragon_stafT" desc="%dragon_stafD" application="equip" build="" properties="missile,magic_staff=8,distance=6,mace,attack=x100,skill_value=30.00%,skill=mage,mithril,add_res=spark_elexir,get_healt=10.00%,poison=10,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_staf_bigicon.png" class="weapon" tech="" pak="">
+    <resource name="dragon_staf" title="%dragon_stafT" desc="%dragon_stafD" application="equip" build="" properties="missile,magic_staff=8,distance=5,mace,attack=x5,skill_value=15.00%,skill=mage,mithril,add_res=spark_elexir,get_healt=5.00%,generate_mana=0.00" shop_count="1" shop_cost="100" file="%mod%/gfx/item_icons/dragon_staf_bigicon.png" class="weapon" tech="" pak="">
         <skin type="tool" file="%mod%/gfx/equip_skins/dragon_staf.png" />
     </resource>
     <resource name="fire_staff_dragon" title="%fire_staff_dragonT" desc="%fire_staff_dragonD" application="equip" build="" properties="no_shop,add_res=fireball_staff_elexir,attack=x5,missile,mace,magic_staff=0,distance=6,skill_value=15.00%,skill=mage" shop_count="1" shop_cost="1" class="weapon" file="%mod%/gfx/item_icons/Dragon_upgrad_DLC_BaM/Dragon_fire_staff_icon.png" pak="">
@@ -32,7 +32,7 @@
             <param name="ammo" value="fireball_staff_elexir" />
         </params>
     </resource>
-    <resource name="Dragone_bone_staff" title="%Dragone_bone_staffT" desc="%Dragone_bone_staffD" application="equip" build="" properties="attack=x8,missile,mace,magic_staff=3,distance=5,add_res=spark_elexir,mithril,skill_value=50.00%,skill=mage,no_shop,no_char_inv,no_inv" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/mithril_staff_or_dragon.png" class="weapon" pak="">
+    <resource name="Dragone_bone_staff" title="%Dragone_bone_staffT" desc="%Dragone_bone_staffD" application="equip" build="" properties="attack=x8,missile,mace,magic_staff=3,distance=5,add_res=spark_elexir,mithril,skill_value=50.00%,skill=mage,no_shop,no_char_inv,no_inv" shop_count="1" shop_cost="100" file="%mod%/gfx/item_icons/mithril_staff_or_dragon.png" class="weapon" pak="">
         <skin type="tool" file="%mod%/gfx/equip_skins/dragon_staf_bone.png" />
         <behaviours>
             <behaviour value="CreatureSpawnBehaviour" tag="on_cast" chance="1">
@@ -43,7 +43,7 @@
             <param name="ammo" value="spark_elexir,fireball_elexir,icearrow_elexir,transform_elexir,healt_elexir" />
         </params>
     </resource>
-    <resource name="dragon_bow" title="%dragon_bowT" desc="%dragon_bowD" application="equip" build="" properties="missile,attack=x100,accuracy=1,get_healt=10.00%,distance=8,add_res=bow_arrow,skill_value=30.00%,skill=archer,poison=10,infinity_count,heavy=8" shop_count="1" shop_cost="1" class="weapon" file="%mod%/gfx/item_icons/23232323232.png" tech="">
+    <resource name="dragon_bow" title="%dragon_bowT" desc="%dragon_bowD" application="equip" build="" properties="missile,attack=x6,accuracy=0.5,get_healt=5.00%,heavy=6,distance=8,add_res=bow_arrow,skill_value=15.00%,skill=archer" shop_count="1" shop_cost="100" class="weapon" file="%mod%/gfx/item_icons/23232323232.png" tech="" pak="">
         <skin type="bow" file="%mod%/gfx/equip_skins/1233.png" />
         <params>
             <param name="sound_shot" value="bow" />
@@ -56,7 +56,7 @@
             <param name="ammo" value="tunder_bolt_dragon,Dragon_lightning_arrow,lighting_arrow,tunder_bolt" />
         </params>
     </resource>
-    <resource name="Dragon_gun" title="%Dragon_gunT" desc="%Dragon_gunD" application="equip" build="" properties="missile,rifle,spine=Dragon_gun,add_res=ammo,attack=x100,get_healt=10.00%,accuracy=1,distance=6,skill_value=30.00%,skill=archer,heavy=3,poison=10,infinity_count" shop_count="1" shop_cost="1" class="weapon" file="%mod%/gfx/item_icons/12334343123123.png" pak="">
+    <resource name="Dragon_gun" title="%Dragon_gunT" desc="%Dragon_gunD" application="equip" build="" properties="missile,rifle,spine=Dragon_gun,add_res=ammo,attack=x7,get_healt=5.00%,accuracy=1,distance=6,skill_value=15.00%,skill=archer,heavy=3" shop_count="1" shop_cost="100" class="weapon" file="%mod%/gfx/item_icons/12334343123123.png" pak="">
         <params>
             <param name="idle" value="main" />
             <param name="action" value="shot" />
@@ -74,7 +74,7 @@
     <resource name="Dragon_sword_soul_reaper" title="%Dragon_sword_soul_reaperT" desc="%Dragon_sword_soul_reaperD" application="equip" build="" properties="no_shop,shine,skill=swordsman,attack=x8,iron,mithril,sword,mace,undead_armor=100.00%,skill_value=25.00%" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_upgrad_DLC_BaM/Dragon_sword_soul_reaper_icon.png" class="weapon" pak="">
         <skin type="tool" file="%mod%/gfx/equip_skins/Dragon_sword_soul_reaper.png" />
     </resource>
-    <resource name="123" title="%123T" desc="%123D" application="equip" build="" properties="skill=mage|archer|swordsman,armor=125.00%,skill_value=10.00%,slowdown=5.00%" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_helm_or_.png" class="helmet" tech="" pak="">
+    <resource name="123" title="%123T" desc="%123D" application="equip" build="" properties="skill=mage|archer|swordsman,armor=125.00%,skill_value=10.00%,slowdown=5.00%" shop_count="1" shop_cost="100" file="%mod%/gfx/item_icons/dragon_helm_or_.png" class="helmet" tech="" pak="">
         <skin type="helmet" file="%mod%/gfx/equip_skins/Helmt/helm.png" />
     </resource>
     <resource name="Dragon_helm_lvl2" title="%Dragon_helm_lvl2T" desc="%Dragon_helm_lvl2D" application="equip" build="" properties="slowdown=2.00%,armor=150.00%,undead_armor=2.00%,skill_value=20.00%,skill=archer|swordsman|mage,no_shop,shine,generate_mana=0.00" shop_count="1" shop_cost="1" class="helmet" file="%mod%/gfx/item_icons/Dragon_helm_lvl2.png" pak="">
@@ -83,23 +83,23 @@
     <resource name="Dragon_helm_lvl3" title="%Dragon_helm_lvl3T" desc="%Dragon_helm_lvl3D" application="equip" build="" properties="skill=archer|swordsman|mage,no_shop,shine,armor=175.00%,undead_armor=5.00%,skill_value=30.00%,generate_mana=0.00" shop_count="1" shop_cost="1" class="helmet" file="%mod%/gfx/item_icons/Dragon_helm_lvl3.png" pak="">
         <skin type="helmet" file="%mod%/gfx/equip_skins/Helmt/dragon_helm_lvl3_template.png" />
     </resource>
-    <resource name="gold_dragon_helm" title="%gold_dragon_helmT" desc="%gold_dragon_helmD" application="equip" build="" properties="skill=archer|swordsman|mage,shine,armor=300.00%,undead_armor=7.50%,skill_value=100.00%,infinity_count" shop_count="1" shop_cost="1" class="helmet" file="%mod%/gfx/item_icons/gold_dragon_helm_or_icon.png" pak="">
+    <resource name="gold_dragon_helm" title="%gold_dragon_helmT" desc="%gold_dragon_helmD" application="equip" build="" properties="no_shop=true,skill=archer|swordsman|mage,shine,armor=300.00%,undead_armor=7.50%,skill_value=100.00%,generate_mana=0.00" shop_count="1" shop_cost="1" class="helmet" file="%mod%/gfx/item_icons/gold_dragon_helm_or_icon.png" pak="">
         <skin type="helmet" file="%mod%/gfx/equip_skins/Helmt/gold_dragon_helm.png" />
     </resource>
-    <resource name="new_item" title="%new_itemT" desc="%new_itemD" application="equip" build="" properties="skill=mage|archer|swordsman,armor=250.00%,skill_value=10.00%,slowdown=7.00%" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/12312323423443241111123.png" class="armor" pak="">
+    <resource name="new_item" title="%new_itemT" desc="%new_itemD" application="equip" build="" properties="skill=mage|archer|swordsman,armor=250.00%,skill_value=10.00%,slowdown=7.00%" shop_count="1" shop_cost="100" file="%mod%/gfx/item_icons/12312323423443241111123.png" class="armor" pak="">
         <skin type="armor" file="%mod%/gfx/equip_skins/Ciras/Drake_cuirass_1_template.png" />
     </resource>
-    <resource name="run_word" title="%run_wordT" desc="%run_wordD" application="halfstuff" build="" properties="shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/1234445551.png" tech="" pak="" />
+    <resource name="run_word" title="%run_wordT" desc="%run_wordD" application="halfstuff" build="" properties="shine" shop_count="1" shop_cost="20" file="%mod%/gfx/item_icons/1234445551.png" tech="" pak="" />
     <resource name="Dragon_armor_lvl2" title="%Dragon_armor_lvl2T" desc="%Dragon_armor_lvl2D" application="equip" build="" properties="slowdown=5.00%,skill=archer|swordsman|mage,no_shop,shine,armor=300.00%,undead_armor=2.00%,skill_value=20.00%,generate_mana=0.00" shop_count="1" shop_cost="1" class="armor" file="%mod%/gfx/item_icons/dragon_armor_lvl2.png" pak="">
         <skin type="armor" file="%mod%/gfx/equip_skins/Ciras/Drake_cuirass_2_template.png" />
     </resource>
     <resource name="Dragon_armor_lvl3" title="%Dragon_armor_lvl3T" desc="%Dragon_armor_lvl3D" application="equip" build="" properties="skill=archer|swordsman|mage,no_shop,shine,armor=500.00%,undead_armor=5.00%,skill_value=30.00%,generate_mana=0.00" shop_count="1" shop_cost="1" class="armor" file="%mod%/gfx/item_icons/Dragon_armor_lvl3.png" pak="">
         <skin type="armor" file="%mod%/gfx/equip_skins/Ciras/Drake_cuirass_3_template.png" />
     </resource>
-    <resource name="gold_dragon_kiras" title="%gold_dragon_kirasT" desc="%gold_dragon_kirasD" application="equip" build="" properties="skill=archer|swordsman|mage,shine,undead_armor=7.50%,skill_value=50.00%,armor=1000.00%,infinity_count" shop_count="1" shop_cost="1" class="armor" file="%mod%/gfx/item_icons/gold_dragon_armor_icon.png" pak="">
+    <resource name="gold_dragon_kiras" title="%gold_dragon_kirasT" desc="%gold_dragon_kirasD" application="equip" build="" properties="no_shop=true,skill=archer|swordsman|mage,shine,undead_armor=7.50%,skill_value=50.00%,armor=1000.00%,generate_mana=0.00" shop_count="1" shop_cost="1" class="armor" file="%mod%/gfx/item_icons/gold_dragon_armor_icon.png" pak="">
         <skin type="armor" file="%mod%/gfx/equip_skins/Ciras/Drake_cuirass_4_template.png" />
     </resource>
-    <resource name="Dragon_boots" title="%Dragon_bootsT" desc="%Dragon_bootsD" application="equip" build="" properties="skill=archer|swordsman|miller,armor=110.00%,skill_value=10.00%,generate_mana=0.00" shop_count="1" shop_cost="1" class="boots" file="%mod%/gfx/item_icons/mithril_boots.png" pak="">
+    <resource name="Dragon_boots" title="%Dragon_bootsT" desc="%Dragon_bootsD" application="equip" build="" properties="skill=archer|swordsman|miller,armor=110.00%,skill_value=10.00%,generate_mana=0.00" shop_count="1" shop_cost="100" class="boots" file="%mod%/gfx/item_icons/mithril_boots.png" pak="">
         <skin type="boots" file="%mod%/gfx/equip_skins/Boots/Drake_boots_1.png" />
     </resource>
     <resource name="Dragon_boots_lvl2" title="%Dragon_boots_lvl2T" desc="%Dragon_boots_lvl2D" application="equip" build="" properties="slowdown=2.00%,skill=archer|swordsman|mage,no_shop,shine,armor=130.00%,undead_armor=2.00%,skill_value=20.00%,generate_mana=0.00" shop_count="1" shop_cost="1" class="boots" file="%mod%/gfx/item_icons/Dragon_boots_lvl2.png" pak="">
@@ -108,18 +108,18 @@
     <resource name="Dragon_boots_lvl3" title="%Dragon_boots_lvl3T" desc="%Dragon_boots_lvl3D" application="equip" build="" properties="skill=archer|swordsman|mage,no_shop,shine,armor=150.00%,undead_armor=5.00%,skill_value=30.00%" shop_count="1" shop_cost="1" class="boots" file="%mod%/gfx/item_icons/Dragon_boots_lvl3.png" pak="">
         <skin type="boots" file="%mod%/gfx/equip_skins/Boots/Drake_boots_3.png" />
     </resource>
-    <resource name="gold_dragon_boots" title="%gold_dragon_bootsT" desc="%gold_dragon_bootsD" application="equip" build="" properties="skill=archer|swordsman|mage,shine,armor=300.00%,undead_armor=7.50%,skill_value=50.00%,infinity_count" shop_count="1" shop_cost="1" class="boots" file="%mod%/gfx/item_icons/gold_dragon_boots_icon.png" pak="">
+    <resource name="gold_dragon_boots" title="%gold_dragon_bootsT" desc="%gold_dragon_bootsD" application="equip" build="" properties="no_shop=true,skill=archer|swordsman|mage,shine,armor=300.00%,undead_armor=7.50%,skill_value=50.00%,generate_mana=0.00" shop_count="1" shop_cost="1" class="boots" file="%mod%/gfx/item_icons/gold_dragon_boots_icon.png" pak="">
         <skin type="boots" file="%mod%/gfx/equip_skins/Boots/Drake_boots_4.png" />
     </resource>
-    <resource name="ring_dragon" title="%ring_dragonT" desc="%ring_dragonD" application="equip" build="" properties="skill=archer|miner|carpenter|smith|stonecutter|cook|swimmer|fisher|swordsman|hunter|logger|mage|miller|climber,regen_healt=100.00%,undead_armor=10.00%,skill_value=50.00%,speed=50%,generate_mana=0.05" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/123443434441.png" class="item" tech="" pak="" />
+    <resource name="ring_dragon" title="%ring_dragonT" desc="%ring_dragonD" application="equip" build="" properties="skill=archer|miner|carpenter|smith|stonecutter|cook|swimmer|fisher|swordsman|hunter|logger|mage|miller,regen_healt=100.00%,undead_armor=10.00%,skill_value=25.00%,speed=50%,generate_mana=0.05" shop_count="1" shop_cost="150" file="%mod%/gfx/item_icons/123443434441.png" class="item" tech="" pak="" />
     <resource name="dragon_vivern_baby_and_ring" title="%dragon_vivern_baby_and_ringT" desc="%dragon_vivern_baby_and_ringD" application="equip" build="" properties="jetpack,no_shop,regen_healt=100.00%,undead_armor=10.00%,skill_value=25.00%,skill=archer|carpenter|climber|cook|fisher|hunter|logger|mage|swordsman|miller|stonecutter|smith|miner|swimmer,shine,generate_mana=0.05" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_upgrad_DLC_BaM/Dragon_Vivern_icon.png" class="item" pak="" />
-    <resource name="dragon_sheld" title="%dragon_sheldT" desc="%dragon_sheldD" application="equip" build="" properties="armor=150.00%,regen_healt=50.00%,slowdown=5.00%,undead_armor=5.00%,skill_value=25.00%,skill=swordsman" shop_count="1" shop_cost="1" class="item" file="%mod%/gfx/item_icons/drake_shield_icon.png" tech="" pak="">
+    <resource name="dragon_sheld" title="%dragon_sheldT" desc="%dragon_sheldD" application="equip" build="" properties="armor=150.00%,regen_healt=50.00%,slowdown=5.00%,undead_armor=5.00%,skill_value=25.00%,skill=swordsman" shop_count="1" shop_cost="75" class="item" file="%mod%/gfx/item_icons/drake_shield_icon.png" tech="" pak="">
         <skin type="shield" file="%mod%/gfx/equip_skins/drake_shield.png" />
         <file path="%mod%/gfx/item_icons/drake_shield_bigicon.png" />
     </resource>
-    <resource name="dragon_arch" title="%dragon_archT" desc="%dragon_archD" application="equip" build="" properties="skill=mage|archer,undead_armor=5.00%,skill_value=25.00%,regen_healt=10.00%,add_res=1a" shop_count="1" shop_cost="1" class="item" file="%mod%/gfx/item_icons/232333232323.png" pak="" />
-    <resource name="Dragon_mage" title="%Dragon_mageT" desc="%Dragon_mageD" application="equip" build="" properties="skill=mage,undead_armor=5.00%,skill_value=25.00%,regen_healt=10.00%,add_res=1m,generate_mana=0.00" shop_count="1" shop_cost="1" class="item" file="%mod%/gfx/item_icons/12312333333123.png" pak="" />
-    <resource name="1a" title="%1aT" desc="%1aD" application="equip" build="" properties="infinity_count,attack=x5,arrow,hit_sound=arrow_hit,disable_drag,get_healt=10.00%" shop_count="1" shop_cost="1" class="weapon" file="%mod%/gfx/item_icons/232323244444.png" pak="">
+    <resource name="dragon_arch" title="%dragon_archT" desc="%dragon_archD" application="equip" build="" properties="skill=mage|archer,undead_armor=5.00%,skill_value=25.00%,regen_healt=10.00%,add_res=1a" shop_count="1" shop_cost="75" class="item" file="%mod%/gfx/item_icons/232333232323.png" pak="" />
+    <resource name="Dragon_mage" title="%Dragon_mageT" desc="%Dragon_mageD" application="equip" build="" properties="skill=mage,undead_armor=5.00%,skill_value=25.00%,regen_healt=10.00%,add_res=1m,generate_mana=0.00" shop_count="1" shop_cost="75" class="item" file="%mod%/gfx/item_icons/12312333333123.png" pak="" />
+    <resource name="1a" title="%1aT" desc="%1aD" application="equip" build="" properties="infinity_count,attack=x2,arrow,hit_sound=arrow_hit,disable_drag,no_shop,get_healt=10.00%" shop_count="1" shop_cost="1" class="weapon" file="%mod%/gfx/item_icons/232323244444.png" pak="">
         <file path="%mod%/gfx/item_icons/232323555r.png" />
     </resource>
     <resource name="Dragon_lightning_arrow" title="" desc="%" application="equip" build="" properties="infinity_count,no_shop,arrow,disable_drag,attack=x6,no_inv,no_char_inv" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_upgrad_DLC_BaM/lightening_bolt.png" class="weapon" pak="">
@@ -150,46 +150,46 @@
             </behaviour>
         </behaviours>
     </resource>
-    <resource name="1m" title="%1mT" desc="%1mD" application="equip" build="" properties="infinity_count,magic_elexir,magic_item=magic_fireball,attack" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/434343.png" pak="" />
-    <resource name="specia" title="%speciaT" desc="%speciaD" application="food" build="" properties="satiety=1,healt=3.33,elixir,aura=spell_rage,bone=effect,speed=x3,time=300,no_back_craft,shine" shop_count="10" shop_cost="1" file="%mod%/gfx/item_icons/specii.png" pak="" />
+    <resource name="1m" title="%1mT" desc="%1mD" application="equip" build="" properties="infinity_count,magic_elexir,no_shop,magic_item=magic_fireball,attack" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/434343.png" pak="" />
+    <resource name="specia" title="%speciaT" desc="%speciaD" application="food" build="" properties="satiety=1,healt=3.33,elixir,aura=spell_rage,bone=effect,speed=x3,time=300,no_back_craft,shine" shop_count="10" shop_cost="10" file="%mod%/gfx/item_icons/specii.png" pak="" />
     <resource name="Fire_berry" title="%Fire_berryT" desc="%Fire_berryD" application="food" build="" properties="no_shop,satiety=1,healt=2" shop_count="1" shop_cost="2" file="%mod%/gfx/item_icons/Dragon_berryes.png" pak="" />
-    <resource name="Dragon_vine" title="%Dragon_vineT" desc="%Dragon_vineD" application="food" build="" properties="satiety=1,healt=10,time=2000,elixir,no_char_inv,shine,aura=spell_speed,bone=effect,speed=x3" shop_count="20" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_vine_bottle.png" pak="" />
-    <resource name="burger" title="%burgerT" desc="%burgerD" application="food" build="" properties="satiety=12,healt=10,no_back_craft" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/burger.png" pak="" />
-    <resource name="zavtrack" title="%zavtrackT" desc="%zavtrackD" application="food" build="" properties="satiety=10,healt=5,no_back_craft" shop_count="2" shop_cost="1" file="%mod%/gfx/item_icons/diner.png" pak="" />
-    <resource name="diner" title="%dinerT" desc="%dinerD" application="food" build="" properties="satiety=10,healt=5,no_back_craft" shop_count="50" shop_cost="1" file="%mod%/gfx/item_icons/obed.png" pak="" />
-    <resource name="uzinpod" title="%uzinpodT" desc="%uzinpodD" application="food" build="" properties="satiety=10,healt=5,no_back_craft" shop_count="50" shop_cost="1" file="%mod%/gfx/item_icons/uzin pod.png" pak="" />
-    <resource name="uzin" title="%uzinT" desc="%uzinD" application="food" build="" properties="satiety=10,healt=5,no_back_craft" shop_count="50" shop_cost="1" file="%mod%/gfx/item_icons/uzin.png" pak="" />
-    <resource name="kasha" title="%kashaT" desc="%kashaD" application="food" build="" properties="satiety=10,healt=5,no_back_craft" shop_count="50" shop_cost="1" file="%mod%/gfx/item_icons/kasha.png" pak="" />
-    <resource name="smyti_dg" title="%smyti_dgT" desc="%smyti_dgD" application="block" build="smyti_dg" properties="" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/s1232132mithy_prev.png" pak="" />
-    <resource name="stanock_dg" title="%stanock_dgT" desc="%stanock_dgD" application="block" build="stanock_dg" properties="" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/1232323.png" pak="" />
-    <resource name="Dragon_lib" title="%Dragon_libT" desc="%Dragon_libD" application="block" build="Dragon_lib" properties="" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_Library_icon_large.png" pak="" />
+    <resource name="Dragon_vine" title="%Dragon_vineT" desc="%Dragon_vineD" application="food" build="" properties="satiety=1,healt=10,time=2000,elixir,no_char_inv,shine,aura=spell_speed,bone=effect,speed=x3" shop_count="5" shop_cost="10" file="%mod%/gfx/item_icons/Dragon_vine_bottle.png" pak="" />
+    <resource name="burger" title="%burgerT" desc="%burgerD" application="food" build="" properties="satiety=12,healt=9.9,no_back_craft" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/burger.png" pak="" />
+    <resource name="zavtrack" title="%zavtrackT" desc="%zavtrackD" application="food" build="" properties="satiety=9,healt=1.5,no_back_craft" shop_count="2" shop_cost="1" file="%mod%/gfx/item_icons/diner.png" pak="" />
+    <resource name="diner" title="%dinerT" desc="%dinerD" application="food" build="" properties="satiety=9,healt=1.5,no_back_craft" shop_count="2" shop_cost="1" file="%mod%/gfx/item_icons/obed.png" pak="" />
+    <resource name="uzinpod" title="%uzinpodT" desc="%uzinpodD" application="food" build="" properties="satiety=9,healt=1.5,no_back_craft" shop_count="2" shop_cost="1" file="%mod%/gfx/item_icons/uzin pod.png" pak="" />
+    <resource name="uzin" title="%uzinT" desc="%uzinD" application="food" build="" properties="satiety=9,healt=3,no_back_craft" shop_count="2" shop_cost="1" file="%mod%/gfx/item_icons/uzin.png" pak="" />
+    <resource name="kasha" title="%kashaT" desc="%kashaD" application="food" build="" properties="satiety=2,healt=1,no_back_craft" shop_count="6" shop_cost="1" file="%mod%/gfx/item_icons/kasha.png" pak="" />
+    <resource name="smyti_dg" title="%smyti_dgT" desc="%smyti_dgD" application="block" build="smyti_dg" properties="" shop_count="1" shop_cost="50" file="%mod%/gfx/item_icons/s1232132mithy_prev.png" pak="" />
+    <resource name="stanock_dg" title="%stanock_dgT" desc="%stanock_dgD" application="block" build="stanock_dg" properties="" shop_count="1" shop_cost="50" file="%mod%/gfx/item_icons/1232323.png" pak="" />
+    <resource name="Dragon_lib" title="%Dragon_libT" desc="%Dragon_libD" application="block" build="Dragon_lib" properties="" shop_count="1" shop_cost="50" file="%mod%/gfx/item_icons/Dragon_Library_icon_large.png" pak="" />
     <resource name="Dragon_mage_table" title="%Dragon_mage_tableT" desc="%Dragon_mage_tableD" application="block" build="Dragon_mage_table" properties="no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/spine/dragon_magic_table/elf_magic_table.png" pak="" />
-    <resource name="lab_dg" title="%lab_dgT" desc="%lab_dgD" application="block" build="lab_dg" properties="" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/12323.png" pak="" />
-    <resource name="kuxona_dg" title="%kuxona_dgT" desc="%kuxona_dgD" application="furniture" build="kuxona_dg" properties="comfort=1" shop_count="1" shop_cost="1" file="%mod%/gfx/spine/kitchen_stone_big_dragon.png" pak="" />
-    <resource name="Dragon_bed" title="%Dragon_bedT" desc="%Dragon_bedD" application="furniture" build="Dragon_bed" properties="comfort=1" shop_count="10" shop_cost="1" file="%mod%/gfx/blocks/bed_multistorey_dragon.png" pak="" />
-    <resource name="Dragon_table" title="%Dragon_tableT" desc="%Dragon_tableD" application="furniture" build="Dragon_table" properties="comfort=0.6" shop_count="2" shop_cost="1" file="%mod%/gfx/item_icons/table_normal_01 — копия.png" pak="" />
+    <resource name="lab_dg" title="%lab_dgT" desc="%lab_dgD" application="block" build="lab_dg" properties="" shop_count="1" shop_cost="50" file="%mod%/gfx/item_icons/12323.png" pak="" />
+    <resource name="kuxona_dg" title="%kuxona_dgT" desc="%kuxona_dgD" application="furniture" build="kuxona_dg" properties="comfort=1" shop_count="1" shop_cost="25" file="%mod%/gfx/spine/kitchen_stone_big_dragon.png" pak="" />
+    <resource name="Dragon_bed" title="%Dragon_bedT" desc="%Dragon_bedD" application="furniture" build="Dragon_bed" properties="comfort=1" shop_count="1" shop_cost="10" file="%mod%/gfx/blocks/bed_multistorey_dragon.png" pak="" />
+    <resource name="Dragon_table" title="%Dragon_tableT" desc="%Dragon_tableD" application="furniture" build="Dragon_table" properties="comfort=0.6" shop_count="1" shop_cost="5" file="%mod%/gfx/item_icons/table_normal_01 — копия.png" pak="" />
     <resource name="Dragon_table_stone" title="%Dragon_table_stoneT" desc="%Dragon_table_stoneD" application="furniture" build="Dragon_table_stone" properties="no_shop,comfort=0.6" shop_count="1" shop_cost="1" file="%mod%/gfx/blocks/table_stone.png" pak="" />
     <resource name="Dragon_trofy_1" title="%Dragon_trofy_1T" desc="%Dragon_trofy_1D" application="furniture" build="Dragon_trofy_1" properties="comfort=3,no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/blocks/Dragon_trofy_1.png" pak="" />
     <resource name="Dragon_trofy_2" title="%Dragon_trofy_2T" desc="%Dragon_trofy_2D" application="furniture" build="Dragon_trofy_2" properties="comfort=3,no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/blocks/Dragon_trofy_2.png" pak="" />
     <resource name="Dragon_vase" title="%Dragon_vaseT" desc="%Dragon_vaseD" application="furniture" build="Dragon_vase" properties="comfort=2,no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/blocks/Dragon_vase_1.png" pak="" />
     <resource name="Dragon_statue_stats" title="%Dragon_statue_statsT" desc="%Dragon_statue_statsD" application="furniture" build="Dragon_statue_stats" properties="comfort=3" shop_count="1" shop_cost="1" file="%mod%/gfx/blocks/statue_hill.png" pak="" />
-    <resource name="Dragon_lamp" title="%Dragon_lampT" desc="%Dragon_lampD" application="furniture" build="Dragon_lamp" properties="comfort=0.3" shop_count="30" shop_cost="1" file="%mod%/gfx/blocks/lamp2.png" pak="" />
+    <resource name="Dragon_lamp" title="%Dragon_lampT" desc="%Dragon_lampD" application="furniture" build="Dragon_lamp" properties="comfort=0.3" shop_count="4" shop_cost="3" file="%mod%/gfx/blocks/lamp2.png" pak="" />
     <resource name="vitrag" title="%vitragT" desc="%vitragD" application="furniture" build="vitrag" properties="comfort=0.5" shop_count="2" shop_cost="5" file="%mod%/gfx/blocks/VitrajD_1.png" pak="" />
     <resource name="Dragon_picture" title="%Dragon_pictureT" desc="%Dragon_pictureD" application="furniture" build="Dragon_picture" properties="comfort=0.5" shop_count="1" shop_cost="5" file="%mod%/gfx/item_icons/3234234234234.png" pak="" />
     <resource name="grey_mushroom" title="%GreyMushroomT" desc="%GreyMushroomD" file="gfx\level_tiles\map_obj\shineobjects\mush_gray1" application="mining" shop_count="1" shop_cost="3" tech="master_alchemy" pak="" />
     <resource name="pink_mushroom" title="%PinkMushroomT" desc="%PinkMushroomD" file="gfx\level_tiles\map_obj\shineobjects\mush_pink1" application="mining" shop_count="1" shop_cost="3" tech="master_alchemy" pak="" />
     <resource name="eye" title="%EyeT" desc="%EyeD" file="gfx\level_tiles\craft_res\eye" application="mining" shop_count="1" shop_cost="2" tech="master_alchemy" pak="" />
-    <resource name="Dragon_Baner" title="%Dragon_BanerT" desc="%Dragon_BanerD" application="furniture" build="Dragon_Baner" properties="comfort=0.5" shop_count="1" shop_cost="1" file="%mod%/gfx/blocks/Dragon_Baner1.png" pak="" />
+    <resource name="Dragon_Baner" title="%Dragon_BanerT" desc="%Dragon_BanerD" application="furniture" build="Dragon_Baner" properties="comfort=0.5" shop_count="1" shop_cost="10" file="%mod%/gfx/blocks/Dragon_Baner1.png" pak="" />
     <resource name="dragon_templ_block" title="%dragon_templ_blockT" desc="%dragon_templ_blockD" application="block" build="dragon_templ_block" properties="comfort=0.7,no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/wall_dragon_templ.png" pak="" />
-    <resource name="Dragon_wall" title="%Dragon_wallT" desc="%Dragon_wallD" application="block" build="Dragon_wall" properties="wall,comfort=0.6" shop_count="10" shop_cost="1" file="%mod%/gfx/item_icons/wall_dragon.png" pak="" />
-    <resource name="door_dragon" title="%door_dragonT" desc="%door_dragonD" application="block" build="door_dragon" properties="wall" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_door.png" pak="" />
-    <resource name="hatch_dragon" title="%hatch_dragonT" desc="%hatch_dragonD" application="block" build="hatch_dragon" properties="door,wall" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_harch.png" pak="" />
+    <resource name="Dragon_wall" title="%Dragon_wallT" desc="%Dragon_wallD" application="block" build="Dragon_wall" properties="wall,comfort=0.6" shop_count="10" shop_cost="10" file="%mod%/gfx/item_icons/wall_dragon.png" pak="" />
+    <resource name="door_dragon" title="%door_dragonT" desc="%door_dragonD" application="block" build="door_dragon" properties="wall" shop_count="1" shop_cost="40" file="%mod%/gfx/item_icons/Dragon_door.png" pak="" />
+    <resource name="hatch_dragon" title="%hatch_dragonT" desc="%hatch_dragonD" application="block" build="hatch_dragon" properties="door,wall" shop_count="1" shop_cost="30" file="%mod%/gfx/item_icons/dragon_harch.png" pak="" />
     <resource name="Dragon_trap" title="%Dragon_trapT" desc="%Dragon_trapD" application="block" build="Dragon_trap" properties="no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/blocks/trap_iron.png" pak="" />
     <resource name="Dragon_cell" title="%Dragon_cellT" desc="%Dragon_cellD" application="block" build="Dragon_cell" properties="no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/blocks/cell_iron.png" pak="" />
-    <resource name="Dragon_arch_tower" title="%Dragon_arch_towerT" desc="%Dragon_arch_towerD" application="block" build="Dragon_arch_tower" properties="" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/wooden_tower_3.png" pak="" />
+    <resource name="Dragon_arch_tower" title="%Dragon_arch_towerT" desc="%Dragon_arch_towerD" application="block" build="Dragon_arch_tower" properties="" shop_count="1" shop_cost="50" file="%mod%/gfx/item_icons/wooden_tower_3.png" pak="" />
     <resource name="treasur_chest_dragon" title="%treasur_chest_dragonT" desc="%treasur_chest_dragonD" application="furniture" build="treasur_chest_dragon" properties="comfort=2,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/blocks/chest_T4.png" pak="" />
     <resource name="Dragon_treasur" title="%Dragon_treasurT" desc="%Dragon_treasurD" application="furniture" build="Dragon_treasur" properties="comfort=2,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_T.png" pak="" />
-    <resource name="tunder_bolt_dragon" title="%tunder_bolt_dragonT" desc="%tunder_bolt_dragonD" application="equip" build="" properties="disable_drag,attack=x10,arrow,infinity_count" shop_count="3" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_upgrad_DLC_BaM/Dragon_Tunder_bolt.png" class="weapon" pak="">
+    <resource name="tunder_bolt_dragon" title="%tunder_bolt_dragonT" desc="%tunder_bolt_dragonD" application="equip" build="" properties="disable_drag,attack=x10,arrow,no_shop" shop_count="3" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_upgrad_DLC_BaM/Dragon_Tunder_bolt.png" class="weapon" pak="">
         <behaviours>
             <behaviour value="ChainProjectileBehaviour" tag="on_use">
                 <effect value="lightning_bolt_y" />
@@ -217,7 +217,7 @@
             </behaviour>
         </behaviours>
     </resource>
-    <resource name="flame_fuel_heat_dragon" title="%flame_fuel_heat_dragonT" desc="%flame_fuel_heat_dragonD" application="equip" build="" properties="disable_drag,attack=x4,bullet,infinity_count" shop_count="3" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_upgrad_DLC_BaM/Dragon_flamethrower_heat_of_gorn.png" class="weapon" pak="">
+    <resource name="flame_fuel_heat_dragon" title="%flame_fuel_heat_dragonT" desc="%flame_fuel_heat_dragonD" application="equip" build="" properties="disable_drag,attack=x4,bullet,no_shop" shop_count="3" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_upgrad_DLC_BaM/Dragon_flamethrower_heat_of_gorn.png" class="weapon" pak="">
         <behaviours>
             <behaviour value="RangeAttackBehaviour" tag="on_use">
                 <effect value="flamethrower_heat" />
@@ -240,24 +240,24 @@
             </behaviour>
         </behaviours>
     </resource>
-    <resource name="Dragon_mana_elexir" title="%Dragon_mana_elexirT" desc="%Dragon_mana_elexirD" application="equip" build="" properties="elixir,shine,mana=100,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_elixir_mana.png" pak="" />
-    <resource name="Dragon_heal_elexir" title="%Dragon_heal_elexirT" desc="%Dragon_heal_elexirD" application="equip" build="" properties="elixir,shine,healt=10,time=2,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_el_health.png" pak="" />
-    <resource name="dragon_eye" title="%dragon_eyeT" desc="%dragon_eyeD" application="mining" build="" properties="no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_eye.png" pak="" />
-    <resource name="archer_master_b" title="%archer_master_bT" desc="%archer_master_bD" application="equip" build="" properties="skill_scroll,skill=archer,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/archer.png" pak="" />
-    <resource name="Run_lerning_kit" title="%Run_lerning_kitT" desc="%Run_lerning_kitD" application="halfstuff" build="" properties="infinity_count,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/run_kit.png" tech="" pak="" />
-    <resource name="miner_master_b" title="%miner_master_bT" desc="%miner_master_bD" application="equip" build="" properties="skill_scroll,skill=miner,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/collier.png" pak="" />
-    <resource name="hunter_master_b" title="%hunter_master_bT" desc="%hunter_master_bD" application="equip" build="" properties="skill_scroll,skill=hunter,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/bookhunter.png" pak="" />
-    <resource name="rock_master_b" title="%rock_master_bT" desc="%rock_master_bD" application="equip" build="" properties="skill_scroll,skill=climber,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/bookrock.png" pak="" />
-    <resource name="wave_master_b" title="%wave_master_bT" desc="%wave_master_bD" application="equip" build="" properties="skill_scroll,skill=swimmer,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/bookwave.png" pak="" />
-    <resource name="mill_master_b" title="%mill_master_bT" desc="%mill_master_bD" application="equip" build="" properties="skill_scroll,skill=miller,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/boomillk.png" pak="" />
-    <resource name="axe_master_b" title="%axe_master_bT" desc="%axe_master_bD" application="equip" build="" properties="skill_scroll,skill=logger,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/logging.png" pak="" />
-    <resource name="cooking_master_b" title="%cooking_master_bT" desc="%cooking_master_bD" application="equip" build="" properties="skill_scroll,skill=cook,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/cooking.png" pak="" />
-    <resource name="fish_master_b" title="%fish_master_bT" desc="%fish_master_bD" application="equip" build="" properties="skill_scroll,skill=fisher,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/fishing.png" pak="" />
-    <resource name="joiner_master_b" title="%joiner_master_bT" desc="%joiner_master_bD" application="equip" build="" properties="skill_scroll,skill=carpenter,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/jointer.png" pak="" />
-    <resource name="magick_master_b" title="%magick_master_bT" desc="%magick_master_bD" application="equip" build="" properties="skill_scroll,shine,skill=mage,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/magic.png" pak="" />
-    <resource name="smith_master_b" title="%smith_master_bT" desc="%smith_master_bD" application="equip" build="" properties="skill_scroll,skill=smith,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/smith.png" pak="" />
-    <resource name="stone_master_b" title="%stone_master_bT" desc="%stone_master_bD" application="equip" build="" properties="skill_scroll,skill=stonecutter,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/stone.png" pak="" />
-    <resource name="sword_man_master_b" title="%sword_man_master_bT" desc="%sword_man_master_bD" application="equip" build="" properties="skill_scroll,skill=swordsman,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/swordsman.png" pak="" />
+    <resource name="Dragon_mana_elexir" title="%Dragon_mana_elexirT" desc="%Dragon_mana_elexirD" application="equip" build="" properties="elixir,shine,mana=100,no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_elixir_mana.png" pak="" />
+    <resource name="Dragon_heal_elexir" title="%Dragon_heal_elexirT" desc="%Dragon_heal_elexirD" application="equip" build="" properties="elixir,shine,healt=10,time=2,no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_el_health.png" pak="" />
+    <resource name="dragon_eye" title="%dragon_eyeT" desc="%dragon_eyeD" application="mining" build="" properties="no_shop,shine" shop_count="1" shop_cost="10" file="%mod%/gfx/item_icons/dragon_eye.png" pak="" />
+    <resource name="archer_master_b" title="%archer_master_bT" desc="%archer_master_bD" application="equip" build="" properties="skill_scroll,skill=archer,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/archer.png" pak="" />
+    <resource name="Run_lerning_kit" title="%Run_lerning_kitT" desc="%Run_lerning_kitD" application="halfstuff" build="" properties="infinity_count,shine" shop_count="1" shop_cost="100" file="%mod%/gfx/item_icons/run_kit.png" tech="" pak="" />
+    <resource name="miner_master_b" title="%miner_master_bT" desc="%miner_master_bD" application="equip" build="" properties="skill_scroll,skill=miner,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/collier.png" pak="" />
+    <resource name="hunter_master_b" title="%hunter_master_bT" desc="%hunter_master_bD" application="equip" build="" properties="skill_scroll,skill=hunter,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/bookhunter.png" pak="" />
+    <resource name="rock_master_b" title="%rock_master_bT" desc="%rock_master_bD" application="equip" build="" properties="skill_scroll,skill=climber,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/bookrock.png" pak="" />
+    <resource name="wave_master_b" title="%wave_master_bT" desc="%wave_master_bD" application="equip" build="" properties="skill_scroll,skill=swimmer,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/bookwave.png" pak="" />
+    <resource name="mill_master_b" title="%mill_master_bT" desc="%mill_master_bD" application="equip" build="" properties="skill_scroll,skill=miller,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/boomillk.png" pak="" />
+    <resource name="axe_master_b" title="%axe_master_bT" desc="%axe_master_bD" application="equip" build="" properties="skill_scroll,skill=logger,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/logging.png" pak="" />
+    <resource name="cooking_master_b" title="%cooking_master_bT" desc="%cooking_master_bD" application="equip" build="" properties="skill_scroll,skill=cook,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/cooking.png" pak="" />
+    <resource name="fish_master_b" title="%fish_master_bT" desc="%fish_master_bD" application="equip" build="" properties="skill_scroll,skill=fisher,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/fishing.png" pak="" />
+    <resource name="joiner_master_b" title="%joiner_master_bT" desc="%joiner_master_bD" application="equip" build="" properties="skill_scroll,skill=carpenter,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/jointer.png" pak="" />
+    <resource name="magick_master_b" title="%magick_master_bT" desc="%magick_master_bD" application="equip" build="" properties="skill_scroll,no_shop,shine,skill=mage" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/magic.png" pak="" />
+    <resource name="smith_master_b" title="%smith_master_bT" desc="%smith_master_bD" application="equip" build="" properties="skill_scroll,skill=smith,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/smith.png" pak="" />
+    <resource name="stone_master_b" title="%stone_master_bT" desc="%stone_master_bD" application="equip" build="" properties="skill_scroll,skill=stonecutter,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/stone.png" pak="" />
+    <resource name="sword_man_master_b" title="%sword_man_master_bT" desc="%sword_man_master_bD" application="equip" build="" properties="skill_scroll,skill=swordsman,no_shop,shine" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_skill_book/swordsman.png" pak="" />
     <resource name="Dragon_enchanting_kristel_low" title="%Dragon_enchanting_kristel_lowT" desc="%Dragon_enchanting_kristel_lowD" application="halfstuff" build="" properties="no_shop,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_enchanting_crystal_low.png" class="item" pak="" />
     <resource name="Dragon_enchanting_kristel" title="%Dragon_enchanting_kristelT" desc="%Dragon_enchanting_kristelD" application="halfstuff" build="" properties="no_shop,shine,infinity_count" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_enchanting_crystal.png" pak="" />
     <resource name="vivern_baby_and_ring" title="" desc="" aapplication="equip" build="" properties="no_shop,add_res=fireball_staff_elexir,attack=x5,missile,mace,magic_staff=0,distance=6,skill_value=15.00%,skill=mage" shop_count="1" shop_cost="1" class="weapon" file="%mod%/gfx/item_icons/Dragon_upgrad_DLC_BaM/Dragon_fire_staff_icon.png" pak="">
@@ -270,11 +270,11 @@
     <resource name="Dragon_ladder" title="%Dragon_ladderT" desc="%Dragon_ladderD" application="furniture" build="Dragon_ladder" properties="no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/blocks/dragon_ladder_trunk.png" pak="" />
     <resource name="Dragon_had" title="%Dragon_hadT" desc="%Dragon_hadD" application="mining" build="" properties="no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/had_dragon.png" pak="" />
     <resource name="had_black_dragon" title="%had_black_dragonT" desc="%had_black_dragonD" application="mining" build="" properties="no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/had_black_dragon.png" pak="" />
-    <resource name="dragon_soul_botl" title="%dragon_soul_botlT" desc="%dragon_soul_botlD" application="halfstuff" build="" properties="" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_soul_botl.png" pak="" />
+    <resource name="dragon_soul_botl" title="%dragon_soul_botlT" desc="%dragon_soul_botlD" application="halfstuff" build="" properties="" shop_count="1" shop_cost="10" file="%mod%/gfx/item_icons/Dragon_soul_botl.png" pak="" />
     <resource name="dragon_soul_borl_full" title="%dragon_soul_borl_fullT" desc="%dragon_soul_borl_fullD" application="halfstuff" build="" properties="no_shop=true" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_soul_botl_full.png" pak="" />
     <resource name="dragon_soul" title="%dragon_soulT" desc="%dragon_soulD" application="halfstuff" build="" properties="spawn=little_dragon,spawn_night,spawn_underground,no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/Dragon_soul.png" pak="" />
-    <resource name="clean_gold" title="%clean_goldT" desc="%clean_goldD" application="halfstuff" build="" properties="" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/clean_gold.png" pak="" />
-    <resource name="gold_dragon_scale" title="%gold_dragon_scaleT" desc="%gold_dragon_scaleD" application="halfstuff" build="" properties="" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/gold_dragon_scale.png" pak="" />
+    <resource name="clean_gold" title="%clean_goldT" desc="%clean_goldD" application="halfstuff" build="" properties="" shop_count="1" shop_cost="15" file="%mod%/gfx/item_icons/clean_gold.png" pak="" />
+    <resource name="gold_dragon_scale" title="%gold_dragon_scaleT" desc="%gold_dragon_scaleD" application="halfstuff" build="" properties="" shop_count="1" shop_cost="100" file="%mod%/gfx/item_icons/gold_dragon_scale.png" pak="" />
     <resource name="dragon_chest" title="%dragon_chestT" desc="%dragon_chestD" application="furniture" build="dragon_chest" properties="shine,no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/Dragon_rooms/dragon_chest.png" pak="" />
     <resource name="boss_spawner" title="%boss_spawnerT" desc="%boss_spawnerD" application="block" build="boss_spawner" properties="no_shop,no_char_inv,no_inv" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/incubator_icon_large.png" pak="" />
     <resource name="dragon_gren_egg" title="%dragon_gren_eggT" desc="%dragon_gren_eggD" application="halfstuff" build="" properties="no_shop,no_char_inv,no_inv" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_egg.png" pak="" />
@@ -283,5 +283,5 @@
     <resource name="dragon_stading" title="%dragon_stadingT" desc="%dragon_stadingD" application="furniture" build="dragon_stading" properties="infinity_count,no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/lesa.png" pak="" />
     <resource name="claster" title="%clasterT" desc="%clasterD" application="halfstuff" build="" properties="shine,no_shop" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/claster.png" pak="" />
     <resource name="big_claster" title="%big_clasterT" desc="%big_clasterD" application="block" build="big_claster" properties="no_shop=true" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/big_crystal_02.png" pak="" />
-    <resource name="dragon_book_chest" title="%dragon_book_chestT" desc="%dragon_book_chestD" application="furniture" build="dragon_book_chest" properties="no_char_inv=true" shop_count="1" shop_cost="1" file="%mod%/gfx/item_icons/dragon_book_chest_icon.png" pak="" />
+    <resource name="dragon_book_chest" title="%dragon_book_chestT" desc="%dragon_book_chestD" application="furniture" build="dragon_book_chest" properties="no_char_inv=true" shop_count="1" shop_cost="25" file="%mod%/gfx/item_icons/dragon_book_chest_icon.png" pak="" />
 </root>

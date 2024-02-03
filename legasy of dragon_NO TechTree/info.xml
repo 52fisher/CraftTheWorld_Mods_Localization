@@ -12,7 +12,7 @@
             <spanish></spanish>
             <japanese></japanese>
             <korean></korean>
-            <chinese>龙之遗产</chinese>
+            <chinese></chinese>
             <chinese_t></chinese_t>
         </title>
         <description>
@@ -25,7 +25,7 @@
             <spanish></spanish>
             <japanese></japanese>
             <korean></korean>
-            <chinese>本Mod是以龙为主题的秘银科技树分支的延续。</chinese>
+            <chinese></chinese>
             <chinese_t></chinese_t>
         </description>
         <author>
@@ -38,9 +38,9 @@
             <spanish></spanish>
             <japanese></japanese>
             <korean></korean>
-            <chinese>Mitrafan</chinese>
+            <chinese></chinese>
             <chinese_t></chinese_t>
         </author>
-        <version>1.087</version>
+        <version>1.092</version>
     </mod>
 </root>

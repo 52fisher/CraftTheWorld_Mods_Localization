@@ -7,7 +7,7 @@
         <Dragon_worcbanch path="%mod%/gfx/spine/joiner_workbench" json="joiner_workbench_dragon.json" scale="0.420000" mirror="true">
             <mixing all="true" />
         </Dragon_worcbanch>
-        <Dragon_smyte path="%mod%/gfx/spine/smithy_dg" json="smithy_dg.json" scale="0.620000" mirror="true">
+        <Dragon_smyte path="%mod%/gfx/spine/smithy_dg" json="smithy_dg.json" scale="0.620000" mirror="false">
             <mixing all="true" />
         </Dragon_smyte>
         <Front_WB path="%mod%/gfx/spine/joiner_workbench" json="joiner_workbench_front_dg.json" scale="0.420000" mirror="false">

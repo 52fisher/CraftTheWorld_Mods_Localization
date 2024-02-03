@@ -3,12 +3,12 @@
     <block name="stanock_dg" type="entity" item="stanock_dg" properties="" resource="stanock_dg" build="1" extract="1" pak="" />
     <block name="lab_dg" type="entity" item="lab_dg" properties="" resource="lab_dg" build="1" extract="1" pak="" />
     <block name="kuxona_dg" type="entity" item="kuxona_dg" build="1" resource="kuxona_dg" extract="4" backcraft="true" properties="editor=build" pak="" />
-    <block name="Dragon_table" type="simple" properties="table=3,fire=fire_down,can_fall,wooden,draw_align=down,scale_xaxis" through="true" extract="4" resource="Dragon_table" draw_layer="normal" build="1" ontop="true" file="%mod%/gfx/blocks/table_normal_01 — копия.png" pak="">
+    <block name="Dragon_table" type="simple" properties="table=3,fire=fire_down,can_fall,wooden,draw_align=down,scale_xaxis,two_layers" through="true" extract="4" resource="Dragon_table" draw_layer="normal" build="1" ontop="true" file="%mod%/gfx/blocks/table_normal_01 — копия.png" pak="">
         <layers count="1">
             <layer file="%mod%/gfx/blocks/table_normal_01 — копия.png" properties="draw_align=down,scale_xaxis" />
         </layers>
     </block>
-    <block name="Dragon_lamp" type="simple" properties="narrow,light=20,metallic" resource="Dragon_lamp" through="true" crack="true" extract="4" draw_layer="front" build="1" backneed="true" ontop="true" file="%mod%/gfx/blocks/lamp2.png" effect="spell_fireball_tail.xml" effect_scale="0.32" effect_offset="0.00,-0.10" pak="" />
+    <block name="Dragon_lamp" type="simple" properties="narrow,light=6,metallic" resource="Dragon_lamp" through="true" crack="true" extract="4" draw_layer="front" build="1" backneed="true" ontop="true" file="%mod%/gfx/blocks/lamp2.png" effect="spell_fireball_tail.xml" effect_scale="0.32" effect_offset="0.00,-0.10" pak="" />
     <block name="Dragon_picture" type="simple" properties="editor=build,user_cycle_switch,fire=fire_block,narrow,two_layers" through="true" crack="true" resource="Dragon_picture" draw_layer="normal" build="1" extract="1" backneed="true" ontop="true" pak="">
         <layers count="3">
             <layer file="%mod%/gfx/item_icons/3234234234234.png" properties="" />
@@ -16,7 +16,7 @@
             <layer file="%mod%/gfx/blocks/12423523.png" properties="" />
         </layers>
     </block>
-    <block name="Dragon_bed" type="simple" properties="can_fall,wide,bed,max_height=5,narrow,wooden,draw_align=down" resource="Dragon_bed" draw_layer="normal" build="0" extract="4" spine="Dragon_bed" through="true" stayon="true" ontop="true" spine_ani="animation" spine_skin="normal" spine_skin_mp="multiplayer" effect="enemy_dwarf.xml" effect_scale="0.27" effect_offset="-0.07,0.38" pak="" />
+    <block name="Dragon_bed" type="simple" properties="can_fall,wide,bed,max_height=4,narrow,wooden,draw_align=down" resource="Dragon_bed" draw_layer="normal" build="0" extract="4" spine="Dragon_bed" through="true" stayon="true" ontop="true" spine_ani="animation" spine_skin="normal" spine_skin_mp="multiplayer" effect="enemy_dwarf.xml" effect_scale="0.27" effect_offset="-0.07,0.38" pak="" />
     <block name="vitrag" type="simple" properties="crash_back,window,user_cycle_switch,narrow" resource="vitrag" draw_layer="normal" build="1" extract="3" crack="true" pak="">
         <file path="%mod%/gfx/blocks/VitrajD_1.png" />
         <file path="%mod%/gfx/blocks/VitrajD_2.png" />

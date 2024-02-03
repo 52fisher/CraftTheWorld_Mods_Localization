@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <root>
-    <item name="smyti_dg" properties="dead_radius=2,nodig_under=2,removable,device,smithy,efficiency=10,warehouse" light="2" size="3.00,3.00" offsety="0" pak="">
+    <item name="smyti_dg" properties="dead_radius=2,nodig_under=2,removable,device,smithy,efficiency=3" light="2" size="3.00,3.00" offsety="0" pak="">
         <params>
             <param name="front_spine" value="Front_ST" />
             <param name="front_off" value="main" />
@@ -12,7 +12,7 @@
             <param name="sound_work" value="craft_metall" />
         </params>
     </item>
-    <item name="stanock_dg" properties="device,nodig_under=2,workbench,efficiency=10,removable,dead_radius=1,workshop,warehouse" size="2.67,2.67" offsety="0" pak="">
+    <item name="stanock_dg" properties="device,nodig_under=2,workbench,efficiency=4,removable,dead_radius=1,workshop" size="2.67,2.67" offsety="0" pak="">
         <params>
             <param name="front_spine" value="Front_WB" />
             <param name="front_off" value="main" />
@@ -24,7 +24,7 @@
             <param name="sound_work" value="craft_wood" />
         </params>
     </item>
-    <item name="lab_dg" properties="dead_radius=2,nodig_under=2,removable,device,lab,efficiency=10,warehouse" size="3.00,3.00" offsety="0" pak="">
+    <item name="lab_dg" properties="dead_radius=2,nodig_under=2,removable,device,lab,efficiency=3" size="3.00,3.00" offsety="0" pak="">
         <params>
             <param name="front_spine" value="Front_LB" />
             <param name="front_off" value="main_off" />
@@ -46,7 +46,7 @@
             <image file="%mod%/gfx/spine/kitchen_stone_big_dragon.png" />
         </images>
     </item>
-    <item name="Dragon_arch_tower" properties="arrow_tower,can_fall,removable,crash_after_fall,radius=15,warehouse" spine="Dragon_arch_tower" offsety="-100" spine_ani="main" spine_skin="wood_tower_2" size="1.00,1.00" pak="">
+    <item name="Dragon_arch_tower" properties="arrow_tower,can_fall,removable,crash_after_fall,radius=12" spine="Dragon_arch_tower" offsety="-100" spine_ani="main" spine_skin="wood_tower_2" size="1.00,1.00" pak="">
         <params>
             <param name="idle" value="main" />
             <param name="attack_up_30" value="attack_high" />
@@ -61,7 +61,7 @@
             <param name="event_attack" value="" />
         </params>
     </item>
-    <item name="Dragon_lib" properties="device,dead_radius=2,nodig_under=2,library,efficiency=10,can_fall,removable,warehouse" light="2" spine="Dragon_lib" spine_ani="off" size="3.00,3.00" offsety="0" pak="">
+    <item name="Dragon_lib" properties="device,dead_radius=2,nodig_under=2,library,efficiency=4,can_fall,removable" light="2" spine="Dragon_lib" spine_ani="off" size="3.00,3.00" offsety="0" pak="">
         <params>
             <param name="front_spine" value="" />
             <param name="front_off" value="" />
